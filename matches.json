@@ -1,0 +1,23 @@
+{
+  "2026-05-19": {
+    "message": "Too many requests"
+  },
+  "2026-05-20": {
+    "message": "Too many requests"
+  },
+  "2026-05-21": {
+    "message": "Too many requests"
+  },
+  "2026-05-22": {
+    "message": "Too many requests"
+  },
+  "2026-05-23": {
+    "message": "Too many requests"
+  },
+  "2026-05-24": {
+    "message": "Too many requests"
+  },
+  "2026-05-18": {
+    "message": "Endpoint '/tennis/v2/fixture/date/2026-05-18' does not exist"
+  }
+}
