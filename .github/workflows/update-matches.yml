@@ -2,8 +2,8 @@ name: Update Tennis Matches
 
 on:
   schedule:
-    - cron: '0 5 * * *'  # Tous les jours à 6h heure française
-  workflow_dispatch:      # Permet de lancer manuellement
+    - cron: '0 5 * * *'
+  workflow_dispatch:
 
 jobs:
   fetch-matches:
@@ -23,76 +23,106 @@ jobs:
           const today = new Date();
           const endDate = new Date(today);
           endDate.setDate(endDate.getDate() + 6);
-
           const fmt = d => d.toISOString().slice(0,10);
           const startStr = fmt(today);
           const endStr = fmt(endDate);
 
-          console.log('Fetching ATP fixtures from', startStr, 'to', endStr);
-
-          const allMatches = {};
-          let done = 0;
-          const tours = ['atp', 'wta'];
-
-          function fetchTour(tour) {
-            const path = '/tennis/v2/' + tour + '/fixtures/' + startStr + '/' + endStr;
-            const options = {
-              method: 'GET',
-              hostname: 'tennis-api-atp-wta-itf.p.rapidapi.com',
-              path: path,
-              headers: {
-                'X-RapidAPI-Key': process.env.RAPIDAPI_KEY,
-                'X-RapidAPI-Host': 'tennis-api-atp-wta-itf.p.rapidapi.com'
-              }
-            };
-
-            const req = https.request(options, res => {
-              let data = '';
-              res.on('data', chunk => data += chunk);
-              res.on('end', () => {
-                try {
-                  const parsed = JSON.parse(data);
-                  console.log('Tour:', tour, '- Status:', res.statusCode);
-                  const fixtures = parsed.data || parsed || [];
-                  if (Array.isArray(fixtures)) {
-                    fixtures.forEach(m => {
-                      const date = (m.date || m.startDate || startStr).slice(0,10);
-                      if (!allMatches[date]) allMatches[date] = {data: []};
-                      allMatches[date].data.push({...m, tour});
-                    });
-                  }
-                } catch(e) {
-                  console.error('Parse error for', tour, ':', e.message);
+          function apiGet(path) {
+            return new Promise((resolve) => {
+              const options = {
+                method: 'GET',
+                hostname: 'tennis-api-atp-wta-itf.p.rapidapi.com',
+                path,
+                headers: {
+                  'X-RapidAPI-Key': process.env.RAPIDAPI_KEY,
+                  'X-RapidAPI-Host': 'tennis-api-atp-wta-itf.p.rapidapi.com'
                 }
-                done++;
-                if (done === tours.length) {
-                  fs.writeFileSync('matches.json', JSON.stringify(allMatches, null, 2));
-                  console.log('matches.json updated with', Object.keys(allMatches).length, 'days');
-                  Object.keys(allMatches).forEach(d => {
-                    console.log(d, ':', allMatches[d].data.length, 'matches');
-                  });
-                }
+              };
+              const req = https.request(options, res => {
+                let data = '';
+                res.on('data', c => data += c);
+                res.on('end', () => {
+                  try { resolve(JSON.parse(data)); }
+                  catch(e) { resolve({}); }
+                });
               });
+              req.on('error', () => resolve({}));
+              req.end();
             });
-            req.on('error', e => {
-              console.error('Request error for', tour, ':', e.message);
-              done++;
-            });
-            req.end();
           }
 
-          // Espacer les requêtes de 1 seconde pour éviter rate limit
-          tours.forEach((tour, i) => {
-            setTimeout(() => fetchTour(tour), i * 1000);
-          });
+          async function main() {
+            const allMatches = {};
 
-          // Attendre que tout soit fini (max 30s)
-          setTimeout(() => {
-            if (done < tours.length) {
-              console.log('Timeout - saving partial results');
-              fs.writeFileSync('matches.json', JSON.stringify(allMatches, null, 2));
+            // 1. Récupérer fixtures ATP et WTA
+            const [atpData, wtaData] = await Promise.all([
+              apiGet('/tennis/v2/atp/fixtures/' + startStr + '/' + endStr),
+              new Promise(r => setTimeout(r, 1500)).then(() =>
+                apiGet('/tennis/v2/wta/fixtures/' + startStr + '/' + endStr)
+              )
+            ]);
+
+            // Combiner ATP + WTA
+            const allFixtures = [
+              ...(atpData.data || []).map(m => ({...m, tour:'atp'})),
+              ...(wtaData.data || []).map(m => ({...m, tour:'wta'})),
+            ];
+
+            console.log('Total fixtures:', allFixtures.length);
+
+            // Grouper par date
+            allFixtures.forEach(m => {
+              const date = (m.date || startStr).slice(0,10);
+              if (!allMatches[date]) allMatches[date] = {data: []};
+              allMatches[date].data.push(m);
+            });
+
+            // 2. Récupérer les noms des tournois uniques
+            const tournIds = [...new Set(allFixtures.map(m => m.tournamentId).filter(Boolean))];
+            console.log('Unique tournament IDs:', tournIds);
+
+            const tournNames = {};
+            for (let i = 0; i < tournIds.length; i++) {
+              const id = tournIds[i];
+              // Alterner atp/wta pour trouver le bon endpoint
+              const atpInfo = await apiGet('/tennis/v2/atp/tournament/info/' + id);
+              if (atpInfo.data?.name) {
+                tournNames[id] = {
+                  name: atpInfo.data.name,
+                  surface: atpInfo.data.surface || 'Clay',
+                  country: atpInfo.data.country || '',
+                  countryAcr: atpInfo.data.countryAcr || '',
+                };
+                console.log('Tournament', id, ':', atpInfo.data.name);
+              } else {
+                const wtaInfo = await apiGet('/tennis/v2/wta/tournament/info/' + id);
+                if (wtaInfo.data?.name) {
+                  tournNames[id] = {
+                    name: wtaInfo.data.name,
+                    surface: wtaInfo.data.surface || 'Clay',
+                    country: wtaInfo.data.country || '',
+                    countryAcr: wtaInfo.data.countryAcr || '',
+                  };
+                  console.log('Tournament', id, '(wta):', wtaInfo.data.name);
+                }
+              }
+              // Pause entre chaque requête
+              if (i < tournIds.length - 1) await new Promise(r => setTimeout(r, 800));
             }
-          }, 30000);
+
+            // 3. Enrichir les matchs avec les noms de tournois
+            Object.keys(allMatches).forEach(date => {
+              allMatches[date].data = allMatches[date].data.map(m => ({
+                ...m,
+                tournament: tournNames[m.tournamentId] || {name: 'Tournoi ' + m.tournamentId, surface: 'Clay'}
+              }));
+            });
+
+            fs.writeFileSync('matches.json', JSON.stringify(allMatches, null, 2));
+            console.log('Done! matches.json updated');
+          }
+
+          main().catch(console.error);
           "
 
       - name: Commit matches.json
