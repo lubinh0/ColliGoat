@@ -1,0 +1,72 @@
+name: Update Tennis Matches
+
+on:
+  schedule:
+    - cron: '0 5 * * *'  # Tous les jours à 6h heure française
+  workflow_dispatch:      # Permet de lancer manuellement
+
+jobs:
+  fetch-matches:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Fetch matches from RapidAPI
+        env:
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+        run: |
+          node -e "
+          const https = require('https');
+          const fs = require('fs');
+
+          const today = new Date();
+          const dates = [];
+          for (let i = 0; i < 7; i++) {
+            const d = new Date(today);
+            d.setDate(d.getDate() + i);
+            dates.push(d.toISOString().slice(0,10));
+          }
+
+          const allMatches = {};
+          let done = 0;
+
+          dates.forEach(date => {
+            const options = {
+              method: 'GET',
+              hostname: 'tennis-api-atp-wta-itf.p.rapidapi.com',
+              path: '/tennis/v2/fixture/date/' + date,
+              headers: {
+                'X-RapidAPI-Key': process.env.RAPIDAPI_KEY,
+                'X-RapidAPI-Host': 'tennis-api-atp-wta-itf.p.rapidapi.com'
+              }
+            };
+
+            const req = https.request(options, res => {
+              let data = '';
+              res.on('data', chunk => data += chunk);
+              res.on('end', () => {
+                try {
+                  allMatches[date] = JSON.parse(data);
+                } catch(e) {
+                  allMatches[date] = {data: []};
+                }
+                done++;
+                if (done === dates.length) {
+                  fs.writeFileSync('matches.json', JSON.stringify(allMatches, null, 2));
+                  console.log('matches.json updated!');
+                }
+              });
+            });
+            req.on('error', e => { allMatches[date] = {data: []}; done++; });
+            req.end();
+          });
+          "
+
+      - name: Commit matches.json
+        run: |
+          git config user.name "ColliGoat Bot"
+          git config user.email "bot@colligoat.com"
+          git add matches.json
+          git diff --staged --quiet || git commit -m "Update matches $(date +%Y-%m-%d)"
+          git push
