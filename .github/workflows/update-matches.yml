@@ -21,21 +21,25 @@ jobs:
           const fs = require('fs');
 
           const today = new Date();
-          const dates = [];
-          for (let i = 0; i < 7; i++) {
-            const d = new Date(today);
-            d.setDate(d.getDate() + i);
-            dates.push(d.toISOString().slice(0,10));
-          }
+          const endDate = new Date(today);
+          endDate.setDate(endDate.getDate() + 6);
+
+          const fmt = d => d.toISOString().slice(0,10);
+          const startStr = fmt(today);
+          const endStr = fmt(endDate);
+
+          console.log('Fetching ATP fixtures from', startStr, 'to', endStr);
 
           const allMatches = {};
           let done = 0;
+          const tours = ['atp', 'wta'];
 
-          dates.forEach(date => {
+          function fetchTour(tour) {
+            const path = '/tennis/v2/' + tour + '/fixtures/' + startStr + '/' + endStr;
             const options = {
               method: 'GET',
               hostname: 'tennis-api-atp-wta-itf.p.rapidapi.com',
-              path: '/tennis/v2/fixture/date/' + date,
+              path: path,
               headers: {
                 'X-RapidAPI-Key': process.env.RAPIDAPI_KEY,
                 'X-RapidAPI-Host': 'tennis-api-atp-wta-itf.p.rapidapi.com'
@@ -47,20 +51,48 @@ jobs:
               res.on('data', chunk => data += chunk);
               res.on('end', () => {
                 try {
-                  allMatches[date] = JSON.parse(data);
+                  const parsed = JSON.parse(data);
+                  console.log('Tour:', tour, '- Status:', res.statusCode);
+                  const fixtures = parsed.data || parsed || [];
+                  if (Array.isArray(fixtures)) {
+                    fixtures.forEach(m => {
+                      const date = (m.date || m.startDate || startStr).slice(0,10);
+                      if (!allMatches[date]) allMatches[date] = {data: []};
+                      allMatches[date].data.push({...m, tour});
+                    });
+                  }
                 } catch(e) {
-                  allMatches[date] = {data: []};
+                  console.error('Parse error for', tour, ':', e.message);
                 }
                 done++;
-                if (done === dates.length) {
+                if (done === tours.length) {
                   fs.writeFileSync('matches.json', JSON.stringify(allMatches, null, 2));
-                  console.log('matches.json updated!');
+                  console.log('matches.json updated with', Object.keys(allMatches).length, 'days');
+                  Object.keys(allMatches).forEach(d => {
+                    console.log(d, ':', allMatches[d].data.length, 'matches');
+                  });
                 }
               });
             });
-            req.on('error', e => { allMatches[date] = {data: []}; done++; });
+            req.on('error', e => {
+              console.error('Request error for', tour, ':', e.message);
+              done++;
+            });
             req.end();
+          }
+
+          // Espacer les requêtes de 1 seconde pour éviter rate limit
+          tours.forEach((tour, i) => {
+            setTimeout(() => fetchTour(tour), i * 1000);
           });
+
+          // Attendre que tout soit fini (max 30s)
+          setTimeout(() => {
+            if (done < tours.length) {
+              console.log('Timeout - saving partial results');
+              fs.writeFileSync('matches.json', JSON.stringify(allMatches, null, 2));
+            }
+          }, 30000);
           "
 
       - name: Commit matches.json
