@@ -20,12 +20,7 @@ jobs:
           const https = require('https');
           const fs = require('fs');
 
-          const today = new Date();
-          const endDate = new Date(today);
-          endDate.setDate(endDate.getDate() + 6);
-          const fmt = d => d.toISOString().slice(0,10);
-          const startStr = fmt(today);
-          const endStr = fmt(endDate);
+          function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
           function apiGet(path) {
             return new Promise((resolve) => {
@@ -51,75 +46,103 @@ jobs:
             });
           }
 
-          async function main() {
-            const allMatches = {};
+          async function getTournamentMatches(tournamentId, tour) {
+            let page = 1;
+            let allMatches = [];
+            let hasNext = true;
 
-            // 1. Récupérer fixtures ATP et WTA
-            const [atpData, wtaData] = await Promise.all([
-              apiGet('/tennis/v2/atp/fixtures/' + startStr + '/' + endStr),
-              new Promise(r => setTimeout(r, 1500)).then(() =>
-                apiGet('/tennis/v2/wta/fixtures/' + startStr + '/' + endStr)
-              )
-            ]);
-
-            // Combiner ATP + WTA
-            const allFixtures = [
-              ...(atpData.data || []).map(m => ({...m, tour:'atp'})),
-              ...(wtaData.data || []).map(m => ({...m, tour:'wta'})),
-            ];
-
-            console.log('Total fixtures:', allFixtures.length);
-
-            // Grouper par date
-            allFixtures.forEach(m => {
-              const date = (m.date || startStr).slice(0,10);
-              if (!allMatches[date]) allMatches[date] = {data: []};
-              allMatches[date].data.push(m);
-            });
-
-            // 2. Récupérer les noms des tournois uniques
-            const tournIds = [...new Set(allFixtures.map(m => m.tournamentId).filter(Boolean))];
-            console.log('Unique tournament IDs:', tournIds);
-
-            const tournNames = {};
-            for (let i = 0; i < tournIds.length; i++) {
-              const id = tournIds[i];
-              // Alterner atp/wta pour trouver le bon endpoint
-              const atpInfo = await apiGet('/tennis/v2/atp/tournament/info/' + id);
-              if (atpInfo.data?.name) {
-                tournNames[id] = {
-                  name: atpInfo.data.name,
-                  surface: atpInfo.data.surface || 'Clay',
-                  country: atpInfo.data.country || '',
-                  countryAcr: atpInfo.data.countryAcr || '',
-                };
-                console.log('Tournament', id, ':', atpInfo.data.name);
-              } else {
-                const wtaInfo = await apiGet('/tennis/v2/wta/tournament/info/' + id);
-                if (wtaInfo.data?.name) {
-                  tournNames[id] = {
-                    name: wtaInfo.data.name,
-                    surface: wtaInfo.data.surface || 'Clay',
-                    country: wtaInfo.data.country || '',
-                    countryAcr: wtaInfo.data.countryAcr || '',
-                  };
-                  console.log('Tournament', id, '(wta):', wtaInfo.data.name);
-                }
-              }
-              // Pause entre chaque requête
-              if (i < tournIds.length - 1) await new Promise(r => setTimeout(r, 800));
+            while (hasNext && page <= 10) {
+              const res = await apiGet('/tennis/v2/' + tour + '/tournament/fixtures/' + tournamentId + '?page=' + page);
+              const matches = res.data || [];
+              allMatches = allMatches.concat(matches);
+              hasNext = res.hasNextPage === true;
+              page++;
+              if (hasNext) await sleep(500);
             }
 
-            // 3. Enrichir les matchs avec les noms de tournois
-            Object.keys(allMatches).forEach(date => {
-              allMatches[date].data = allMatches[date].data.map(m => ({
-                ...m,
-                tournament: tournNames[m.tournamentId] || {name: 'Tournoi ' + m.tournamentId, surface: 'Clay'}
-              }));
+            return allMatches.filter(m => {
+              const p1 = m.player1?.name || '';
+              const p2 = m.player2?.name || '';
+              return !p1.includes('/') && !p2.includes('/');
+            });
+          }
+
+          async function main() {
+            const today = new Date();
+            const endDate = new Date(today);
+            endDate.setDate(endDate.getDate() + 7);
+            const fmt = d => d.toISOString().slice(0,10);
+            const startStr = fmt(today);
+            const endStr = fmt(endDate);
+
+            console.log('Fetching matches from', startStr, 'to', endStr);
+
+            const [atpCalendar, wtaCalendar] = await Promise.all([
+              apiGet('/tennis/v2/atp/tournament/calendar/2026'),
+              sleep(1000).then(() => apiGet('/tennis/v2/wta/tournament/calendar/2026'))
+            ]);
+
+            const atpTournaments = (atpCalendar.data || []).filter(t => {
+              const start = t.startDate || t.dateFrom || '';
+              const end = t.endDate || t.dateTo || '';
+              return start <= endStr && end >= startStr;
             });
 
+            const wtaTournaments = (wtaCalendar.data || []).filter(t => {
+              const start = t.startDate || t.dateFrom || '';
+              const end = t.endDate || t.dateTo || '';
+              return start <= endStr && end >= startStr;
+            });
+
+            console.log('Active ATP tournaments:', atpTournaments.length);
+            console.log('Active WTA tournaments:', wtaTournaments.length);
+
+            const allMatches = {};
+
+            const allTournaments = [
+              ...atpTournaments.map(t => ({...t, tour: 'atp'})),
+              ...wtaTournaments.map(t => ({...t, tour: 'wta'}))
+            ];
+
+            for (let i = 0; i < allTournaments.length; i++) {
+              const t = allTournaments[i];
+              const tId = t.id || t.tournamentId;
+              console.log('Fetching tournament', tId, t.name || '', '(' + t.tour + ')');
+
+              const matches = await getTournamentMatches(tId, t.tour);
+              console.log(' ->', matches.length, 'singles matches');
+
+              matches.forEach(m => {
+                if (!m.date) return;
+                const date = m.date.slice(0,10);
+                if (date < startStr || date > endStr) return;
+
+                if (!allMatches[date]) allMatches[date] = {data: []};
+                allMatches[date].data.push({
+                  ...m,
+                  tour: t.tour,
+                  tournament: {
+                    name: t.name || t.tournamentName || 'Tournoi ' + tId,
+                    surface: t.surface || t.courtType || 'Clay',
+                    country: t.country || '',
+                    countryAcr: t.countryAcr || ''
+                  }
+                });
+              });
+
+              if (i < allTournaments.length - 1) await sleep(600);
+            }
+
+            let total = 0;
+            Object.keys(allMatches).sort().forEach(date => {
+              const n = allMatches[date].data.length;
+              total += n;
+              console.log(date, ':', n, 'matches');
+            });
+            console.log('Total:', total, 'matches across', Object.keys(allMatches).length, 'days');
+
             fs.writeFileSync('matches.json', JSON.stringify(allMatches, null, 2));
-            console.log('Done! matches.json updated');
+            console.log('Done!');
           }
 
           main().catch(console.error);
