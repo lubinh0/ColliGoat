@@ -12,9 +12,10 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Fetch matches from RapidAPI
+      - name: Fetch matches and odds
         env:
           RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: |
           node -e "
           const https = require('https');
@@ -22,16 +23,16 @@ jobs:
 
           function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
-          function apiGet(path) {
+          function apiGet(hostname, path, isHttps = true) {
             return new Promise((resolve) => {
               const options = {
                 method: 'GET',
-                hostname: 'tennis-api-atp-wta-itf.p.rapidapi.com',
+                hostname,
                 path,
-                headers: {
+                headers: hostname.includes('rapidapi') ? {
                   'X-RapidAPI-Key': process.env.RAPIDAPI_KEY,
                   'X-RapidAPI-Host': 'tennis-api-atp-wta-itf.p.rapidapi.com'
-                }
+                } : {}
               };
               const req = https.request(options, res => {
                 let data = '';
@@ -58,16 +59,13 @@ jobs:
 
             // 1. Récupérer fixtures ATP et WTA
             const [atpData, wtaData] = await Promise.all([
-              apiGet('/tennis/v2/atp/fixtures/' + startStr + '/' + endStr),
-              sleep(1200).then(() => apiGet('/tennis/v2/wta/fixtures/' + startStr + '/' + endStr))
+              apiGet('tennis-api-atp-wta-itf.p.rapidapi.com', '/tennis/v2/atp/fixtures/' + startStr + '/' + endStr),
+              sleep(1200).then(() => apiGet('tennis-api-atp-wta-itf.p.rapidapi.com', '/tennis/v2/wta/fixtures/' + startStr + '/' + endStr))
             ]);
 
             const atpFixtures = (atpData.data || []).map(m => ({...m, tour:'atp'}));
             const wtaFixtures = (wtaData.data || []).map(m => ({...m, tour:'wta'}));
             const allFixtures = [...atpFixtures, ...wtaFixtures];
-
-            console.log('ATP fixtures:', atpFixtures.length);
-            console.log('WTA fixtures:', wtaFixtures.length);
 
             // Filtrer les doubles
             const singles = allFixtures.filter(m => {
@@ -78,23 +76,19 @@ jobs:
 
             console.log('Singles:', singles.length);
 
-            // 2. Récupérer les noms des tournois uniques
+            // 2. Noms des tournois
             const tournIds = [...new Set(singles.map(m => m.tournamentId).filter(Boolean))];
-            console.log('Tournament IDs:', tournIds);
-
             const tournInfo = {};
             for (let i = 0; i < tournIds.length; i++) {
               const id = tournIds[i];
-              // Trouver le tour de ce tournoi
               const sample = singles.find(m => m.tournamentId === id);
               const tour = sample?.tour || 'atp';
-
-              const res = await apiGet('/tennis/v2/' + tour + '/tournament/info/' + id);
+              const res = await apiGet('tennis-api-atp-wta-itf.p.rapidapi.com', '/tennis/v2/' + tour + '/tournament/info/' + id);
               if (res.data) {
                 tournInfo[id] = {
                   name: res.data.name || 'Tournoi ' + id,
-                  surface: res.data.court?.name || res.data.surface || 'Clay',
-                  countryAcr: res.data.country?.acronym || res.data.countryAcr || ''
+                  surface: res.data.court?.name || 'Clay',
+                  countryAcr: res.data.country?.acronym || ''
                 };
                 console.log('Tournament', id, ':', tournInfo[id].name);
               } else {
@@ -103,13 +97,11 @@ jobs:
               if (i < tournIds.length - 1) await sleep(800);
             }
 
-            // Drapeaux pays
             const FLAGS = {
               'FRA':'🇫🇷','ESP':'🇪🇸','ITA':'🇮🇹','GER':'🇩🇪','USA':'🇺🇸',
               'GBR':'🇬🇧','SUI':'🇨🇭','AUS':'🇦🇺','ARG':'🇦🇷','RUS':'🇷🇺',
-              'POL':'🇵🇱','BLR':'🇧🇾','GRE':'🇬🇷','CAN':'🇨🇦','JPN':'🇯🇵',
-              'BEL':'🇧🇪','SWE':'🇸🇪','DEN':'🇩🇰','NED':'🇳🇱','CZE':'🇨🇿',
-              'AUT':'🇦🇹','POR':'🇵🇹','MCO':'🇲🇨','SRB':'🇷🇸','CRO':'🇭🇷',
+              'POL':'🇵🇱','BLR':'🇧🇾','GRE':'🇬🇷','CAN':'🇨🇦','MCO':'🇲🇨',
+              'SRB':'🇷🇸','CRO':'🇭🇷','BEL':'🇧🇪','SWE':'🇸🇪','NED':'🇳🇱',
             };
 
             // 3. Grouper par date
@@ -118,39 +110,72 @@ jobs:
               if (!m.date) return;
               const date = m.date.slice(0,10);
               if (!allMatches[date]) allMatches[date] = {data: []};
-
               const tInfo = tournInfo[m.tournamentId] || {name: 'Tournoi ' + m.tournamentId, surface: 'Clay', countryAcr: ''};
-              const flag = FLAGS[tInfo.countryAcr] || '🎾';
-
               allMatches[date].data.push({
                 ...m,
-                tournament: {
-                  name: tInfo.name,
-                  surface: tInfo.surface,
-                  flag
-                }
+                tournament: {name: tInfo.name, surface: tInfo.surface, flag: FLAGS[tInfo.countryAcr] || '🎾'}
               });
             });
 
-            let total = 0;
-            Object.keys(allMatches).sort().forEach(d => {
-              const n = allMatches[d].data.length;
-              total += n;
-              console.log(d, ':', n, 'matches');
-            });
-            console.log('Total:', total);
-
             fs.writeFileSync('matches.json', JSON.stringify(allMatches, null, 2));
-            console.log('Done!');
+            console.log('matches.json done');
+
+            // 4. Récupérer les cotes tennis via The Odds API
+            await sleep(500);
+            const oddsRes = await apiGet(
+              'api.the-odds-api.com',
+              '/v4/sports/tennis_atp/odds/?apiKey=' + process.env.ODDS_API_KEY + '&regions=eu&markets=h2h&oddsFormat=decimal&bookmakers=betclic,unibet,winamax,bet365,pinnacle'
+            );
+
+            const oddsWta = await apiGet(
+              'api.the-odds-api.com',
+              '/v4/sports/tennis_wta/odds/?apiKey=' + process.env.ODDS_API_KEY + '&regions=eu&markets=h2h&oddsFormat=decimal&bookmakers=betclic,unibet,winamax,bet365,pinnacle'
+            );
+
+            const allOdds = [...(Array.isArray(oddsRes) ? oddsRes : []), ...(Array.isArray(oddsWta) ? oddsWta : [])];
+            console.log('Odds fetched:', allOdds.length, 'matches');
+
+            // Construire index des cotes par nom de joueurs
+            const oddsIndex = {};
+            allOdds.forEach(event => {
+              const bookmakers = event.bookmakers || [];
+              const bestOdds = {p1: null, p2: null, p1name: '', p2name: ''};
+
+              bookmakers.forEach(bk => {
+                const market = (bk.markets || []).find(m => m.key === 'h2h');
+                if (!market) return;
+                const outcomes = market.outcomes || [];
+                if (outcomes.length < 2) return;
+                const o1 = outcomes[0], o2 = outcomes[1];
+                if (!bestOdds.p1 || o1.price > bestOdds.p1) {
+                  bestOdds.p1 = o1.price;
+                  bestOdds.p1name = o1.name;
+                }
+                if (!bestOdds.p2 || o2.price > bestOdds.p2) {
+                  bestOdds.p2 = o2.price;
+                  bestOdds.p2name = o2.name;
+                }
+              });
+
+              if (bestOdds.p1 && bestOdds.p2) {
+                // Clé = noms normalisés
+                const key = [bestOdds.p1name, bestOdds.p2name].sort().join('|').toLowerCase();
+                oddsIndex[key] = bestOdds;
+              }
+            });
+
+            console.log('Odds index size:', Object.keys(oddsIndex).length);
+            fs.writeFileSync('odds.json', JSON.stringify(oddsIndex, null, 2));
+            console.log('odds.json done!');
           }
 
           main().catch(console.error);
           "
 
-      - name: Commit matches.json
+      - name: Commit files
         run: |
           git config user.name "ColliGoat Bot"
           git config user.email "bot@colligoat.com"
-          git add matches.json
-          git diff --staged --quiet || git commit -m "Update matches $(date +%Y-%m-%d)"
+          git add matches.json odds.json
+          git diff --staged --quiet || git commit -m "Update matches and odds $(date +%Y-%m-%d)"
           git push
