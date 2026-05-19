@@ -121,18 +121,31 @@ jobs:
             console.log('matches.json done');
 
             // 4. Récupérer les cotes tennis via The Odds API
-            await sleep(500);
-            const oddsRes = await apiGet(
-              'api.the-odds-api.com',
-              '/v4/sports/tennis_atp/odds/?apiKey=' + process.env.ODDS_API_KEY + '&regions=eu&markets=h2h&oddsFormat=decimal&bookmakers=betclic,unibet,winamax,bet365,pinnacle'
-            );
+            // Récupérer tous les sports tennis actifs
+            const tennisSports = [
+              'tennis_atp_french_open',
+              'tennis_wta_french_open',
+              'tennis_atp_hamburg_open',
+              'tennis_wta_strasbourg',
+              'tennis_atp_geneva',
+              'tennis_wta_rabat',
+            ];
 
-            const oddsWta = await apiGet(
-              'api.the-odds-api.com',
-              '/v4/sports/tennis_wta/odds/?apiKey=' + process.env.ODDS_API_KEY + '&regions=eu&markets=h2h&oddsFormat=decimal&bookmakers=betclic,unibet,winamax,bet365,pinnacle'
-            );
-
-            const allOdds = [...(Array.isArray(oddsRes) ? oddsRes : []), ...(Array.isArray(oddsWta) ? oddsWta : [])];
+            let allOdds = [];
+            for (let i = 0; i < tennisSports.length; i++) {
+              await sleep(300);
+              const sport = tennisSports[i];
+              const res = await apiGet(
+                'api.the-odds-api.com',
+                '/v4/sports/' + sport + '/odds/?apiKey=' + process.env.ODDS_API_KEY + '&regions=eu&markets=h2h&oddsFormat=decimal&bookmakers=betclic,unibet,winamax,bet365,pinnacle'
+              );
+              if (Array.isArray(res)) {
+                console.log(sport, ':', res.length, 'odds');
+                allOdds = allOdds.concat(res);
+              } else {
+                console.log(sport, ': no data');
+              }
+            }
             console.log('Odds fetched:', allOdds.length, 'matches');
 
             // Construire index des cotes par nom de joueurs
