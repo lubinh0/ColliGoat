@@ -46,6 +46,26 @@ jobs:
             });
           }
 
+          // Tournois hardcodés — IDs connus
+          const TOURNAMENTS = [
+            // ATP
+            {id: 21327, tour: 'atp', name: 'Roland Garros', surface: 'Clay', flag: '🇫🇷'},
+            {id: 21328, tour: 'atp', name: 'Wimbledon', surface: 'Grass', flag: '🇬🇧'},
+            {id: 21329, tour: 'atp', name: 'US Open', surface: 'Hard', flag: '🇺🇸'},
+            {id: 21330, tour: 'atp', name: 'Australian Open', surface: 'Hard', flag: '🇦🇺'},
+            {id: 21331, tour: 'atp', name: 'ATP Genève', surface: 'Clay', flag: '🇨🇭'},
+            {id: 21332, tour: 'atp', name: 'ATP Lyon', surface: 'Clay', flag: '🇫🇷'},
+            {id: 21333, tour: 'atp', name: 'ATP Rome', surface: 'Clay', flag: '🇮🇹'},
+            {id: 21334, tour: 'atp', name: 'ATP Madrid', surface: 'Clay', flag: '🇪🇸'},
+            {id: 21335, tour: 'atp', name: 'ATP Barcelona', surface: 'Clay', flag: '🇪🇸'},
+            {id: 21336, tour: 'atp', name: 'ATP Monte Carlo', surface: 'Clay', flag: '🇲🇨'},
+            // WTA
+            {id: 21337, tour: 'wta', name: 'Roland Garros', surface: 'Clay', flag: '🇫🇷'},
+            {id: 21338, tour: 'wta', name: 'WTA Strasbourg', surface: 'Clay', flag: '🇫🇷'},
+            {id: 21339, tour: 'wta', name: 'WTA Rome', surface: 'Clay', flag: '🇮🇹'},
+            {id: 21340, tour: 'wta', name: 'WTA Madrid', surface: 'Clay', flag: '🇪🇸'},
+          ];
+
           async function getTournamentMatches(tournamentId, tour) {
             let page = 1;
             let allMatches = [];
@@ -54,16 +74,18 @@ jobs:
             while (hasNext && page <= 10) {
               const res = await apiGet('/tennis/v2/' + tour + '/tournament/fixtures/' + tournamentId + '?page=' + page);
               const matches = res.data || [];
+              if (matches.length === 0) break;
               allMatches = allMatches.concat(matches);
               hasNext = res.hasNextPage === true;
               page++;
               if (hasNext) await sleep(500);
             }
 
+            // Filtrer les doubles
             return allMatches.filter(m => {
               const p1 = m.player1?.name || '';
               const p2 = m.player2?.name || '';
-              return !p1.includes('/') && !p2.includes('/');
+              return !p1.includes('/') && !p2.includes('/') && p1 !== '?' && p2 !== '?';
             });
           }
 
@@ -75,71 +97,48 @@ jobs:
             const startStr = fmt(today);
             const endStr = fmt(endDate);
 
-            console.log('Fetching matches from', startStr, 'to', endStr);
-
-            const [atpCalendar, wtaCalendar] = await Promise.all([
-              apiGet('/tennis/v2/atp/tournament/calendar/2026'),
-              sleep(1000).then(() => apiGet('/tennis/v2/wta/tournament/calendar/2026'))
-            ]);
-
-            const atpTournaments = (atpCalendar.data || []).filter(t => {
-              const start = t.startDate || t.dateFrom || '';
-              const end = t.endDate || t.dateTo || '';
-              return start <= endStr && end >= startStr;
-            });
-
-            const wtaTournaments = (wtaCalendar.data || []).filter(t => {
-              const start = t.startDate || t.dateFrom || '';
-              const end = t.endDate || t.dateTo || '';
-              return start <= endStr && end >= startStr;
-            });
-
-            console.log('Active ATP tournaments:', atpTournaments.length);
-            console.log('Active WTA tournaments:', wtaTournaments.length);
+            console.log('Window:', startStr, 'to', endStr);
 
             const allMatches = {};
+            let totalMatches = 0;
 
-            const allTournaments = [
-              ...atpTournaments.map(t => ({...t, tour: 'atp'})),
-              ...wtaTournaments.map(t => ({...t, tour: 'wta'}))
-            ];
+            for (let i = 0; i < TOURNAMENTS.length; i++) {
+              const t = TOURNAMENTS[i];
+              console.log('Fetching', t.name, '(' + t.tour + ') id=' + t.id);
 
-            for (let i = 0; i < allTournaments.length; i++) {
-              const t = allTournaments[i];
-              const tId = t.id || t.tournamentId;
-              console.log('Fetching tournament', tId, t.name || '', '(' + t.tour + ')');
-
-              const matches = await getTournamentMatches(tId, t.tour);
-              console.log(' ->', matches.length, 'singles matches');
-
-              matches.forEach(m => {
-                if (!m.date) return;
+              const matches = await getTournamentMatches(t.id, t.tour);
+              
+              // Filtrer par fenêtre de dates
+              const filtered = matches.filter(m => {
+                if (!m.date) return false;
                 const date = m.date.slice(0,10);
-                if (date < startStr || date > endStr) return;
+                return date >= startStr && date <= endStr;
+              });
 
+              console.log(' -> total:', matches.length, '| in window:', filtered.length);
+
+              filtered.forEach(m => {
+                const date = m.date.slice(0,10);
                 if (!allMatches[date]) allMatches[date] = {data: []};
                 allMatches[date].data.push({
                   ...m,
                   tour: t.tour,
                   tournament: {
-                    name: t.name || t.tournamentName || 'Tournoi ' + tId,
-                    surface: t.surface || t.courtType || 'Clay',
-                    country: t.country || '',
-                    countryAcr: t.countryAcr || ''
+                    name: t.name,
+                    surface: t.surface,
+                    flag: t.flag
                   }
                 });
+                totalMatches++;
               });
 
-              if (i < allTournaments.length - 1) await sleep(600);
+              if (i < TOURNAMENTS.length - 1) await sleep(700);
             }
 
-            let total = 0;
-            Object.keys(allMatches).sort().forEach(date => {
-              const n = allMatches[date].data.length;
-              total += n;
-              console.log(date, ':', n, 'matches');
+            console.log('Total matches in window:', totalMatches);
+            Object.keys(allMatches).sort().forEach(d => {
+              console.log(d, ':', allMatches[d].data.length, 'matches');
             });
-            console.log('Total:', total, 'matches across', Object.keys(allMatches).length, 'days');
 
             fs.writeFileSync('matches.json', JSON.stringify(allMatches, null, 2));
             console.log('Done!');
