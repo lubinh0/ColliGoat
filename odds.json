@@ -1,10 +1,4 @@
 {
-  "jesper de jong|liam draxl": {
-    "p1": 1.49,
-    "p2": 2.68,
-    "p1name": "Jesper De Jong",
-    "p2name": "Liam Draxl"
-  },
   "bernard tomic|federico cinà": {
     "p1": 11.42,
     "p2": 1.08,
@@ -12,22 +6,22 @@
     "p2name": "Federico Cinà"
   },
   "pablo llamas ruiz|ugo blanchet": {
-    "p1": 1.11,
-    "p2": 8.72,
+    "p1": 1.07,
+    "p2": 12.68,
     "p1name": "Pablo Llamas Ruiz",
     "p2name": "Ugo Blanchet"
-  },
-  "alexis galarneau|pedro boscardin dias": {
-    "p1": 2.25,
-    "p2": 1.68,
-    "p1name": "Alexis Galarneau",
-    "p2name": "Pedro Boscardin Dias"
   },
   "gonzalo bueno|vitaliy sachko": {
     "p1": 1.85,
     "p2": 2.01,
     "p1name": "Gonzalo Bueno",
     "p2name": "Vitaliy Sachko"
+  },
+  "alexis galarneau|pedro boscardin dias": {
+    "p1": 2.25,
+    "p2": 1.68,
+    "p1name": "Alexis Galarneau",
+    "p2name": "Pedro Boscardin Dias"
   },
   "alejandro moro canas|lukas neumayer": {
     "p1": 3.05,
@@ -66,8 +60,8 @@
     "p2name": "Felix Gill"
   },
   "gianluca cadenasso|leandro riedi": {
-    "p1": 2.53,
-    "p2": 1.55,
+    "p1": 2.44,
+    "p2": 1.59,
     "p1name": "Gianluca Cadenasso",
     "p2name": "Leandro Riedi"
   },
@@ -90,7 +84,7 @@
     "p2name": "Thiago Seyboth Wild"
   },
   "francesco maestrelli|roberto carballes baena": {
-    "p1": 2.76,
+    "p1": 2.78,
     "p2": 1.47,
     "p1name": "Francesco Maestrelli",
     "p2name": "Roberto Carballes Baena"
@@ -103,7 +97,7 @@
   },
   "darwin blanch|tristan schoolkate": {
     "p1": 1.44,
-    "p2": 2.85,
+    "p2": 2.88,
     "p1name": "Darwin Blanch",
     "p2name": "Tristan Schoolkate"
   },
@@ -282,8 +276,8 @@
     "p2name": "Tommy Paul"
   },
   "aleksandar kovacevic|felix auger-aliassime": {
-    "p1": 5.1,
-    "p2": 1.24,
+    "p1": 5.14,
+    "p2": 1.21,
     "p1name": "Aleksandar Kovacevic",
     "p2name": "Felix Auger-Aliassime"
   },
@@ -318,7 +312,7 @@
     "p2name": "Yannick Hanfmann"
   },
   "clara tauson|jaqueline cristian": {
-    "p1": 10,
+    "p1": 9.5,
     "p2": 1.1,
     "p1name": "Clara Tauson",
     "p2name": "Jaqueline Cristian"
