@@ -23,7 +23,6 @@
           "countryAcr": "KAZ"
         },
         "tour": "atp",
-        "scheduled": true,
         "tournament": {
           "name": "Gonet Geneva Open - Geneva",
           "surface": "Clay",
@@ -56,7 +55,6 @@
           "countryAcr": "CAN"
         },
         "tour": "wta",
-        "scheduled": true,
         "tournament": {
           "name": "Internationaux de Strasbourg - Strasbourg",
           "surface": "Clay",

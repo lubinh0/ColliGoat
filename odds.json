@@ -5,6 +5,18 @@
     "p1name": "Jesper De Jong",
     "p2name": "Liam Draxl"
   },
+  "bernard tomic|federico cinà": {
+    "p1": 11.42,
+    "p2": 1.08,
+    "p1name": "Bernard Tomic",
+    "p2name": "Federico Cinà"
+  },
+  "pablo llamas ruiz|ugo blanchet": {
+    "p1": 1.11,
+    "p2": 8.72,
+    "p1name": "Pablo Llamas Ruiz",
+    "p2name": "Ugo Blanchet"
+  },
   "alexis galarneau|pedro boscardin dias": {
     "p1": 2.25,
     "p2": 1.68,
@@ -17,12 +29,6 @@
     "p1name": "Gonzalo Bueno",
     "p2name": "Vitaliy Sachko"
   },
-  "pablo llamas ruiz|ugo blanchet": {
-    "p1": 1.19,
-    "p2": 5.07,
-    "p1name": "Pablo Llamas Ruiz",
-    "p2name": "Ugo Blanchet"
-  },
   "alejandro moro canas|lukas neumayer": {
     "p1": 3.05,
     "p2": 1.41,
@@ -30,7 +36,7 @@
     "p2name": "Lukas Neumayer"
   },
   "borna gojo|henrique rocha": {
-    "p1": 2.29,
+    "p1": 2.3,
     "p2": 1.66,
     "p1name": "Borna Gojo",
     "p2name": "Henrique Rocha"
@@ -90,7 +96,7 @@
     "p2name": "Roberto Carballes Baena"
   },
   "jan choinski|pierre-hugues herbert": {
-    "p1": 1.47,
+    "p1": 1.48,
     "p2": 2.74,
     "p1name": "Jan Choinski",
     "p2name": "Pierre-Hugues Herbert"
@@ -270,14 +276,14 @@
     "p2name": "Tommy Paul"
   },
   "aleksandar kovacevic|felix auger-aliassime": {
-    "p1": 7.48,
-    "p2": 1.11,
+    "p1": 5,
+    "p2": 1.24,
     "p1name": "Aleksandar Kovacevic",
     "p2name": "Felix Auger-Aliassime"
   },
   "ignacio buse|jakub mensik": {
-    "p1": 2.37,
-    "p2": 1.66,
+    "p1": 2.39,
+    "p2": 1.65,
     "p1name": "Ignacio Buse",
     "p2name": "Jakub Mensik"
   },
@@ -306,7 +312,7 @@
     "p2name": "Yannick Hanfmann"
   },
   "clara tauson|jaqueline cristian": {
-    "p1": 9.1,
+    "p1": 12,
     "p2": 1.1,
     "p1name": "Clara Tauson",
     "p2name": "Jaqueline Cristian"
