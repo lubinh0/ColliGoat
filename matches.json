@@ -23,6 +23,7 @@
           "countryAcr": "BRA"
         },
         "tour": "atp",
+        "scheduled": true,
         "tournament": {
           "name": "M15 Maringa",
           "surface": "Clay",
@@ -51,6 +52,7 @@
           "countryAcr": "CAN"
         },
         "tour": "wta",
+        "scheduled": true,
         "tournament": {
           "name": "Internationaux de Strasbourg - Strasbourg",
           "surface": "Clay",
@@ -79,6 +81,7 @@
           "countryAcr": "RUS"
         },
         "tour": "wta",
+        "scheduled": true,
         "tournament": {
           "name": "W35 Changwon",
           "surface": "Hard",
@@ -107,6 +110,7 @@
           "countryAcr": "KOR"
         },
         "tour": "wta",
+        "scheduled": true,
         "tournament": {
           "name": "W35 Changwon",
           "surface": "Hard",
@@ -135,6 +139,7 @@
           "countryAcr": "KOR"
         },
         "tour": "wta",
+        "scheduled": true,
         "tournament": {
           "name": "W35 Changwon",
           "surface": "Hard",
@@ -163,6 +168,7 @@
           "countryAcr": "KOR"
         },
         "tour": "wta",
+        "scheduled": true,
         "tournament": {
           "name": "W35 Changwon",
           "surface": "Hard",
@@ -191,6 +197,7 @@
           "countryAcr": "KOR"
         },
         "tour": "wta",
+        "scheduled": true,
         "tournament": {
           "name": "W35 Changwon",
           "surface": "Hard",
@@ -219,6 +226,7 @@
           "countryAcr": "KOR"
         },
         "tour": "wta",
+        "scheduled": true,
         "tournament": {
           "name": "W35 Changwon",
           "surface": "Hard",
@@ -251,6 +259,7 @@
           "countryAcr": "BRA"
         },
         "tour": "atp",
+        "scheduled": true,
         "tournament": {
           "name": "M15 Maringa",
           "surface": "Clay",
@@ -279,6 +288,7 @@
           "countryAcr": "COL"
         },
         "tour": "atp",
+        "scheduled": true,
         "tournament": {
           "name": "M15 Maringa",
           "surface": "Clay",
@@ -307,6 +317,7 @@
           "countryAcr": "BRA"
         },
         "tour": "atp",
+        "scheduled": true,
         "tournament": {
           "name": "M15 Maringa",
           "surface": "Clay",
@@ -335,6 +346,7 @@
           "countryAcr": "IND"
         },
         "tour": "atp",
+        "scheduled": true,
         "tournament": {
           "name": "M15 Hurghada",
           "surface": "Hard",
@@ -363,6 +375,7 @@
           "countryAcr": "ESP"
         },
         "tour": "atp",
+        "scheduled": true,
         "tournament": {
           "name": "M15 Hurghada",
           "surface": "Hard",
@@ -391,6 +404,7 @@
           "countryAcr": "IND"
         },
         "tour": "atp",
+        "scheduled": true,
         "tournament": {
           "name": "M15 Hurghada",
           "surface": "Hard",
@@ -419,6 +433,7 @@
           "countryAcr": "UKR"
         },
         "tour": "atp",
+        "scheduled": true,
         "tournament": {
           "name": "M15 Hurghada",
           "surface": "Hard",
@@ -447,6 +462,7 @@
           "countryAcr": "KAZ"
         },
         "tour": "atp",
+        "scheduled": true,
         "tournament": {
           "name": "Gonet Geneva Open - Geneva",
           "surface": "Clay",
@@ -475,6 +491,7 @@
           "countryAcr": "BRA"
         },
         "tour": "atp",
+        "scheduled": true,
         "tournament": {
           "name": "M15 Maringa",
           "surface": "Clay",
@@ -503,6 +520,7 @@
           "countryAcr": "USA"
         },
         "tour": "wta",
+        "scheduled": true,
         "tournament": {
           "name": "W50 Pelham",
           "surface": "Clay",
@@ -531,6 +549,7 @@
           "countryAcr": "ROU"
         },
         "tour": "wta",
+        "scheduled": true,
         "tournament": {
           "name": "W50 Pelham",
           "surface": "Clay",
@@ -559,6 +578,7 @@
           "countryAcr": "USA"
         },
         "tour": "wta",
+        "scheduled": true,
         "tournament": {
           "name": "W50 Pelham",
           "surface": "Clay",
