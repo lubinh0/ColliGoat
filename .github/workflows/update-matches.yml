@@ -63,11 +63,15 @@ jobs:
               sleep(1200).then(() => apiGet('tennis-api-atp-wta-itf.p.rapidapi.com', '/tennis/v2/wta/fixtures/' + startStr + '/' + endStr))
             ]);
 
-            // Filtrer les doubles et ITF
-            const isITF = (name) => {
-              const n = name.toUpperCase();
-              return /\bM15\b|\bM25\b|\bW15\b|\bW25\b|\bW35\b|\bW50\b|\bW60\b|\bW80\b|\bW100\b/.test(n);
-            };
+            // IDs des tournois ITF à exclure (M15, W35 etc.)
+            const ITF_IDS_EXCLUDE = new Set();
+            Object.entries(tournInfo).forEach(([id, info]) => {
+              const n = info.name.toUpperCase();
+              if (/\bM\d{2}\b|\bW\d{2,3}\b/.test(n)) {
+                ITF_IDS_EXCLUDE.add(Number(id));
+                console.log('Excluding ITF tournament:', id, info.name);
+              }
+            });
             
             const allFixtures = [
               ...(atpData.data || []).map(m => ({...m, tour:'atp'})),
@@ -116,7 +120,7 @@ jobs:
               const tInfo = tournInfo[m.tournamentId] || {name: 'Tournoi ' + m.tournamentId, surface: 'Clay', countryAcr: ''};
               
               // Filtrer ITF
-              if (isITF(tInfo.name)) return;
+              if (ITF_IDS_EXCLUDE.has(m.tournamentId)) return;
 
               const date = m.date.slice(0,10);
               if (!allMatches[date]) allMatches[date] = {data: []};
