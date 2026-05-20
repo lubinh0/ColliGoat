@@ -194,7 +194,7 @@ jobs:
         run: |
           git config user.name "ColliGoat Bot"
           git config user.email "bot@colligoat.com"
-          git pull --rebase origin main
           git add matches.json odds.json
           git diff --staged --quiet || git commit -m "Update matches and odds $(date +%Y-%m-%d)"
+          git pull --rebase origin main
           git push
