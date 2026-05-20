@@ -137,12 +137,12 @@ jobs:
               if (i < tournIds.length - 1) await sleep(800);
             }
 
-            // Filtrer les tournois ITF
-            const ITF_KEYWORDS = ['M15','M25','W15','W25','W35','W50','W60','W80','W100','ITF'];
+            // Filtrer les tournois ITF (M15, M25, W15, W25, W35, W50 etc.)
+            const ITF_KEYWORDS = [' M15',' M25',' W15',' W25',' W35',' W50',' W60',' W80',' W100'];
             const filteredTournIds = tournIds.filter(({id}) => {
               const info = tournInfo[id];
-              if (!info) return false;
-              const name = info.name.toUpperCase();
+              if (!info) return true; // garder si pas d'info
+              const name = ' ' + info.name.toUpperCase();
               return !ITF_KEYWORDS.some(kw => name.includes(kw));
             });
 
@@ -152,12 +152,15 @@ jobs:
             const ITF_IDS = new Set(tournIds.filter(({id}) => {
               const info = tournInfo[id];
               if (!info) return false;
-              const name = info.name.toUpperCase();
-              return ['M15','M25','W15','W25','W35','W50','W60','W80','W100','ITF'].some(kw => name.includes(kw));
+              const name = ' ' + info.name.toUpperCase();
+              return ITF_KEYWORDS.some(kw => name.includes(kw));
             }).map(({id}) => id));
 
             const filteredFixtures = scheduledFixtures.filter(m => !ITF_IDS.has(m.tournamentId));
             console.log('Filtered scheduled singles:', filteredFixtures.length);
+
+            // 4. Récupérer TOUS les matchs de chaque tournoi non-ITF
+            const allTournMatches = {};
             for (let i = 0; i < filteredTournIds.length; i++) {
               const {id, tour} = filteredTournIds[i];
               await sleep(600);
