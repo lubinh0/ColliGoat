@@ -64,7 +64,10 @@ jobs:
             ]);
 
             // Filtrer les doubles et ITF
-            const ITF_KEYWORDS = [' M15',' M25',' W15',' W25',' W35',' W50',' W60',' W80',' W100'];
+            const isITF = (name) => {
+              const n = name.toUpperCase();
+              return /\bM15\b|\bM25\b|\bW15\b|\bW25\b|\bW35\b|\bW50\b|\bW60\b|\bW80\b|\bW100\b/.test(n);
+            };
             
             const allFixtures = [
               ...(atpData.data || []).map(m => ({...m, tour:'atp'})),
@@ -113,8 +116,7 @@ jobs:
               const tInfo = tournInfo[m.tournamentId] || {name: 'Tournoi ' + m.tournamentId, surface: 'Clay', countryAcr: ''};
               
               // Filtrer ITF
-              const tName = ' ' + tInfo.name.toUpperCase();
-              if (ITF_KEYWORDS.some(kw => tName.includes(kw))) return;
+              if (isITF(tInfo.name)) return;
 
               const date = m.date.slice(0,10);
               if (!allMatches[date]) allMatches[date] = {data: []};
