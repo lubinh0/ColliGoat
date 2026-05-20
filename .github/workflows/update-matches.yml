@@ -47,32 +47,6 @@ jobs:
             });
           }
 
-          // Récupère tous les matchs d'un tournoi avec pagination
-          async function getTournamentMatches(id, tour) {
-            // Essayer d'abord avec le tour indiqué, puis l'autre
-            const tours = tour === 'atp' ? ['atp', 'wta'] : ['wta', 'atp'];
-            for (const t of tours) {
-              let page = 1, all = [], hasNext = true;
-              while (hasNext && page <= 5) {
-                const res = await apiGet('tennis-api-atp-wta-itf.p.rapidapi.com', '/tennis/v2/' + t + '/tournament/fixtures/' + id + '?page=' + page);
-                const matches = res.data || [];
-                if (!matches.length) break;
-                all = all.concat(matches.map(m => ({...m, tour: t})));
-                hasNext = res.hasNextPage === true;
-                page++;
-                if (hasNext) await sleep(500);
-              }
-              if (all.length > 0) {
-                return all.filter(m => {
-                  const p1 = m.player1?.name || '';
-                  const p2 = m.player2?.name || '';
-                  return !p1.includes('/') && !p2.includes('/') && p1 && p2;
-                });
-              }
-            }
-            return [];
-          }
-
           async function main() {
             const today = new Date();
             const endDate = new Date(today);
@@ -83,34 +57,30 @@ jobs:
 
             console.log('Fetching from', startStr, 'to', endStr);
 
-            // 1. Fixtures par date (matchs avec horaire confirmé)
+            // 1. Fixtures ATP et WTA par date
             const [atpData, wtaData] = await Promise.all([
               apiGet('tennis-api-atp-wta-itf.p.rapidapi.com', '/tennis/v2/atp/fixtures/' + startStr + '/' + endStr),
               sleep(1200).then(() => apiGet('tennis-api-atp-wta-itf.p.rapidapi.com', '/tennis/v2/wta/fixtures/' + startStr + '/' + endStr))
             ]);
 
-            const scheduledFixtures = [
-              ...(atpData.data || []).map(m => ({...m, tour:'atp', scheduled: true})),
-              ...(wtaData.data || []).map(m => ({...m, tour:'wta', scheduled: true}))
+            // Filtrer les doubles et ITF
+            const ITF_KEYWORDS = [' M15',' M25',' W15',' W25',' W35',' W50',' W60',' W80',' W100'];
+            
+            const allFixtures = [
+              ...(atpData.data || []).map(m => ({...m, tour:'atp'})),
+              ...(wtaData.data || []).map(m => ({...m, tour:'wta'}))
             ].filter(m => {
               const p1 = m.player1?.name || '';
               const p2 = m.player2?.name || '';
-              if (p1.includes('/') || p2.includes('/')) return false;
-              // Filtrer les tournois ITF (M15, M25, W15, W25, W35, W50, W60, W100)
-              const tId = String(m.tournamentId || '');
-              return true; // on filtre par nom de tournoi plus bas
+              return !p1.includes('/') && !p2.includes('/');
             });
 
-            console.log('Scheduled singles:', scheduledFixtures.length);
+            console.log('All singles:', allFixtures.length);
 
-            // 2. Récupérer les IDs des tournois actifs
-            const tournIds = [...new Set(scheduledFixtures.map(m => ({id: m.tournamentId, tour: m.tour}))
-              .filter(t => t.id)
-              .map(t => JSON.stringify(t)))].map(t => JSON.parse(t));
+            // 2. Noms des tournois
+            const tournIds = [...new Set(allFixtures.map(m => JSON.stringify({id: m.tournamentId, tour: m.tour})))]
+              .map(t => JSON.parse(t)).filter(t => t.id);
 
-            console.log('Active tournaments:', tournIds.length);
-
-            // 3. Infos des tournois
             const tournInfo = {};
             const FLAGS = {
               'FRA':'🇫🇷','ESP':'🇪🇸','ITA':'🇮🇹','GER':'🇩🇪','USA':'🇺🇸',
@@ -127,97 +97,33 @@ jobs:
                 tournInfo[id] = {
                   name: res.data.name || 'Tournoi ' + id,
                   surface: res.data.court?.name || 'Clay',
-                  countryAcr: res.data.country?.acronym || '',
-                  tour
+                  countryAcr: res.data.country?.acronym || ''
                 };
                 console.log('Tournament', id, ':', tournInfo[id].name);
               } else {
-                tournInfo[id] = {name: 'Tournoi ' + id, surface: 'Clay', countryAcr: '', tour};
+                tournInfo[id] = {name: 'Tournoi ' + id, surface: 'Clay', countryAcr: ''};
               }
               if (i < tournIds.length - 1) await sleep(800);
             }
 
-            // Filtrer les tournois ITF (M15, M25, W15, W25, W35, W50 etc.)
-            const ITF_KEYWORDS = [' M15',' M25',' W15',' W25',' W35',' W50',' W60',' W80',' W100'];
-            const filteredTournIds = tournIds.filter(({id}) => {
-              const info = tournInfo[id];
-              if (!info) return true; // garder si pas d'info
-              const name = ' ' + info.name.toUpperCase();
-              return !ITF_KEYWORDS.some(kw => name.includes(kw));
-            });
-
-            console.log('Filtered tournaments (no ITF):', filteredTournIds.length);
-
-            // Filtrer les fixtures pour exclure les tournois ITF
-            const ITF_IDS = new Set(tournIds.filter(({id}) => {
-              const info = tournInfo[id];
-              if (!info) return false;
-              const name = ' ' + info.name.toUpperCase();
-              return ITF_KEYWORDS.some(kw => name.includes(kw));
-            }).map(({id}) => id));
-
-            const filteredFixtures = scheduledFixtures.filter(m => !ITF_IDS.has(m.tournamentId));
-            console.log('Filtered scheduled singles:', filteredFixtures.length);
-
-            // 4. Récupérer TOUS les matchs de chaque tournoi non-ITF
-            const allTournMatches = {};
-            for (let i = 0; i < filteredTournIds.length; i++) {
-              const {id, tour} = filteredTournIds[i];
-              await sleep(600);
-              const matches = await getTournamentMatches(id, tour);
-              console.log('Tournament', id, ': all matches =', matches.length);
-              allTournMatches[id] = matches;
-            }
-
-            // 5. Construire le matches.json
-            // D'abord indexer les matchs programmés par ID
-            const scheduledIds = new Set(filteredFixtures.map(m => m.id));
-
+            // 3. Filtrer les ITF et grouper par date
             const allMatches = {};
-
-            // Ajouter les matchs programmés avec leur date
-            filteredFixtures.forEach(m => {
+            allFixtures.forEach(m => {
               if (!m.date) return;
-              const date = m.date.slice(0,10);
-              if (date < startStr || date > endStr) return;
-              if (!allMatches[date]) allMatches[date] = {data: []};
               const tInfo = tournInfo[m.tournamentId] || {name: 'Tournoi ' + m.tournamentId, surface: 'Clay', countryAcr: ''};
+              
+              // Filtrer ITF
+              const tName = ' ' + tInfo.name.toUpperCase();
+              if (ITF_KEYWORDS.some(kw => tName.includes(kw))) return;
+
+              const date = m.date.slice(0,10);
+              if (!allMatches[date]) allMatches[date] = {data: []};
               allMatches[date].data.push({
                 ...m,
-                scheduled: true,
                 tournament: {name: tInfo.name, surface: tInfo.surface, flag: FLAGS[tInfo.countryAcr] || '🎾'}
               });
             });
 
-            // Ajouter les matchs sans horaire sous une clé spéciale "tbc"
-            Object.entries(allTournMatches).forEach(([id, matches]) => {
-              const tInfo = tournInfo[id] || {name: 'Tournoi ' + id, surface: 'Clay', countryAcr: ''};
-              matches.forEach(m => {
-                // Skip si déjà dans les matchs programmés
-                if (scheduledIds.has(m.id)) return;
-                // Skip si a une date hors fenêtre
-                if (m.date) {
-                  const date = m.date.slice(0,10);
-                  if (date < startStr || date > endStr) return;
-                  if (!allMatches[date]) allMatches[date] = {data: []};
-                  allMatches[date].data.push({
-                    ...m,
-                    scheduled: true,
-                    tournament: {name: tInfo.name, surface: tInfo.surface, flag: FLAGS[tInfo.countryAcr] || '🎾'}
-                  });
-                } else {
-                  // Pas de date — ajouter sous "tbc"
-                  if (!allMatches['tbc']) allMatches['tbc'] = {data: []};
-                  allMatches['tbc'].data.push({
-                    ...m,
-                    scheduled: false,
-                    tournament: {name: tInfo.name, surface: tInfo.surface, flag: FLAGS[tInfo.countryAcr] || '🎾'}
-                  });
-                }
-              });
-            });
-
-            // Stats
             let total = 0;
             Object.keys(allMatches).sort().forEach(d => {
               const n = allMatches[d].data.length;
@@ -229,7 +135,7 @@ jobs:
             fs.writeFileSync('matches.json', JSON.stringify(allMatches, null, 2));
             console.log('matches.json done');
 
-            // 6. Cotes via The Odds API
+            // 4. Cotes via The Odds API
             const tennisSports = [
               'tennis_atp_french_open',
               'tennis_wta_french_open',
