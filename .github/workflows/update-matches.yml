@@ -12,7 +12,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Fetch matches and odds
+      - name: Fetch matches, odds and results
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: |
@@ -43,19 +43,17 @@ jobs:
             });
           }
 
-          // Déduire la surface depuis le nom du tournoi
           function getSurface(sport, tournName) {
             const n = (tournName || sport || '').toLowerCase();
-            if (n.includes('french') || n.includes('roland') || n.includes('clay') ||
-                n.includes('hamburg') || n.includes('madrid') || n.includes('rome') ||
-                n.includes('barcelona') || n.includes('monte') || n.includes('geneva') ||
-                n.includes('strasbourg') || n.includes('rabat') || n.includes('lyon')) return 'Clay';
-            if (n.includes('wimbledon') || n.includes('grass') || n.includes('halle') ||
-                n.includes('queens') || n.includes('eastbourne') || n.includes('birmingham')) return 'Grass';
+            if (n.includes('french') || n.includes('roland') || n.includes('hamburg') ||
+                n.includes('madrid') || n.includes('rome') || n.includes('barcelona') ||
+                n.includes('monte') || n.includes('geneva') || n.includes('strasbourg') ||
+                n.includes('rabat') || n.includes('lyon')) return 'Clay';
+            if (n.includes('wimbledon') || n.includes('halle') || n.includes('queens') ||
+                n.includes('eastbourne') || n.includes('birmingham')) return 'Grass';
             return 'Hard';
           }
 
-          // Déduire le drapeau depuis le nom du tournoi
           function getFlag(tournName) {
             const n = (tournName || '').toLowerCase();
             if (n.includes('french') || n.includes('paris') || n.includes('roland') || n.includes('strasbourg') || n.includes('lyon')) return '🇫🇷';
@@ -65,15 +63,12 @@ jobs:
             if (n.includes('rome') || n.includes('italia')) return '🇮🇹';
             if (n.includes('monte') || n.includes('monaco')) return '🇲🇨';
             if (n.includes('geneva')) return '🇨🇭';
-            if (n.includes('rabat') || n.includes('maroc')) return '🇲🇦';
-            if (n.includes('us open') || n.includes('new york')) return '🇺🇸';
+            if (n.includes('rabat')) return '🇲🇦';
+            if (n.includes('us open') || n.includes('new york') || n.includes('cincinnati') || n.includes('toronto') || n.includes('montreal')) return '🇺🇸';
             if (n.includes('australian') || n.includes('melbourne')) return '🇦🇺';
-            if (n.includes('toronto') || n.includes('montreal') || n.includes('canada')) return '🇨🇦';
-            if (n.includes('cincinnati')) return '🇺🇸';
             return '🎾';
           }
 
-          // Tous les sports tennis disponibles
           async function getActiveSports() {
             const all = await apiGet('/v4/sports/?apiKey=' + process.env.ODDS_API_KEY);
             return (Array.isArray(all) ? all : [])
@@ -82,64 +77,55 @@ jobs:
           }
 
           async function main() {
+            const today = new Date();
+            const yesterday = new Date(today);
+            yesterday.setDate(yesterday.getDate() - 1);
+            const yesterdayStr = yesterday.toISOString().slice(0,10);
+
             console.log('Fetching active tennis sports...');
             const sports = await getActiveSports();
-            console.log('Active tennis sports:', sports.length, sports.join(', '));
+            console.log('Active sports:', sports.length);
 
             const allMatches = {};
             const oddsIndex = {};
+            const todayMatchesByKey = {}; // pour le bilan
 
+            // ── MATCHS ET COTES DU JOUR ──────────────────────────────────────
             for (let i = 0; i < sports.length; i++) {
               const sport = sports[i];
               await sleep(300);
-
               const events = await apiGet(
                 '/v4/sports/' + sport + '/odds/?apiKey=' + process.env.ODDS_API_KEY +
                 '&regions=eu&markets=h2h&oddsFormat=decimal&bookmakers=betclic,unibet,winamax,bet365,pinnacle'
               );
-
-              if (!Array.isArray(events) || events.length === 0) {
-                console.log(sport, ': no data');
-                continue;
-              }
-
+              if (!Array.isArray(events) || !events.length) { console.log(sport, ': no data'); continue; }
               console.log(sport, ':', events.length, 'events');
 
               events.forEach(event => {
                 const date = event.commence_time ? event.commence_time.slice(0,10) : null;
                 if (!date) return;
-
-                const p1 = event.home_team || '';
-                const p2 = event.away_team || '';
+                const p1 = event.home_team || '', p2 = event.away_team || '';
                 if (!p1 || !p2) return;
-
                 const tournName = event.sport_title || sport;
                 const surface = getSurface(sport, tournName);
                 const flag = getFlag(tournName);
 
-                // Heure UTC → heure française (+2h)
                 let timeStr = '--:--';
                 if (event.commence_time) {
                   const d = new Date(event.commence_time);
                   const h = d.getUTCHours() + 2;
-                  const m = String(d.getUTCMinutes()).padStart(2,'0');
-                  timeStr = String(h).padStart(2,'0') + 'h' + m;
+                  timeStr = String(h).padStart(2,'0') + 'h' + String(d.getUTCMinutes()).padStart(2,'0');
                 }
 
-                // Ajouter au matches.json
                 if (!allMatches[date]) allMatches[date] = {data: []};
                 allMatches[date].data.push({
-                  id: event.id,
-                  date: event.commence_time,
-                  player1: {name: p1},
-                  player2: {name: p2},
+                  id: event.id, date: event.commence_time,
+                  player1: {name: p1}, player2: {name: p2},
                   tour: sport.includes('wta') ? 'wta' : 'atp',
-                  time: timeStr,
-                  scheduled: true,
+                  time: timeStr, scheduled: true,
                   tournament: {name: tournName, surface, flag}
                 });
 
-                // Construire les cotes
                 const bookmakers = event.bookmakers || [];
                 const bestOdds = {p1: null, p2: null, p1name: p1, p2name: p2};
                 bookmakers.forEach(bk => {
@@ -155,22 +141,100 @@ jobs:
                 if (bestOdds.p1 && bestOdds.p2) {
                   const key = [p1, p2].sort().join('|').toLowerCase();
                   oddsIndex[key] = bestOdds;
+                  todayMatchesByKey[key] = {p1, p2, odds1: bestOdds.p1, odds2: bestOdds.p2, date, tournName};
                 }
               });
             }
 
-            // Stats
             let total = 0;
-            Object.keys(allMatches).sort().forEach(d => {
-              const n = allMatches[d].data.length;
-              total += n;
-              console.log(d, ':', n, 'matches');
-            });
-            console.log('Total matches:', total);
-            console.log('Odds index size:', Object.keys(oddsIndex).length);
-
+            Object.keys(allMatches).sort().forEach(d => { const n = allMatches[d].data.length; total += n; console.log(d, ':', n, 'matches'); });
+            console.log('Total:', total);
             fs.writeFileSync('matches.json', JSON.stringify(allMatches, null, 2));
             fs.writeFileSync('odds.json', JSON.stringify(oddsIndex, null, 2));
+
+            // ── RÉSULTATS DE LA VEILLE ────────────────────────────────────────
+            console.log('Fetching results for', yesterdayStr);
+            const completedMatches = [];
+
+            for (let i = 0; i < sports.length; i++) {
+              await sleep(400);
+              const sport = sports[i];
+              const res = await apiGet(
+                '/v4/sports/' + sport + '/scores/?apiKey=' + process.env.ODDS_API_KEY +
+                '&daysFrom=1&dateFormat=iso'
+              );
+              if (!Array.isArray(res)) continue;
+              res.forEach(event => {
+                if (!event.completed) return;
+                const date = event.commence_time ? event.commence_time.slice(0,10) : null;
+                if (date !== yesterdayStr) return;
+                const p1 = event.home_team, p2 = event.away_team;
+                if (!p1 || !p2) return;
+                const scores = event.scores || [];
+                let winner = null;
+                if (scores.length >= 2) {
+                  const s1 = parseFloat(scores[0]?.score || 0);
+                  const s2 = parseFloat(scores[1]?.score || 0);
+                  winner = s1 > s2 ? p1 : p2;
+                }
+                if (winner) completedMatches.push({p1, p2, winner, sport, date, id: event.id});
+              });
+            }
+
+            console.log('Completed matches yesterday:', completedMatches.length);
+
+            // ── CALCUL BILAN JOURNALIER ───────────────────────────────────────
+            // Charger le results.json existant
+            let resultsData = {};
+            try { resultsData = JSON.parse(fs.readFileSync('results.json', 'utf8')); } catch(e) {}
+
+            if (completedMatches.length > 0) {
+              // Charger le matches.json de la veille depuis odds.json (on a les cotes)
+              // On calcule le bilan sans les probas CSV (pas dispo ici) — on utilise les cotes implicites
+              let dayScore = 0, dayCorrect = 0, dayTotal = 0;
+              const dayDetails = [];
+
+              completedMatches.forEach(m => {
+                const key = [m.p1, m.p2].sort().join('|').toLowerCase();
+                const odds = oddsIndex[key];
+                if (!odds) return;
+
+                // Probabilité implicite depuis les cotes (bookmaker)
+                const prob1 = Math.round(100 / odds.p1);
+                const prob2 = Math.round(100 / odds.p2);
+
+                const isP1Winner = m.winner === m.p1;
+                const predWinner = prob1 > prob2 ? m.p1 : m.p2;
+                const predProb = prob1 > prob2 ? prob1 : prob2;
+
+                const correct = m.winner === predWinner;
+                const score = correct ? predProb / 100 : -(predProb / 100);
+
+                dayScore += score;
+                dayTotal++;
+                if (correct) dayCorrect++;
+
+                dayDetails.push({
+                  p1: m.p1, p2: m.p2, winner: m.winner,
+                  pred: predWinner, predProb, correct, score: Math.round(score * 100) / 100
+                });
+              });
+
+              if (dayTotal > 0) {
+                const dayScorePct = Math.round((dayScore / dayTotal) * 100);
+                resultsData[yesterdayStr] = {
+                  date: yesterdayStr,
+                  total: dayTotal,
+                  correct: dayCorrect,
+                  accuracy: Math.round(dayCorrect / dayTotal * 100),
+                  score: dayScorePct,
+                  details: dayDetails
+                };
+                console.log('Day score:', dayScorePct + '%', '| Accuracy:', Math.round(dayCorrect/dayTotal*100) + '%');
+              }
+            }
+
+            fs.writeFileSync('results.json', JSON.stringify(resultsData, null, 2));
             console.log('Done!');
           }
 
@@ -181,7 +245,7 @@ jobs:
         run: |
           git config user.name "ColliGoat Bot"
           git config user.email "bot@colligoat.com"
-          git add matches.json odds.json
-          git diff --staged --quiet || git commit -m "Update matches and odds $(date +%Y-%m-%d)"
+          git add matches.json odds.json results.json
+          git diff --staged --quiet || git commit -m "Update matches, odds and results $(date +%Y-%m-%d)"
           git pull --rebase origin main
           git push
