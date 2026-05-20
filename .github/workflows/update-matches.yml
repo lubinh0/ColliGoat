@@ -14,7 +14,6 @@ jobs:
 
       - name: Fetch matches and odds
         env:
-          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: |
           node -e "
@@ -23,172 +22,156 @@ jobs:
 
           function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
-          function apiGet(hostname, path) {
+          function apiGet(path) {
             return new Promise((resolve) => {
               const options = {
                 method: 'GET',
-                hostname,
+                hostname: 'api.the-odds-api.com',
                 path,
-                headers: hostname.includes('rapidapi') ? {
-                  'X-RapidAPI-Key': process.env.RAPIDAPI_KEY,
-                  'X-RapidAPI-Host': 'tennis-api-atp-wta-itf.p.rapidapi.com'
-                } : {}
+                headers: {}
               };
               const req = https.request(options, res => {
                 let data = '';
                 res.on('data', c => data += c);
                 res.on('end', () => {
                   try { resolve(JSON.parse(data)); }
-                  catch(e) { resolve({}); }
+                  catch(e) { resolve([]); }
                 });
               });
-              req.on('error', () => resolve({}));
+              req.on('error', () => resolve([]));
               req.end();
             });
           }
 
+          // Déduire la surface depuis le nom du tournoi
+          function getSurface(sport, tournName) {
+            const n = (tournName || sport || '').toLowerCase();
+            if (n.includes('french') || n.includes('roland') || n.includes('clay') ||
+                n.includes('hamburg') || n.includes('madrid') || n.includes('rome') ||
+                n.includes('barcelona') || n.includes('monte') || n.includes('geneva') ||
+                n.includes('strasbourg') || n.includes('rabat') || n.includes('lyon')) return 'Clay';
+            if (n.includes('wimbledon') || n.includes('grass') || n.includes('halle') ||
+                n.includes('queens') || n.includes('eastbourne') || n.includes('birmingham')) return 'Grass';
+            return 'Hard';
+          }
+
+          // Déduire le drapeau depuis le nom du tournoi
+          function getFlag(tournName) {
+            const n = (tournName || '').toLowerCase();
+            if (n.includes('french') || n.includes('paris') || n.includes('roland') || n.includes('strasbourg') || n.includes('lyon')) return '🇫🇷';
+            if (n.includes('wimbledon') || n.includes('london') || n.includes('queens') || n.includes('eastbourne') || n.includes('birmingham')) return '🇬🇧';
+            if (n.includes('hamburg')) return '🇩🇪';
+            if (n.includes('madrid')) return '🇪🇸';
+            if (n.includes('rome') || n.includes('italia')) return '🇮🇹';
+            if (n.includes('monte') || n.includes('monaco')) return '🇲🇨';
+            if (n.includes('geneva')) return '🇨🇭';
+            if (n.includes('rabat') || n.includes('maroc')) return '🇲🇦';
+            if (n.includes('us open') || n.includes('new york')) return '🇺🇸';
+            if (n.includes('australian') || n.includes('melbourne')) return '🇦🇺';
+            if (n.includes('toronto') || n.includes('montreal') || n.includes('canada')) return '🇨🇦';
+            if (n.includes('cincinnati')) return '🇺🇸';
+            return '🎾';
+          }
+
+          // Tous les sports tennis disponibles
+          async function getActiveSports() {
+            const all = await apiGet('/v4/sports/?apiKey=' + process.env.ODDS_API_KEY);
+            return (Array.isArray(all) ? all : [])
+              .filter(s => s.group === 'Tennis' && s.active)
+              .map(s => s.key);
+          }
+
           async function main() {
-            const today = new Date();
-            const endDate = new Date(today);
-            endDate.setDate(endDate.getDate() + 14);
-            const fmt = d => d.toISOString().slice(0,10);
-            const startStr = fmt(today);
-            const endStr = fmt(endDate);
+            console.log('Fetching active tennis sports...');
+            const sports = await getActiveSports();
+            console.log('Active tennis sports:', sports.length, sports.join(', '));
 
-            console.log('Fetching from', startStr, 'to', endStr);
+            const allMatches = {};
+            const oddsIndex = {};
 
-            // 1. Fixtures ATP et WTA par date
-            const [atpData, wtaData] = await Promise.all([
-              apiGet('tennis-api-atp-wta-itf.p.rapidapi.com', '/tennis/v2/atp/fixtures/' + startStr + '/' + endStr),
-              sleep(1200).then(() => apiGet('tennis-api-atp-wta-itf.p.rapidapi.com', '/tennis/v2/wta/fixtures/' + startStr + '/' + endStr))
-            ]);
+            for (let i = 0; i < sports.length; i++) {
+              const sport = sports[i];
+              await sleep(300);
 
-            const allFixtures = [
-              ...(atpData.data || []).map(m => ({...m, tour:'atp'})),
-              ...(wtaData.data || []).map(m => ({...m, tour:'wta'}))
-            ].filter(m => {
-              const p1 = m.player1?.name || '';
-              const p2 = m.player2?.name || '';
-              return !p1.includes('/') && !p2.includes('/');
-            });
+              const events = await apiGet(
+                '/v4/sports/' + sport + '/odds/?apiKey=' + process.env.ODDS_API_KEY +
+                '&regions=eu&markets=h2h&oddsFormat=decimal&bookmakers=betclic,unibet,winamax,bet365,pinnacle'
+              );
 
-            console.log('All singles:', allFixtures.length);
-
-            // 2. Noms des tournois
-            const tournIds = [...new Set(allFixtures.map(m => JSON.stringify({id: m.tournamentId, tour: m.tour})))]
-              .map(t => JSON.parse(t)).filter(t => t.id);
-
-            const tournInfo = {};
-            const FLAGS = {
-              'FRA':'🇫🇷','ESP':'🇪🇸','ITA':'🇮🇹','GER':'🇩🇪','USA':'🇺🇸',
-              'GBR':'🇬🇧','SUI':'🇨🇭','AUS':'🇦🇺','ARG':'🇦🇷','RUS':'🇷🇺',
-              'POL':'🇵🇱','BLR':'🇧🇾','GRE':'🇬🇷','CAN':'🇨🇦','MCO':'🇲🇨',
-              'SRB':'🇷🇸','CRO':'🇭🇷','BEL':'🇧🇪','SWE':'🇸🇪','NED':'🇳🇱',
-              'MAR':'🇲🇦','KOR':'🇰🇷','JPN':'🇯🇵','CHN':'🇨🇳','BRA':'🇧🇷',
-            };
-
-            for (let i = 0; i < tournIds.length; i++) {
-              const {id, tour} = tournIds[i];
-              const res = await apiGet('tennis-api-atp-wta-itf.p.rapidapi.com', '/tennis/v2/' + tour + '/tournament/info/' + id);
-              if (res.data) {
-                tournInfo[id] = {
-                  name: res.data.name || 'Tournoi ' + id,
-                  surface: res.data.court?.name || 'Clay',
-                  countryAcr: res.data.country?.acronym || ''
-                };
-                console.log('Tournament', id, ':', tournInfo[id].name);
-              } else {
-                tournInfo[id] = {name: 'Tournoi ' + id, surface: 'Clay', countryAcr: ''};
+              if (!Array.isArray(events) || events.length === 0) {
+                console.log(sport, ': no data');
+                continue;
               }
-              if (i < tournIds.length - 1) await sleep(800);
+
+              console.log(sport, ':', events.length, 'events');
+
+              events.forEach(event => {
+                const date = event.commence_time ? event.commence_time.slice(0,10) : null;
+                if (!date) return;
+
+                const p1 = event.home_team || '';
+                const p2 = event.away_team || '';
+                if (!p1 || !p2) return;
+
+                const tournName = event.sport_title || sport;
+                const surface = getSurface(sport, tournName);
+                const flag = getFlag(tournName);
+
+                // Heure UTC → heure française (+2h)
+                let timeStr = '--:--';
+                if (event.commence_time) {
+                  const d = new Date(event.commence_time);
+                  const h = d.getUTCHours() + 2;
+                  const m = String(d.getUTCMinutes()).padStart(2,'0');
+                  timeStr = String(h).padStart(2,'0') + 'h' + m;
+                }
+
+                // Ajouter au matches.json
+                if (!allMatches[date]) allMatches[date] = {data: []};
+                allMatches[date].data.push({
+                  id: event.id,
+                  date: event.commence_time,
+                  player1: {name: p1},
+                  player2: {name: p2},
+                  tour: sport.includes('wta') ? 'wta' : 'atp',
+                  time: timeStr,
+                  scheduled: true,
+                  tournament: {name: tournName, surface, flag}
+                });
+
+                // Construire les cotes
+                const bookmakers = event.bookmakers || [];
+                const bestOdds = {p1: null, p2: null, p1name: p1, p2name: p2};
+                bookmakers.forEach(bk => {
+                  const market = (bk.markets || []).find(m => m.key === 'h2h');
+                  if (!market) return;
+                  const outcomes = market.outcomes || [];
+                  const o1 = outcomes.find(o => o.name === p1);
+                  const o2 = outcomes.find(o => o.name === p2);
+                  if (o1 && (!bestOdds.p1 || o1.price > bestOdds.p1)) bestOdds.p1 = o1.price;
+                  if (o2 && (!bestOdds.p2 || o2.price > bestOdds.p2)) bestOdds.p2 = o2.price;
+                });
+
+                if (bestOdds.p1 && bestOdds.p2) {
+                  const key = [p1, p2].sort().join('|').toLowerCase();
+                  oddsIndex[key] = bestOdds;
+                }
+              });
             }
 
-            // IDs des tournois ITF à exclure (M15, W35 etc.)
-            const ITF_IDS_EXCLUDE = new Set();
-            Object.entries(tournInfo).forEach(([id, info]) => {
-              const n = info.name.toUpperCase();
-              if (/\bM\d{2}\b|\bW\d{2,3}\b/.test(n)) {
-                ITF_IDS_EXCLUDE.add(Number(id));
-                console.log('Excluding ITF tournament:', id, info.name);
-              }
-            });
-
-            // 3. Filtrer les ITF et grouper par date
-            const allMatches = {};
-            allFixtures.forEach(m => {
-              if (!m.date) return;
-              const tInfo = tournInfo[m.tournamentId] || {name: 'Tournoi ' + m.tournamentId, surface: 'Clay', countryAcr: ''};
-              
-              // Filtrer ITF
-              if (ITF_IDS_EXCLUDE.has(m.tournamentId)) return;
-
-              const date = m.date.slice(0,10);
-              if (!allMatches[date]) allMatches[date] = {data: []};
-              allMatches[date].data.push({
-                ...m,
-                tournament: {name: tInfo.name, surface: tInfo.surface, flag: FLAGS[tInfo.countryAcr] || '🎾'}
-              });
-            });
-
+            // Stats
             let total = 0;
             Object.keys(allMatches).sort().forEach(d => {
               const n = allMatches[d].data.length;
               total += n;
               console.log(d, ':', n, 'matches');
             });
-            console.log('Total:', total);
+            console.log('Total matches:', total);
+            console.log('Odds index size:', Object.keys(oddsIndex).length);
 
             fs.writeFileSync('matches.json', JSON.stringify(allMatches, null, 2));
-            console.log('matches.json done');
-
-            // 4. Cotes via The Odds API
-            const tennisSports = [
-              'tennis_atp_french_open',
-              'tennis_wta_french_open',
-              'tennis_atp_hamburg_open',
-              'tennis_wta_strasbourg',
-              'tennis_atp_geneva',
-              'tennis_wta_rabat',
-            ];
-
-            let allOdds = [];
-            for (let i = 0; i < tennisSports.length; i++) {
-              await sleep(300);
-              const sport = tennisSports[i];
-              const res = await apiGet(
-                'api.the-odds-api.com',
-                '/v4/sports/' + sport + '/odds/?apiKey=' + process.env.ODDS_API_KEY + '&regions=eu&markets=h2h&oddsFormat=decimal&bookmakers=betclic,unibet,winamax,bet365,pinnacle'
-              );
-              if (Array.isArray(res)) {
-                console.log(sport, ':', res.length, 'odds');
-                allOdds = allOdds.concat(res);
-              } else {
-                console.log(sport, ': no data');
-              }
-            }
-
-            const oddsIndex = {};
-            allOdds.forEach(event => {
-              const bookmakers = event.bookmakers || [];
-              const bestOdds = {p1: null, p2: null, p1name: '', p2name: ''};
-              bookmakers.forEach(bk => {
-                const market = (bk.markets || []).find(m => m.key === 'h2h');
-                if (!market) return;
-                const outcomes = market.outcomes || [];
-                if (outcomes.length < 2) return;
-                const o1 = outcomes[0], o2 = outcomes[1];
-                if (!bestOdds.p1 || o1.price > bestOdds.p1) { bestOdds.p1 = o1.price; bestOdds.p1name = o1.name; }
-                if (!bestOdds.p2 || o2.price > bestOdds.p2) { bestOdds.p2 = o2.price; bestOdds.p2name = o2.name; }
-              });
-              if (bestOdds.p1 && bestOdds.p2) {
-                const key = [bestOdds.p1name, bestOdds.p2name].sort().join('|').toLowerCase();
-                oddsIndex[key] = bestOdds;
-              }
-            });
-
-            console.log('Odds index size:', Object.keys(oddsIndex).length);
             fs.writeFileSync('odds.json', JSON.stringify(oddsIndex, null, 2));
-            console.log('odds.json done!');
+            console.log('Done!');
           }
 
           main().catch(console.error);
