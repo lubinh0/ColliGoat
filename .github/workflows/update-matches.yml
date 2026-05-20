@@ -63,16 +63,6 @@ jobs:
               sleep(1200).then(() => apiGet('tennis-api-atp-wta-itf.p.rapidapi.com', '/tennis/v2/wta/fixtures/' + startStr + '/' + endStr))
             ]);
 
-            // IDs des tournois ITF à exclure (M15, W35 etc.)
-            const ITF_IDS_EXCLUDE = new Set();
-            Object.entries(tournInfo).forEach(([id, info]) => {
-              const n = info.name.toUpperCase();
-              if (/\bM\d{2}\b|\bW\d{2,3}\b/.test(n)) {
-                ITF_IDS_EXCLUDE.add(Number(id));
-                console.log('Excluding ITF tournament:', id, info.name);
-              }
-            });
-            
             const allFixtures = [
               ...(atpData.data || []).map(m => ({...m, tour:'atp'})),
               ...(wtaData.data || []).map(m => ({...m, tour:'wta'}))
@@ -112,6 +102,16 @@ jobs:
               }
               if (i < tournIds.length - 1) await sleep(800);
             }
+
+            // IDs des tournois ITF à exclure (M15, W35 etc.)
+            const ITF_IDS_EXCLUDE = new Set();
+            Object.entries(tournInfo).forEach(([id, info]) => {
+              const n = info.name.toUpperCase();
+              if (/\bM\d{2}\b|\bW\d{2,3}\b/.test(n)) {
+                ITF_IDS_EXCLUDE.add(Number(id));
+                console.log('Excluding ITF tournament:', id, info.name);
+              }
+            });
 
             // 3. Filtrer les ITF et grouper par date
             const allMatches = {};
