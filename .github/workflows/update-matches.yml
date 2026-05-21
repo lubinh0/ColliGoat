@@ -142,7 +142,6 @@ jobs:
                 if (bestOdds.p1 && bestOdds.p2) {
                   const key = [p1, p2].sort().join('|').toLowerCase();
                   oddsIndex[key] = bestOdds;
-                  todayMatchesByKey[key] = {p1, p2, odds1: bestOdds.p1, odds2: bestOdds.p2, date, tournName};
                 }
               });
             }
