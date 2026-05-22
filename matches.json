@@ -2,80 +2,8 @@
   "2026-05-22": {
     "data": [
       {
-        "id": "987fce1b568962caae4b0bf0fd16a77b",
-        "date": "2026-05-22T11:00:00Z",
-        "player1": {
-          "name": "Emilio Nava"
-        },
-        "player2": {
-          "name": "Pedro Martinez"
-        },
-        "tour": "atp",
-        "time": "13h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP French Open",
-          "surface": "Clay",
-          "flag": "🇫🇷"
-        }
-      },
-      {
-        "id": "b62b3ef77d9ebbc31a8aef9f1a6227f7",
-        "date": "2026-05-22T11:00:00Z",
-        "player1": {
-          "name": "Pierre-Hugues Herbert"
-        },
-        "player2": {
-          "name": "Leandro Riedi"
-        },
-        "tour": "atp",
-        "time": "13h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP French Open",
-          "surface": "Clay",
-          "flag": "🇫🇷"
-        }
-      },
-      {
-        "id": "b267cbb15e179028e5e94dcec43abe23",
-        "date": "2026-05-22T11:00:00Z",
-        "player1": {
-          "name": "Tom Gentzsch"
-        },
-        "player2": {
-          "name": "Roman Safiullin"
-        },
-        "tour": "atp",
-        "time": "13h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP French Open",
-          "surface": "Clay",
-          "flag": "🇫🇷"
-        }
-      },
-      {
-        "id": "acc1a5d2a72eb11cd828408a9a8036f8",
-        "date": "2026-05-22T13:00:00Z",
-        "player1": {
-          "name": "Darwin Blanch"
-        },
-        "player2": {
-          "name": "Luka Pavlovic"
-        },
-        "tour": "atp",
-        "time": "15h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP French Open",
-          "surface": "Clay",
-          "flag": "🇫🇷"
-        }
-      },
-      {
         "id": "1c805fafd9f99192273ec1edd4dd2deb",
-        "date": "2026-05-22T14:00:00Z",
+        "date": "2026-05-22T13:00:00Z",
         "player1": {
           "name": "Felix Gill"
         },
@@ -83,7 +11,7 @@
           "name": "Kyrian Jacquet"
         },
         "tour": "atp",
-        "time": "16h00",
+        "time": "15h00",
         "scheduled": true,
         "tournament": {
           "name": "ATP French Open",
@@ -92,26 +20,8 @@
         }
       },
       {
-        "id": "423cc6effe454114e981d2271f9d521a",
-        "date": "2026-05-22T13:30:00Z",
-        "player1": {
-          "name": "Aleksandar Kovacevic"
-        },
-        "player2": {
-          "name": "Ignacio Buse"
-        },
-        "tour": "atp",
-        "time": "15h30",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Hamburg Open",
-          "surface": "Clay",
-          "flag": "🇩🇪"
-        }
-      },
-      {
         "id": "e2980ecd59ada2913d01ae91bd71c0bc",
-        "date": "2026-05-22T15:30:00Z",
+        "date": "2026-05-22T15:35:00Z",
         "player1": {
           "name": "Alex de Minaur"
         },
@@ -119,7 +29,7 @@
           "name": "Tommy Paul"
         },
         "tour": "atp",
-        "time": "17h30",
+        "time": "17h35",
         "scheduled": true,
         "tournament": {
           "name": "ATP Hamburg Open",
@@ -128,44 +38,8 @@
         }
       },
       {
-        "id": "0171eeb1a293fc213690b167f4aa0c43",
-        "date": "2026-05-22T11:00:00Z",
-        "player1": {
-          "name": "Katarina Zavatska"
-        },
-        "player2": {
-          "name": "Lucia Bronzetti"
-        },
-        "tour": "wta",
-        "time": "13h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA French Open",
-          "surface": "Clay",
-          "flag": "🇫🇷"
-        }
-      },
-      {
-        "id": "80359b522cb5e7cc5690fb69002a02ed",
-        "date": "2026-05-22T13:00:00Z",
-        "player1": {
-          "name": "Rebecca Sramkova"
-        },
-        "player2": {
-          "name": "Maria Lourdes Carle"
-        },
-        "tour": "wta",
-        "time": "15h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA French Open",
-          "surface": "Clay",
-          "flag": "🇫🇷"
-        }
-      },
-      {
         "id": "dc8d2dbec05a98130f4d51ae46e46b6d",
-        "date": "2026-05-22T14:00:00Z",
+        "date": "2026-05-22T13:00:00Z",
         "player1": {
           "name": "Polina Kudermetova"
         },
@@ -173,28 +47,10 @@
           "name": "Xiyu Wang"
         },
         "tour": "wta",
-        "time": "16h00",
+        "time": "15h00",
         "scheduled": true,
         "tournament": {
           "name": "WTA French Open",
-          "surface": "Clay",
-          "flag": "🇫🇷"
-        }
-      },
-      {
-        "id": "a922ef9e0e0013d7d9b0fb7c7dd9151e",
-        "date": "2026-05-22T12:30:00Z",
-        "player1": {
-          "name": "Emma Navarro"
-        },
-        "player2": {
-          "name": "Ann Li"
-        },
-        "tour": "wta",
-        "time": "14h30",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Internationaux de Strasbourg",
           "surface": "Clay",
           "flag": "🇫🇷"
         }
