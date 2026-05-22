@@ -1,7 +1,7 @@
 {
   "felix gill|kyrian jacquet": {
-    "p1": 4.97,
-    "p2": 1.21,
+    "p1": 8.36,
+    "p2": 1.11,
     "p1name": "Felix Gill",
     "p2name": "Kyrian Jacquet"
   },
@@ -42,7 +42,7 @@
     "p2name": "Andrey Rublev"
   },
   "arthur fils|stan wawrinka": {
-    "p1": 7.01,
+    "p1": 7.05,
     "p2": 1.13,
     "p1name": "Stan Wawrinka",
     "p2name": "Arthur Fils"
@@ -54,8 +54,8 @@
     "p2name": "Arthur Gea"
   },
   "fabian marozsan|miomir kecmanovic": {
-    "p1": 1.65,
-    "p2": 2.34,
+    "p1": 1.66,
+    "p2": 2.35,
     "p1name": "Miomir Kecmanovic",
     "p2name": "Fabian Marozsan"
   },
@@ -78,8 +78,8 @@
     "p2name": "Yannick Hanfmann"
   },
   "jakub mensik|titouan droguet": {
-    "p1": 2.89,
-    "p2": 1.45,
+    "p1": 2.91,
+    "p2": 1.46,
     "p1name": "Titouan Droguet",
     "p2name": "Jakub Mensik"
   },
@@ -96,20 +96,20 @@
     "p2name": "Jiri Lehecka"
   },
   "mattia bellucci|quentin halys": {
-    "p1": 1.86,
-    "p2": 2.02,
+    "p1": 1.87,
+    "p2": 2.03,
     "p1name": "Quentin Halys",
     "p2name": "Mattia Bellucci"
   },
   "nishesh basavareddy|taylor fritz": {
     "p1": 1.33,
-    "p2": 3.55,
+    "p2": 3.58,
     "p1name": "Taylor Fritz",
     "p2name": "Nishesh Basavareddy"
   },
   "nuno borges|tomas martin etcheverry": {
-    "p1": 1.46,
-    "p2": 2.85,
+    "p1": 1.47,
+    "p2": 2.87,
     "p1name": "Tomas Martin Etcheverry",
     "p2name": "Nuno Borges"
   },
@@ -132,14 +132,14 @@
     "p2name": "Zizou Bergs"
   },
   "alex de minaur|tommy paul": {
-    "p1": 1.69,
-    "p2": 2.3,
+    "p1": 1.75,
+    "p2": 2.2,
     "p1name": "Alex de Minaur",
     "p2name": "Tommy Paul"
   },
   "polina kudermetova|xiyu wang": {
-    "p1": 5.95,
-    "p2": 1.17,
+    "p1": 20.07,
+    "p2": 1.04,
     "p1name": "Polina Kudermetova",
     "p2name": "Xiyu Wang"
   },
@@ -186,14 +186,14 @@
     "p2name": "Shuai Zhang"
   },
   "anna kalinskaya|lois boisson": {
-    "p1": 1.56,
-    "p2": 2.58,
+    "p1": 1.57,
+    "p2": 2.56,
     "p1name": "Anna Kalinskaya",
     "p2name": "Lois Boisson"
   },
   "aryna sabalenka|jessica bouzas maneiro": {
     "p1": 1.05,
-    "p2": 12.95,
+    "p2": 12.97,
     "p1name": "Aryna Sabalenka",
     "p2name": "Jessica Bouzas Maneiro"
   },
@@ -240,7 +240,7 @@
     "p2name": "Madison Keys"
   },
   "jessica pegula|kimberly birrell": {
-    "p1": 18.52,
+    "p1": 18.57,
     "p2": 1.04,
     "p1name": "Kimberly Birrell",
     "p2name": "Jessica Pegula"
@@ -276,8 +276,8 @@
     "p2name": "Yulia Putintseva"
   },
   "jaqueline cristian|victoria mboko": {
-    "p1": 1.65,
-    "p2": 3,
+    "p1": 1.5,
+    "p2": 5,
     "p1name": "Victoria Mboko",
     "p2name": "Jaqueline Cristian"
   }

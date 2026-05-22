@@ -21,7 +21,7 @@
       },
       {
         "id": "e2980ecd59ada2913d01ae91bd71c0bc",
-        "date": "2026-05-22T15:35:00Z",
+        "date": "2026-05-22T15:33:00Z",
         "player1": {
           "name": "Alex de Minaur"
         },
@@ -29,7 +29,7 @@
           "name": "Tommy Paul"
         },
         "tour": "atp",
-        "time": "17h35",
+        "time": "17h33",
         "scheduled": true,
         "tournament": {
           "name": "ATP Hamburg Open",
