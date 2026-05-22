@@ -1,31 +1,31 @@
 {
   "emilio nava|pedro martinez": {
-    "p1": 1.13,
-    "p2": 7.6,
+    "p1": 1.02,
+    "p2": 42.29,
     "p1name": "Emilio Nava",
     "p2name": "Pedro Martinez"
   },
   "leandro riedi|pierre-hugues herbert": {
-    "p1": 1.88,
-    "p2": 1.93,
+    "p1": 2.63,
+    "p2": 1.51,
     "p1name": "Pierre-Hugues Herbert",
     "p2name": "Leandro Riedi"
   },
   "roman safiullin|tom gentzsch": {
-    "p1": 8.83,
-    "p2": 1.11,
+    "p1": 5.29,
+    "p2": 1.19,
     "p1name": "Tom Gentzsch",
     "p2name": "Roman Safiullin"
   },
   "darwin blanch|luka pavlovic": {
-    "p1": 1.51,
-    "p2": 2.68,
+    "p1": 1.93,
+    "p2": 1.88,
     "p1name": "Darwin Blanch",
     "p2name": "Luka Pavlovic"
   },
   "felix gill|kyrian jacquet": {
-    "p1": 2.31,
-    "p2": 1.65,
+    "p1": 2.3,
+    "p2": 1.66,
     "p1name": "Felix Gill",
     "p2name": "Kyrian Jacquet"
   },
@@ -55,7 +55,7 @@
   },
   "alexander zverev|benjamin bonzi": {
     "p1": 19.04,
-    "p2": 1.02,
+    "p2": 1.03,
     "p1name": "Benjamin Bonzi",
     "p2name": "Alexander Zverev"
   },
@@ -156,14 +156,14 @@
     "p2name": "Zizou Bergs"
   },
   "aleksandar kovacevic|ignacio buse": {
-    "p1": 3.55,
-    "p2": 1.35,
+    "p1": 3.47,
+    "p2": 1.36,
     "p1name": "Aleksandar Kovacevic",
     "p2name": "Ignacio Buse"
   },
   "alex de minaur|tommy paul": {
-    "p1": 1.68,
-    "p2": 2.32,
+    "p1": 1.67,
+    "p2": 2.36,
     "p1name": "Alex de Minaur",
     "p2name": "Tommy Paul"
   },
@@ -174,14 +174,14 @@
     "p2name": "Lucia Bronzetti"
   },
   "maria lourdes carle|rebecca sramkova": {
-    "p1": 1.4,
-    "p2": 3.08,
+    "p1": 1.33,
+    "p2": 3.52,
     "p1name": "Rebecca Sramkova",
     "p2name": "Maria Lourdes Carle"
   },
   "polina kudermetova|xiyu wang": {
-    "p1": 2.31,
-    "p2": 1.65,
+    "p1": 2.35,
+    "p2": 1.63,
     "p1name": "Polina Kudermetova",
     "p2name": "Xiyu Wang"
   },
@@ -318,8 +318,8 @@
     "p2name": "Yulia Putintseva"
   },
   "ann li|emma navarro": {
-    "p1": 1.56,
-    "p2": 3.3,
+    "p1": 1.37,
+    "p2": 7.5,
     "p1name": "Emma Navarro",
     "p2name": "Ann Li"
   },
