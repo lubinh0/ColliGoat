@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colligoat — Tennis Analytics</title>
+<meta name="description" content="Colligoat analyse les matchs de tennis, les surfaces, les cotes et les signaux de value betting pour aider à préparer ses analyses pré-match.">
+
+<!-- ── PWA (point 9) ── -->
+<link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#C9C000">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Colligoat">
+<link rel="apple-touch-icon" href="./icon-192.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --bg:#0B1628;--bg2:#0f1e35;--bg3:#112240;--bg4:#1A3357;
+  --accent:#2E7CF6;--yellow:#C9C000;--yellow2:#D4CC00;
+  --white:#F0F4FF;--mid:#9EB3D8;--dim:#4A6285;
+  --border:#1A3357;--borderl:#243F6A;
+  --danger:#FF6B6B;--live:#3FC87A;
+}
+html{background:#060e1a;}
+body{background:#060e1a;font-family:'Inter',sans-serif;color:var(--white);display:flex;justify-content:center;padding:20px;min-height:100vh;}
+.app{width:100%;max-width:780px;background:var(--bg);border-radius:16px;overflow:visible;border:1px solid var(--border);}
+
+/* ── TOAST (point 5) ── */
+#toast-container{position:fixed;bottom:20px;right:20px;z-index:9999;display:flex;flex-direction:column;gap:8px;pointer-events:none;}
+.toast{background:var(--bg3);border:1px solid var(--borderl);border-radius:10px;padding:10px 16px;font-size:12px;font-weight:600;color:var(--white);display:flex;align-items:center;gap:8px;animation:toastIn .3s ease;max-width:300px;}
+.toast.ok{border-color:rgba(63,200,122,.4);color:var(--live);}
+.toast.err{border-color:rgba(255,107,107,.4);color:var(--danger);}
+.toast.warn{border-color:rgba(201,192,0,.4);color:var(--yellow);}
+@keyframes toastIn{from{opacity:0;transform:translateX(20px);}to{opacity:1;transform:translateX(0);}}
+@keyframes toastOut{from{opacity:1;}to{opacity:0;transform:translateX(20px);}}
+
+/* ── RESPONSIVE MOBILE ── */
+@media(max-width:600px){
+  body{padding:0;}
+  .app{border-radius:0;border-left:none;border-right:none;}
+  .hdr{padding:12px 14px;}
+  .lt{font-size:20px;}
+  .lsub{font-size:8px;letter-spacing:3px;}
+  .data-status{font-size:9px;padding:3px 8px;}
+  .date-nav{padding:10px 12px;gap:6px;}
+  .day-btn{padding:6px 10px;}
+  .day-btn .dnum{font-size:16px;}
+  .tabs .tab{font-size:10px;padding:11px 2px;letter-spacing:0;}
+  .body{padding:12px 14px;}
+  .mmain{padding:10px 12px;gap:6px;}
+  .pname{font-size:12px;}
+  .mright{gap:4px;}
+  .adv{font-size:9px;padding:2px 6px;}
+  .mtime{font-size:9px;}
+  .mdetail{padding:12px;}
+  .sr{grid-template-columns:1fr 80px 1fr;}
+  .sv{font-size:11px;}
+  .tourn-hdr{flex-wrap:wrap;gap:5px;}
+  .tourn-date{width:100%;margin-left:0;}
+  .odd-chip{font-size:10px;padding:1px 5px;min-width:32px;}
+  .pprob{font-size:11px;min-width:30px;}
+  .valid-grid{grid-template-columns:1fr !important;}
+  table{font-size:11px;}
+  th,td{padding:6px 3px;}
+}
+
+.hdr{background:var(--bg2);border-bottom:1px solid var(--border);padding:16px 24px;display:flex;align-items:center;justify-content:space-between;}
+.logo{display:flex;align-items:center;gap:12px;}
+.lt{font-size:24px;font-weight:900;letter-spacing:-0.5px;line-height:1;}
+.lt .c1{color:var(--white);}
+.lt .c2{color:var(--accent);}
+.lsub{font-size:9px;letter-spacing:5px;color:var(--dim);margin-top:3px;}
+.data-status{font-size:10px;display:flex;align-items:center;gap:6px;background:var(--bg3);border:1px solid var(--border);border-radius:20px;padding:4px 10px;cursor:pointer;transition:border-color .15s;}
+.data-status:hover{border-color:var(--borderl);}
+.status-dot{width:7px;height:7px;border-radius:50%;background:var(--dim);}
+.status-dot.loading{background:var(--yellow);animation:pulse 1s infinite;}
+.status-dot.ok{background:var(--live);}
+.status-dot.error{background:var(--danger);}
+.status-dot.warn{background:var(--yellow);}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.4;}}
+
+.date-nav{background:var(--bg2);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:8px;overflow-x:auto;white-space:nowrap;}
+.date-nav::-webkit-scrollbar{height:3px;}
+.date-nav::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px;}
+.day-btn{flex-shrink:0;display:flex;flex-direction:column;align-items:center;padding:8px 16px;border-radius:10px;border:1px solid var(--border);background:transparent;cursor:pointer;transition:all .15s;font-family:'Inter',sans-serif;gap:1px;}
+.day-btn:hover{border-color:var(--borderl);background:var(--bg3);}
+.day-btn.on{background:var(--yellow);border-color:var(--yellow);}
+.day-btn .dday{font-size:10px;font-weight:600;color:var(--dim);letter-spacing:1px;text-transform:uppercase;}
+.day-btn .dnum{font-size:20px;font-weight:900;color:var(--white);line-height:1.1;}
+.day-btn .dmon{font-size:10px;color:var(--dim);font-weight:500;}
+.day-btn .dnb{font-size:9px;background:var(--bg4);color:var(--mid);border-radius:10px;padding:2px 6px;margin-top:3px;font-weight:600;}
+.day-btn.on .dday,.day-btn.on .dnum,.day-btn.on .dmon{color:#0B1628;}
+.day-btn.on .dnb{background:rgba(11,22,40,.25);color:#0B1628;}
+
+.tabs{display:flex;background:var(--bg2);border-bottom:1px solid var(--border);}
+.tab{flex:1;padding:14px 0;text-align:center;font-size:12px;font-weight:700;color:var(--dim);cursor:pointer;letter-spacing:.5px;border-bottom:3px solid transparent;transition:all .15s;text-transform:uppercase;}
+.tab.on{color:var(--white);border-bottom-color:var(--yellow);}
+.tab:hover:not(.on){color:var(--mid);}
+
+.body{padding:20px 24px;}
+.sec{display:none;}
+.sec.on{display:block;}
+
+.tourn-block{margin-bottom:20px;}
+.tourn-hdr{display:flex;align-items:center;gap:8px;margin-bottom:10px;}
+.tourn-name{font-size:11px;font-weight:700;color:var(--mid);letter-spacing:2px;text-transform:uppercase;}
+.tourn-surf{font-size:10px;color:var(--dim);background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:2px 8px;letter-spacing:1px;}
+.tourn-date{font-size:10px;color:var(--dim);margin-left:auto;font-weight:500;}
+
+.mrow{background:var(--bg2);border:1px solid var(--border);border-radius:10px;margin-bottom:6px;cursor:pointer;transition:all .15s;overflow:hidden;}
+.mrow:hover{border-color:var(--borderl);background:var(--bg3);}
+.mrow.open{border-color:var(--accent);}
+.mmain{display:grid;grid-template-columns:1fr auto;align-items:center;padding:13px 16px;gap:12px;}
+.players{display:flex;flex-direction:column;gap:7px;}
+.pline{display:flex;align-items:center;gap:8px;}
+.pflag{font-size:14px;width:22px;text-align:center;}
+.pname{font-size:14px;font-weight:700;color:var(--white);flex:1;letter-spacing:-.2px;}
+.pprob{font-size:13px;font-weight:800;color:var(--dim);min-width:38px;text-align:right;}
+.pprob.fav{color:var(--yellow);}
+.mright{display:flex;flex-direction:column;align-items:flex-end;gap:7px;}
+/* Point hors du rectangle — wrapper flex */
+.adv-wrap{display:flex;align-items:center;gap:6px;}
+.adv{font-size:10px;padding:3px 10px;border-radius:5px;font-weight:700;white-space:nowrap;}
+.ae{background:rgba(255,107,107,.15);color:#FF6B6B;border:1px solid rgba(255,107,107,.2);}
+.ah{background:rgba(232,123,46,.15);color:#E87B2E;border:1px solid rgba(232,123,46,.2);}
+.am{background:rgba(201,192,0,.12);color:#C9C000;border:1px solid rgba(201,192,0,.2);}
+.al{background:rgba(46,124,246,.12);color:#2E7CF6;border:1px solid rgba(46,124,246,.2);}
+.rdot{width:6px;height:6px;border-radius:50%;flex-shrink:0;}
+.rdot-high{background:#3FC87A;}
+.rdot-medium{background:#E8A020;}
+.rdot-low{background:#FF6B6B;}
+.mtime{font-size:10px;color:var(--dim);font-weight:500;}
+.chev{width:16px;height:16px;color:var(--dim);transition:transform .2s;flex-shrink:0;}
+.mrow.open .chev{transform:rotate(180deg);}
+.mdiv{height:1px;background:var(--border);margin:0 16px;}
+.mdetail{display:none;padding:16px;}
+.mrow.open .mdetail{display:block;}
+
+/* ── BALLE QUI REBONDIT ── */
+@keyframes ballBounce{
+  0%,100%{transform:translateY(0) scaleX(1) scaleY(1);}
+  40%{transform:translateY(-18px) scaleX(1) scaleY(1);}
+  50%{transform:translateY(-20px) scaleX(1) scaleY(1);}
+  80%{transform:translateY(0) scaleX(1.15) scaleY(0.85);}
+  90%{transform:translateY(0) scaleX(1) scaleY(1);}
+}
+@keyframes ballBounceSm{
+  0%,100%{transform:translateY(0) scaleX(1) scaleY(1);}
+  40%{transform:translateY(-9px) scaleX(1) scaleY(1);}
+  50%{transform:translateY(-10px) scaleX(1) scaleY(1);}
+  80%{transform:translateY(0) scaleX(1.15) scaleY(0.85);}
+  90%{transform:translateY(0) scaleX(1) scaleY(1);}
+}
+.ball-loader{display:flex;flex-direction:column;align-items:center;gap:8px;padding:1.5rem;}
+.ball-loader.sm{gap:5px;padding:.75rem;}
+.ball-svg{animation:ballBounce .7s ease-in-out infinite;}
+.ball-svg.sm{animation:ballBounceSm .7s ease-in-out infinite;}
+.ball-loader-txt{font-size:12px;font-weight:500;color:var(--dim);}
+.ball-loader.sm .ball-loader-txt{font-size:10px;}
+
+.prob-row{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--dim);margin-bottom:6px;font-weight:600;}
+.pbtrack{height:7px;border-radius:4px;background:var(--bg);overflow:hidden;display:flex;margin-bottom:14px;}
+.pbl{background:var(--yellow);}
+.pbr{background:var(--accent);}
+.pond-note{font-size:10px;color:var(--dim);display:flex;align-items:center;gap:5px;margin-bottom:14px;letter-spacing:.5px;font-weight:500;}
+.stat-hdr{display:flex;justify-content:space-between;font-size:11px;margin-bottom:6px;font-weight:700;letter-spacing:.5px;}
+.slbl2{font-size:10px;font-weight:700;color:var(--dim);text-transform:uppercase;letter-spacing:2px;margin:12px 0 7px;padding-bottom:5px;border-bottom:1px solid var(--border);}
+.sr{display:grid;grid-template-columns:1fr 120px 1fr;gap:6px;align-items:center;margin-bottom:6px;}
+.sv{font-size:13px;font-weight:700;}
+.sv.g{color:var(--live);}
+.sv.b{color:var(--danger);}
+.sv.n{color:var(--mid);}
+.svr{text-align:right;}
+.slbl{font-size:10px;color:var(--dim);text-align:center;letter-spacing:.3px;}
+.sbar{display:grid;grid-template-columns:1fr 1fr;gap:1px;height:3px;border-radius:2px;overflow:hidden;margin-top:3px;}
+.sbl{background:var(--yellow);}
+.sbr{background:var(--accent);}
+
+.h2h-box{background:var(--bg);border-radius:8px;padding:12px;margin-bottom:12px;}
+.h2h-title{font-size:10px;font-weight:700;color:var(--dim);text-transform:uppercase;letter-spacing:2px;margin-bottom:10px;}
+.h2h-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;}
+.h2h-item{text-align:center;}
+.h2h-val{font-size:18px;font-weight:900;color:var(--white);}
+.h2h-lbl{font-size:10px;color:var(--dim);margin-top:2px;}
+.h2h-last{font-size:11px;color:var(--mid);margin-top:8px;padding-top:8px;border-top:1px solid var(--border);line-height:1.5;}
+.ins{display:flex;gap:9px;align-items:flex-start;margin-bottom:6px;font-size:12px;color:var(--mid);line-height:1.5;background:var(--bg);border-radius:7px;padding:9px 12px;}
+.idot{width:6px;height:6px;border-radius:50%;margin-top:3px;flex-shrink:0;}
+.idot.g{background:var(--live);}
+.idot.r{background:var(--danger);}
+.idot.y{background:var(--yellow);}
+.idot.b{background:var(--accent);}
+
+/* ── OVERLAY LOADER CENTRÉ ── */
+#page-loader{
+  position:fixed;inset:0;background:rgba(6,14,26,0.85);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:12px;z-index:9998;opacity:0;pointer-events:none;
+  transition:opacity .4s ease;
+}
+#page-loader.visible{opacity:1;pointer-events:all;}
+#page-loader .ball-svg{animation:ballBounce .7s ease-in-out infinite;}
+#page-loader .loader-txt{font-size:13px;font-weight:600;color:var(--mid);letter-spacing:.5px;}
+.error-box{background:rgba(255,107,107,.07);border:1px solid rgba(255,107,107,.25);border-radius:10px;padding:16px;margin-bottom:12px;display:flex;gap:12px;align-items:flex-start;}
+.error-icon{font-size:22px;flex-shrink:0;}
+.error-title{font-size:13px;font-weight:700;color:var(--danger);margin-bottom:4px;}
+.error-msg{font-size:11px;color:var(--mid);line-height:1.6;}
+.retry-btn{margin-top:10px;padding:7px 14px;background:rgba(255,107,107,.12);border:1px solid rgba(255,107,107,.3);border-radius:6px;color:var(--danger);font-size:11px;font-weight:700;cursor:pointer;font-family:'Inter',sans-serif;transition:background .15s;}
+.retry-btn:hover{background:rgba(255,107,107,.22);}
+
+/* ── LOAD MORE (point 7) ── */
+.load-more-btn{width:100%;padding:10px;background:var(--bg2);border:1px solid var(--border);border-radius:8px;color:var(--mid);font-size:12px;font-weight:700;cursor:pointer;font-family:'Inter',sans-serif;margin-top:8px;transition:all .15s;}
+.load-more-btn:hover{border-color:var(--borderl);color:var(--white);}
+
+.surf-note{font-size:10px;color:var(--dim);margin-bottom:14px;display:flex;align-items:center;gap:6px;font-weight:600;letter-spacing:1px;}
+.surf-dot{width:7px;height:7px;border-radius:50%;background:var(--live);}
+table{width:100%;border-collapse:collapse;}
+th{padding:8px;font-size:10px;color:var(--dim);font-weight:700;text-align:center;border-bottom:1px solid var(--borderl);letter-spacing:1px;text-transform:uppercase;}
+th:first-child{text-align:left;}
+td{padding:9px 8px;font-size:12px;border-bottom:1px solid var(--border);font-weight:600;text-align:center;}
+td:first-child{color:var(--white);text-align:left;white-space:nowrap;}
+tr:hover td{background:var(--bg2);}
+.empty{text-align:center;padding:3rem;color:var(--dim);font-size:13px;font-weight:500;}
+.footer{background:var(--bg2);border-top:1px solid var(--border);padding:10px 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;}
+.footer-txt{font-size:10px;color:var(--dim);letter-spacing:.5px;}
+.odd-chip{font-size:11px;font-weight:800;padding:2px 7px;border-radius:5px;min-width:38px;text-align:center;}
+.odd-value{background:rgba(63,200,122,.15);color:#3FC87A;border:1px solid rgba(63,200,122,.3);}
+.odd-novalue{background:rgba(255,107,107,.12);color:#FF8080;border:1px solid rgba(255,107,107,.25);}
+.odd-neutral{background:var(--bg3);color:var(--mid);border:1px solid var(--border);}
+.odd-none{background:transparent;color:var(--dim);border:1px solid transparent;font-size:10px;}
+.surf-search{width:100%;background:var(--bg2);border:1px solid var(--border);border-radius:8px;color:var(--white);font-size:13px;padding:10px 14px;margin-bottom:14px;font-family:'Inter',sans-serif;transition:border-color .15s;}
+.surf-search:focus{outline:none;border-color:var(--yellow);}
+.surf-search::placeholder{color:var(--dim);}
+
+/* ── INDICE DE FIABILITÉ ── */
+.reliability-badge{display:inline-flex;align-items:center;gap:6px;border-radius:6px;padding:5px 10px;font-size:11px;font-weight:700;letter-spacing:.5px;}
+.reliability-high{background:rgba(63,200,122,.12);color:#3FC87A;border:1px solid rgba(63,200,122,.25);}
+.reliability-medium{background:rgba(232,123,46,.12);color:#E87B2E;border:1px solid rgba(232,123,46,.25);}
+.reliability-low{background:rgba(255,107,107,.12);color:#FF6B6B;border:1px solid rgba(255,107,107,.25);}
+.reliability-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+.reliability-high .reliability-dot{background:#3FC87A;}
+.reliability-medium .reliability-dot{background:#E87B2E;}
+.reliability-low .reliability-dot{background:#FF6B6B;}
+
+
+/* ── VERSION PRODUIT / PREMIUM ── */
+.product-note{background:linear-gradient(135deg,rgba(46,124,246,.14),rgba(201,192,0,.08));border:1px solid var(--borderl);border-radius:12px;padding:12px 14px;margin-bottom:14px;}
+.product-note-title{font-size:12px;font-weight:900;color:var(--white);letter-spacing:.4px;margin-bottom:4px;}
+.product-note-txt{font-size:11px;color:var(--mid);line-height:1.55;}
+.decision-card{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:12px;margin:12px 0;}
+.decision-title{font-size:10px;font-weight:800;color:var(--dim);letter-spacing:1.8px;text-transform:uppercase;margin-bottom:8px;}
+.decision-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.decision-item{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:9px;}
+.decision-k{font-size:9px;color:var(--dim);font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;}
+.decision-v{font-size:13px;color:var(--white);font-weight:800;}
+.reco-box{margin-top:10px;background:rgba(201,192,0,.07);border:1px solid rgba(201,192,0,.18);border-radius:8px;padding:10px;font-size:11px;color:var(--mid);line-height:1.55;}
+.value-badge{display:inline-flex;align-items:center;gap:6px;border-radius:20px;padding:4px 9px;font-size:10px;font-weight:900;letter-spacing:.5px;text-transform:uppercase;border:1px solid var(--border);}
+.value-yes{background:rgba(63,200,122,.12);color:var(--live);border-color:rgba(63,200,122,.3);}
+.value-no{background:rgba(255,107,107,.10);color:var(--danger);border-color:rgba(255,107,107,.25);}
+.value-neutral{background:var(--bg3);color:var(--mid);}
+.pick-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:14px;margin-bottom:10px;transition:all .15s;}
+.pick-card:hover{border-color:var(--borderl);transform:translateY(-1px);}
+.pick-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;gap:12px;}
+.pick-meta{font-size:10px;color:var(--dim);margin-bottom:4px;}
+.pick-match{font-size:12px;font-weight:800;color:var(--white);}
+.pick-sub{font-size:10px;color:var(--dim);margin-top:2px;}
+.pick-prob{font-size:28px;font-weight:900;line-height:1;color:var(--yellow);}
+.pick-prob-lbl{font-size:9px;color:var(--dim);text-align:center;margin-top:3px;}
+.pick-main{background:var(--bg);border-radius:8px;padding:10px;display:flex;align-items:center;gap:10px;}
+.pick-type{font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:1px;margin-bottom:2px;}
+.pick-label{font-size:13px;font-weight:900;color:var(--white);}
+.pick-foot{display:flex;justify-content:space-between;align-items:center;margin-top:9px;gap:8px;flex-wrap:wrap;}
+.legal-mini{font-size:10px;color:var(--dim);line-height:1.5;}
+@media(max-width:600px){.decision-grid{grid-template-columns:1fr}.product-note{margin-bottom:10px}.pick-top{align-items:center}.pick-prob{font-size:24px}}
+
+</style>
+</head>
+<body>
+<div id="toast-container"></div>
+<div id="page-loader">
+  <svg class="ball-svg" width="48" height="48" viewBox="0 0 40 40" fill="none">
+    <circle cx="20" cy="20" r="19" fill="#C9C000"/>
+    <path d="M1,20 Q10,7 20,6 Q30,7 39,20" stroke="#F5F0D0" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M1,20 Q10,33 20,34 Q30,33 39,20" stroke="#F5F0D0" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  </svg>
+  <span class="loader-txt">Chargement...</span>
+</div>
+<div class="app">
+
+  <div class="hdr">
+    <div class="logo">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="19" fill="#C9C000"/>
+        <path d="M1,20 Q10,7 20,6 Q30,7 39,20" stroke="#F5F0D0" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        <path d="M1,20 Q10,33 20,34 Q30,33 39,20" stroke="#F5F0D0" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+      </svg>
+      <div>
+        <div class="lt"><span class="c1">Colli</span><span class="c2">goat</span></div>
+        <div class="lsub">TENNIS ANALYTICS</div>
+      </div>
+    </div>
+    <div class="data-status" onclick="showDataInfo()" title="Cliquer pour les détails">
+      <div class="status-dot loading" id="status-dot"></div>
+      <span id="status-text" style="color:var(--dim);">Chargement...</span>
+    </div>
+  </div>
+
+  <div class="date-nav" id="date-nav">
+    <div style="display:flex;align-items:center;padding:4px 0;"><div class="ball-loader sm"><svg class="ball-svg sm" width="20" height="20" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" fill="#C9C000"/><path d="M1,20 Q10,7 20,6 Q30,7 39,20" stroke="#F5F0D0" stroke-width="2.5" stroke-linecap="round" fill="none"/><path d="M1,20 Q10,33 20,34 Q30,33 39,20" stroke="#F5F0D0" stroke-width="2.5" stroke-linecap="round" fill="none"/></svg><span class="ball-loader-txt">Chargement...</span></div></div>
+  </div>
+
+  <div class="tabs">
+    <div class="tab on" onclick="sw('matches')">Matchs</div>
+    <div class="tab" onclick="sw('spot')">⭐ Spot du jour</div>
+    <div class="tab" onclick="sw('surf')">Surfaces</div>
+  </div>
+
+  <div class="body">
+    <div id="t-matches" class="sec on">
+      <div id="mlist"><div class="empty"><div class="ball-loader"><svg class="ball-svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" fill="#C9C000"/><path d="M1,20 Q10,7 20,6 Q30,7 39,20" stroke="#F5F0D0" stroke-width="2.5" stroke-linecap="round" fill="none"/><path d="M1,20 Q10,33 20,34 Q30,33 39,20" stroke="#F5F0D0" stroke-width="2.5" stroke-linecap="round" fill="none"/></svg><span class="ball-loader-txt">Chargement des matchs...</span></div></div></div>
+    </div>
+    <div id="t-spot" class="sec"><div id="spot-cont"></div></div>
+    <div id="t-surf" class="sec"><div id="scont"></div></div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-txt">Données · Tennis Abstract (Jeff Sackmann) · CC BY-NC-SA</div>
+    <div class="footer-txt" id="footer-date">Stats pondérées · 6 mois glissants · filtrées par surface</div>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════════════════════════════
+// CONFIG
+// ═══════════════════════════════════════════════════════════════════════════════
+const BASE = './';
+const CSV_FILES = [
+  {url: BASE + 'atp_matches_2026.csv', tour: 'atp'},
+  {url: BASE + 'atp_matches_2025.csv', tour: 'atp'},
+  {url: BASE + 'wta_matches_2026.csv', tour: 'wta'},
+  {url: BASE + 'wta_matches_2025.csv', tour: 'wta'},
+];
+const DAYS_FR  = ['Dim.','Lun.','Mar.','Mer.','Jeu.','Ven.','Sam.'];
+const MONTHS_FR = ['Jan','Fév','Mar','Avr','Mai','Jun','Jul','Aoû','Sep','Oct','Nov','Déc'];
+const SM = {Clay:'Terre battue', Hard:'Dur', Grass:'Gazon'};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// POINT 1 — DATE DYNAMIQUE (jamais hardcodée)
+// ═══════════════════════════════════════════════════════════════════════════════
+const now = () => new Date();
+const cutoffDate = () => {
+  const d = now(); d.setMonth(d.getMonth() - 6); return d;
+};
+const cutoffInt = () => parseInt(cutoffDate().toISOString().slice(0,10).replace(/-/g,''));
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// POINT 8 — FLAGS ÉLARGI (top 150+ ATP + WTA)
+// ═══════════════════════════════════════════════════════════════════════════════
+const FL = {
+  // Format Sackmann (nom Initiale.)
+  'Sinner J.':'🇮🇹','Zverev A.':'🇩🇪','Alcaraz C.':'🇪🇸','Djokovic N.':'🇷🇸',
+  'Medvedev D.':'🇷🇺','Fritz T.':'🇺🇸','Rublev A.':'🇷🇺','Tsitsipas S.':'🇬🇷',
+  'Ruud C.':'🇳🇴','Hurkacz H.':'🇵🇱','Dimitrov G.':'🇧🇬','de Minaur A.':'🇦🇺',
+  'Paul T.':'🇺🇸','Shelton B.':'🇺🇸','Korda S.':'🇺🇸','Rune H.':'🇩🇰',
+  'Humbert U.':'🇫🇷','Fils A.':'🇫🇷','Mannarino A.':'🇫🇷','Muller A.':'🇫🇷',
+  'Moutet C.':'🇫🇷','Monfils G.':'🇫🇷','Gasquet R.':'🇫🇷','Paire B.':'🇫🇷',
+  'Gaston H.':'🇫🇷','Halys Q.':'🇫🇷','Mpetshi Perricard G.':'🇫🇷',
+  'Khachanov K.':'🇷🇺','Safiullin R.':'🇷🇺','Kotov P.':'🇷🇺','Karatsev A.':'🇷🇺',
+  'Popyrin A.':'🇦🇺','Thompson J.':'🇦🇺','Kokkinakis T.':'🇦🇺','Kubler J.':'🇦🇺',
+  'Tiafoe F.':'🇺🇸','Shapovalov D.':'🇨🇦','Auger-Aliassime F.':'🇨🇦',
+  'Cerundolo F.':'🇦🇷','Baez S.':'🇦🇷','Schwartzman D.':'🇦🇷','Etcheverry T.':'🇦🇷',
+  'Cachin P.':'🇦🇷','Navone M.':'🇦🇷','Diaz Acosta F.':'🇦🇷',
+  'Nadal R.':'🇪🇸','Bautista Agut R.':'🇪🇸','Davidovich Fokina A.':'🇪🇸',
+  'Martinez P.':'🇪🇸','Carballes Baena R.':'🇪🇸','Tabilo A.':'🇨🇱','Jarry N.':'🇨🇱',
+  'Wawrinka S.':'🇨🇭','Lehecka J.':'🇨🇿','Machac T.':'🇨🇿',
+  'Struff J.':'🇩🇪','Hanfmann Y.':'🇩🇪','Altmaier D.':'🇩🇪',
+  'Cilic M.':'🇭🇷','Coric B.':'🇭🇷','Goffin D.':'🇧🇪','Bergs Z.':'🇧🇪',
+  'Bublik A.':'🇰🇿','Van De Zandschulp B.':'🇳🇱','Griekspoor T.':'🇳🇱',
+  'Kecmanovic M.':'🇷🇸','Lajovic D.':'🇷🇸','Djere L.':'🇷🇸',
+  'Musetti L.':'🇮🇹','Berrettini M.':'🇮🇹','Sonego L.':'🇮🇹','Arnaldi M.':'🇮🇹',
+  'Cobolli F.':'🇮🇹','Darderi L.':'🇮🇹','Cecchinato M.':'🇮🇹','Pellegrino A.':'🇮🇹',
+  'Borges N.':'🇵🇹','Norrie C.':'🇬🇧','Draper J.':'🇬🇧','Evans D.':'🇬🇧',
+  'Murray A.':'🇬🇧','Mensik J.':'🇨🇿','Holmgren A.':'🇺🇸','McDonald M.':'🇺🇸',
+  'Nakashima B.':'🇺🇸','Eubanks C.':'🇺🇸','Wolf J.':'🇺🇸',
+  'Nishioka Y.':'🇯🇵','Watanuki Y.':'🇯🇵',
+  // Format complet (matches.json)
+  'Jannik Sinner':'🇮🇹','Alexander Zverev':'🇩🇪','Carlos Alcaraz':'🇪🇸',
+  'Novak Djokovic':'🇷🇸','Daniil Medvedev':'🇷🇺','Taylor Fritz':'🇺🇸',
+  'Andrey Rublev':'🇷🇺','Stefanos Tsitsipas':'🇬🇷','Casper Ruud':'🇳🇴',
+  'Hubert Hurkacz':'🇵🇱','Grigor Dimitrov':'🇧🇬','Alex de Minaur':'🇦🇺',
+  'Tommy Paul':'🇺🇸','Ben Shelton':'🇺🇸','Sebastian Korda':'🇺🇸',
+  'Holger Rune':'🇩🇰','Ugo Humbert':'🇫🇷','Arthur Fils':'🇫🇷',
+  'Adrian Mannarino':'🇫🇷','Alexandre Muller':'🇫🇷','Corentin Moutet':'🇫🇷',
+  'Gael Monfils':'🇫🇷','Richard Gasquet':'🇫🇷','Benoit Paire':'🇫🇷',
+  'Hugo Gaston':'🇫🇷','Quentin Halys':'🇫🇷',
+  'Giovanni Mpetshi Perricard':'🇫🇷','Harold Mayot':'🇫🇷',
+  'Constant Lestienne':'🇫🇷','Maxime Janvier':'🇫🇷',
+  'Karen Khachanov':'🇷🇺','Roman Safiullin':'🇷🇺','Pavel Kotov':'🇷🇺',
+  'Aslan Karatsev':'🇷🇺','Alexei Popyrin':'🇦🇺','Jordan Thompson':'🇦🇺',
+  'Thanasi Kokkinakis':'🇦🇺','Jason Kubler':'🇦🇺',
+  'Frances Tiafoe':'🇺🇸','Denis Shapovalov':'🇨🇦',
+  'Felix Auger-Aliassime':'🇨🇦','Milos Raonic':'🇨🇦',
+  'Francisco Cerundolo':'🇦🇷','Sebastian Baez':'🇦🇷',
+  'Diego Schwartzman':'🇦🇷','Tomas Martin Etcheverry':'🇦🇷',
+  'Pedro Cachin':'🇦🇷','Mariano Navone':'🇦🇷','Facundo Diaz Acosta':'🇦🇷',
+  'Rafael Nadal':'🇪🇸','Roberto Bautista Agut':'🇪🇸',
+  'Alejandro Davidovich Fokina':'🇪🇸','Pedro Martinez':'🇪🇸',
+  'Roberto Carballes Baena':'🇪🇸','Alejandro Tabilo':'🇨🇱','Nicolas Jarry':'🇨🇱',
+  'Stan Wawrinka':'🇨🇭','Jiri Lehecka':'🇨🇿','Tomas Machac':'🇨🇿',
+  'Jan-Lennard Struff':'🇩🇪','Yannick Hanfmann':'🇩🇪','Daniel Altmaier':'🇩🇪',
+  'Marin Cilic':'🇭🇷','Borna Coric':'🇭🇷','David Goffin':'🇧🇪','Zizou Bergs':'🇧🇪',
+  'Alexander Bublik':'🇰🇿','Botic van de Zandschulp':'🇳🇱','Tallon Griekspoor':'🇳🇱',
+  'Miomir Kecmanovic':'🇷🇸','Dusan Lajovic':'🇷🇸','Laslo Djere':'🇷🇸',
+  'Lorenzo Musetti':'🇮🇹','Matteo Berrettini':'🇮🇹','Lorenzo Sonego':'🇮🇹',
+  'Matteo Arnaldi':'🇮🇹','Flavio Cobolli':'🇮🇹','Luciano Darderi':'🇮🇹',
+  'Marco Cecchinato':'🇮🇹','Andrea Pellegrino':'🇮🇹','Luca Nardi':'🇮🇹',
+  'Nuno Borges':'🇵🇹','Cameron Norrie':'🇬🇧','Jack Draper':'🇬🇧',
+  'Dan Evans':'🇬🇧','Andy Murray':'🇬🇧','Jakub Mensik':'🇨🇿',
+  'August Holmgren':'🇺🇸','Mackenzie McDonald':'🇺🇸',
+  'Brandon Nakashima':'🇺🇸','Christopher Eubanks':'🇺🇸','J.J. Wolf':'🇺🇸',
+  'Yoshihito Nishioka':'🇯🇵','Yosuke Watanuki':'🇯🇵',
+  // WTA
+  'Iga Swiatek':'🇵🇱','Swiatek I.':'🇵🇱',
+  'Aryna Sabalenka':'🇧🇾','Sabalenka A.':'🇧🇾',
+  'Coco Gauff':'🇺🇸','Gauff C.':'🇺🇸',
+  'Elena Rybakina':'🇰🇿','Rybakina E.':'🇰🇿',
+  'Jessica Pegula':'🇺🇸','Pegula J.':'🇺🇸',
+  'Jasmine Paolini':'🇮🇹','Paolini J.':'🇮🇹',
+  'Daria Kasatkina':'🇷🇺','Kasatkina D.':'🇷🇺',
+  'Madison Keys':'🇺🇸','Keys M.':'🇺🇸',
+  'Barbora Krejcikova':'🇨🇿','Krejcikova B.':'🇨🇿',
+  'Beatriz Haddad Maia':'🇧🇷','Haddad Maia B.':'🇧🇷',
+  'Elina Svitolina':'🇺🇦','Svitolina E.':'🇺🇦',
+  'Karolina Muchova':'🇨🇿','Muchova K.':'🇨🇿',
+  'Marketa Vondrousova':'🇨🇿','Vondrousova M.':'🇨🇿',
+  'Mirra Andreeva':'🇷🇺','Andreeva M.':'🇷🇺',
+  'Diana Shnaider':'🇷🇺','Shnaider D.':'🇷🇺',
+  'Liudmila Samsonova':'🇷🇺','Samsonova L.':'🇷🇺',
+  'Veronika Kudermetova':'🇷🇺','Kudermetova V.':'🇷🇺',
+  'Anastasia Pavlyuchenkova':'🇷🇺','Pavlyuchenkova A.':'🇷🇺',
+  'Victoria Azarenka':'🇧🇾','Azarenka V.':'🇧🇾',
+  'Maria Sakkari':'🇬🇷','Sakkari M.':'🇬🇷',
+  'Ons Jabeur':'🇹🇳','Jabeur O.':'🇹🇳',
+  'Danielle Collins':'🇺🇸','Collins D.':'🇺🇸',
+  'Amanda Anisimova':'🇺🇸','Anisimova A.':'🇺🇸',
+  'Emma Navarro':'🇺🇸','Navarro E.':'🇺🇸',
+  'Peyton Stearns':'🇺🇸','Stearns P.':'🇺🇸',
+  'Caroline Garcia':'🇫🇷','Garcia C.':'🇫🇷',
+  'Alize Cornet':'🇫🇷','Cornet A.':'🇫🇷',
+  'Clara Burel':'🇫🇷','Burel C.':'🇫🇷',
+  'Diane Parry':'🇫🇷','Parry D.':'🇫🇷',
+  'Harmony Tan':'🇫🇷','Tan H.':'🇫🇷',
+  'Emma Raducanu':'🇬🇧','Raducanu E.':'🇬🇧',
+  'Katie Boulter':'🇬🇧','Boulter K.':'🇬🇧',
+  'Simona Halep':'🇷🇴','Halep S.':'🇷🇴',
+  'Sorana Cirstea':'🇷🇴','Cirstea S.':'🇷🇴',
+  'Donna Vekic':'🇭🇷','Vekic D.':'🇭🇷',
+  'Bianca Andreescu':'🇨🇦','Andreescu B.':'🇨🇦',
+  'Leylah Fernandez':'🇨🇦','Fernandez L.':'🇨🇦',
+  'Qinwen Zheng':'🇨🇳','Zheng Q.':'🇨🇳',
+  'Naomi Osaka':'🇯🇵','Osaka N.':'🇯🇵',
+  'Paula Badosa':'🇪🇸','Badosa P.':'🇪🇸',
+  'Petra Kvitova':'🇨🇿','Kvitova P.':'🇨🇿',
+  'Karolina Pliskova':'🇨🇿','Pliskova Ka.':'🇨🇿',
+  'Belinda Bencic':'🇨🇭','Bencic B.':'🇨🇭',
+  'Anna Kalinskaya':'🇷🇺','Kalinskaya A.':'🇷🇺',
+  'Ekaterina Alexandrova':'🇷🇺','Alexandrova E.':'🇷🇺',
+  'Anna Blinkova':'🇷🇺','Blinkova A.':'🇷🇺',
+  'Elise Mertens':'🇧🇪','Mertens E.':'🇧🇪',
+  'Laura Siegemund':'🇩🇪','Siegemund L.':'🇩🇪',
+  'Marta Kostyuk':'🇺🇦','Kostyuk M.':'🇺🇦',
+  'Yulia Putintseva':'🇰🇿','Putintseva Y.':'🇰🇿',
+  'Magda Linette':'🇵🇱','Linette M.':'🇵🇱',
+  'Magdalena Frech':'🇵🇱','Frech M.':'🇵🇱',
+  'Camila Giorgi':'🇮🇹','Giorgi C.':'🇮🇹',
+  'Martina Trevisan':'🇮🇹','Trevisan M.':'🇮🇹',
+  'Lucia Bronzetti':'🇮🇹','Bronzetti L.':'🇮🇹',
+  'Viktoriya Tomova':'🇧🇬','Tomova V.':'🇧🇬',
+  'Elina Avanesyan':'🇷🇺','Avanesyan E.':'🇷🇺',
+};
+
+const COUNTRY_ACR = {
+  'ESP':'🇪🇸','ITA':'🇮🇹','FRA':'🇫🇷','GER':'🇩🇪','USA':'🇺🇸','ARG':'🇦🇷',
+  'SRB':'🇷🇸','RUS':'🇷🇺','POL':'🇵🇱','BLR':'🇧🇾','GRE':'🇬🇷','AUS':'🇦🇺',
+  'SUI':'🇨🇭','GBR':'🇬🇧','CZE':'🇨🇿','ROU':'🇷🇴','DEN':'🇩🇰','NOR':'🇳🇴',
+  'CAN':'🇨🇦','JPN':'🇯🇵','CHN':'🇨🇳','BEL':'🇧🇪','KAZ':'🇰🇿','BUL':'🇧🇬',
+  'CRO':'🇭🇷','NED':'🇳🇱','BRA':'🇧🇷','AUT':'🇦🇹','POR':'🇵🇹','SWE':'🇸🇪',
+  'MAR':'🇲🇦','KOR':'🇰🇷','UKR':'🇺🇦','SVK':'🇸🇰','EST':'🇪🇪','TUN':'🇹🇳',
+  'CHI':'🇨🇱','GEO':'🇬🇪','SVN':'🇸🇮','FIN':'🇫🇮','HUN':'🇭🇺','LAT':'🇱🇻',
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// POINT 3 & 4 — MATCHING DE NOMS ROBUSTE
+// matches.json = "Jannik Sinner" | Sackmann = "Sinner J." | odds.json = variable
+// ═══════════════════════════════════════════════════════════════════════════════
+const _nameCache = {};
+
+function normStr(s) {
+  if (!s) return '';
+  return s.toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .replace(/[^a-z0-9\s\-]/g,'')
+    .trim();
+}
+
+// Extrait prénom, nom, initiale depuis n'importe quel format
+function parseName(raw) {
+  if (!raw) return {last:'', first:'', init:''};
+  const s = raw.trim();
+  // Format Sackmann "Sinner J." ou "De Minaur A."
+  const sack = s.match(/^(.+?)\s+([A-Z])\.?$/);
+  if (sack) return {last: normStr(sack[1]), first:'', init: sack[2].toLowerCase()};
+  // Format complet "Jannik Sinner"
+  const parts = s.split(' ');
+  if (parts.length >= 2) {
+    const last = normStr(parts.slice(1).join(' '));
+    const first = normStr(parts[0]);
+    return {last, first, init: first[0]||''};
+  }
+  return {last: normStr(s), first:'', init:''};
+}
+
+function nameSimilarity(a, b) {
+  if (!a || !b) return 0;
+  const na = normStr(a), nb = normStr(b);
+  if (na === nb) return 1.0;
+  const pa = parseName(a), pb = parseName(b);
+  // Nom de famille identique (critère principal)
+  if (pa.last === pb.last && pa.last.length > 2) {
+    // + initiale identique = très fiable
+    if (pa.init && pb.init && pa.init === pb.init) return 0.95;
+    return 0.85;
+  }
+  // Nom de famille partiel (ex: "de Minaur" vs "Minaur")
+  if (pa.last.length > 4 && pb.last.includes(pa.last)) return 0.80;
+  if (pb.last.length > 4 && pa.last.includes(pb.last)) return 0.80;
+  // Nom complet contient l'autre
+  if (na.length > 5 && nb.includes(na)) return 0.75;
+  if (nb.length > 5 && na.includes(nb)) return 0.75;
+  return 0;
+}
+
+function getFlag(name) {
+  if (!name) return '🎾';
+  if (FL[name]) return FL[name];
+  // Cherche par nom de famille (dernier mot)
+  const last = name.split(' ').slice(1).join(' ');
+  if (last.length > 3) {
+    for (const [k,v] of Object.entries(FL)) {
+      if (k.toLowerCase().includes(last.toLowerCase())) return v;
+    }
+  }
+  return '🎾';
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// PARSER MATCHES.JSON
+// ═══════════════════════════════════════════════════════════════════════════════
+let DAYS = [];
+
+function parseMatchesJSON(data) {
+  const days = [];
+
+  function processDay(dateStr, matchList, isTbc) {
+    if (!matchList || !matchList.length) return null;
+    const dateObj = isTbc ? now() : new Date(dateStr);
+    const label = DAYS_FR[dateObj.getDay()];
+    const num   = isTbc ? '?' : String(dateObj.getDate());
+    const mon   = MONTHS_FR[dateObj.getMonth()];
+    const tournMap = {};
+
+    matchList.forEach(m => {
+      const tInfo = m.tournament || {};
+      const tName = tInfo.name || 'Tournoi';
+      const surface = tInfo.surface || 'Clay';
+      let flag = tInfo.flag || '🎾';
+      if (flag && flag.length <= 3) flag = COUNTRY_ACR[flag.toUpperCase()] || flag;
+      if (!tournMap[tName]) tournMap[tName] = {name:tName, flag, surface, matches:[]};
+
+      const p1 = m.player1?.name || '?';
+      const p2 = m.player2?.name || '?';
+      // Enrichir FL depuis les codes pays du JSON
+      if (m.player1?.countryAcr && COUNTRY_ACR[m.player1.countryAcr]) FL[p1] = COUNTRY_ACR[m.player1.countryAcr];
+      if (m.player2?.countryAcr && COUNTRY_ACR[m.player2.countryAcr]) FL[p2] = COUNTRY_ACR[m.player2.countryAcr];
+
+      const id = m.id ? `${dateStr}-${m.id}` : `${dateStr}-${p1.slice(0,4)}-${p2.slice(0,4)}`;
+      tournMap[tName].matches.push({
+        id, p1, p2,
+        r: m.round || (m.roundId ? `Tour ${m.roundId}` : ''),
+        time: m.time || 'À confirmer',
+        scheduled: !!m.scheduled
+      });
+    });
+
+    Object.values(tournMap).forEach(t => {
+      t.matches.sort((a,b) => {
+        if (a.scheduled && !b.scheduled) return -1;
+        if (!a.scheduled && b.scheduled) return  1;
+        return a.time.localeCompare(b.time);
+      });
+    });
+
+    const tournaments = Object.values(tournMap).filter(t => t.matches.length);
+    if (!tournaments.length) return null;
+    return {label, num, mon, date:dateStr, isTbc, tournaments};
+  }
+
+  // Filtre : garder seulement aujourd'hui et les jours suivants (+ hier max)
+  const todayDate = now();
+  todayDate.setHours(0,0,0,0);
+  const yesterdayDate = new Date(todayDate);
+  yesterdayDate.setDate(yesterdayDate.getDate() - 1);
+
+  Object.keys(data).filter(d => d !== 'tbc').sort().forEach(d => {
+    const dayDate = new Date(d);
+    dayDate.setHours(0,0,0,0);
+    if (dayDate < yesterdayDate) return; // ignore avant hier
+    const day = processDay(d, data[d].data, false);
+    if (day) days.push(day);
+  });
+  if (data.tbc?.data?.length) {
+    const day = processDay('tbc', data.tbc.data, true);
+    if (day) { day.label='?'; day.num='?'; day.mon='TBC'; days.push(day); }
+  }
+  return days;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// DATA ENGINE
+// ═══════════════════════════════════════════════════════════════════════════════
+let allRows = [], playerCache = {}, dataLoaded = false, loadErrors = [];
+
+function parseCSV(text) {
+  const lines = text.trim().split('\n');
+  const headers = lines[0].split(',').map(h => h.trim().replace(/"/g,''));
+  return lines.slice(1).map(line => {
+    const vals = line.split(',');
+    const obj = {};
+    headers.forEach((h,i) => obj[h] = (vals[i]||'').trim().replace(/"/g,''));
+    return obj;
+  }).filter(r => r.tourney_date);
+}
+
+function getPlayerStats(playerName, surface, asWinner) {
+  const co = cutoffInt();
+  const n  = now();
+
+  const rows = allRows.filter(r => {
+    const rName = asWinner ? r.winner_name : r.loser_name;
+    return nameSimilarity(playerName, rName) >= 0.75 &&
+           (surface === 'All' || r.surface === surface) &&
+           parseInt(r.tourney_date) >= co;
+  });
+  if (!rows.length) return null;
+
+  let tw=0, s1pct=0, s1won=0, s2won=0, aces=0, df=0, bpFaced=0, bpSaved=0;
+  rows.forEach(r => {
+    const ds = String(r.tourney_date);
+    const dt = new Date(`${ds.slice(0,4)}-${ds.slice(4,6)}-${ds.slice(6,8)}`);
+    const w  = Math.exp(-(n-dt)/(1000*60*60*24*90));
+    const px = asWinner ? 'w_' : 'l_';
+    const sp = parseFloat(r[px+'svpt'])||0;
+    const s1i= parseFloat(r[px+'1stIn'])||0;
+    const s1w= parseFloat(r[px+'1stWon'])||0;
+    const s2w= parseFloat(r[px+'2ndWon'])||0;
+    const s2p= sp - s1i;
+    if (sp > 0) {
+      tw      += w;
+      s1pct   += w*(s1i/sp*100);
+      s1won   += w*(s1i>0 ? s1w/s1i*100 : 0);
+      s2won   += w*(s2p>0 ? s2w/s2p*100 : 0);
+      aces    += w*(parseFloat(r[px+'ace'])||0);
+      df      += w*(parseFloat(r[px+'df'])||0);
+      bpFaced += w*(parseFloat(r[px+'bpFaced'])||0);
+      bpSaved += w*((parseFloat(r[px+'bpFaced'])||0)>0 ? (parseFloat(r[px+'bpSaved'])||0)/(parseFloat(r[px+'bpFaced'])||1)*100 : 0);
+    }
+  });
+  if (!tw) return null;
+
+  // Win% sur surface (6 mois)
+  const tot = allRows.filter(r =>
+    (nameSimilarity(playerName, r.winner_name||'')>=0.75 || nameSimilarity(playerName, r.loser_name||'')>=0.75) &&
+    (surface==='All' || r.surface===surface) &&
+    parseInt(r.tourney_date)>=co
+  );
+  const wins = tot.filter(r => nameSimilarity(playerName, r.winner_name||'')>=0.75);
+  const winPct = tot.length ? Math.round(wins.length/tot.length*100) : 50;
+
+  return {
+    matches: rows.length, winPct,
+    s1pct: Math.round(s1pct/tw), s1won: Math.round(s1won/tw), s2won: Math.round(s2won/tw),
+    aces: (aces/tw).toFixed(1), df: (df/tw).toFixed(1),
+    bpConc: (bpFaced/tw).toFixed(1), bpSaved: Math.round(bpSaved/tw),
+  };
+}
+
+// Récupère le dernier classement connu d'un joueur dans les CSV
+function getLastRank(name) {
+  const rows = allRows.filter(r =>
+    nameSimilarity(name, r.winner_name||'')>=0.75 ||
+    nameSimilarity(name, r.loser_name||'')>=0.75
+  ).sort((a,b) => parseInt(b.tourney_date)-parseInt(a.tourney_date));
+  if (!rows.length) return null;
+  const r = rows[0];
+  const isW = nameSimilarity(name, r.winner_name||'')>=0.75;
+  const rank = parseInt(isW ? r.winner_rank : r.loser_rank);
+  return isNaN(rank) ? null : rank;
+}
+
+// Calcule une proba de base à partir des classements (fallback)
+// Formule logarithmique : reflète la vraie hiérarchie tennis
+// rank 1 vs 200 → 95% | rank 10 vs 20 → 57% | rank 50 vs 51 → 50%
+function rankToWinPct(rankA, rankB) {
+  if (!rankA || !rankB) return 50;
+  const logDiff = Math.log(rankB) - Math.log(rankA);
+  const raw = 50 + logDiff * 10;
+  return Math.round(Math.max(5, Math.min(95, raw)));
+}
+
+function getStats(name, surface) {
+  const key = name+'_'+surface;
+  if (playerCache[key]) return playerCache[key];
+  const asW = getPlayerStats(name, surface, true);
+  const asL = getPlayerStats(name, surface, false);
+  let stats = null;
+
+  if (asW && asL) {
+    const tw=asW.matches, tl=asL.matches, tot=tw+tl;
+    const w=(a,b)=>(a*tw+b*tl)/tot;
+    stats = {
+      matches:tot, winPct:asW.winPct, isFallback:false,
+      s1pct:Math.round(w(asW.s1pct,asL.s1pct)),
+      s1won:Math.round(w(asW.s1won,asL.s1won)),
+      s2won:Math.round(w(asW.s2won,asL.s2won)),
+      aces:((parseFloat(asW.aces)*tw+parseFloat(asL.aces)*tl)/tot).toFixed(1),
+      df:((parseFloat(asW.df)*tw+parseFloat(asL.df)*tl)/tot).toFixed(1),
+      bpConc:((parseFloat(asW.bpConc)*tw+parseFloat(asL.bpConc)*tl)/tot).toFixed(1),
+      bpSaved:Math.round(w(asW.bpSaved,asL.bpSaved)),
+    };
+  } else {
+    stats = asW || asL || null;
+    if (stats) stats.isFallback = false;
+  }
+
+  // ── MINIMUM 3 MATCHS — sinon fallback classement ──────────────────────────
+  if (!stats || stats.matches < 3) {
+    const rank = getLastRank(name);
+    if (rank) {
+      // On garde les stats partielles si elles existent, mais on flag fallback
+      stats = stats || {};
+      stats.matches = stats.matches || 0;
+      stats.rank = rank;
+      stats.isFallback = true;
+      // winPct sera calculé dynamiquement dans calcProb via les deux classements
+    } else {
+      stats = null; // vraiment aucune donnée
+    }
+  }
+
+  playerCache[key] = stats;
+  return stats;
+}
+
+function getH2H(p1, p2, surface) {
+  const rows = allRows.filter(r => {
+    const p1w=nameSimilarity(p1,r.winner_name||'')>=0.75, p1l=nameSimilarity(p1,r.loser_name||'')>=0.75;
+    const p2w=nameSimilarity(p2,r.winner_name||'')>=0.75, p2l=nameSimilarity(p2,r.loser_name||'')>=0.75;
+    return (p1w&&p2l)||(p2w&&p1l);
+  });
+  const onS  = surface!=='All' ? rows.filter(r=>r.surface===surface) : rows;
+  const p1w  = rows.filter(r=>nameSimilarity(p1,r.winner_name||'')>=0.75).length;
+  const p2w  = rows.filter(r=>nameSimilarity(p2,r.winner_name||'')>=0.75).length;
+  const p1wS = onS.filter(r=>nameSimilarity(p1,r.winner_name||'')>=0.75).length;
+  const p2wS = onS.filter(r=>nameSimilarity(p2,r.winner_name||'')>=0.75).length;
+  const last = [...rows].sort((a,b)=>parseInt(b.tourney_date)-parseInt(a.tourney_date))[0];
+  let lastStr = null;
+  if (last) {
+    const d = String(last.tourney_date);
+    const winner = nameSimilarity(p1,last.winner_name||'')>=0.75 ? p1 : p2;
+    lastStr = `Dernier : ${winner} · ${last.tourney_name||''} ${d.slice(0,4)}`;
+  }
+  return {p1wins:p1w, p2wins:p2w, p1winsS:p1wS, p2winsS:p2wS, total:rows.length, totalS:onS.length, last:lastStr};
+}
+
+function getFatigue(name) {
+  const d4 = now(); d4.setDate(d4.getDate()-4);
+  const co = parseInt(d4.toISOString().slice(0,10).replace(/-/g,''));
+  const recent = allRows.filter(r =>
+    parseInt(r.tourney_date)>=co &&
+    (nameSimilarity(name,r.winner_name||'')>=0.75 || nameSimilarity(name,r.loser_name||'')>=0.75)
+  );
+  return recent.reduce((acc,r)=>{
+    const sc = r.score||'', sets=sc.trim().split(' ').length;
+    const tight = sc.includes('7-6')||sc.includes('6-7');
+    return acc + (sets>=3&&tight ? 2 : sets>=3 ? 1.5 : 1);
+  }, 0);
+}
+
+function getRoundWin(name, round) {
+  if (!round||!allRows.length) return null;
+  const rows = allRows.filter(r=>
+    (nameSimilarity(name,r.winner_name||'')>=0.75||nameSimilarity(name,r.loser_name||'')>=0.75) && r.round===round
+  );
+  if (rows.length<3) return null;
+  return Math.round(rows.filter(r=>nameSimilarity(name,r.winner_name||'')>=0.75).length/rows.length*100);
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// POINT 2 — MODÈLE DE PROBABILITÉ RECALIBRÉ
+// Poids ajustés : winPct surface est de loin le meilleur prédicteur en tennis
+// ═══════════════════════════════════════════════════════════════════════════════
+function calcProb(p1, p2, surface, round) {
+  const a = getStats(p1, surface) || getStats(p1, 'All');
+  const b = getStats(p2, surface) || getStats(p2, 'All');
+  if (!a || !b) return null;
+
+  // ── FIABILITÉ ─────────────────────────────────────────────────────────────
+  // On calcule la fiabilité basée sur le nombre de matchs réels des deux joueurs
+  const mA = (!a.isFallback ? a.matches : 0);
+  const mB = (!b.isFallback ? b.matches : 0);
+  const minMatches = Math.min(mA, mB);
+  let reliability;
+  if (a.isFallback || b.isFallback) {
+    reliability = 'low'; // au moins un joueur utilise le fallback
+  } else if (minMatches >= 15) {
+    reliability = 'high';
+  } else if (minMatches >= 3) {
+    reliability = 'medium';
+  } else {
+    reliability = 'low';
+  }
+
+  // ── FALLBACK CLASSEMENT ───────────────────────────────────────────────────
+  // Si un joueur est en fallback, on utilise son classement pour estimer winPct
+  if (a.isFallback || b.isFallback) {
+    const rankA = a.rank || getLastRank(p1) || 200;
+    const rankB = b.rank || getLastRank(p2) || 200;
+    const pA = rankToWinPct(rankA, rankB);
+    const pB = 100 - pA;
+    return {
+      p1: Math.max(5, Math.min(95, pA)),
+      p2: Math.max(5, Math.min(95, pB)),
+      reliability,
+      matchesA: mA, matchesB: mB,
+    };
+  }
+
+  // 1. Win% surface (38%)
+  const s1 = a.winPct * 0.38;
+  const s2 = b.winPct * 0.38;
+
+  // 2. Service (22%)
+  const srv_a = a.s1pct*0.35 + a.s1won*0.40 + a.s2won*0.25;
+  const srv_b = b.s1pct*0.35 + b.s1won*0.40 + b.s2won*0.25;
+  const srv_t = srv_a + srv_b || 1;
+  const s3 = (srv_a/srv_t)*0.22*100;
+  const s4 = (srv_b/srv_t)*0.22*100;
+
+  // 3. Balles de break (20%)
+  const bp_a = Math.max(0, 100 - parseFloat(a.bpConc)*8) + a.bpSaved;
+  const bp_b = Math.max(0, 100 - parseFloat(b.bpConc)*8) + b.bpSaved;
+  const bp_t = bp_a + bp_b || 1;
+  const s5 = (bp_a/bp_t)*0.20*100;
+  const s6 = (bp_b/bp_t)*0.20*100;
+
+  // 4. H2H (10%)
+  let s7=5, s8=5;
+  const h2h = getH2H(p1, p2, 'All');
+  if (h2h.total >= 2) {
+    const p = h2h.p1wins/h2h.total*100;
+    s7 = p*0.10; s8 = (100-p)*0.10;
+  }
+
+  // 5. Fatigue (6%)
+  let s9=3, s10=3;
+  if (allRows.length) {
+    const f1=getFatigue(p1), f2=getFatigue(p2), ft=f1+f2||1;
+    s9  = (1-f1/(ft+1))*0.06*100;
+    s10 = (1-f2/(ft+1))*0.06*100;
+  }
+
+  // 6. Round (4%)
+  let s11=2, s12=2;
+  if (round && allRows.length) {
+    const r1=getRoundWin(p1,round), r2=getRoundWin(p2,round);
+    if (r1!==null && r2!==null) {
+      const rt=r1+r2||1;
+      s11=(r1/rt)*0.04*100; s12=(r2/rt)*0.04*100;
+    }
+  }
+
+  const sc1 = s1+s3+s5+s7+s9+s11;
+  const sc2 = s2+s4+s6+s8+s10+s12;
+  const t   = sc1+sc2 || 1;
+  const p   = Math.round(sc1/t*100);
+  return {
+    p1: Math.max(5,Math.min(95,p)),
+    p2: Math.max(5,Math.min(95,100-p)),
+    reliability,
+    matchesA: mA, matchesB: mB,
+  };
+}
+
+function avInfoFromProb(p1, p2) {
+  const d = Math.abs((p1||50)-(p2||50));
+  if (d<=5)  return {l:'Indécis',   c:'al'};
+  if (d<=21) return {l:'Équilibré', c:'am'};
+  if (d<=41) return {l:'Dominé',    c:'ah'};
+  return          {l:'Expéditif', c:'ae'};
+}
+
+// ── BALLE LOADER ─────────────────────────────────────────────────────────────
+function ballLoader(size='lg', txt='Chargement...') {
+  const s = size==='sm' ? 20 : 40;
+  const cls = size==='sm' ? 'sm' : '';
+  return `<div class="ball-loader ${cls}">
+    <svg class="ball-svg ${cls}" width="${s}" height="${s}" viewBox="0 0 40 40" fill="none">
+      <circle cx="20" cy="20" r="19" fill="#C9C000"/>
+      <path d="M1,20 Q10,7 20,6 Q30,7 39,20" stroke="#F5F0D0" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+      <path d="M1,20 Q10,33 20,34 Q30,33 39,20" stroke="#F5F0D0" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    </svg>
+    <span class="ball-loader-txt">${txt}</span>
+  </div>`;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// PROFIL DE MATCH (Spot du jour)
+// ═══════════════════════════════════════════════════════════════════════════════
+function getMatchProfile(name, surface) {
+  const co = cutoffInt();
+  const rows = allRows.filter(r=>
+    (nameSimilarity(name,r.winner_name||'')>=0.75||nameSimilarity(name,r.loser_name||'')>=0.75) &&
+    (surface==='All'||r.surface===surface) &&
+    parseInt(r.tourney_date)>=co && r.score
+  );
+  if (rows.length<5) return null;
+
+  let totalG=0, mc=0, twoSet=0, threeSet=0, setsW=0, totSets=0, tb=0, totSetsForTb=0, gamesW=0, totGames=0;
+  rows.forEach(r=>{
+    const isW = nameSimilarity(name,r.winner_name||'')>=0.75;
+    const sets = (r.score||'').trim().split(' ').filter(s=>/^\d+-\d+/.test(s));
+    if (sets.length<2) return;
+    mc++;
+    let pSets=0, mG=0, pG=0;
+    sets.forEach(s=>{
+      const [g1,g2]=[parseInt(s.split('-')[0])||0, parseInt(s.split('-')[1])||0];
+      mG+=g1+g2; pG+=isW?g1:g2;
+      if ((isW?g1:g2)>(isW?g2:g1)) pSets++;
+      if ((g1===7&&g2===6)||(g1===6&&g2===7)) tb++;
+      totSetsForTb++;
+    });
+    totalG+=mG; gamesW+=pG; totGames+=mG;
+    totSets+=sets.length; setsW+=pSets;
+    if (sets.length===2) twoSet++;
+    if (sets.length===3) threeSet++;
+  });
+  if (!mc) return null;
+  return {
+    matches:mc,
+    avgGames: Math.round(totalG/mc*10)/10,
+    pctTwoSets: Math.round(twoSet/mc*100),
+    pctThreeSets: Math.round(threeSet/mc*100),
+    pctTiebreak: Math.round(tb/Math.max(totSetsForTb,1)*100),
+    avgSetsPerMatch: Math.round(totSets/mc*10)/10,
+    setsWonPct: Math.round(setsW/Math.max(totSets,1)*100),
+    gamesWonPct: Math.round(gamesW/Math.max(totGames,1)*100),
+  };
+}
+
+// POINT 6 — SPOTS DU JOUR AMÉLIORÉS (ajustement par surface)
+function getSpots(p1, p2, surface, pr) {
+  const mp1 = getMatchProfile(p1,surface)||getMatchProfile(p1,'All');
+  const mp2 = getMatchProfile(p2,surface)||getMatchProfile(p2,'All');
+  if (!mp1||!mp2) return [];
+
+  const spots = [];
+  const n1 = p1.split(' ').slice(-1)[0], n2 = p2.split(' ').slice(-1)[0];
+
+  // Ajustement surface : terre = matchs plus longs, gazon = plus courts
+  const surfMult = surface==='Clay'?1.10 : surface==='Grass'?0.90 : 1.0;
+  const avgTotal = ((mp1.avgGames+mp2.avgGames)/2)*surfMult;
+
+  // Over/Under
+  const line = Math.round(avgTotal/2)*2+0.5;
+  const stdDev = surface==='Clay'?5.5 : surface==='Grass'?3.5 : 4.5;
+  const z = (avgTotal-line)/stdDev;
+  const pOver  = Math.round(Math.min(80,Math.max(20,50+z*15)));
+  const pUnder = 100-pOver;
+  const best = pOver>pUnder
+    ? {label:`Over ${line} jeux`,  prob:pOver,  type:'total', icon:'🎾'}
+    : {label:`Under ${line} jeux`, prob:pUnder, type:'total', icon:'🎾'};
+  if (best.prob>=55) spots.push(best);
+
+  // Victoire en 2 sets
+  if (pr) {
+    const favProb = Math.max(pr.p1,pr.p2)/100;
+    const favName = pr.p1>pr.p2?n1:n2;
+    const favProfile = pr.p1>pr.p2?mp1:mp2;
+    const sb = surface==='Grass'?1.15 : surface==='Clay'?0.85 : 1.0;
+    const p2s = Math.round(favProb*(favProfile.pctTwoSets/100)*sb*100);
+    if (p2s>=38) spots.push({label:`${favName} gagne en 2 sets`, prob:Math.min(72,p2s), type:'sets', icon:'⚡'});
+  }
+
+  // Outsider gagne au moins 1 set
+  if (pr) {
+    const undName    = pr.p1<pr.p2?n1:n2;
+    const undProfile = pr.p1<pr.p2?mp1:mp2;
+    const undProb    = Math.min(pr.p1,pr.p2)/100;
+    const sb = surface==='Clay'?1.10 : surface==='Grass'?0.90 : 1.0;
+    const ps = Math.round(undProfile.setsWonPct*0.75*sb+undProb*25);
+    if (ps>=45) spots.push({label:`${undName} gagne au moins 1 set`, prob:Math.min(78,ps), type:'set', icon:'🎯'});
+  }
+
+  // Handicap jeux
+  if (pr) {
+    const favName    = pr.p1>pr.p2?n1:n2;
+    const favProfile = pr.p1>pr.p2?mp1:mp2;
+    const undProfile = pr.p1<pr.p2?mp1:mp2;
+    const diff = (favProfile.gamesWonPct-undProfile.gamesWonPct)/100*avgTotal;
+    const hLine = Math.max(1.5, Math.round(diff/2)*2-0.5);
+    if (hLine>=2.5) {
+      const ph = Math.round(favProfile.gamesWonPct*0.55+(Math.max(pr.p1,pr.p2)-50)*0.45);
+      spots.push({label:`${favName} -${hLine} jeux`, prob:Math.min(70,Math.max(45,ph)), type:'handicap', icon:'📊'});
+    }
+  }
+
+  return spots.sort((a,b)=>b.prob-a.prob).slice(0,3);
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// UI — RENDU
+// ═══════════════════════════════════════════════════════════════════════════════
+const AM={}, MS={};
+let openId=null;
+
+function srow(v1,v2,lbl,higher,isPct) {
+  if (v1===null||v2===null) return `<div class="sr"><div class="sv n">—</div><div><div class="slbl">${lbl}</div></div><div class="sv svr n">—</div></div>`;
+  const f=v=>isPct?v+'%':v;
+  const ok=(a,b)=>higher?parseFloat(a)>=parseFloat(b):parseFloat(a)<=parseFloat(b);
+  const w1=isPct?parseFloat(v1):Math.min(90,Math.max(10,Math.round(parseFloat(v1)*6)));
+  const w2=isPct?parseFloat(v2):Math.min(90,Math.max(10,Math.round(parseFloat(v2)*6)));
+  return `<div class="sr">
+    <div class="sv ${ok(v1,v2)?'g':'b'}">${f(v1)}</div>
+    <div><div class="slbl">${lbl}</div><div class="sbar"><div class="sbl" style="width:${w1}%"></div><div class="sbr" style="width:${w2}%"></div></div></div>
+    <div class="sv svr ${ok(v2,v1)?'g':'b'}">${f(v2)}</div>
+  </div>`;
+}
+
+
+
+// ── AIDE À LA DÉCISION / VERSION PRODUIT ───────────────────────────────────
+function reliabilityLabel(r){
+  return r==='high' ? 'Confiance élevée' : r==='medium' ? 'Confiance moyenne' : 'Confiance faible';
+}
+function reliabilityClass(r){
+  return r==='high' ? 'reliability-high' : r==='medium' ? 'reliability-medium' : 'reliability-low';
+}
+function valueInfo(odds, prob){
+  if(!odds || !prob) return {edge:null,label:'Cote indisponible',cls:'value-neutral'};
+  const implied=100/odds;
+  const edge=Math.round((prob-implied)*10)/10;
+  if(edge>=3) return {edge,label:`Value +${edge} pts`,cls:'value-yes'};
+  if(edge<=-3) return {edge,label:`Pas value ${edge} pts`,cls:'value-no'};
+  return {edge,label:`Neutre ${edge>0?'+':''}${edge} pts`,cls:'value-neutral'};
+}
+function matchReasons(p1,p2,surface,pr,a,b,h2h){
+  const reasons=[];
+  if(pr.p1!==pr.p2){
+    const fav=pr.p1>pr.p2?p1:p2;
+    const fp=Math.max(pr.p1,pr.p2);
+    if(fp>=62) reasons.push(`${fav} ressort favori du modèle avec ${fp}% de probabilité.`);
+  }
+  if(a&&b&&!a.isFallback&&!b.isFallback){
+    const n1=p1.split(' ')[0], n2=p2.split(' ')[0];
+    if(Math.abs(a.winPct-b.winPct)>=10) reasons.push(`Avantage surface : ${a.winPct>b.winPct?n1:n2} affiche le meilleur rendement sur ${SM[surface]||surface}.`);
+    if(Math.abs(parseFloat(a.bpConc)-parseFloat(b.bpConc))>=0.8) reasons.push(`Écart sur les balles de break concédées : ${parseFloat(a.bpConc)<parseFloat(b.bpConc)?n1:n2} protège mieux ses jeux de service.`);
+    if(Math.abs(a.s1won-b.s1won)>=5) reasons.push(`Différence notable sur les points gagnés derrière première balle.`);
+  }
+  if(h2h&&h2h.total>=3) reasons.push(`Le face-à-face donne un signal exploitable : ${h2h.total} confrontations recensées.`);
+  if(!reasons.length) reasons.push('Signal modéré : le match doit surtout être comparé aux cotes avant décision.');
+  return reasons.slice(0,3);
+}
+
+function renderDetail(m, surface) {
+  const a  = getStats(m.p1,surface)||getStats(m.p1,'All');
+  const b  = getStats(m.p2,surface)||getStats(m.p2,'All');
+  const pr = calcProb(m.p1,m.p2,surface,m.r);
+  const h2h= getH2H(m.p1,m.p2,surface);
+  const n1 = m.p1.split(' ')[0], n2 = m.p2.split(' ')[0];
+
+  if (!pr) return `<div class="mdiv"></div><div class="mdetail">
+    <div class="error-box">
+      <div class="error-icon">📊</div>
+      <div><div class="error-title">Données insuffisantes</div>
+      <div class="error-msg">Aucune donnée disponible pour ${m.p1} ou ${m.p2} — impossible de calculer une probabilité.</div></div>
+    </div></div>`;
+
+  const hasRealStats = a && b && !a.isFallback && !b.isFallback && a.matches >= 3 && b.matches >= 3;
+  const odds = getOdds(m.p1,m.p2);
+  const v1 = valueInfo(odds.o1,pr.p1);
+  const v2 = valueInfo(odds.o2,pr.p2);
+  const reasons = matchReasons(m.p1,m.p2,surface,pr,a,b,h2h);
+
+  return `<div class="mdiv"></div><div class="mdetail">
+    <div class="prob-row">
+      <span style="font-weight:800;color:var(--yellow);">${n1} — ${pr.p1}%</span>
+      <span style="font-size:10px;letter-spacing:1px;color:var(--dim);">PROBABILITÉS</span>
+      <span style="font-weight:800;color:var(--accent);">${pr.p2}% — ${n2}</span>
+    </div>
+    <div class="pbtrack"><div class="pbl" style="width:${pr.p1}%"></div><div class="pbr" style="width:${pr.p2}%"></div></div>
+    <div class="pond-note">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      Pondération 6 mois · ${SM[surface]||surface} · ${pr.matchesA} / ${pr.matchesB} matchs
+    </div>
+
+    <div class="decision-card">
+      <div class="decision-title">Lecture rapide</div>
+      <div class="decision-grid">
+        <div class="decision-item"><div class="decision-k">Fiabilité</div><div class="decision-v"><span class="reliability-badge ${reliabilityClass(pr.reliability)}"><span class="reliability-dot"></span>${reliabilityLabel(pr.reliability)}</span></div></div>
+        <div class="decision-item"><div class="decision-k">Value cotes</div><div class="decision-v"><span class="value-badge ${v1.edge>=v2.edge?v1.cls:v2.cls}">${v1.edge>=v2.edge?v1.label:v2.label}</span></div></div>
+      </div>
+      <div class="reco-box">${reasons.map(r=>`• ${r}`).join('<br>')}<br><span style="color:var(--yellow);font-weight:800;">À utiliser comme aide à l’analyse, pas comme garantie de pari.</span></div>
+    </div>
+
+    <div class="h2h-box">
+      <div class="h2h-title">Head to Head</div>
+      <div class="h2h-grid">
+        <div class="h2h-item"><div class="h2h-val" style="color:var(--yellow);">${h2h.p1wins}</div><div class="h2h-lbl">${n1}</div></div>
+        <div class="h2h-item"><div class="h2h-val">${h2h.total}</div><div class="h2h-lbl">Total</div></div>
+        <div class="h2h-item"><div class="h2h-val" style="color:var(--accent);">${h2h.p2wins}</div><div class="h2h-lbl">${n2}</div></div>
+      </div>
+      ${h2h.totalS>0?`<div class="h2h-grid" style="margin-top:8px;">
+        <div class="h2h-item"><div class="h2h-val" style="color:var(--yellow);font-size:14px;">${h2h.p1winsS}</div><div class="h2h-lbl">${n1} / ${SM[surface]||surface}</div></div>
+        <div class="h2h-item"><div class="h2h-val" style="font-size:14px;">${h2h.totalS}</div><div class="h2h-lbl">Sur surface</div></div>
+        <div class="h2h-item"><div class="h2h-val" style="color:var(--accent);font-size:14px;">${h2h.p2winsS}</div><div class="h2h-lbl">${n2} / ${SM[surface]||surface}</div></div>
+      </div>`:''}
+      ${h2h.last?`<div class="h2h-last">${h2h.last}</div>`:''}
+    </div>
+
+    ${hasRealStats?`
+    <div class="stat-hdr"><span style="color:var(--yellow);">${n1}</span><span></span><span style="color:var(--accent);">${n2}</span></div>
+    <div class="slbl2">Service</div>
+    ${srow(a.s1pct,b.s1pct,'1er service réussi',true,true)}
+    ${srow(a.s1won,b.s1won,'Points gagnés / 1er service',true,true)}
+    ${srow(a.s2won,b.s2won,'Points gagnés / 2e service',true,true)}
+    ${srow(a.aces,b.aces,'Aces / match',true,false)}
+    ${srow(a.df,b.df,'Doubles fautes / match',false,false)}
+    <div class="slbl2">Balles de break</div>
+    ${srow(a.bpConc,b.bpConc,'BP concédées / match',false,false)}
+    ${srow(a.bpSaved,b.bpSaved,'BP sauvées',true,true)}`
+    :`<div style="background:var(--bg);border-radius:8px;padding:12px;margin-bottom:12px;font-size:11px;color:var(--dim);text-align:center;">
+      Statistiques détaillées indisponibles — données insuffisantes pour ce match
+    </div>`}
+
+    <div class="slbl2">Insights</div>
+    ${pr.p1>62?`<div class="ins"><div class="idot g"></div><div><strong style="color:var(--white)">${n1}</strong> favori selon le modèle — ${pr.p1}% de probabilité.</div></div>`:''}
+    ${hasRealStats&&Math.abs(parseFloat(a.bpConc)-parseFloat(b.bpConc))>0.8?`<div class="ins"><div class="idot ${parseFloat(a.bpConc)<parseFloat(b.bpConc)?'g':'r'}"></div><div>BP concédées : <strong style="color:var(--white)">${n1}</strong> ${a.bpConc}/match vs <strong style="color:var(--white)">${n2}</strong> ${b.bpConc}/match.</div></div>`:''}
+    ${hasRealStats&&Math.abs(a.winPct-b.winPct)>10?`<div class="ins"><div class="idot y"></div><div>Avantage surface : <strong style="color:var(--white)">${a.winPct>b.winPct?n1:n2}</strong> domine sur ${SM[surface]||surface} (${Math.max(a.winPct,b.winPct)}%).</div></div>`:''}
+    ${h2h.total>2?`<div class="ins"><div class="idot b"></div><div>H2H : <strong style="color:var(--white)">${h2h.p1wins>h2h.p2wins?n1:n2}</strong> mène ${Math.max(h2h.p1wins,h2h.p2wins)}-${Math.min(h2h.p1wins,h2h.p2wins)}.</div></div>`:''}
+  </div>`;
+}
+
+function tog(id) {
+  if (openId===id) { document.getElementById('r-'+id).classList.remove('open'); openId=null; return; }
+  if (openId) document.getElementById('r-'+openId).classList.remove('open');
+  openId=id;
+  const row=document.getElementById('r-'+id);
+  row.classList.add('open');
+  if (!document.getElementById('d-'+id)) {
+    const d=document.createElement('div');
+    d.id='d-'+id;
+    d.innerHTML = dataLoaded ? renderDetail(AM[id],MS[id])
+      : `<div class="mdiv"></div><div class="mdetail">${ballLoader('sm','Calcul en cours...')}</div>`;
+    row.appendChild(d);
+  }
+}
+
+function renderDay(idx) {
+  openId=null;
+  document.querySelectorAll('[id^="d-"]').forEach(el=>el.remove());
+  document.querySelectorAll('.day-btn').forEach((b,i)=>b.classList.toggle('on',i===idx));
+  const day=DAYS[idx];
+  if (!day) { document.getElementById('mlist').innerHTML='<div class="empty">Aucun match disponible.</div>'; return; }
+
+  document.getElementById('mlist').innerHTML = `
+    <div class="product-note">
+      <div class="product-note-title">Colligoat Preview</div>
+      <div class="product-note-txt">Probabilités internes, cotes, surface et fiabilité sont regroupées pour repérer rapidement les matchs à analyser en priorité.</div>
+    </div>` + day.tournaments.map(t=>`
+    <div class="tourn-block">
+      <div class="tourn-hdr">
+        <span style="font-size:16px">${t.flag}</span>
+        <span class="tourn-name">${t.name}</span>
+        <span class="tourn-surf">${SM[t.surface]||t.surface}</span>
+        <span class="tourn-date">${day.label} ${day.num} ${day.mon}</span>
+      </div>
+      ${t.matches.map(m=>{
+        AM[m.id]=m; MS[m.id]=t.surface;
+        const pr  = dataLoaded ? calcProb(m.p1,m.p2,t.surface,m.r) : null;
+        const ai  = pr ? avInfoFromProb(pr.p1,pr.p2) : {l:'—',c:'al'};
+        const rdot = pr ? `<span class="rdot rdot-${pr.reliability||'medium'}"></span>` : '';
+        const odd = getOdds(m.p1,m.p2);
+        const c1  = pr&&odd.o1 ? oddsChip(odd.o1,pr.p1) : `<span class="odd-chip odd-none">${odd.o1?odd.o1.toFixed(2):'—'}</span>`;
+        const c2  = pr&&odd.o2 ? oddsChip(odd.o2,pr.p2) : `<span class="odd-chip odd-none">${odd.o2?odd.o2.toFixed(2):'—'}</span>`;
+        return `<div class="mrow" id="r-${m.id}" onclick="tog('${m.id}')" ${!m.scheduled?'style="opacity:0.75"':''}>
+          <div class="mmain">
+            <div class="players">
+              <div class="pline"><span class="pflag">${getFlag(m.p1)}</span><span class="pname">${m.p1}</span>${c1}<span class="pprob ${pr&&pr.p1>pr.p2?'fav':''}">${pr?pr.p1+'%':'—'}</span></div>
+              <div class="pline"><span class="pflag">${getFlag(m.p2)}</span><span class="pname">${m.p2}</span>${c2}<span class="pprob ${pr&&pr.p2>pr.p1?'fav':''}">${pr?pr.p2+'%':'—'}</span></div>
+            </div>
+            <div class="mright">
+              <div class="adv-wrap">
+                ${rdot}
+                <span class="adv ${ai.c}">${ai.l}</span>
+              </div>
+              <span class="mtime" style="${!m.scheduled?'font-style:italic;':''}">${m.r?m.r+' · ':''}${m.time}</span>
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+          </div>
+        </div>`;
+      }).join('')}
+    </div>`).join('') || '<div class="empty">Aucun match ce jour.</div>';
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// POINT 7 — SURFACES AVEC LAZY LOADING (50 joueurs à la fois)
+// ═══════════════════════════════════════════════════════════════════════════════
+let surfPage=0, surfFiltered=[], surfTimer=null;
+
+function rsuf(q='') {
+  q = q.toLowerCase().trim();
+  if (q !== (rsuf._q||'') || !surfFiltered.length) {
+    rsuf._q = q;
+    const names = [...new Set(allRows.map(r=>r.winner_name).filter(Boolean))].sort();
+    surfFiltered = q ? names.filter(n=>n.toLowerCase().includes(q)) : names;
+    surfPage = 0;
+  }
+  const surfs = ['Clay','Hard','Grass'];
+  const cls = v => v>=75?'color:var(--live)':v>=60?'color:var(--yellow)':'color:var(--danger)';
+  const visible = surfFiltered.slice(0, (surfPage+1)*50);
+
+  const tbody = document.getElementById('surf-table');
+  if (tbody) tbody.innerHTML = visible.map(p=>{
+    const ss = surfs.map(s=>{
+      const st=getStats(p,s);
+      return st&&st.matches>2
+        ? `<td style="font-weight:700;${cls(st.winPct)}">${st.winPct}%<span style="font-size:9px;color:var(--dim);"> (${st.matches})</span></td>`
+        : '<td style="color:var(--dim)">—</td>';
+    }).join('');
+    const all=getStats(p,'All');
+    return `<tr><td>${getFlag(p)} ${p}</td>${ss}<td style="color:var(--mid)">${all?all.bpConc:'—'}</td><td style="color:var(--mid)">${all?all.bpSaved+'%':'—'}</td></tr>`;
+  }).join('') || '<tr><td colspan="6" style="text-align:center;color:var(--dim);padding:1rem;">Aucun joueur trouvé</td></tr>';
+
+  const btn = document.getElementById('surf-more');
+  if (btn) {
+    const rem = surfFiltered.length - (surfPage+1)*50;
+    btn.style.display = rem>0 ? 'block' : 'none';
+    if (rem>0) btn.textContent = `Voir ${Math.min(rem,50)} joueurs de plus (${rem} restants)`;
+  }
+}
+
+function rsufDebounced(q) {
+  clearTimeout(surfTimer);
+  surfFiltered=[]; surfPage=0;
+  surfTimer = setTimeout(()=>rsuf(q), 250);
+}
+
+function initSurf() {
+  surfFiltered=[]; surfPage=0;
+  document.getElementById('scont').innerHTML = `
+    <div class="surf-note"><div class="surf-dot"></div>TENNIS ABSTRACT · DONNÉES RÉELLES · PONDÉRATION 6 MOIS</div>
+    <input class="surf-search" id="surf-input" placeholder="🔍 Rechercher un joueur..." oninput="rsufDebounced(this.value)">
+    <div style="overflow-x:auto;"><table>
+      <thead><tr>
+        <th style="text-align:left;">Joueur</th>
+        <th>Terre</th><th>Dur</th><th>Gazon</th>
+        <th>BP conc.</th><th>BP sauv.</th>
+      </tr></thead>
+      <tbody id="surf-table"></tbody>
+    </table></div>
+    <button class="load-more-btn" id="surf-more" onclick="surfPage++;rsuf(document.getElementById('surf-input').value)" style="display:none;"></button>`;
+  rsuf();
+}
+
+function sw(n) {
+  document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('on',['matches','spot','surf'][i]===n));
+  document.querySelectorAll('.sec').forEach(s=>s.classList.remove('on'));
+  document.getElementById('t-'+n).classList.add('on');
+  if (n==='surf') initSurf();
+  if (n==='spot') renderSpot();
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// SPOT DU JOUR
+// ═══════════════════════════════════════════════════════════════════════════════
+function renderSpot() {
+  const cont = document.getElementById('spot-cont');
+  if (!dataLoaded) {
+    cont.innerHTML=`<div class="empty">${ballLoader('lg','Données en cours de chargement...')}</div>`;
+    return;
+  }
+  const idx = [...document.querySelectorAll('.day-btn')].findIndex(b=>b.classList.contains('on'));
+  if (!DAYS[idx]) { cont.innerHTML='<div class="empty">Aucun match disponible.</div>'; return; }
+
+  const day = DAYS[idx];
+  const allSpots = [];
+  day.tournaments.forEach(t=>t.matches.forEach(m=>{
+    const pr=calcProb(m.p1,m.p2,t.surface,m.r);
+    if (!pr) return;
+    const odds=getOdds(m.p1,m.p2);
+    getSpots(m.p1,m.p2,t.surface,pr).forEach(s=>{
+      const favProb=Math.max(pr.p1,pr.p2);
+      const favOdds=pr.p1>=pr.p2?odds.o1:odds.o2;
+      const vi=valueInfo(favOdds,favProb);
+      allSpots.push({...s,p1:m.p1,p2:m.p2,tournament:t.name,flag:t.flag,time:m.time,surface:t.surface,pr,vi});
+    });
+  }));
+  allSpots.sort((a,b)=>b.prob-a.prob);
+  const top = allSpots.slice(0,8);
+
+  if (!top.length) {
+    cont.innerHTML=`<div style="text-align:center;margin-bottom:1rem;">
+      <div style="font-size:18px;font-weight:800;color:var(--white);">⭐ Spot du jour</div>
+      <div style="font-size:11px;color:var(--mid);margin-top:4px;">${day.label} ${day.num} ${day.mon}</div>
+    </div>
+    <div class="empty"><div style="font-size:28px;margin-bottom:10px;">🔍</div>
+    <div style="color:var(--mid);font-weight:600;">Pas assez de données pour analyser les matchs du jour</div></div>`;
+    return;
+  }
+
+  const probColor = p=>p>=65?'var(--live)':p>=55?'var(--yellow)':'var(--mid)';
+  const typeInfo = t=>({
+    total:  {color:'#2E7CF6', label:'Over/Under jeux'},
+    sets:   {color:'#C9C000', label:'Victoire express'},
+    set:    {color:'#3FC87A', label:'Set pour l\'outsider'},
+    handicap:{color:'#E87B2E', label:'Handicap jeux'},
+  }[t]||{color:'var(--mid)',label:t});
+
+  cont.innerHTML = `
+    <div style="text-align:center;margin-bottom:1.25rem;">
+      <div style="font-size:18px;font-weight:800;color:var(--white);">⭐ Spot du jour</div>
+      <div style="font-size:11px;color:var(--mid);margin-top:4px;">${day.label} ${day.num} ${day.mon} · ${top.length} paris analysés</div>
+    </div>
+    ${top.map(s=>{
+      const ti=typeInfo(s.type);
+      return `<div class="pick-card">
+        <div class="pick-top">
+          <div style="flex:1;">
+            <div class="pick-meta">${s.flag} ${s.tournament} · ${SM[s.surface]||s.surface} · ${s.time}</div>
+            <div class="pick-match">${s.p1} vs ${s.p2}</div>
+            <div class="pick-sub">ML modèle : ${s.pr.p1}% / ${s.pr.p2}%</div>
+          </div>
+          <div style="text-align:center;margin-left:12px;">
+            <div class="pick-prob" style="color:${probColor(s.prob)};">${s.prob}%</div>
+            <div class="pick-prob-lbl">probabilité</div>
+          </div>
+        </div>
+        <div class="pick-main">
+          <span style="font-size:18px;">${s.icon}</span>
+          <div>
+            <div class="pick-type" style="color:${ti.color};">${ti.label}</div>
+            <div class="pick-label">${s.label}</div>
+          </div>
+        </div>
+        <div class="pick-foot">
+          <span class="value-badge ${s.vi?.cls||'value-neutral'}">${s.vi?.label||'Cote indisponible'}</span>
+          <span class="legal-mini">Comparer avec la cote réelle avant décision.</span>
+        </div>
+      </div>`;
+    }).join('')}
+    <div style="font-size:11px;color:var(--dim);line-height:1.7;background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:12px;margin-top:4px;">
+      <strong style="color:var(--mid);">Comment lire :</strong> Probabilités calculées depuis les stats Sackmann, ajustées par surface.
+      <strong style="color:var(--yellow);">Toujours comparer avec les cotes de ton bookmaker avant de parier.</strong>
+    </div>`;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// ODDS
+// ═══════════════════════════════════════════════════════════════════════════════
+let oddsIndex = {};
+
+function getOdds(p1, p2) {
+  let best=null, bestScore=0.72;
+  for (const key of Object.keys(oddsIndex)) {
+    const entry = oddsIndex[key];
+    // Utilise p1name/p2name si disponibles (plus fiable que la clé)
+    const n1 = entry.p1name || key.split('|')[0] || '';
+    const n2 = entry.p2name || key.split('|')[1] || '';
+    if (!n2) continue;
+
+    // Ordre normal : p1 matches n1, p2 matches n2
+    const s1 = Math.min(nameSimilarity(p1, n1), nameSimilarity(p2, n2));
+    // Ordre inversé : p1 matches n2, p2 matches n1
+    const s2 = Math.min(nameSimilarity(p1, n2), nameSimilarity(p2, n1));
+
+    if (s1 > bestScore) {
+      bestScore = s1;
+      // Ordre direct : cote p1 du JSON → joueur p1 du match
+      best = {o1: entry.p1, o2: entry.p2};
+    }
+    if (s2 > bestScore) {
+      bestScore = s2;
+      // Ordre inversé : cote p2 du JSON → joueur p1 du match
+      best = {o1: entry.p2, o2: entry.p1};
+    }
+  }
+  return best||{o1:null,o2:null};
+}
+
+function oddsChip(odds, myProb) {
+  if (!odds) return `<span class="odd-chip odd-none">—</span>`;
+  const impl = 100/odds, edge = myProb-impl;
+  const cls = edge>=3?'odd-value':edge<=-3?'odd-novalue':'odd-neutral';
+  return `<span class="odd-chip ${cls}">${odds.toFixed(2)}</span>`;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// POINT 5 — TOASTS + GESTION D'ERREURS
+// ═══════════════════════════════════════════════════════════════════════════════
+function toast(msg, type='info', dur=4000) {
+  const c=document.getElementById('toast-container');
+  const t=document.createElement('div');
+  t.className=`toast ${type}`;
+  t.innerHTML=`<span>${type==='ok'?'✓':type==='err'?'✗':'⚠'}</span><span>${msg}</span>`;
+  c.appendChild(t);
+  setTimeout(()=>{ t.style.animation='toastOut .3s ease forwards'; setTimeout(()=>t.remove(),300); }, dur);
+}
+
+function showDataInfo() {
+  const dot=document.getElementById('status-dot');
+  if (dot.classList.contains('ok'))    toast(`${allRows.length.toLocaleString()} matchs chargés · Tennis Abstract`,'ok');
+  else if (dot.classList.contains('error')) toast('Erreur de chargement des CSV','err');
+  else if (dot.classList.contains('warn'))  toast('Données partielles — certains CSV manquent','warn');
+  if (loadErrors.length) setTimeout(()=>toast('Fichiers manquants : '+loadErrors.join(', '),'warn',6000),400);
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// CHARGEMENT
+// ═══════════════════════════════════════════════════════════════════════════════
+async function loadData() {
+  const dot=document.getElementById('status-dot');
+  const txt=document.getElementById('status-text');
+  const loader=document.getElementById('page-loader');
+
+  // Afficher le loader après 400ms si le chargement n'est pas fini (fondu doux)
+  const loaderTimer = setTimeout(()=>{ loader.classList.add('visible'); }, 400);
+  const hideLoader = () => { loader.classList.remove('visible'); clearTimeout(loaderTimer); };
+
+  // 1. matches.json
+  try {
+    const r = await fetch('./matches.json');
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    DAYS = parseMatchesJSON(await r.json());
+    if (DAYS.length) {
+      document.getElementById('date-nav').innerHTML = DAYS.map((d,i)=>{
+        const nb=d.tournaments.reduce((a,t)=>a+t.matches.length,0);
+        return `<button class="day-btn ${i===0?'on':''}" onclick="renderDay(${i})">
+          <span class="dday">${d.isTbc?'🕐':d.label}</span>
+          <span class="dnum" style="${d.isTbc?'font-size:13px;':''}">${d.isTbc?'TBC':d.num}</span>
+          <span class="dmon">${d.isTbc?'':d.mon}</span>
+          <span class="dnb">${nb} match${nb>1?'s':''}</span>
+        </button>`;
+      }).join('');
+      // Sélectionner automatiquement aujourd'hui
+      const todayStr = now().toISOString().slice(0,10);
+      const todayIdx = DAYS.findIndex(d => d.date === todayStr);
+      const startIdx = todayIdx >= 0 ? todayIdx : 0;
+      document.querySelectorAll('.day-btn').forEach((b,i)=>b.classList.toggle('on', i===startIdx));
+      renderDay(startIdx);
+    } else {
+      document.getElementById('mlist').innerHTML=`<div class="error-box"><div class="error-icon">📅</div><div><div class="error-title">Aucun match trouvé</div><div class="error-msg">matches.json est vide ou mal formaté.</div></div></div>`;
+    }
+  } catch(e) {
+    loadErrors.push('matches.json');
+    document.getElementById('date-nav').innerHTML='';
+    document.getElementById('mlist').innerHTML=`
+      <div class="error-box">
+        <div class="error-icon">📡</div>
+        <div>
+          <div class="error-title">Impossible de charger les matchs</div>
+          <div class="error-msg">matches.json introuvable. Vérifie que le workflow GitHub Actions s'est bien exécuté.<br><strong>Erreur :</strong> ${e.message}</div>
+          <button class="retry-btn" onclick="location.reload()">🔄 Réessayer</button>
+        </div>
+      </div>`;
+    toast('matches.json introuvable','err',6000);
+  }
+
+  // 2. odds.json
+  try {
+    const r=await fetch('./odds.json');
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    oddsIndex=await r.json();
+    const idx=[...document.querySelectorAll('.day-btn')].findIndex(b=>b.classList.contains('on'));
+    if (DAYS.length) renderDay(Math.max(0,idx));
+  } catch(e) {
+    loadErrors.push('odds.json');
+    console.warn('odds.json non disponible:', e.message);
+  }
+
+  // 3. results.json
+  try {
+    const r=await fetch('./results.json');
+    window._resultsData = r.ok ? await r.json() : {};
+  } catch { window._resultsData={}; }
+
+  // 4. CSV Tennis Abstract
+  txt.textContent='Chargement des stats...';
+  let loaded=0, failed=0;
+
+  const results=await Promise.allSettled(
+    CSV_FILES.map(f=>fetch(f.url).then(r=>{ if(!r.ok) throw new Error(`HTTP ${r.status}`); return r.text(); }))
+  );
+
+  results.forEach((res,i)=>{
+    if (res.status==='fulfilled') {
+      allRows=allRows.concat(parseCSV(res.value));
+      loaded++;
+    } else {
+      failed++;
+      loadErrors.push(CSV_FILES[i].url.split('/').pop());
+      console.warn('CSV échoué:', CSV_FILES[i].url, res.reason?.message);
+    }
+    txt.textContent=`Chargement... ${loaded+failed}/${CSV_FILES.length}`;
+  });
+
+  if (allRows.length) {
+    dataLoaded=true;
+    playerCache={};
+    hideLoader();
+    const d=now();
+    document.getElementById('footer-date').textContent=`Mis à jour le ${d.getDate()} ${MONTHS_FR[d.getMonth()]} ${d.getFullYear()}`;
+
+    if (failed>0) {
+      dot.className='status-dot warn';
+      txt.textContent=`${allRows.length.toLocaleString()} matchs (${failed} CSV manquant${failed>1?'s':''})`;
+      toast(`${loaded}/${CSV_FILES.length} fichiers CSV chargés`,'warn');
+    } else {
+      dot.className='status-dot ok';
+      txt.textContent=`${allRows.length.toLocaleString()} matchs · Tennis Abstract`;
+      toast(`${allRows.length.toLocaleString()} matchs chargés`,'ok',3000);
+    }
+
+    const idx=[...document.querySelectorAll('.day-btn')].findIndex(b=>b.classList.contains('on'));
+    if (DAYS.length) renderDay(Math.max(0,idx));
+    if (openId&&AM[openId]) {
+      const d=document.getElementById('d-'+openId);
+      if (d) d.innerHTML=renderDetail(AM[openId],MS[openId]);
+    }
+  } else {
+    hideLoader();
+    dot.className='status-dot error';
+    txt.textContent='Erreur — aucune donnée CSV';
+    toast('Aucun CSV chargé — stats indisponibles','err',7000);
+  }
+}
+
+loadData();
+</script>
+</body>
+</html>
