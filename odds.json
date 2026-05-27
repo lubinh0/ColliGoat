@@ -1,72 +1,48 @@
 {
-  "andrey rublev|camilo ugo carabelli": {
-    "p1": 6.25,
-    "p2": 1.35,
-    "p1name": "Camilo Ugo Carabelli",
-    "p2name": "Andrey Rublev"
-  },
-  "jakub mensik|mariano navone": {
-    "p1": 2.05,
-    "p2": 1.82,
-    "p1name": "Mariano Navone",
-    "p2name": "Jakub Mensik"
-  },
-  "pablo carreno busta|thanasi kokkinakis": {
-    "p1": 3.25,
-    "p2": 1.39,
-    "p1name": "Thanasi Kokkinakis",
-    "p2name": "Pablo Carreno Busta"
-  },
-  "miomir kecmanovic|nuno borges": {
-    "p1": 5.06,
-    "p2": 1.21,
-    "p1name": "Nuno Borges",
-    "p2name": "Miomir Kecmanovic"
-  },
   "novak djokovic|valentin royer": {
-    "p1": 7.42,
-    "p2": 1.13,
+    "p1": 9.83,
+    "p2": 1.1,
     "p1name": "Valentin Royer",
     "p2name": "Novak Djokovic"
   },
   "james duckworth|rafael jodar": {
-    "p1": 15.99,
-    "p2": 1.04,
+    "p1": 8.5,
+    "p2": 1.12,
     "p1name": "James Duckworth",
     "p2name": "Rafael Jodar"
   },
   "quentin halys|ugo humbert": {
-    "p1": 1.71,
-    "p2": 2.3,
+    "p1": 5.33,
+    "p2": 1.2,
     "p1name": "Ugo Humbert",
     "p2name": "Quentin Halys"
   },
-  "dino prizmic|joao fonseca": {
-    "p1": 1.96,
-    "p2": 1.94,
-    "p1name": "Joao Fonseca",
-    "p2name": "Dino Prizmic"
-  },
   "alex michelsen|nishesh basavareddy": {
-    "p1": 2.68,
-    "p2": 1.54,
+    "p1": 6.59,
+    "p2": 1.14,
     "p1name": "Nishesh Basavareddy",
     "p2name": "Alex Michelsen"
   },
-  "casper ruud|hamad medjedovic": {
-    "p1": 1.39,
-    "p2": 3.29,
-    "p1name": "Casper Ruud",
-    "p2name": "Hamad Medjedovic"
+  "dino prizmic|joao fonseca": {
+    "p1": 3.06,
+    "p2": 1.47,
+    "p1name": "Joao Fonseca",
+    "p2name": "Dino Prizmic"
   },
   "lorenzo sonego|tommy paul": {
-    "p1": 6.03,
-    "p2": 1.16,
+    "p1": 6.27,
+    "p2": 1.15,
     "p1name": "Lorenzo Sonego",
     "p2name": "Tommy Paul"
   },
+  "casper ruud|hamad medjedovic": {
+    "p1": 1.4,
+    "p2": 3.24,
+    "p1name": "Casper Ruud",
+    "p2name": "Hamad Medjedovic"
+  },
   "alexander zverev|tomas machac": {
-    "p1": 6.93,
+    "p1": 7.19,
     "p2": 1.13,
     "p1name": "Tomas Machac",
     "p2name": "Alexander Zverev"
@@ -103,7 +79,7 @@
   },
   "jannik sinner|juan manuel cerundolo": {
     "p1": 1.01,
-    "p2": 40.37,
+    "p2": 33.74,
     "p1name": "Jannik Sinner",
     "p2name": "Juan Manuel Cerundolo"
   },
@@ -120,8 +96,8 @@
     "p2name": "Hugo Gaston"
   },
   "martin landaluce|vit kopriva": {
-    "p1": 1.87,
-    "p2": 2.02,
+    "p1": 1.91,
+    "p2": 1.98,
     "p1name": "Martin Landaluce",
     "p2name": "Vit Kopriva"
   },
@@ -138,13 +114,13 @@
     "p2name": "Ben Shelton"
   },
   "alejandro tabilo|valentin vacherot": {
-    "p1": 1.49,
-    "p2": 2.86,
+    "p1": 1.51,
+    "p2": 2.78,
     "p1name": "Alejandro Tabilo",
     "p2name": "Valentin Vacherot"
   },
   "felix auger-aliassime|roman andres burruchaga": {
-    "p1": 1.43,
+    "p1": 1.4,
     "p2": 3.19,
     "p1name": "Felix Auger-Aliassime",
     "p2name": "Roman Andres Burruchaga"
@@ -167,57 +143,45 @@
     "p1name": "Arthur Rinderknech",
     "p2name": "Matteo Berrettini"
   },
-  "elena rybakina|yuliia starodubtseva": {
-    "p1": 11.22,
-    "p2": 1.08,
-    "p1name": "Yuliia Starodubtseva",
-    "p2name": "Elena Rybakina"
-  },
-  "katie volynets|marta kostyuk": {
-    "p1": 1.27,
-    "p2": 4.6,
-    "p1name": "Marta Kostyuk",
-    "p2name": "Katie Volynets"
-  },
-  "francesca jones|marie bouzkova": {
-    "p1": 13,
-    "p2": 1.17,
-    "p1name": "Francesca Jones",
-    "p2name": "Marie Bouzkova"
+  "jesper de jong|karen khachanov": {
+    "p1": 1.41,
+    "p2": 3.1,
+    "p1name": "Karen Khachanov",
+    "p2name": "Jesper De Jong"
   },
   "jasmine paolini|solana sierra": {
-    "p1": 1.55,
-    "p2": 2.63,
+    "p1": 1.51,
+    "p2": 2.62,
     "p1name": "Jasmine Paolini",
     "p2name": "Solana Sierra"
   },
   "hailey baptiste|xiyu wang": {
-    "p1": 1.48,
-    "p2": 2.88,
+    "p1": 1.56,
+    "p2": 2.49,
     "p1name": "Hailey Baptiste",
     "p2name": "Xiyu Wang"
   },
   "jil teichmann|magdalena frech": {
-    "p1": 2.33,
-    "p2": 1.68,
+    "p1": 3.81,
+    "p2": 1.29,
     "p1name": "Jil Teichmann",
     "p2name": "Magdalena Frech"
   },
   "eva lys|sorana cirstea": {
-    "p1": 4.59,
+    "p1": 4.6,
     "p2": 1.24,
     "p1name": "Eva Lys",
     "p2name": "Sorana Cirstea"
   },
   "kamilla rakhimova|karolina muchova": {
-    "p1": 8.77,
-    "p2": 1.1,
+    "p1": 8.88,
+    "p2": 1.09,
     "p1name": "Kamilla Rakhimova",
     "p2name": "Karolina Muchova"
   },
   "marina bassols ribera|mirra andreeva": {
-    "p1": 1.05,
-    "p2": 16,
+    "p1": 1.1,
+    "p2": 7.11,
     "p1name": "Mirra Andreeva",
     "p2name": "Marina Bassols Ribera"
   },
@@ -241,7 +205,7 @@
   },
   "alina korneeva|anna kalinskaya": {
     "p1": 1.4,
-    "p2": 3.25,
+    "p2": 3.18,
     "p1name": "Anna Kalinskaya",
     "p2name": "Alina Korneeva"
   },
@@ -258,14 +222,14 @@
     "p2name": "McCartney Kessler"
   },
   "elise mertens|maja chwalinska": {
-    "p1": 2.85,
+    "p1": 2.82,
     "p2": 1.49,
     "p1name": "Maja Chwalinska",
     "p2name": "Elise Mertens"
   },
   "maria camila osorio serrano|yulia putintseva": {
     "p1": 2.3,
-    "p2": 1.7,
+    "p2": 1.69,
     "p1name": "Yulia Putintseva",
     "p2name": "Maria Camila Osorio Serrano"
   },
@@ -294,14 +258,14 @@
     "p2name": "Mayar Sherif"
   },
   "daria kasatkina|susan bandecchi": {
-    "p1": 1.12,
+    "p1": 1.11,
     "p2": 7.67,
     "p1name": "Daria Kasatkina",
     "p2name": "Susan Bandecchi"
   },
   "aryna sabalenka|elsa jacquemot": {
-    "p1": 1.02,
-    "p2": 35.24,
+    "p1": 1.01,
+    "p2": 34.9,
     "p1name": "Aryna Sabalenka",
     "p2name": "Elsa Jacquemot"
   },
@@ -316,5 +280,17 @@
     "p2": 3.32,
     "p1name": "Victoria Mboko",
     "p2name": "Katerina Siniakova"
+  },
+  "belinda bencic|peyton stearns": {
+    "p1": 3.39,
+    "p2": 1.36,
+    "p1name": "Peyton Stearns",
+    "p2name": "Belinda Bencic"
+  },
+  "elina svitolina|tamara korpatsch": {
+    "p1": 1.05,
+    "p2": 12.01,
+    "p1name": "Elina Svitolina",
+    "p2name": "Tamara Korpatsch"
   }
 }
