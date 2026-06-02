@@ -1,50 +1,38 @@
 {
-  "frances tiafoe|matteo arnaldi": {
-    "p1": 1.77,
-    "p2": 2.14,
-    "p1name": "Frances Tiafoe",
-    "p2name": "Matteo Arnaldi"
-  },
-  "alexander zverev|rafael jodar": {
-    "p1": 3.68,
-    "p2": 1.33,
-    "p1name": "Rafael Jodar",
-    "p2name": "Alexander Zverev"
-  },
   "jakub mensik|joao fonseca": {
-    "p1": 2.86,
-    "p2": 1.48,
+    "p1": 2.93,
+    "p2": 1.46,
     "p1name": "Jakub Mensik",
     "p2name": "Joao Fonseca"
   },
   "felix auger-aliassime|flavio cobolli": {
-    "p1": 1.93,
-    "p2": 2,
+    "p1": 2.02,
+    "p2": 1.89,
     "p1name": "Felix Auger-Aliassime",
     "p2name": "Flavio Cobolli"
   },
-  "mirra andreeva|sorana cirstea": {
-    "p1": 1.57,
+  "matteo arnaldi|matteo berrettini": {
+    "p1": 1.56,
     "p2": 2.63,
-    "p1name": "Mirra Andreeva",
-    "p2name": "Sorana Cirstea"
-  },
-  "elina svitolina|marta kostyuk": {
-    "p1": 2.14,
-    "p2": 1.79,
-    "p1name": "Elina Svitolina",
-    "p2name": "Marta Kostyuk"
+    "p1name": "Matteo Berrettini",
+    "p2name": "Matteo Arnaldi"
   },
   "anna kalinskaya|maja chwalinska": {
-    "p1": 1.95,
-    "p2": 1.93,
+    "p1": 1.93,
+    "p2": 1.98,
     "p1name": "Anna Kalinskaya",
     "p2name": "Maja Chwalinska"
   },
   "aryna sabalenka|diana shnaider": {
-    "p1": 1.14,
-    "p2": 5.6,
+    "p1": 1.15,
+    "p2": 6.25,
     "p1name": "Aryna Sabalenka",
     "p2name": "Diana Shnaider"
+  },
+  "marta kostyuk|mirra andreeva": {
+    "p1": 1.78,
+    "p2": 2.16,
+    "p1name": "Marta Kostyuk",
+    "p2name": "Mirra Andreeva"
   }
 }
