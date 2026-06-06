@@ -1,19 +1,13 @@
 {
-  "alexander zverev|jakub mensik": {
-    "p1": 12.5,
-    "p2": 1.05,
-    "p1name": "Jakub Mensik",
+  "alexander zverev|flavio cobolli": {
+    "p1": 4.34,
+    "p2": 1.26,
+    "p1name": "Flavio Cobolli",
     "p2name": "Alexander Zverev"
   },
-  "flavio cobolli|matteo arnaldi": {
-    "p1": 3.05,
-    "p2": 1.45,
-    "p1name": "Matteo Arnaldi",
-    "p2name": "Flavio Cobolli"
-  },
   "maja chwalinska|mirra andreeva": {
-    "p1": 4.3,
-    "p2": 1.27,
+    "p1": 4.89,
+    "p2": 1.22,
     "p1name": "Maja Chwalinska",
     "p2name": "Mirra Andreeva"
   }

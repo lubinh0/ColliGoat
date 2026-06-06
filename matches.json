@@ -1,35 +1,17 @@
 {
-  "2026-06-05": {
+  "2026-06-07": {
     "data": [
       {
-        "id": "a4c247a3021a7854b7dc23b9d67524c6",
-        "date": "2026-06-05T12:35:00Z",
+        "id": "4b95e6de32c69dc11ab8bbdaf7929253",
+        "date": "2026-06-07T13:00:00Z",
         "player1": {
-          "name": "Jakub Mensik"
+          "name": "Flavio Cobolli"
         },
         "player2": {
           "name": "Alexander Zverev"
         },
         "tour": "atp",
-        "time": "14h35",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP French Open",
-          "surface": "Clay",
-          "flag": "🇫🇷"
-        }
-      },
-      {
-        "id": "e8fd9e22f4de0704558bc7a7f08171ce",
-        "date": "2026-06-05T17:00:00Z",
-        "player1": {
-          "name": "Matteo Arnaldi"
-        },
-        "player2": {
-          "name": "Flavio Cobolli"
-        },
-        "tour": "atp",
-        "time": "19h00",
+        "time": "15h00",
         "scheduled": true,
         "tournament": {
           "name": "ATP French Open",
