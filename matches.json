@@ -20,27 +20,5 @@
         }
       }
     ]
-  },
-  "2026-06-06": {
-    "data": [
-      {
-        "id": "69fde123c71acd8bcf4d957dba6f97b3",
-        "date": "2026-06-06T13:00:00Z",
-        "player1": {
-          "name": "Maja Chwalinska"
-        },
-        "player2": {
-          "name": "Mirra Andreeva"
-        },
-        "tour": "wta",
-        "time": "15h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA French Open",
-          "surface": "Clay",
-          "flag": "🇫🇷"
-        }
-      }
-    ]
   }
 }
