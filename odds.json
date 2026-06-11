@@ -1,31 +1,31 @@
 {
-  "donna vekic|marie bouzkova": {
-    "p1": 1.69,
-    "p2": 2.29,
-    "p1name": "Marie Bouzkova",
-    "p2name": "Donna Vekic"
-  },
-  "belinda bencic|harriet dart": {
-    "p1": 6.34,
-    "p2": 1.14,
+  "harriet dart|kamilla rakhimova": {
+    "p1": 1.79,
+    "p2": 2.13,
     "p1name": "Harriet Dart",
-    "p2name": "Belinda Bencic"
+    "p2name": "Kamilla Rakhimova"
+  },
+  "amanda anisimova|iva jović": {
+    "p1": 2.12,
+    "p2": 1.79,
+    "p1name": "Iva Jović",
+    "p2name": "Amanda Anisimova"
   },
   "elena rybakina|tatjana maria": {
     "p1": 1.21,
-    "p2": 4.75,
+    "p2": 5.02,
     "p1name": "Elena Rybakina",
     "p2name": "Tatjana Maria"
   },
   "emma raducanu|sorana cirstea": {
-    "p1": 1.87,
-    "p2": 2,
+    "p1": 1.83,
+    "p2": 1.95,
     "p1name": "Sorana Cirstea",
     "p2name": "Emma Raducanu"
   },
   "jaqueline cristian|katie boulter": {
-    "p1": 2.7,
-    "p2": 1.51,
+    "p1": 2.89,
+    "p2": 1.5,
     "p1name": "Jaqueline Cristian",
     "p2name": "Katie Boulter"
   }
