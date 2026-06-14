@@ -1,14 +1,8 @@
 {
-  "emma raducanu|kamilla rakhimova": {
-    "p1": 1.21,
-    "p2": 4.96,
-    "p1name": "Emma Raducanu",
-    "p2name": "Kamilla Rakhimova"
-  },
-  "donna vekic|katie boulter": {
-    "p1": 1.81,
-    "p2": 2.12,
-    "p1name": "Katie Boulter",
-    "p2name": "Donna Vekic"
+  "donna vekic|emma raducanu": {
+    "p1": 2.3,
+    "p2": 1.69,
+    "p1name": "Donna Vekic",
+    "p2name": "Emma Raducanu"
   }
 }
