@@ -1,12 +1,12 @@
 {
   "alexander bublik|mattia bellucci": {
     "p1": 3.2,
-    "p2": 1.39,
+    "p2": 1.41,
     "p1name": "Mattia Bellucci",
     "p2name": "Alexander Bublik"
   },
   "alexei popyrin|raphael collignon": {
-    "p1": 2.33,
+    "p1": 2.32,
     "p2": 1.66,
     "p1name": "Alexei Popyrin",
     "p2name": "Raphael Collignon"
@@ -18,19 +18,19 @@
     "p2name": "Ethan Quinn"
   },
   "andrey rublev|hubert hurkacz": {
-    "p1": 1.94,
-    "p2": 1.93,
+    "p1": 1.97,
+    "p2": 1.9,
     "p1name": "Andrey Rublev",
     "p2name": "Hubert Hurkacz"
   },
   "joao fonseca|yannick hanfmann": {
     "p1": 1.41,
-    "p2": 3.08,
+    "p2": 3.06,
     "p1name": "Joao Fonseca",
     "p2name": "Yannick Hanfmann"
   },
   "sho shimabukuro|tallon griekspoor": {
-    "p1": 1.69,
+    "p1": 1.7,
     "p2": 2.3,
     "p1name": "Tallon Griekspoor",
     "p2name": "Sho Shimabukuro"
@@ -43,12 +43,12 @@
   },
   "alexander zverev|vit kopriva": {
     "p1": 1.05,
-    "p2": 13.96,
+    "p2": 13.24,
     "p1name": "Alexander Zverev",
     "p2name": "Vit Kopriva"
   },
   "daniil medvedev|tomas martin etcheverry": {
-    "p1": 4.91,
+    "p1": 4.74,
     "p2": 1.23,
     "p1name": "Tomas Martin Etcheverry",
     "p2name": "Daniil Medvedev"
@@ -65,15 +65,9 @@
     "p1name": "Zizou Bergs",
     "p2name": "Taylor Fritz"
   },
-  "corentin moutet|giovanni mpetshi perricard": {
-    "p1": 1.26,
-    "p2": 4.27,
-    "p1name": "Giovanni Mpetshi Perricard",
-    "p2name": "Corentin Moutet"
-  },
   "adrian mannarino|jakub mensik": {
-    "p1": 1.52,
-    "p2": 2.68,
+    "p1": 1.49,
+    "p2": 2.79,
     "p1name": "Jakub Mensik",
     "p2name": "Adrian Mannarino"
   },
@@ -83,6 +77,12 @@
     "p1name": "Brandon Nakashima",
     "p2name": "Marton Fucsovics"
   },
+  "ignacio buse|marcos giron": {
+    "p1": 3.29,
+    "p2": 1.37,
+    "p1name": "Ignacio Buse",
+    "p2name": "Marcos Giron"
+  },
   "ignacio buse|rafael jodar": {
     "p1": 3.45,
     "p2": 1.3,
@@ -90,14 +90,14 @@
     "p2name": "Rafael Jodar"
   },
   "jenson brooksby|martin damm jr.": {
-    "p1": 2.29,
+    "p1": 2.3,
     "p2": 1.68,
     "p1name": "Jenson Brooksby",
     "p2name": "Martin Damm Jr."
   },
   "alex de minaur|gabriel diallo": {
     "p1": 1.21,
-    "p2": 5.02,
+    "p2": 5,
     "p1name": "Alex de Minaur",
     "p2name": "Gabriel Diallo"
   },
@@ -108,22 +108,22 @@
     "p2name": "Toby Samuel"
   },
   "aleksandar kovacevic|francisco cerundolo": {
-    "p1": 2.55,
+    "p1": 2.57,
     "p2": 1.56,
     "p1name": "Aleksandar Kovacevic",
     "p2name": "Francisco Cerundolo"
-  },
-  "alejandro tabilo|rinky hijikata": {
-    "p1": 2.06,
-    "p2": 1.82,
-    "p1name": "Rinky Hijikata",
-    "p2name": "Alejandro Tabilo"
   },
   "alejandro davidovich fokina|cameron norrie": {
     "p1": 2.14,
     "p2": 1.78,
     "p1name": "Cameron Norrie",
     "p2name": "Alejandro Davidovich Fokina"
+  },
+  "alejandro tabilo|rinky hijikata": {
+    "p1": 2.07,
+    "p2": 1.83,
+    "p1name": "Rinky Hijikata",
+    "p2name": "Alejandro Tabilo"
   },
   "arthur rinderknech|hamad medjedovic": {
     "p1": 1.79,
@@ -132,8 +132,8 @@
     "p2name": "Hamad Medjedovic"
   },
   "jiri lehecka|kamil majchrzak": {
-    "p1": 2.79,
-    "p2": 1.49,
+    "p1": 2.83,
+    "p2": 1.48,
     "p1name": "Kamil Majchrzak",
     "p2name": "Jiri Lehecka"
   },
@@ -143,12 +143,6 @@
     "p1name": "Ugo Humbert",
     "p2name": "Marin Cilic"
   },
-  "alexandra eala|donna vekic": {
-    "p1": 1.82,
-    "p2": 2.09,
-    "p1name": "Donna Vekic",
-    "p2name": "Alexandra Eala"
-  },
   "madison keys|xinyu wang": {
     "p1": 1.34,
     "p2": 3.55,
@@ -156,9 +150,27 @@
     "p2name": "Xinyu Wang"
   },
   "anna kalinskaya|elina svitolina": {
-    "p1": 1.45,
-    "p2": 2.96,
+    "p1": 1.46,
+    "p2": 2.89,
     "p1name": "Elina Svitolina",
     "p2name": "Anna Kalinskaya"
+  },
+  "alexandra eala|donna vekic": {
+    "p1": 1.82,
+    "p2": 2.09,
+    "p1name": "Donna Vekic",
+    "p2name": "Alexandra Eala"
+  },
+  "elise mertens|nikola bartunkova": {
+    "p1": 1.33,
+    "p2": 3.3,
+    "p1name": "Elise Mertens",
+    "p2name": "Nikola Bartunkova"
+  },
+  "aryna sabalenka|ekaterina alexandrova": {
+    "p1": 1.13,
+    "p2": 6,
+    "p1name": "Aryna Sabalenka",
+    "p2name": "Ekaterina Alexandrova"
   }
 }
