@@ -2,7 +2,10 @@ name: Update Tennis Matches
 
 on:
   schedule:
-    - cron: '0 4 * * *'  # 6h heure française (UTC+2)
+    - cron: '0 4 * * *'   # 6h FR
+    - cron: '0 7 * * *'   # 9h FR
+    - cron: '0 10 * * *'  # 12h FR
+    - cron: '0 16 * * *'  # 18h FR
   workflow_dispatch:
 
 jobs:
@@ -56,17 +59,27 @@ jobs:
 
           function getFlag(tournName) {
             const n = (tournName || '').toLowerCase();
-            if (n.includes('french') || n.includes('paris') || n.includes('roland') || n.includes('strasbourg') || n.includes('lyon')) return '🇫🇷';
-            if (n.includes('wimbledon') || n.includes('london') || n.includes('queens') || n.includes('eastbourne') || n.includes('birmingham')) return '🇬🇧';
-            if (n.includes('hamburg')) return '🇩🇪';
-            if (n.includes('madrid')) return '🇪🇸';
-            if (n.includes('rome') || n.includes('italia')) return '🇮🇹';
-            if (n.includes('monte') || n.includes('monaco')) return '🇲🇨';
-            if (n.includes('geneva')) return '🇨🇭';
-            if (n.includes('rabat')) return '🇲🇦';
-            if (n.includes('us open') || n.includes('new york') || n.includes('cincinnati') || n.includes('toronto') || n.includes('montreal')) return '🇺🇸';
-            if (n.includes('australian') || n.includes('melbourne')) return '🇦🇺';
-            return '🎾';
+            if (n.includes('french') || n.includes('paris') || n.includes('roland') || n.includes('strasbourg') || n.includes('lyon')) return 'FR';
+            if (n.includes('wimbledon') || n.includes('london') || n.includes('queens') || n.includes('eastbourne') || n.includes('birmingham')) return 'GB';
+            if (n.includes('hamburg')) return 'DE';
+            if (n.includes('halle')) return 'DE';
+            if (n.includes('madrid')) return 'ES';
+            if (n.includes('rome') || n.includes('italia')) return 'IT';
+            if (n.includes('monte') || n.includes('monaco')) return 'MC';
+            if (n.includes('geneva')) return 'CH';
+            if (n.includes('rabat')) return 'MA';
+            if (n.includes('us open') || n.includes('new york') || n.includes('cincinnati') || n.includes('toronto') || n.includes('montreal')) return 'US';
+            if (n.includes('australian') || n.includes('melbourne')) return 'AU';
+            if (n.includes('miami')) return 'US';
+            if (n.includes('beijing') || n.includes('china') || n.includes('wuhan')) return 'CN';
+            if (n.includes('tokyo') || n.includes('japan')) return 'JP';
+            if (n.includes('dubai') || n.includes('abu dhabi')) return 'AE';
+            if (n.includes('doha')) return 'QA';
+            if (n.includes('acapulco') || n.includes('mexican')) return 'MX';
+            if (n.includes('buenos') || n.includes('argentina')) return 'AR';
+            if (n.includes('rio') || n.includes('brazil')) return 'BR';
+            if (n.includes('eastbourne') || n.includes('nottingham')) return 'GB';
+            return 'UN';
           }
 
           async function getActiveSports() {
@@ -78,18 +91,19 @@ jobs:
 
           async function main() {
             const today = new Date();
-            const todayStr = today.toISOString().slice(0,10);
-            const j2 = new Date(today); j2.setDate(j2.getDate() + 2);
-            const j2Str = j2.toISOString().slice(0,10);
+            // Correction fuseau : on considère la date en heure française (UTC+2)
+            const todayFR = new Date(today.getTime() + 2 * 60 * 60 * 1000);
+            const todayStr = todayFR.toISOString().slice(0,10);
+            const j3 = new Date(todayFR); j3.setDate(j3.getDate() + 3);
+            const j3Str = j3.toISOString().slice(0,10);
 
-            console.log('Window:', todayStr, 'to', j2Str);
+            console.log('Window:', todayStr, 'to', j3Str);
             const sports = await getActiveSports();
             console.log('Active sports:', sports.length);
 
             const allMatches = {};
             const oddsIndex = {};
 
-            // ── MATCHS ET COTES DU JOUR ──────────────────────────────────────
             for (let i = 0; i < sports.length; i++) {
               const sport = sports[i];
               await sleep(300);
@@ -101,32 +115,42 @@ jobs:
               console.log(sport, ':', events.length, 'events');
 
               events.forEach(event => {
-                const date = event.commence_time ? event.commence_time.slice(0,10) : null;
-                if (!date) return;
-                // Garder uniquement aujourd'hui + J+1 + J+2
-                if (date < todayStr || date > j2Str) return;
+                if (!event.commence_time) return;
+                // Convertir en heure française pour la date
+                const eventDateFR = new Date(new Date(event.commence_time).getTime() + 2 * 60 * 60 * 1000);
+                const date = eventDateFR.toISOString().slice(0,10);
+
+                // Garder uniquement aujourd'hui + J+3
+                if (date < todayStr || date > j3Str) return;
+
                 const p1 = event.home_team || '', p2 = event.away_team || '';
                 if (!p1 || !p2) return;
                 const tournName = event.sport_title || sport;
                 const surface = getSurface(sport, tournName);
                 const flag = getFlag(tournName);
 
-                let timeStr = '--:--';
-                if (event.commence_time) {
-                  const d = new Date(event.commence_time);
-                  const h = d.getUTCHours() + 2;
-                  timeStr = String(h).padStart(2,'0') + 'h' + String(d.getUTCMinutes()).padStart(2,'0');
-                }
+                // Heure en français
+                const d = new Date(event.commence_time);
+                const hFR = (d.getUTCHours() + 2) % 24;
+                const timeStr = String(hFR).padStart(2,'0') + 'h' + String(d.getUTCMinutes()).padStart(2,'0');
 
                 if (!allMatches[date]) allMatches[date] = {data: []};
-                allMatches[date].data.push({
-                  id: event.id, date: event.commence_time,
-                  player1: {name: p1}, player2: {name: p2},
-                  tour: sport.includes('wta') ? 'wta' : 'atp',
-                  time: timeStr, scheduled: true,
-                  tournament: {name: tournName, surface, flag}
-                });
 
+                // Éviter les doublons
+                const exists = allMatches[date].data.find(m =>
+                  m.player1.name === p1 && m.player2.name === p2
+                );
+                if (!exists) {
+                  allMatches[date].data.push({
+                    id: event.id, date: event.commence_time,
+                    player1: {name: p1}, player2: {name: p2},
+                    tour: sport.includes('wta') ? 'wta' : 'atp',
+                    time: timeStr, scheduled: true,
+                    tournament: {name: tournName, surface, flag}
+                  });
+                }
+
+                // Meilleures cotes
                 const bookmakers = event.bookmakers || [];
                 const bestOdds = {p1: null, p2: null, p1name: p1, p2name: p2};
                 bookmakers.forEach(bk => {
@@ -146,9 +170,19 @@ jobs:
               });
             }
 
+            // Trier les matchs par heure dans chaque jour
+            Object.keys(allMatches).forEach(date => {
+              allMatches[date].data.sort((a, b) => a.time.localeCompare(b.time));
+            });
+
             let total = 0;
-            Object.keys(allMatches).sort().forEach(d => { const n = allMatches[d].data.length; total += n; console.log(d, ':', n, 'matches'); });
+            Object.keys(allMatches).sort().forEach(d => {
+              const n = allMatches[d].data.length;
+              total += n;
+              console.log(d, ':', n, 'matches');
+            });
             console.log('Total:', total);
+
             fs.writeFileSync('matches.json', JSON.stringify(allMatches, null, 2));
             fs.writeFileSync('odds.json', JSON.stringify(oddsIndex, null, 2));
             console.log('Done!');
@@ -162,6 +196,6 @@ jobs:
           git config user.name "ColliGoat Bot"
           git config user.email "bot@colligoat.com"
           git add matches.json odds.json
-          git diff --staged --quiet || git commit -m "Update matches and odds $(date +%Y-%m-%d)"
+          git diff --staged --quiet || git commit -m "Update matches and odds $(date +%Y-%m-%d %H:%M)"
           git pull --rebase origin main
           git push
