@@ -258,45 +258,5 @@
         }
       }
     ]
-  },
-  "2026-06-16": {
-    "data": [
-      {
-        "id": "2791bdfb47ed6ab784ea5bbc8f2a6473",
-        "date": "2026-06-16T15:20:00Z",
-        "player1": {
-          "name": "Cameron Norrie"
-        },
-        "player2": {
-          "name": "Alejandro Davidovich Fokina"
-        },
-        "tour": "atp",
-        "time": "17h20",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Queen's Club Championships",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "5fd9d5a716dc1c26827e66b6607e5433",
-        "date": "2026-06-16T17:45:00Z",
-        "player1": {
-          "name": "Kamil Majchrzak"
-        },
-        "player2": {
-          "name": "Jiri Lehecka"
-        },
-        "tour": "atp",
-        "time": "19h45",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Queen's Club Championships",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      }
-    ]
   }
 }
