@@ -92,24 +92,6 @@
         }
       },
       {
-        "id": "202aedc8fd4c6ae3bcad0563143e4e9c",
-        "date": "2026-06-18T09:30:00Z",
-        "player1": {
-          "name": "Ben Shelton"
-        },
-        "player2": {
-          "name": "Ethan Quinn"
-        },
-        "tour": "atp",
-        "time": "11h30",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Halle Open",
-          "surface": "Grass",
-          "flag": "DE"
-        }
-      },
-      {
         "id": "94cfb3815ac1f05a6da9f434f7e90aa7",
         "date": "2026-06-18T09:30:00Z",
         "player1": {
@@ -143,6 +125,24 @@
           "name": "WTA German Open",
           "surface": "Hard",
           "flag": "UN"
+        }
+      },
+      {
+        "id": "202aedc8fd4c6ae3bcad0563143e4e9c",
+        "date": "2026-06-18T10:40:00Z",
+        "player1": {
+          "name": "Ben Shelton"
+        },
+        "player2": {
+          "name": "Ethan Quinn"
+        },
+        "tour": "atp",
+        "time": "12h40",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Halle Open",
+          "surface": "Grass",
+          "flag": "DE"
         }
       },
       {
@@ -228,6 +228,64 @@
         },
         "tour": "wta",
         "time": "17h30",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA German Open",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      }
+    ]
+  },
+  "2026-06-19": {
+    "data": [
+      {
+        "id": "4fc52f44db445d9d1b01d99fe8213b6e",
+        "date": "2026-06-19T09:30:00Z",
+        "player1": {
+          "name": "Daniel Altmaier"
+        },
+        "player2": {
+          "name": "Daniil Medvedev"
+        },
+        "tour": "atp",
+        "time": "11h30",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Halle Open",
+          "surface": "Grass",
+          "flag": "DE"
+        }
+      },
+      {
+        "id": "0400c5a7cf4fe78e0204ad9c6989e397",
+        "date": "2026-06-19T09:30:00Z",
+        "player1": {
+          "name": "Frances Tiafoe"
+        },
+        "player2": {
+          "name": "Felix Auger-Aliassime"
+        },
+        "tour": "atp",
+        "time": "11h30",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Halle Open",
+          "surface": "Grass",
+          "flag": "DE"
+        }
+      },
+      {
+        "id": "239a91f2804fbbf8fdb1c3dc3c5d31de",
+        "date": "2026-06-19T09:30:00Z",
+        "player1": {
+          "name": "Aryna Sabalenka"
+        },
+        "player2": {
+          "name": "Nikola Bartunkova"
+        },
+        "tour": "wta",
+        "time": "11h30",
         "scheduled": true,
         "tournament": {
           "name": "WTA German Open",

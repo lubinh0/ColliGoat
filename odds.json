@@ -1,19 +1,19 @@
 {
-  "ben shelton|ethan quinn": {
-    "p1": 1.29,
-    "p2": 3.94,
-    "p1name": "Ben Shelton",
-    "p2name": "Ethan Quinn"
-  },
   "fabian marozsan|taylor fritz": {
-    "p1": 4.25,
+    "p1": 4.41,
     "p2": 1.26,
     "p1name": "Fabian Marozsan",
     "p2name": "Taylor Fritz"
   },
+  "ben shelton|ethan quinn": {
+    "p1": 1.32,
+    "p2": 4.02,
+    "p1name": "Ben Shelton",
+    "p2name": "Ethan Quinn"
+  },
   "alexander zverev|yannick hanfmann": {
     "p1": 1.12,
-    "p2": 7.5,
+    "p2": 6.81,
     "p1name": "Alexander Zverev",
     "p2name": "Yannick Hanfmann"
   },
@@ -23,15 +23,21 @@
     "p1name": "Raphael Collignon",
     "p2name": "Mattia Bellucci"
   },
+  "felix auger-aliassime|frances tiafoe": {
+    "p1": 2.33,
+    "p2": 1.6,
+    "p1name": "Frances Tiafoe",
+    "p2name": "Felix Auger-Aliassime"
+  },
   "alejandro davidovich fokina|corentin moutet": {
-    "p1": 2.34,
+    "p1": 2.33,
     "p2": 1.68,
     "p1name": "Corentin Moutet",
     "p2name": "Alejandro Davidovich Fokina"
   },
   "alex de minaur|brandon nakashima": {
     "p1": 1.4,
-    "p2": 3.16,
+    "p2": 3.15,
     "p1name": "Alex de Minaur",
     "p2name": "Brandon Nakashima"
   },
@@ -42,20 +48,20 @@
     "p2name": "Ugo Humbert"
   },
   "jiri lehecka|rinky hijikata": {
-    "p1": 3.6,
-    "p2": 1.33,
+    "p1": 3.63,
+    "p2": 1.34,
     "p1name": "Rinky Hijikata",
     "p2name": "Jiri Lehecka"
   },
   "botic van de zandschulp|tommy paul": {
-    "p1": 1.32,
-    "p2": 3.77,
+    "p1": 1.31,
+    "p2": 3.81,
     "p1name": "Tommy Paul",
     "p2name": "Botic van de Zandschulp"
   },
   "diane parry|linda noskova": {
     "p1": 1.37,
-    "p2": 3.35,
+    "p2": 3.32,
     "p1name": "Linda Noskova",
     "p2name": "Diane Parry"
   },
@@ -72,9 +78,15 @@
     "p2name": "Karolina Muchova"
   },
   "alexandra eala|elena rybakina": {
-    "p1": 5.66,
-    "p2": 1.17,
+    "p1": 5.56,
+    "p2": 1.18,
     "p1name": "Alexandra Eala",
     "p2name": "Elena Rybakina"
+  },
+  "aryna sabalenka|nikola bartunkova": {
+    "p1": 1.12,
+    "p2": 6.1,
+    "p1name": "Aryna Sabalenka",
+    "p2name": "Nikola Bartunkova"
   }
 }
