@@ -1,12 +1,12 @@
 {
-  "daniil medvedev|terence atmane": {
-    "p1": 8.5,
-    "p2": 1.2,
-    "p1name": "Terence Atmane",
-    "p2name": "Daniil Medvedev"
+  "ben shelton|ethan quinn": {
+    "p1": 1.29,
+    "p2": 3.94,
+    "p1name": "Ben Shelton",
+    "p2name": "Ethan Quinn"
   },
   "fabian marozsan|taylor fritz": {
-    "p1": 4.35,
+    "p1": 4.25,
     "p2": 1.26,
     "p1name": "Fabian Marozsan",
     "p2name": "Taylor Fritz"
@@ -54,8 +54,8 @@
     "p2name": "Botic van de Zandschulp"
   },
   "diane parry|linda noskova": {
-    "p1": 1.35,
-    "p2": 3.46,
+    "p1": 1.37,
+    "p2": 3.35,
     "p1name": "Linda Noskova",
     "p2name": "Diane Parry"
   },
@@ -72,7 +72,7 @@
     "p2name": "Karolina Muchova"
   },
   "alexandra eala|elena rybakina": {
-    "p1": 5.72,
+    "p1": 5.66,
     "p2": 1.17,
     "p1name": "Alexandra Eala",
     "p2name": "Elena Rybakina"

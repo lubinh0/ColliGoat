@@ -1,26 +1,4 @@
 {
-  "2026-06-17": {
-    "data": [
-      {
-        "id": "c579c3816c51c10bb16d622c5a56280f",
-        "date": "2026-06-17T16:38:00Z",
-        "player1": {
-          "name": "Terence Atmane"
-        },
-        "player2": {
-          "name": "Daniil Medvedev"
-        },
-        "tour": "atp",
-        "time": "18h38",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Halle Open",
-          "surface": "Grass",
-          "flag": "DE"
-        }
-      }
-    ]
-  },
   "2026-06-18": {
     "data": [
       {
