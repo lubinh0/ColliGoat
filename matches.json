@@ -2,44 +2,8 @@
   "2026-06-17": {
     "data": [
       {
-        "id": "476c87ee04f06466ce2ada417b3a62b9",
-        "date": "2026-06-17T15:20:00Z",
-        "player1": {
-          "name": "Jenson Brooksby"
-        },
-        "player2": {
-          "name": "Francisco Cerundolo"
-        },
-        "tour": "atp",
-        "time": "17h20",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Queen's Club Championships",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "1c23c1d4fbfac7181a33c173fd24fbc6",
-        "date": "2026-06-17T15:37:00Z",
-        "player1": {
-          "name": "Aryna Sabalenka"
-        },
-        "player2": {
-          "name": "Ekaterina Alexandrova"
-        },
-        "tour": "wta",
-        "time": "17h37",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA German Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
         "id": "c579c3816c51c10bb16d622c5a56280f",
-        "date": "2026-06-17T16:30:00Z",
+        "date": "2026-06-17T16:38:00Z",
         "player1": {
           "name": "Terence Atmane"
         },
@@ -47,7 +11,7 @@
           "name": "Daniil Medvedev"
         },
         "tour": "atp",
-        "time": "18h30",
+        "time": "18h38",
         "scheduled": true,
         "tournament": {
           "name": "ATP Halle Open",
@@ -147,6 +111,24 @@
           "name": "WTA German Open",
           "surface": "Hard",
           "flag": "UN"
+        }
+      },
+      {
+        "id": "202aedc8fd4c6ae3bcad0563143e4e9c",
+        "date": "2026-06-18T09:30:00Z",
+        "player1": {
+          "name": "Ben Shelton"
+        },
+        "player2": {
+          "name": "Ethan Quinn"
+        },
+        "tour": "atp",
+        "time": "11h30",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Halle Open",
+          "surface": "Grass",
+          "flag": "DE"
         }
       },
       {
