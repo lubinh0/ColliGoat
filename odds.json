@@ -1,49 +1,25 @@
 {
-  "ben shelton|ethan quinn": {
-    "p1": 1.72,
-    "p2": 6.24,
+  "ben shelton|taylor fritz": {
+    "p1": 2.04,
+    "p2": 1.85,
     "p1name": "Ben Shelton",
-    "p2name": "Ethan Quinn"
-  },
-  "alexander zverev|yannick hanfmann": {
-    "p1": 1.14,
-    "p2": 6.64,
-    "p1name": "Alexander Zverev",
-    "p2name": "Yannick Hanfmann"
-  },
-  "mattia bellucci|raphael collignon": {
-    "p1": 1.83,
-    "p2": 2.09,
-    "p1name": "Raphael Collignon",
-    "p2name": "Mattia Bellucci"
+    "p2name": "Taylor Fritz"
   },
   "daniel altmaier|daniil medvedev": {
-    "p1": 5.98,
-    "p2": 1.19,
+    "p1": 6.1,
+    "p2": 1.15,
     "p1name": "Daniel Altmaier",
     "p2name": "Daniil Medvedev"
   },
   "felix auger-aliassime|frances tiafoe": {
-    "p1": 2.65,
-    "p2": 1.53,
+    "p1": 2.56,
+    "p2": 1.57,
     "p1name": "Frances Tiafoe",
     "p2name": "Felix Auger-Aliassime"
   },
-  "botic van de zandschulp|tommy paul": {
-    "p1": 1.56,
-    "p2": 2.85,
-    "p1name": "Tommy Paul",
-    "p2name": "Botic van de Zandschulp"
-  },
-  "hamad medjedovic|ugo humbert": {
-    "p1": 2.52,
-    "p2": 1.6,
-    "p1name": "Hamad Medjedovic",
-    "p2name": "Ugo Humbert"
-  },
   "jiri lehecka|rinky hijikata": {
-    "p1": 3.7,
-    "p2": 1.33,
+    "p1": 1.5,
+    "p2": 3.97,
     "p1name": "Rinky Hijikata",
     "p2name": "Jiri Lehecka"
   },
@@ -54,32 +30,26 @@
     "p2name": "Brandon Nakashima"
   },
   "arthur fery|francisco cerundolo": {
-    "p1": 2.6,
+    "p1": 2.55,
     "p2": 1.59,
     "p1name": "Arthur Fery",
     "p2name": "Francisco Cerundolo"
   },
-  "karolina muchova|madison keys": {
-    "p1": 2.04,
-    "p2": 1.89,
-    "p1name": "Madison Keys",
-    "p2name": "Karolina Muchova"
-  },
-  "alexandra eala|elena rybakina": {
-    "p1": 5.2,
-    "p2": 1.2,
-    "p1name": "Alexandra Eala",
-    "p2name": "Elena Rybakina"
+  "alejandro davidovich fokina|tommy paul": {
+    "p1": 1.36,
+    "p2": 3.15,
+    "p1name": "Tommy Paul",
+    "p2name": "Alejandro Davidovich Fokina"
   },
   "linda noskova|paula badosa": {
-    "p1": 1.45,
-    "p2": 2.93,
+    "p1": 1.48,
+    "p2": 2.83,
     "p1name": "Linda Noskova",
     "p2name": "Paula Badosa"
   },
   "aryna sabalenka|nikola bartunkova": {
     "p1": 1.12,
-    "p2": 7.59,
+    "p2": 7.75,
     "p1name": "Aryna Sabalenka",
     "p2name": "Nikola Bartunkova"
   }
