@@ -2,26 +2,8 @@
   "2026-06-19": {
     "data": [
       {
-        "id": "defb5a4d2c558f868a5f1229c6c5071e",
-        "date": "2026-06-19T09:35:00Z",
-        "player1": {
-          "name": "Ben Shelton"
-        },
-        "player2": {
-          "name": "Taylor Fritz"
-        },
-        "tour": "atp",
-        "time": "11h35",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Halle Open",
-          "surface": "Grass",
-          "flag": "DE"
-        }
-      },
-      {
         "id": "01acf87affe11192c9aad6dacf7ad308",
-        "date": "2026-06-19T10:05:00Z",
+        "date": "2026-06-19T09:05:00Z",
         "player1": {
           "name": "Jessica Pegula"
         },
@@ -29,12 +11,30 @@
           "name": "Madison Keys"
         },
         "tour": "wta",
-        "time": "12h05",
+        "time": "11h05",
         "scheduled": true,
         "tournament": {
           "name": "WTA German Open",
           "surface": "Hard",
           "flag": "UN"
+        }
+      },
+      {
+        "id": "defb5a4d2c558f868a5f1229c6c5071e",
+        "date": "2026-06-19T09:36:00Z",
+        "player1": {
+          "name": "Ben Shelton"
+        },
+        "player2": {
+          "name": "Taylor Fritz"
+        },
+        "tour": "atp",
+        "time": "11h36",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Halle Open",
+          "surface": "Grass",
+          "flag": "DE"
         }
       },
       {
@@ -56,24 +56,6 @@
         }
       },
       {
-        "id": "80ebeafec3a2692c37f98b5ec572d6e0",
-        "date": "2026-06-19T11:00:00Z",
-        "player1": {
-          "name": "Linda Noskova"
-        },
-        "player2": {
-          "name": "Paula Badosa"
-        },
-        "tour": "wta",
-        "time": "13h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA German Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
         "id": "6b68f42aee183d1a08b635829320d3b0",
         "date": "2026-06-19T11:30:00Z",
         "player1": {
@@ -89,6 +71,24 @@
           "name": "ATP Halle Open",
           "surface": "Grass",
           "flag": "DE"
+        }
+      },
+      {
+        "id": "80ebeafec3a2692c37f98b5ec572d6e0",
+        "date": "2026-06-19T12:00:00Z",
+        "player1": {
+          "name": "Linda Noskova"
+        },
+        "player2": {
+          "name": "Paula Badosa"
+        },
+        "tour": "wta",
+        "time": "14h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA German Open",
+          "surface": "Hard",
+          "flag": "UN"
         }
       },
       {
