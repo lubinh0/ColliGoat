@@ -2,62 +2,8 @@
   "2026-06-19": {
     "data": [
       {
-        "id": "6b68f42aee183d1a08b635829320d3b0",
-        "date": "2026-06-19T12:45:00Z",
-        "player1": {
-          "name": "Alexander Zverev"
-        },
-        "player2": {
-          "name": "Raphael Collignon"
-        },
-        "tour": "atp",
-        "time": "14h45",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Halle Open",
-          "surface": "Grass",
-          "flag": "DE"
-        }
-      },
-      {
-        "id": "74b965a06f9eb94fa2942eea94875cfa",
-        "date": "2026-06-19T13:40:00Z",
-        "player1": {
-          "name": "Arthur Fery"
-        },
-        "player2": {
-          "name": "Francisco Cerundolo"
-        },
-        "tour": "atp",
-        "time": "15h40",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Queen's Club Championships",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "239a91f2804fbbf8fdb1c3dc3c5d31de",
-        "date": "2026-06-19T13:40:00Z",
-        "player1": {
-          "name": "Aryna Sabalenka"
-        },
-        "player2": {
-          "name": "Nikola Bartunkova"
-        },
-        "tour": "wta",
-        "time": "15h40",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA German Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
         "id": "4fc52f44db445d9d1b01d99fe8213b6e",
-        "date": "2026-06-19T13:45:00Z",
+        "date": "2026-06-19T15:03:00Z",
         "player1": {
           "name": "Daniel Altmaier"
         },
@@ -65,7 +11,7 @@
           "name": "Daniil Medvedev"
         },
         "tour": "atp",
-        "time": "15h45",
+        "time": "17h03",
         "scheduled": true,
         "tournament": {
           "name": "ATP Halle Open",
@@ -74,34 +20,16 @@
         }
       },
       {
-        "id": "0400c5a7cf4fe78e0204ad9c6989e397",
-        "date": "2026-06-19T14:55:00Z",
+        "id": "0ec5ed6fa58f885f7c7f3f9e9030a845",
+        "date": "2026-06-19T15:30:00Z",
         "player1": {
-          "name": "Frances Tiafoe"
+          "name": "Ugo Humbert"
         },
         "player2": {
-          "name": "Felix Auger-Aliassime"
+          "name": "Rinky Hijikata"
         },
         "tour": "atp",
-        "time": "16h55",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Halle Open",
-          "surface": "Grass",
-          "flag": "DE"
-        }
-      },
-      {
-        "id": "2319b02e9fa0a3aa1653a9d5e2de31ce",
-        "date": "2026-06-19T14:55:00Z",
-        "player1": {
-          "name": "Tommy Paul"
-        },
-        "player2": {
-          "name": "Alejandro Davidovich Fokina"
-        },
-        "tour": "atp",
-        "time": "16h55",
+        "time": "17h30",
         "scheduled": true,
         "tournament": {
           "name": "ATP Queen's Club Championships",
@@ -125,6 +53,82 @@
           "name": "WTA German Open",
           "surface": "Hard",
           "flag": "UN"
+        }
+      },
+      {
+        "id": "2319b02e9fa0a3aa1653a9d5e2de31ce",
+        "date": "2026-06-19T16:37:00Z",
+        "player1": {
+          "name": "Tommy Paul"
+        },
+        "player2": {
+          "name": "Alejandro Davidovich Fokina"
+        },
+        "tour": "atp",
+        "time": "18h37",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Queen's Club Championships",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "0400c5a7cf4fe78e0204ad9c6989e397",
+        "date": "2026-06-19T18:00:00Z",
+        "player1": {
+          "name": "Frances Tiafoe"
+        },
+        "player2": {
+          "name": "Felix Auger-Aliassime"
+        },
+        "tour": "atp",
+        "time": "20h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Halle Open",
+          "surface": "Grass",
+          "flag": "DE"
+        }
+      }
+    ]
+  },
+  "2026-06-20": {
+    "data": [
+      {
+        "id": "eb2c5a87635273bd4cdb234abfe25b94",
+        "date": "2026-06-20T09:30:00Z",
+        "player1": {
+          "name": "Aryna Sabalenka"
+        },
+        "player2": {
+          "name": "Jessica Pegula"
+        },
+        "tour": "wta",
+        "time": "11h30",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA German Open",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "fd0b906df491300bfc22b589211850ca",
+        "date": "2026-06-20T13:00:00Z",
+        "player1": {
+          "name": "Alexander Zverev"
+        },
+        "player2": {
+          "name": "Taylor Fritz"
+        },
+        "tour": "atp",
+        "time": "15h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Halle Open",
+          "surface": "Grass",
+          "flag": "DE"
         }
       }
     ]
