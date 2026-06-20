@@ -3,7 +3,7 @@
     "data": [
       {
         "id": "eb2c5a87635273bd4cdb234abfe25b94",
-        "date": "2026-06-20T10:30:00Z",
+        "date": "2026-06-20T10:08:00Z",
         "player1": {
           "name": "Aryna Sabalenka"
         },
@@ -11,7 +11,7 @@
           "name": "Jessica Pegula"
         },
         "tour": "wta",
-        "time": "12h30",
+        "time": "12h08",
         "scheduled": true,
         "tournament": {
           "name": "WTA German Open",
@@ -38,24 +38,6 @@
         }
       },
       {
-        "id": "9727ed72b3019e53fba529cb07965e34",
-        "date": "2026-06-20T12:00:00Z",
-        "player1": {
-          "name": "Linda Noskova"
-        },
-        "player2": {
-          "name": "Alexandra Eala"
-        },
-        "tour": "wta",
-        "time": "14h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA German Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
         "id": "fd0b906df491300bfc22b589211850ca",
         "date": "2026-06-20T13:00:00Z",
         "player1": {
@@ -71,6 +53,24 @@
           "name": "ATP Halle Open",
           "surface": "Grass",
           "flag": "DE"
+        }
+      },
+      {
+        "id": "9727ed72b3019e53fba529cb07965e34",
+        "date": "2026-06-20T13:00:00Z",
+        "player1": {
+          "name": "Linda Noskova"
+        },
+        "player2": {
+          "name": "Alexandra Eala"
+        },
+        "tour": "wta",
+        "time": "15h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA German Open",
+          "surface": "Hard",
+          "flag": "UN"
         }
       },
       {
