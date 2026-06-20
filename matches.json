@@ -3,7 +3,7 @@
     "data": [
       {
         "id": "eb2c5a87635273bd4cdb234abfe25b94",
-        "date": "2026-06-20T09:30:00Z",
+        "date": "2026-06-20T10:30:00Z",
         "player1": {
           "name": "Aryna Sabalenka"
         },
@@ -11,7 +11,7 @@
           "name": "Jessica Pegula"
         },
         "tour": "wta",
-        "time": "11h30",
+        "time": "12h30",
         "scheduled": true,
         "tournament": {
           "name": "WTA German Open",
