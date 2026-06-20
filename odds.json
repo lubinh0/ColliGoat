@@ -1,44 +1,38 @@
 {
-  "daniel altmaier|daniil medvedev": {
-    "p1": 1.52,
-    "p2": 6.66,
-    "p1name": "Daniel Altmaier",
-    "p2name": "Daniil Medvedev"
-  },
-  "felix auger-aliassime|frances tiafoe": {
-    "p1": 2.33,
-    "p2": 1.69,
-    "p1name": "Frances Tiafoe",
-    "p2name": "Felix Auger-Aliassime"
-  },
   "alexander zverev|taylor fritz": {
-    "p1": 1.7,
-    "p2": 2.26,
+    "p1": 1.73,
+    "p2": 2.22,
     "p1name": "Alexander Zverev",
     "p2name": "Taylor Fritz"
   },
-  "rinky hijikata|ugo humbert": {
-    "p1": 1.15,
-    "p2": 6.57,
-    "p1name": "Ugo Humbert",
-    "p2name": "Rinky Hijikata"
+  "daniel altmaier|frances tiafoe": {
+    "p1": 3.45,
+    "p2": 1.36,
+    "p1name": "Daniel Altmaier",
+    "p2name": "Frances Tiafoe"
   },
-  "alejandro davidovich fokina|tommy paul": {
-    "p1": 1.25,
-    "p2": 3.85,
+  "brandon nakashima|francisco cerundolo": {
+    "p1": 1.61,
+    "p2": 2.45,
+    "p1name": "Brandon Nakashima",
+    "p2name": "Francisco Cerundolo"
+  },
+  "tommy paul|ugo humbert": {
+    "p1": 1.61,
+    "p2": 2.46,
     "p1name": "Tommy Paul",
-    "p2name": "Alejandro Davidovich Fokina"
-  },
-  "alexandra eala|elina svitolina": {
-    "p1": 27.51,
-    "p2": 1.06,
-    "p1name": "Elina Svitolina",
-    "p2name": "Alexandra Eala"
+    "p2name": "Ugo Humbert"
   },
   "aryna sabalenka|jessica pegula": {
-    "p1": 1.44,
-    "p2": 2.99,
+    "p1": 1.56,
+    "p2": 2.7,
     "p1name": "Aryna Sabalenka",
     "p2name": "Jessica Pegula"
+  },
+  "alexandra eala|linda noskova": {
+    "p1": 1.65,
+    "p2": 2.37,
+    "p1name": "Linda Noskova",
+    "p2name": "Alexandra Eala"
   }
 }
