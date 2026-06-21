@@ -1,19 +1,43 @@
 {
-  "frances tiafoe|taylor fritz": {
-    "p1": 1.47,
-    "p2": 2.92,
-    "p1name": "Taylor Fritz",
-    "p2name": "Frances Tiafoe"
+  "magdalena frech|naomi osaka": {
+    "p1": 1.32,
+    "p2": 3.35,
+    "p1name": "Naomi Osaka",
+    "p2name": "Magdalena Frech"
   },
-  "francisco cerundolo|tommy paul": {
-    "p1": 2.88,
-    "p2": 1.48,
-    "p1name": "Francisco Cerundolo",
-    "p2name": "Tommy Paul"
+  "iva jović|xinyu wang": {
+    "p1": 1.33,
+    "p2": 3.58,
+    "p1name": "Iva Jović",
+    "p2name": "Xinyu Wang"
+  },
+  "ann li|ekaterina alexandrova": {
+    "p1": 2.27,
+    "p2": 1.69,
+    "p1name": "Ann Li",
+    "p2name": "Ekaterina Alexandrova"
+  },
+  "clara tauson|diana shnaider": {
+    "p1": 2.75,
+    "p2": 1.49,
+    "p1name": "Clara Tauson",
+    "p2name": "Diana Shnaider"
+  },
+  "emma navarro|eva lys": {
+    "p1": 2.76,
+    "p2": 1.49,
+    "p1name": "Eva Lys",
+    "p2name": "Emma Navarro"
+  },
+  "alexandra eala|elise mertens": {
+    "p1": 2.04,
+    "p2": 1.84,
+    "p1name": "Alexandra Eala",
+    "p2name": "Elise Mertens"
   },
   "jessica pegula|linda noskova": {
-    "p1": 1.6,
-    "p2": 2.58,
+    "p1": 3.31,
+    "p2": 1.62,
     "p1name": "Jessica Pegula",
     "p2name": "Linda Noskova"
   }
