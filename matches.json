@@ -3,7 +3,7 @@
     "data": [
       {
         "id": "32bde0a6dc3f7883533b11f4f48007a1",
-        "date": "2026-06-21T10:05:00Z",
+        "date": "2026-06-21T11:05:00Z",
         "player1": {
           "name": "Jessica Pegula"
         },
@@ -11,7 +11,7 @@
           "name": "Linda Noskova"
         },
         "tour": "wta",
-        "time": "12h05",
+        "time": "13h05",
         "scheduled": true,
         "tournament": {
           "name": "WTA German Open",
