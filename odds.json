@@ -1,117 +1,15 @@
 {
-  "gilles arnaud bailly|pol martin tiffon": {
-    "p1": 15.07,
-    "p2": 1.06,
-    "p1name": "Gilles Arnaud Bailly",
-    "p2name": "Pol Martin Tiffon"
-  },
-  "andrea pellegrino|jay clarke": {
-    "p1": 1.13,
-    "p2": 7.08,
-    "p1name": "Jay Clarke",
-    "p2name": "Andrea Pellegrino"
-  },
-  "august holmgren|liam broady": {
-    "p1": 1.59,
-    "p2": 2.33,
-    "p1name": "Liam Broady",
-    "p2name": "August Holmgren"
-  },
-  "gonzalo bueno|jerome kym": {
-    "p1": 1.05,
-    "p2": 17.33,
-    "p1name": "Jerome Kym",
-    "p2name": "Gonzalo Bueno"
-  },
-  "luka mikrut|stefano travaglia": {
-    "p1": 1.12,
-    "p2": 7.62,
-    "p1name": "Stefano Travaglia",
-    "p2name": "Luka Mikrut"
-  },
-  "otto virtanen|pedro martinez": {
-    "p1": 1.04,
-    "p2": 19.45,
-    "p1name": "Otto Virtanen",
-    "p2name": "Pedro Martinez"
-  },
-  "bernard tomic|kaichi uchida": {
-    "p1": 4.48,
-    "p2": 1.23,
-    "p1name": "Kaichi Uchida",
-    "p2name": "Bernard Tomic"
-  },
-  "chun-hsin tseng|gustavo heide": {
-    "p1": 2.12,
-    "p2": 1.77,
-    "p1name": "Chun-Hsin Tseng",
-    "p2name": "Gustavo Heide"
-  },
-  "dusan lajovic|lukas neumayer": {
-    "p1": 1.85,
-    "p2": 2.01,
-    "p1name": "Lukas Neumayer",
-    "p2name": "Dusan Lajovic"
-  },
-  "felipe meligeni rodrigues alves|mackenzie mcdonald": {
-    "p1": 1.03,
-    "p2": 16.65,
-    "p1name": "Mackenzie McDonald",
-    "p2name": "Felipe Meligeni Rodrigues Alves"
-  },
-  "henrique rocha|nicolas mejia": {
-    "p1": 1.39,
-    "p2": 3,
-    "p1name": "Henrique Rocha",
-    "p2name": "Nicolas Mejia"
-  },
-  "henry searle|zhizhen zhang": {
-    "p1": 1.64,
-    "p2": 2.34,
-    "p1name": "Zhizhen Zhang",
-    "p2name": "Henry Searle"
-  },
-  "jurij rodionov|oliver crawford": {
-    "p1": 2.85,
-    "p2": 1.42,
-    "p1name": "Oliver Crawford",
-    "p2name": "Jurij Rodionov"
-  },
-  "marcelo tomas barrios vera|marco cecchinato": {
-    "p1": 7.52,
-    "p2": 1.12,
-    "p1name": "Marco Cecchinato",
-    "p2name": "Marcelo Tomas Barrios Vera"
-  },
-  "michael mmoh|vilius gaubas": {
-    "p1": 2.91,
-    "p2": 1.44,
-    "p1name": "Vilius Gaubas",
-    "p2name": "Michael Mmoh"
-  },
-  "paul jubb|pierre-hugues herbert": {
-    "p1": 1.73,
-    "p2": 2.17,
-    "p1name": "Pierre-Hugues Herbert",
-    "p2name": "Paul Jubb"
-  },
-  "tom gentzsch|zdenek kolar": {
-    "p1": 1.5,
-    "p2": 2.69,
-    "p1name": "Tom Gentzsch",
-    "p2name": "Zdenek Kolar"
-  },
-  "irina-camelia begu|venus williams": {
-    "p1": 9.5,
-    "p2": 1.11,
-    "p1name": "Venus Williams",
-    "p2name": "Irina-Camelia Begu"
-  },
   "alexandra eala|elise mertens": {
-    "p1": 2.32,
-    "p2": 1.67,
+    "p1": 19.76,
+    "p2": 1.04,
     "p1name": "Alexandra Eala",
     "p2name": "Elise Mertens"
+  },
+  "emma navarro|eva lys": {
+    "p1": 2.76,
+    "p2": 1.5,
+    "p1name": "Eva Lys",
+    "p2name": "Emma Navarro"
   },
   "ann li|ekaterina alexandrova": {
     "p1": 2.26,
@@ -119,21 +17,21 @@
     "p1name": "Ann Li",
     "p2name": "Ekaterina Alexandrova"
   },
-  "emma navarro|eva lys": {
-    "p1": 2.74,
-    "p2": 1.51,
-    "p1name": "Eva Lys",
-    "p2name": "Emma Navarro"
-  },
   "elena gabriela ruse|linda noskova": {
-    "p1": 2.65,
-    "p2": 1.48,
+    "p1": 2.95,
+    "p2": 1.44,
     "p1name": "Elena Gabriela Ruse",
     "p2name": "Linda Noskova"
   },
+  "leylah fernandez|xinyu wang": {
+    "p1": 2.21,
+    "p2": 1.74,
+    "p1name": "Xinyu Wang",
+    "p2name": "Leylah Fernandez"
+  },
   "elina svitolina|liudmila samsonova": {
-    "p1": 3.28,
-    "p2": 1.4,
+    "p1": 3.13,
+    "p2": 1.41,
     "p1name": "Liudmila Samsonova",
     "p2name": "Elina Svitolina"
   }
