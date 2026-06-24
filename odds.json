@@ -1,109 +1,13 @@
 {
-  "alexis galarneau|oliver tarvet": {
-    "p1": 2.5,
-    "p2": 1.56,
-    "p1name": "Alexis Galarneau",
-    "p2name": "Oliver Tarvet"
-  },
-  "billy harris|zsombor piros": {
-    "p1": 2.29,
-    "p2": 1.66,
-    "p1name": "Zsombor Piros",
-    "p2name": "Billy Harris"
-  },
-  "daniel evans|tristan schoolkate": {
-    "p1": 2.49,
-    "p2": 1.57,
-    "p1name": "Daniel Evans",
-    "p2name": "Tristan Schoolkate"
-  },
-  "gauthier onclin|shintaro mochizuki": {
-    "p1": 2.13,
-    "p2": 1.76,
-    "p1name": "Gauthier Onclin",
-    "p2name": "Shintaro Mochizuki"
-  },
-  "gustavo heide|nicolas mejia": {
-    "p1": 2.42,
-    "p2": 1.6,
-    "p1name": "Nicolas Mejia",
-    "p2name": "Gustavo Heide"
-  },
-  "stefano travaglia|yi zhou": {
-    "p1": 1.83,
-    "p2": 2.04,
-    "p1name": "Stefano Travaglia",
-    "p2name": "Yi Zhou"
-  },
-  "bu yunchaokete|clement tabur": {
-    "p1": 1.22,
-    "p2": 4.64,
-    "p1name": "Bu Yunchaokete",
-    "p2name": "Clement Tabur"
-  },
-  "august holmgren|jerome kym": {
-    "p1": 1.87,
-    "p2": 1.98,
-    "p1name": "Jerome Kym",
-    "p2name": "August Holmgren"
-  },
-  "bernard tomic|christopher o'connell": {
-    "p1": 2.81,
-    "p2": 1.47,
-    "p1name": "Bernard Tomic",
-    "p2name": "Christopher O'Connell"
-  },
-  "borna gojo|colton smith": {
-    "p1": 1.84,
-    "p2": 2.02,
-    "p1name": "Borna Gojo",
-    "p2name": "Colton Smith"
-  },
-  "dane sweeny|darwin blanch": {
-    "p1": 2.37,
-    "p2": 1.62,
-    "p1name": "Dane Sweeny",
-    "p2name": "Darwin Blanch"
-  },
-  "federico cinà|hugo gaston": {
-    "p1": 2.09,
-    "p2": 1.79,
-    "p1name": "Hugo Gaston",
-    "p2name": "Federico Cinà"
-  },
-  "kimmer coppejans|roman safiullin": {
-    "p1": 1.19,
-    "p2": 5.12,
-    "p1name": "Roman Safiullin",
-    "p2name": "Kimmer Coppejans"
-  },
-  "laslo djere|michael zheng": {
-    "p1": 2.12,
-    "p2": 1.77,
-    "p1name": "Laslo Djere",
-    "p2name": "Michael Zheng"
-  },
-  "mackenzie mcdonald|roberto carballes baena": {
-    "p1": 1.46,
-    "p2": 2.82,
-    "p1name": "Mackenzie McDonald",
-    "p2name": "Roberto Carballes Baena"
-  },
-  "marcelo tomas barrios vera|paul jubb": {
-    "p1": 2.16,
-    "p2": 1.74,
-    "p1name": "Paul Jubb",
-    "p2name": "Marcelo Tomas Barrios Vera"
-  },
   "alejandro moro canas|harold mayot": {
-    "p1": 2.77,
+    "p1": 2.74,
     "p2": 1.48,
     "p1name": "Alejandro Moro Canas",
     "p2name": "Harold Mayot"
   },
   "andrea pellegrino|tristan boyer": {
-    "p1": 1.46,
-    "p2": 2.82,
+    "p1": 1.43,
+    "p2": 2.96,
     "p1name": "Tristan Boyer",
     "p2name": "Andrea Pellegrino"
   },
@@ -126,8 +30,8 @@
     "p2name": "Dusan Lajovic"
   },
   "elias ymer|timofey skatov": {
-    "p1": 1.63,
-    "p2": 2.36,
+    "p1": 1.66,
+    "p2": 2.3,
     "p1name": "Elias Ymer",
     "p2name": "Timofey Skatov"
   },
@@ -138,44 +42,38 @@
     "p2name": "Henry Searle"
   },
   "jaime faria|luka pavlovic": {
-    "p1": 1.39,
-    "p2": 3.15,
+    "p1": 1.36,
+    "p2": 3.31,
     "p1name": "Jaime Faria",
     "p2name": "Luka Pavlovic"
   },
   "luca nardi|otto virtanen": {
-    "p1": 3.59,
-    "p2": 1.32,
+    "p1": 3.78,
+    "p2": 1.29,
     "p1name": "Luca Nardi",
     "p2name": "Otto Virtanen"
   },
   "pablo llamas ruiz|pol martin tiffon": {
-    "p1": 1.44,
-    "p2": 2.91,
+    "p1": 1.48,
+    "p2": 2.76,
     "p1name": "Pablo Llamas Ruiz",
     "p2name": "Pol Martin Tiffon"
   },
-  "ekaterina alexandrova|mirra andreeva": {
-    "p1": 1.09,
-    "p2": 10.63,
-    "p1name": "Ekaterina Alexandrova",
-    "p2name": "Mirra Andreeva"
-  },
   "anna kalinskaya|elena gabriela ruse": {
-    "p1": 1.82,
-    "p2": 2.11,
+    "p1": 14.2,
+    "p2": 1.08,
     "p1name": "Anna Kalinskaya",
     "p2name": "Elena Gabriela Ruse"
   },
   "clara tauson|qinwen zheng": {
-    "p1": 1.82,
-    "p2": 2.14,
+    "p1": 1.34,
+    "p2": 3.61,
     "p1name": "Qinwen Zheng",
     "p2name": "Clara Tauson"
   },
   "emma navarro|iga swiatek": {
-    "p1": 1.34,
-    "p2": 3.63,
+    "p1": 1.36,
+    "p2": 3.5,
     "p1name": "Iga Swiatek",
     "p2name": "Emma Navarro"
   },
@@ -186,68 +84,20 @@
     "p2name": "Irina-Camelia Begu"
   },
   "elina svitolina|xinyu wang": {
-    "p1": 3.35,
-    "p2": 1.37,
+    "p1": 3.45,
+    "p2": 1.36,
     "p1name": "Xinyu Wang",
     "p2name": "Elina Svitolina"
   },
-  "greet minnen|iryna shymanovich": {
-    "p1": 6.19,
-    "p2": 1.14,
-    "p1name": "Iryna Shymanovich",
-    "p2name": "Greet Minnen"
-  },
-  "lulu sun|oceane dodin": {
-    "p1": 1.28,
-    "p2": 3.85,
-    "p1name": "Lulu Sun",
-    "p2name": "Oceane Dodin"
-  },
-  "joanna garland|tyra caterina grant": {
-    "p1": 2.18,
-    "p2": 1.72,
-    "p1name": "Joanna Garland",
-    "p2name": "Tyra Caterina Grant"
-  },
-  "mananchaya sawangkaew|mary stoiana": {
-    "p1": 2.34,
-    "p2": 1.64,
-    "p1name": "Mananchaya Sawangkaew",
-    "p2name": "Mary Stoiana"
-  },
-  "katherine sebov|noma noha akugue": {
-    "p1": 2.67,
-    "p2": 1.51,
-    "p1name": "Katherine Sebov",
-    "p2name": "Noma Noha Akugue"
-  },
   "alina korneeva|andrea lazaro garcia": {
-    "p1": 1.44,
-    "p2": 2.91,
+    "p1": 1.43,
+    "p2": 2.94,
     "p1name": "Alina Korneeva",
     "p2name": "Andrea Lazaro Garcia"
   },
-  "claire liu|kaitlin quevedo": {
-    "p1": 2.2,
-    "p2": 1.71,
-    "p1name": "Kaitlin Quevedo",
-    "p2name": "Claire Liu"
-  },
-  "elena pridankina|suzan lamens": {
-    "p1": 2.2,
-    "p2": 1.71,
-    "p1name": "Elena Pridankina",
-    "p2name": "Suzan Lamens"
-  },
-  "erika andreeva|kayla day": {
-    "p1": 2.28,
-    "p2": 1.67,
-    "p1name": "Erika Andreeva",
-    "p2name": "Kayla Day"
-  },
   "fiona crawley|julia riera": {
-    "p1": 1.9,
-    "p2": 1.95,
+    "p1": 1.89,
+    "p2": 1.96,
     "p1name": "Julia Riera",
     "p2name": "Fiona Crawley"
   },
@@ -258,25 +108,25 @@
     "p2name": "Lucrezia Stefanini"
   },
   "anastasia gasanova|emerson jones": {
-    "p1": 3.2,
+    "p1": 3.24,
     "p2": 1.37,
     "p1name": "Anastasia Gasanova",
     "p2name": "Emerson Jones"
   },
   "darja semenistaja|nao hibino": {
-    "p1": 1.91,
+    "p1": 1.92,
     "p2": 1.93,
     "p1name": "Darja Semenistaja",
     "p2name": "Nao Hibino"
   },
   "francisca jorge|lina gjorcheska": {
-    "p1": 1.41,
-    "p2": 3.01,
+    "p1": 1.38,
+    "p2": 3.2,
     "p1name": "Francisca Jorge",
     "p2name": "Lina Gjorcheska"
   },
   "justina mikulskytė|lucia bronzetti": {
-    "p1": 5.86,
+    "p1": 5.94,
     "p2": 1.14,
     "p1name": "Justina Mikulskytė",
     "p2name": "Lucia Bronzetti"
@@ -288,8 +138,8 @@
     "p2name": "Storm Hunter"
   },
   "ashlyn krueger|mai hontama": {
-    "p1": 1.14,
-    "p2": 5.94,
+    "p1": 1.12,
+    "p2": 6.26,
     "p1name": "Ashlyn Krueger",
     "p2name": "Mai Hontama"
   },
@@ -300,13 +150,13 @@
     "p2name": "Jil Teichmann"
   },
   "clervie ngounoue|polina kudermetova": {
-    "p1": 1.56,
-    "p2": 2.49,
+    "p1": 1.55,
+    "p2": 2.5,
     "p1name": "Polina Kudermetova",
     "p2name": "Clervie Ngounoue"
   },
   "ekaterine gorgodze|leolia jeanjean": {
-    "p1": 3.81,
+    "p1": 3.79,
     "p2": 1.28,
     "p1name": "Ekaterine Gorgodze",
     "p2name": "Leolia Jeanjean"
@@ -318,32 +168,32 @@
     "p2name": "Elvina Kalieva"
   },
   "heather watson|tatiana prozorova": {
-    "p1": 1.77,
-    "p2": 2.1,
+    "p1": 1.81,
+    "p2": 2.03,
     "p1name": "Tatiana Prozorova",
     "p2name": "Heather Watson"
   },
   "lin zhu|tiantsoa sarah rajaonah": {
-    "p1": 3.56,
+    "p1": 3.54,
     "p2": 1.31,
     "p1name": "Tiantsoa Sarah Rajaonah",
     "p2name": "Lin Zhu"
   },
   "marina bassols ribera|xiyu wang": {
-    "p1": 1.29,
-    "p2": 3.73,
+    "p1": 1.37,
+    "p2": 3.18,
     "p1name": "Xiyu Wang",
     "p2name": "Marina Bassols Ribera"
   },
   "polina iatcenko|zhuoxuan bai": {
-    "p1": 1.97,
-    "p2": 1.86,
+    "p1": 2.01,
+    "p2": 1.83,
     "p1name": "Polina Iatcenko",
     "p2name": "Zhuoxuan Bai"
   },
   "rebecca sramkova|teodora kostovic": {
-    "p1": 1.76,
-    "p2": 2.11,
+    "p1": 1.75,
+    "p2": 2.12,
     "p1name": "Rebecca Sramkova",
     "p2name": "Teodora Kostovic"
   }
