@@ -1,200 +1,128 @@
 {
   "alejandro moro canas|harold mayot": {
-    "p1": 2.74,
-    "p2": 1.48,
+    "p1": 1.43,
+    "p2": 2.87,
     "p1name": "Alejandro Moro Canas",
     "p2name": "Harold Mayot"
   },
-  "andrea pellegrino|tristan boyer": {
-    "p1": 1.43,
-    "p2": 2.96,
-    "p1name": "Tristan Boyer",
-    "p2name": "Andrea Pellegrino"
-  },
   "arthur gea|soonwoo kwon": {
-    "p1": 1.86,
-    "p2": 1.99,
+    "p1": 1.29,
+    "p2": 3.81,
     "p1name": "Soonwoo Kwon",
     "p2name": "Arthur Gea"
   },
   "aziz dougaz|rei sakamoto": {
-    "p1": 3.1,
-    "p2": 1.4,
+    "p1": 26.93,
+    "p2": 1.03,
     "p1name": "Aziz Dougaz",
     "p2name": "Rei Sakamoto"
   },
-  "chris rodesch|dusan lajovic": {
-    "p1": 1.43,
-    "p2": 2.95,
-    "p1name": "Chris Rodesch",
-    "p2name": "Dusan Lajovic"
-  },
-  "elias ymer|timofey skatov": {
-    "p1": 1.66,
-    "p2": 2.3,
-    "p1name": "Elias Ymer",
-    "p2name": "Timofey Skatov"
-  },
   "henry searle|vilius gaubas": {
-    "p1": 3.69,
-    "p2": 1.3,
+    "p1": 1.22,
+    "p2": 4.77,
     "p1name": "Vilius Gaubas",
     "p2name": "Henry Searle"
   },
-  "jaime faria|luka pavlovic": {
-    "p1": 1.36,
-    "p2": 3.31,
-    "p1name": "Jaime Faria",
-    "p2name": "Luka Pavlovic"
+  "billy harris|yi zhou": {
+    "p1": 2.5,
+    "p2": 1.56,
+    "p1name": "Yi Zhou",
+    "p2name": "Billy Harris"
   },
-  "luca nardi|otto virtanen": {
-    "p1": 3.78,
-    "p2": 1.29,
-    "p1name": "Luca Nardi",
-    "p2name": "Otto Virtanen"
+  "christopher o'connell|mackenzie mcdonald": {
+    "p1": 2.24,
+    "p2": 1.68,
+    "p1name": "Mackenzie McDonald",
+    "p2name": "Christopher O'Connell"
   },
-  "pablo llamas ruiz|pol martin tiffon": {
-    "p1": 1.48,
-    "p2": 2.76,
-    "p1name": "Pablo Llamas Ruiz",
-    "p2name": "Pol Martin Tiffon"
+  "clement tabur|shintaro mochizuki": {
+    "p1": 2.07,
+    "p2": 1.78,
+    "p1name": "Clement Tabur",
+    "p2name": "Shintaro Mochizuki"
   },
-  "anna kalinskaya|elena gabriela ruse": {
-    "p1": 14.2,
-    "p2": 1.08,
-    "p1name": "Anna Kalinskaya",
-    "p2name": "Elena Gabriela Ruse"
-  },
-  "clara tauson|qinwen zheng": {
-    "p1": 1.34,
-    "p2": 3.61,
-    "p1name": "Qinwen Zheng",
-    "p2name": "Clara Tauson"
-  },
-  "emma navarro|iga swiatek": {
-    "p1": 1.36,
-    "p2": 3.5,
-    "p1name": "Iga Swiatek",
-    "p2name": "Emma Navarro"
-  },
-  "irina-camelia begu|karolina muchova": {
-    "p1": 1.14,
-    "p2": 6.65,
-    "p1name": "Karolina Muchova",
-    "p2name": "Irina-Camelia Begu"
+  "ekaterina alexandrova|naomi osaka": {
+    "p1": 1.76,
+    "p2": 2.23,
+    "p1name": "Naomi Osaka",
+    "p2name": "Ekaterina Alexandrova"
   },
   "elina svitolina|xinyu wang": {
-    "p1": 3.45,
-    "p2": 1.36,
+    "p1": 2.95,
+    "p2": 1.43,
     "p1name": "Xinyu Wang",
     "p2name": "Elina Svitolina"
   },
-  "alina korneeva|andrea lazaro garcia": {
-    "p1": 1.43,
-    "p2": 2.94,
-    "p1name": "Alina Korneeva",
-    "p2name": "Andrea Lazaro Garcia"
-  },
-  "fiona crawley|julia riera": {
-    "p1": 1.89,
-    "p2": 1.96,
-    "p1name": "Julia Riera",
-    "p2name": "Fiona Crawley"
-  },
-  "katarzyna kawa|lucrezia stefanini": {
-    "p1": 1.51,
-    "p2": 2.66,
-    "p1name": "Katarzyna Kawa",
-    "p2name": "Lucrezia Stefanini"
-  },
-  "anastasia gasanova|emerson jones": {
-    "p1": 3.24,
-    "p2": 1.37,
-    "p1name": "Anastasia Gasanova",
-    "p2name": "Emerson Jones"
-  },
   "darja semenistaja|nao hibino": {
-    "p1": 1.92,
-    "p2": 1.93,
+    "p1": 1.07,
+    "p2": 13.65,
     "p1name": "Darja Semenistaja",
     "p2name": "Nao Hibino"
   },
-  "francisca jorge|lina gjorcheska": {
-    "p1": 1.38,
-    "p2": 3.2,
-    "p1name": "Francisca Jorge",
-    "p2name": "Lina Gjorcheska"
-  },
-  "justina mikulskytė|lucia bronzetti": {
-    "p1": 5.94,
-    "p2": 1.14,
-    "p1name": "Justina Mikulskytė",
-    "p2name": "Lucia Bronzetti"
-  },
   "aliaksandra sasnovich|storm hunter": {
-    "p1": 1.5,
-    "p2": 2.65,
+    "p1": 1.13,
+    "p2": 7.31,
     "p1name": "Aliaksandra Sasnovich",
     "p2name": "Storm Hunter"
   },
   "ashlyn krueger|mai hontama": {
-    "p1": 1.12,
-    "p2": 6.26,
+    "p1": 1.01,
+    "p2": 62.46,
     "p1name": "Ashlyn Krueger",
     "p2name": "Mai Hontama"
   },
   "bianca andreescu|jil teichmann": {
-    "p1": 1.51,
-    "p2": 2.64,
+    "p1": 1.73,
+    "p2": 2.15,
     "p1name": "Bianca Andreescu",
     "p2name": "Jil Teichmann"
   },
   "clervie ngounoue|polina kudermetova": {
-    "p1": 1.55,
-    "p2": 2.5,
+    "p1": 1.19,
+    "p2": 5.4,
     "p1name": "Polina Kudermetova",
     "p2name": "Clervie Ngounoue"
   },
-  "ekaterine gorgodze|leolia jeanjean": {
-    "p1": 3.79,
-    "p2": 1.28,
-    "p1name": "Ekaterine Gorgodze",
-    "p2name": "Leolia Jeanjean"
-  },
   "elvina kalieva|robin montgomery": {
-    "p1": 1.2,
-    "p2": 4.72,
+    "p1": 1.07,
+    "p2": 12.25,
     "p1name": "Robin Montgomery",
     "p2name": "Elvina Kalieva"
   },
   "heather watson|tatiana prozorova": {
-    "p1": 1.81,
-    "p2": 2.03,
+    "p1": 1.19,
+    "p2": 5.37,
     "p1name": "Tatiana Prozorova",
     "p2name": "Heather Watson"
   },
-  "lin zhu|tiantsoa sarah rajaonah": {
-    "p1": 3.54,
-    "p2": 1.31,
-    "p1name": "Tiantsoa Sarah Rajaonah",
-    "p2name": "Lin Zhu"
-  },
   "marina bassols ribera|xiyu wang": {
-    "p1": 1.37,
-    "p2": 3.18,
+    "p1": 1.18,
+    "p2": 5.79,
     "p1name": "Xiyu Wang",
     "p2name": "Marina Bassols Ribera"
   },
   "polina iatcenko|zhuoxuan bai": {
-    "p1": 2.01,
-    "p2": 1.83,
+    "p1": 1.98,
+    "p2": 1.87,
     "p1name": "Polina Iatcenko",
     "p2name": "Zhuoxuan Bai"
   },
   "rebecca sramkova|teodora kostovic": {
-    "p1": 1.75,
-    "p2": 2.12,
+    "p1": 1.24,
+    "p2": 4.47,
     "p1name": "Rebecca Sramkova",
     "p2name": "Teodora Kostovic"
+  },
+  "harmony tan|tyra caterina grant": {
+    "p1": 1.84,
+    "p2": 2,
+    "p1name": "Harmony Tan",
+    "p2name": "Tyra Caterina Grant"
+  },
+  "mananchaya sawangkaew|oceane dodin": {
+    "p1": 2.8,
+    "p2": 1.46,
+    "p1name": "Oceane Dodin",
+    "p2name": "Mananchaya Sawangkaew"
   }
 }
