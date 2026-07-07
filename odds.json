@@ -7,13 +7,13 @@
   },
   "jan-lennard struff|jannik sinner": {
     "p1": 1.05,
-    "p2": 12.35,
+    "p2": 13.53,
     "p1name": "Jannik Sinner",
     "p2name": "Jan-Lennard Struff"
   },
   "felix auger-aliassime|novak djokovic": {
-    "p1": 2.38,
-    "p2": 1.66,
+    "p1": 2.46,
+    "p2": 1.62,
     "p1name": "Felix Auger-Aliassime",
     "p2name": "Novak Djokovic"
   },
@@ -30,14 +30,14 @@
     "p2name": "Coco Gauff"
   },
   "karolina muchova|naomi osaka": {
-    "p1": 1.79,
-    "p2": 2.14,
+    "p1": 1.78,
+    "p2": 2.16,
     "p1name": "Naomi Osaka",
     "p2name": "Karolina Muchova"
   },
   "elise mertens|linda noskova": {
-    "p1": 1.66,
-    "p2": 2.37,
+    "p1": 1.65,
+    "p2": 2.39,
     "p1name": "Linda Noskova",
     "p2name": "Elise Mertens"
   },
