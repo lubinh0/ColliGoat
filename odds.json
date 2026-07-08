@@ -1,38 +1,26 @@
 {
-  "alexander zverev|taylor fritz": {
-    "p1": 1.79,
-    "p2": 2.15,
-    "p1name": "Taylor Fritz",
-    "p2name": "Alexander Zverev"
-  },
-  "arthur fery|flavio cobolli": {
-    "p1": 1.39,
-    "p2": 3.28,
-    "p1name": "Flavio Cobolli",
-    "p2name": "Arthur Fery"
-  },
   "jannik sinner|novak djokovic": {
-    "p1": 1.23,
-    "p2": 4.59,
+    "p1": 1.25,
+    "p2": 4.8,
     "p1name": "Jannik Sinner",
     "p2name": "Novak Djokovic"
   },
-  "elise mertens|linda noskova": {
-    "p1": 1.61,
-    "p2": 2.48,
-    "p1name": "Linda Noskova",
-    "p2name": "Elise Mertens"
-  },
-  "jasmine paolini|marta kostyuk": {
-    "p1": 1.38,
-    "p2": 3.35,
-    "p1name": "Marta Kostyuk",
-    "p2name": "Jasmine Paolini"
+  "alexander zverev|arthur fery": {
+    "p1": 6.4,
+    "p2": 1.13,
+    "p1name": "Arthur Fery",
+    "p2name": "Alexander Zverev"
   },
   "coco gauff|karolina muchova": {
     "p1": 1.88,
     "p2": 2.02,
     "p1name": "Karolina Muchova",
     "p2name": "Coco Gauff"
+  },
+  "linda noskova|marta kostyuk": {
+    "p1": 1.81,
+    "p2": 2.09,
+    "p1name": "Marta Kostyuk",
+    "p2name": "Linda Noskova"
   }
 }
