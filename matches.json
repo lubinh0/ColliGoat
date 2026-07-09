@@ -3,7 +3,7 @@
     "data": [
       {
         "id": "6f788a6edb5a38e19c4b09fdec863bcc",
-        "date": "2026-07-10T12:00:00Z",
+        "date": "2026-07-10T09:00:00Z",
         "player1": {
           "name": "Jannik Sinner"
         },
@@ -11,7 +11,7 @@
           "name": "Novak Djokovic"
         },
         "tour": "atp",
-        "time": "14h00",
+        "time": "11h00",
         "scheduled": true,
         "tournament": {
           "name": "ATP Wimbledon",
