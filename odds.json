@@ -1,25 +1,25 @@
 {
   "jannik sinner|novak djokovic": {
     "p1": 1.22,
-    "p2": 4.82,
+    "p2": 4.81,
     "p1name": "Jannik Sinner",
     "p2name": "Novak Djokovic"
   },
   "alexander zverev|arthur fery": {
-    "p1": 6.25,
+    "p1": 6.1,
     "p2": 1.15,
     "p1name": "Arthur Fery",
     "p2name": "Alexander Zverev"
   },
   "coco gauff|karolina muchova": {
-    "p1": 1.87,
-    "p2": 2.04,
+    "p1": 1.88,
+    "p2": 2.03,
     "p1name": "Karolina Muchova",
     "p2name": "Coco Gauff"
   },
   "linda noskova|marta kostyuk": {
     "p1": 1.79,
-    "p2": 2.13,
+    "p2": 2.14,
     "p1name": "Marta Kostyuk",
     "p2name": "Linda Noskova"
   }
