@@ -1,14 +1,8 @@
 {
   "alexander zverev|jannik sinner": {
-    "p1": 1.22,
-    "p2": 4.84,
+    "p1": 1.23,
+    "p2": 4.76,
     "p1name": "Jannik Sinner",
     "p2name": "Alexander Zverev"
-  },
-  "karolina muchova|linda noskova": {
-    "p1": 1.68,
-    "p2": 2.28,
-    "p1name": "Karolina Muchova",
-    "p2name": "Linda Noskova"
   }
 }
