@@ -56,24 +56,6 @@
         }
       },
       {
-        "id": "8ff4cd944686caa4aa359e98df787008",
-        "date": "2026-07-28T15:00:00Z",
-        "player1": {
-          "name": "Julieta Pareja"
-        },
-        "player2": {
-          "name": "Xinyu Wang"
-        },
-        "tour": "wta",
-        "time": "17h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Washington Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
         "id": "30f0320d3a420d0f2c62b61b0e359c01",
         "date": "2026-07-28T16:30:00Z",
         "player1": {
@@ -146,13 +128,13 @@
         }
       },
       {
-        "id": "b0a015fdd15f9ed459d8f09a5fcb3f35",
+        "id": "ac4d7fbd351591b71a42ee82337d4c1d",
         "date": "2026-07-28T17:40:00Z",
         "player1": {
-          "name": "Marcos Giron"
+          "name": "Brandon Nakashima"
         },
         "player2": {
-          "name": "Cruz Hewitt"
+          "name": "Tomas Martin Etcheverry"
         },
         "tour": "atp",
         "time": "19h40",
@@ -164,16 +146,16 @@
         }
       },
       {
-        "id": "ac4d7fbd351591b71a42ee82337d4c1d",
-        "date": "2026-07-28T18:00:00Z",
+        "id": "b0a015fdd15f9ed459d8f09a5fcb3f35",
+        "date": "2026-07-28T17:40:00Z",
         "player1": {
-          "name": "Brandon Nakashima"
+          "name": "Marcos Giron"
         },
         "player2": {
-          "name": "Tomas Martin Etcheverry"
+          "name": "Cruz Hewitt"
         },
         "tour": "atp",
-        "time": "20h00",
+        "time": "19h40",
         "scheduled": true,
         "tournament": {
           "name": "ATP Washington Open",
@@ -237,7 +219,7 @@
       },
       {
         "id": "a1ee84a1e7426c2f0a22850180bd8e44",
-        "date": "2026-07-28T20:30:00Z",
+        "date": "2026-07-28T20:10:00Z",
         "player1": {
           "name": "Magdalena Frech"
         },
@@ -245,7 +227,7 @@
           "name": "Ann Li"
         },
         "tour": "wta",
-        "time": "22h30",
+        "time": "22h10",
         "scheduled": true,
         "tournament": {
           "name": "WTA Washington Open",
@@ -294,24 +276,6 @@
         }
       },
       {
-        "id": "02f86b5bbdfd72bfc6d18a2df1061797",
-        "date": "2026-07-29T14:00:00Z",
-        "player1": {
-          "name": "Emma Navarro"
-        },
-        "player2": {
-          "name": "Elisabetta Cocciaretto"
-        },
-        "tour": "wta",
-        "time": "16h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Washington Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
         "id": "03fd45966d7f69242b90a177bfc4fbac",
         "date": "2026-07-29T15:00:00Z",
         "player1": {
@@ -343,6 +307,24 @@
         "scheduled": true,
         "tournament": {
           "name": "ATP Washington Open",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "02f86b5bbdfd72bfc6d18a2df1061797",
+        "date": "2026-07-29T15:00:00Z",
+        "player1": {
+          "name": "Emma Navarro"
+        },
+        "player2": {
+          "name": "Elisabetta Cocciaretto"
+        },
+        "tour": "wta",
+        "time": "17h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA Washington Open",
           "surface": "Hard",
           "flag": "UN"
         }
