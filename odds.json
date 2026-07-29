@@ -1,19 +1,19 @@
 {
   "aleksandar vukic|lorenzo musetti": {
-    "p1": 3.16,
-    "p2": 1.41,
+    "p1": 3.22,
+    "p2": 1.4,
     "p1name": "Aleksandar Vukic",
     "p2name": "Lorenzo Musetti"
   },
   "alex de minaur|stefanos tsitsipas": {
-    "p1": 1.71,
+    "p1": 1.74,
     "p2": 2.29,
     "p1name": "Alex de Minaur",
     "p2name": "Stefanos Tsitsipas"
   },
   "kamil majchrzak|taylor fritz": {
-    "p1": 1.29,
-    "p2": 3.6,
+    "p1": 1.32,
+    "p2": 3.7,
     "p1name": "Taylor Fritz",
     "p2name": "Kamil Majchrzak"
   },
@@ -24,8 +24,8 @@
     "p2name": "Adrian Mannarino"
   },
   "kei nishikori|rafael jodar": {
-    "p1": 1.21,
-    "p2": 4.4,
+    "p1": 1.18,
+    "p2": 4.8,
     "p1name": "Rafael Jodar",
     "p2name": "Kei Nishikori"
   },
@@ -37,13 +37,13 @@
   },
   "alexandra eala|leylah fernandez": {
     "p1": 2.02,
-    "p2": 1.79,
+    "p2": 1.88,
     "p1name": "Leylah Fernandez",
     "p2name": "Alexandra Eala"
   },
   "liudmila samsonova|xinyu wang": {
-    "p1": 2.45,
-    "p2": 1.55,
+    "p1": 2.55,
+    "p2": 1.57,
     "p1name": "Xinyu Wang",
     "p2name": "Liudmila Samsonova"
   },
@@ -54,7 +54,7 @@
     "p2name": "Elisabetta Cocciaretto"
   },
   "ashlyn krueger|naomi osaka": {
-    "p1": 3.73,
+    "p1": 3.75,
     "p2": 1.31,
     "p1name": "Ashlyn Krueger",
     "p2name": "Naomi Osaka"
