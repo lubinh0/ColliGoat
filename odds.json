@@ -1,48 +1,60 @@
 {
   "aleksandar vukic|lorenzo musetti": {
-    "p1": 3.22,
-    "p2": 1.4,
+    "p1": 3.1,
+    "p2": 1.43,
     "p1name": "Aleksandar Vukic",
     "p2name": "Lorenzo Musetti"
   },
   "alex de minaur|stefanos tsitsipas": {
-    "p1": 1.74,
-    "p2": 2.29,
+    "p1": 1.67,
+    "p2": 2.33,
     "p1name": "Alex de Minaur",
     "p2name": "Stefanos Tsitsipas"
   },
   "kamil majchrzak|taylor fritz": {
-    "p1": 1.32,
-    "p2": 3.7,
+    "p1": 1.31,
+    "p2": 3.74,
     "p1name": "Taylor Fritz",
     "p2name": "Kamil Majchrzak"
   },
   "adrian mannarino|alex michelsen": {
-    "p1": 1.4,
-    "p2": 2.95,
+    "p1": 1.35,
+    "p2": 3.77,
     "p1name": "Alex Michelsen",
     "p2name": "Adrian Mannarino"
   },
   "kei nishikori|rafael jodar": {
-    "p1": 1.18,
-    "p2": 4.8,
+    "p1": 1.23,
+    "p2": 4.9,
     "p1name": "Rafael Jodar",
     "p2name": "Kei Nishikori"
   },
   "alejandro tabilo|terence atmane": {
-    "p1": 1.86,
-    "p2": 2.05,
+    "p1": 1.88,
+    "p2": 2.03,
     "p1name": "Terence Atmane",
     "p2name": "Alejandro Tabilo"
   },
+  "ben shelton|ugo humbert": {
+    "p1": 2.55,
+    "p2": 1.5,
+    "p1name": "Ugo Humbert",
+    "p2name": "Ben Shelton"
+  },
+  "brandon nakashima|jakub mensik": {
+    "p1": 2.04,
+    "p2": 1.77,
+    "p1name": "Brandon Nakashima",
+    "p2name": "Jakub Mensik"
+  },
   "alexandra eala|leylah fernandez": {
-    "p1": 2.02,
-    "p2": 1.88,
+    "p1": 2.07,
+    "p2": 1.83,
     "p1name": "Leylah Fernandez",
     "p2name": "Alexandra Eala"
   },
   "liudmila samsonova|xinyu wang": {
-    "p1": 2.55,
+    "p1": 2.54,
     "p2": 1.57,
     "p1name": "Xinyu Wang",
     "p2name": "Liudmila Samsonova"
@@ -54,8 +66,8 @@
     "p2name": "Elisabetta Cocciaretto"
   },
   "ashlyn krueger|naomi osaka": {
-    "p1": 3.75,
-    "p2": 1.31,
+    "p1": 3.7,
+    "p2": 1.33,
     "p1name": "Ashlyn Krueger",
     "p2name": "Naomi Osaka"
   },
@@ -67,7 +79,7 @@
   },
   "anastasia potapova|diana shnaider": {
     "p1": 1.75,
-    "p2": 2.07,
+    "p2": 2.08,
     "p1name": "Diana Shnaider",
     "p2name": "Anastasia Potapova"
   },
