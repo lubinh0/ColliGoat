@@ -1,37 +1,55 @@
 {
   "brandon nakashima|jakub mensik": {
     "p1": 2.28,
-    "p2": 1.69,
+    "p2": 1.7,
     "p1name": "Brandon Nakashima",
     "p2name": "Jakub Mensik"
   },
+  "alex de minaur|cruz hewitt": {
+    "p1": 1.07,
+    "p2": 10.32,
+    "p1name": "Alex de Minaur",
+    "p2name": "Cruz Hewitt"
+  },
   "alejandro tabilo|terence atmane": {
-    "p1": 1.89,
-    "p2": 2.02,
+    "p1": 1.91,
+    "p2": 2,
     "p1name": "Terence Atmane",
     "p2name": "Alejandro Tabilo"
   },
   "ben shelton|ugo humbert": {
-    "p1": 2.75,
+    "p1": 2.55,
     "p2": 1.57,
     "p1name": "Ugo Humbert",
     "p2name": "Ben Shelton"
   },
+  "alex michelsen|taylor fritz": {
+    "p1": 1.51,
+    "p2": 2.75,
+    "p1name": "Taylor Fritz",
+    "p2name": "Alex Michelsen"
+  },
+  "lorenzo musetti|rafael jodar": {
+    "p1": 1.54,
+    "p2": 2.64,
+    "p1name": "Rafael Jodar",
+    "p2name": "Lorenzo Musetti"
+  },
   "anna kalinskaya|janice tjen": {
-    "p1": 3.28,
-    "p2": 1.38,
+    "p1": 3.18,
+    "p2": 1.4,
     "p1name": "Janice Tjen",
     "p2name": "Anna Kalinskaya"
   },
   "jessica pegula|magdalena frech": {
     "p1": 1.09,
-    "p2": 8.15,
+    "p2": 8.13,
     "p1name": "Jessica Pegula",
     "p2name": "Magdalena Frech"
   },
   "anastasia potapova|diana shnaider": {
-    "p1": 1.81,
-    "p2": 2.1,
+    "p1": 1.84,
+    "p2": 2.08,
     "p1name": "Diana Shnaider",
     "p2name": "Anastasia Potapova"
   },
@@ -40,5 +58,11 @@
     "p2": 1.19,
     "p1name": "Polina Kudermetova",
     "p2name": "Elina Svitolina"
+  },
+  "elisabetta cocciaretto|naomi osaka": {
+    "p1": 5.4,
+    "p2": 1.15,
+    "p1name": "Elisabetta Cocciaretto",
+    "p2name": "Naomi Osaka"
   }
 }
