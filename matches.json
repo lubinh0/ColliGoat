@@ -3,7 +3,7 @@
     "data": [
       {
         "id": "0eca1a6456bce26106630b067ca08d38",
-        "date": "2026-07-31T16:00:00Z",
+        "date": "2026-07-31T16:07:00Z",
         "player1": {
           "name": "Jessica Pegula"
         },
@@ -11,7 +11,7 @@
           "name": "Anna Kalinskaya"
         },
         "tour": "wta",
-        "time": "18h00",
+        "time": "18h07",
         "scheduled": true,
         "tournament": {
           "name": "WTA Washington Open",
