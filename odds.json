@@ -1,68 +1,50 @@
 {
-  "brandon nakashima|jakub mensik": {
-    "p1": 1.85,
-    "p2": 2.12,
-    "p1name": "Brandon Nakashima",
-    "p2name": "Jakub Mensik"
-  },
-  "alex de minaur|cruz hewitt": {
-    "p1": 1.09,
-    "p2": 8.76,
+  "alex de minaur|brandon nakashima": {
+    "p1": 1.52,
+    "p2": 2.55,
     "p1name": "Alex de Minaur",
-    "p2name": "Cruz Hewitt"
-  },
-  "alejandro tabilo|terence atmane": {
-    "p1": 1.93,
-    "p2": 2,
-    "p1name": "Terence Atmane",
-    "p2name": "Alejandro Tabilo"
-  },
-  "ben shelton|ugo humbert": {
-    "p1": 2.65,
-    "p2": 1.54,
-    "p1name": "Ugo Humbert",
-    "p2name": "Ben Shelton"
+    "p2name": "Brandon Nakashima"
   },
   "alex michelsen|taylor fritz": {
-    "p1": 1.47,
-    "p2": 2.87,
+    "p1": 1.43,
+    "p2": 2.85,
     "p1name": "Taylor Fritz",
     "p2name": "Alex Michelsen"
   },
   "lorenzo musetti|rafael jodar": {
-    "p1": 1.56,
+    "p1": 1.48,
     "p2": 2.63,
     "p1name": "Rafael Jodar",
     "p2name": "Lorenzo Musetti"
   },
-  "anna kalinskaya|janice tjen": {
-    "p1": 1.64,
-    "p2": 2.23,
-    "p1name": "Janice Tjen",
+  "alejandro tabilo|ben shelton": {
+    "p1": 3.35,
+    "p2": 1.32,
+    "p1name": "Alejandro Tabilo",
+    "p2name": "Ben Shelton"
+  },
+  "anna kalinskaya|jessica pegula": {
+    "p1": 1.36,
+    "p2": 3.4,
+    "p1name": "Jessica Pegula",
     "p2name": "Anna Kalinskaya"
   },
-  "jessica pegula|magdalena frech": {
-    "p1": 1.1,
-    "p2": 8.2,
-    "p1name": "Jessica Pegula",
-    "p2name": "Magdalena Frech"
-  },
-  "anastasia potapova|diana shnaider": {
-    "p1": 1.83,
-    "p2": 2.1,
-    "p1name": "Diana Shnaider",
-    "p2name": "Anastasia Potapova"
-  },
-  "elina svitolina|polina kudermetova": {
-    "p1": 5.34,
-    "p2": 1.2,
-    "p1name": "Polina Kudermetova",
-    "p2name": "Elina Svitolina"
-  },
   "elisabetta cocciaretto|naomi osaka": {
-    "p1": 6,
+    "p1": 6.02,
     "p2": 1.16,
     "p1name": "Elisabetta Cocciaretto",
     "p2name": "Naomi Osaka"
+  },
+  "diana shnaider|liudmila samsonova": {
+    "p1": 1.82,
+    "p2": 2.08,
+    "p1name": "Diana Shnaider",
+    "p2name": "Liudmila Samsonova"
+  },
+  "alexandra eala|elina svitolina": {
+    "p1": 2.8,
+    "p2": 1.44,
+    "p1name": "Alexandra Eala",
+    "p2name": "Elina Svitolina"
   }
 }
