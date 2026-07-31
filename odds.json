@@ -24,8 +24,8 @@
     "p2name": "Ben Shelton"
   },
   "anna kalinskaya|jessica pegula": {
-    "p1": 1.36,
-    "p2": 3.4,
+    "p1": 1.35,
+    "p2": 3.44,
     "p1name": "Jessica Pegula",
     "p2name": "Anna Kalinskaya"
   },
@@ -36,14 +36,14 @@
     "p2name": "Naomi Osaka"
   },
   "diana shnaider|liudmila samsonova": {
-    "p1": 1.82,
-    "p2": 2.08,
+    "p1": 1.88,
+    "p2": 2.02,
     "p1name": "Diana Shnaider",
     "p2name": "Liudmila Samsonova"
   },
   "alexandra eala|elina svitolina": {
-    "p1": 2.66,
-    "p2": 1.53,
+    "p1": 2.65,
+    "p2": 1.56,
     "p1name": "Alexandra Eala",
     "p2name": "Elina Svitolina"
   }
