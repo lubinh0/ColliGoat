@@ -1,71 +1,17 @@
 {
-  "2026-07-31": {
+  "2026-08-02": {
     "data": [
       {
-        "id": "0eca1a6456bce26106630b067ca08d38",
-        "date": "2026-07-31T16:07:00Z",
+        "id": "47f8a5f6294a8f78a47b84de7c4b63d1",
+        "date": "2026-08-01T22:30:00Z",
         "player1": {
-          "name": "Jessica Pegula"
-        },
-        "player2": {
-          "name": "Anna Kalinskaya"
-        },
-        "tour": "wta",
-        "time": "18h07",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Washington Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "58f955e5478d9fec4341c319144c6b41",
-        "date": "2026-07-31T18:00:00Z",
-        "player1": {
-          "name": "Alex de Minaur"
-        },
-        "player2": {
           "name": "Brandon Nakashima"
         },
-        "tour": "atp",
-        "time": "20h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Washington Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "767a9e028ce550c22d4a65b238c43d15",
-        "date": "2026-07-31T18:00:00Z",
-        "player1": {
-          "name": "Elisabetta Cocciaretto"
-        },
         "player2": {
-          "name": "Naomi Osaka"
-        },
-        "tour": "wta",
-        "time": "20h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Washington Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "5787dd2544e1b79088510e275a0ebbc7",
-        "date": "2026-07-31T19:10:00Z",
-        "player1": {
           "name": "Taylor Fritz"
         },
-        "player2": {
-          "name": "Alex Michelsen"
-        },
         "tour": "atp",
-        "time": "21h10",
+        "time": "00h30",
         "scheduled": true,
         "tournament": {
           "name": "ATP Washington Open",
@@ -74,19 +20,19 @@
         }
       },
       {
-        "id": "ab864b41059c0b3ac632c2a49551cb18",
-        "date": "2026-07-31T19:10:00Z",
+        "id": "4c80ce38653307c0d3827d1edb2d09c7",
+        "date": "2026-08-01T23:40:00Z",
         "player1": {
-          "name": "Diana Shnaider"
+          "name": "Rafael Jodar"
         },
         "player2": {
-          "name": "Liudmila Samsonova"
+          "name": "Alejandro Tabilo"
         },
-        "tour": "wta",
-        "time": "21h10",
+        "tour": "atp",
+        "time": "01h40",
         "scheduled": true,
         "tournament": {
-          "name": "WTA Washington Open",
+          "name": "ATP Washington Open",
           "surface": "Hard",
           "flag": "UN"
         }
@@ -96,34 +42,16 @@
   "2026-08-01": {
     "data": [
       {
-        "id": "e68f95e5652963b0e4aaf11c24f7bc5e",
-        "date": "2026-07-31T22:00:00Z",
+        "id": "d5c04ef0d9ad398c751bde36f2b3fafb",
+        "date": "2026-08-01T18:00:00Z",
         "player1": {
-          "name": "Rafael Jodar"
+          "name": "Jessica Pegula"
         },
         "player2": {
-          "name": "Lorenzo Musetti"
-        },
-        "tour": "atp",
-        "time": "00h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Washington Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "40d66c49c39a81a6dcd0e60870869833",
-        "date": "2026-07-31T22:30:00Z",
-        "player1": {
-          "name": "Alexandra Eala"
-        },
-        "player2": {
-          "name": "Elina Svitolina"
+          "name": "Diana Shnaider"
         },
         "tour": "wta",
-        "time": "00h30",
+        "time": "20h00",
         "scheduled": true,
         "tournament": {
           "name": "WTA Washington Open",
@@ -132,19 +60,19 @@
         }
       },
       {
-        "id": "2feb46686f50b6edc3810fb37670d262",
-        "date": "2026-08-01T00:00:00Z",
+        "id": "744cfeab04893225ce7f0920e2d044d7",
+        "date": "2026-08-01T19:10:00Z",
         "player1": {
-          "name": "Alejandro Tabilo"
+          "name": "Naomi Osaka"
         },
         "player2": {
-          "name": "Ben Shelton"
+          "name": "Alexandra Eala"
         },
-        "tour": "atp",
-        "time": "02h00",
+        "tour": "wta",
+        "time": "21h10",
         "scheduled": true,
         "tournament": {
-          "name": "ATP Washington Open",
+          "name": "WTA Washington Open",
           "surface": "Hard",
           "flag": "UN"
         }
