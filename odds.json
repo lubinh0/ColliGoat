@@ -1,140 +1,50 @@
 {
-  "alex michelsen|daniel merida aguilar": {
-    "p1": 3.37,
-    "p2": 1.48,
-    "p1name": "Daniel Merida Aguilar",
-    "p2name": "Alex Michelsen"
-  },
-  "matteo arnaldi|tallon griekspoor": {
-    "p1": 1.44,
-    "p2": 3.02,
-    "p1name": "Tallon Griekspoor",
-    "p2name": "Matteo Arnaldi"
-  },
-  "ben shelton|zizou bergs": {
-    "p1": 3.61,
-    "p2": 1.34,
-    "p1name": "Zizou Bergs",
-    "p2name": "Ben Shelton"
-  },
-  "botic van de zandschulp|hubert hurkacz": {
-    "p1": 2.8,
-    "p2": 1.54,
-    "p1name": "Botic van de Zandschulp",
-    "p2name": "Hubert Hurkacz"
-  },
-  "jakub mensik|terence atmane": {
-    "p1": 2.83,
-    "p2": 1.49,
-    "p1name": "Terence Atmane",
-    "p2name": "Jakub Mensik"
-  },
-  "casper ruud|joao fonseca": {
-    "p1": 2.09,
-    "p2": 1.83,
-    "p1name": "Casper Ruud",
-    "p2name": "Joao Fonseca"
-  },
-  "alexei popyrin|thiago agustin tirante": {
-    "p1": 1.79,
-    "p2": 2.15,
-    "p1name": "Alexei Popyrin",
-    "p2name": "Thiago Agustin Tirante"
-  },
-  "learner tien|tommy paul": {
-    "p1": 2.55,
-    "p2": 1.61,
-    "p1name": "Learner Tien",
-    "p2name": "Tommy Paul"
-  },
-  "arthur fils|cameron norrie": {
-    "p1": 1.41,
-    "p2": 3.15,
-    "p1name": "Arthur Fils",
-    "p2name": "Cameron Norrie"
-  },
-  "arthur rinderknech|brandon nakashima": {
-    "p1": 3.02,
-    "p2": 1.43,
-    "p1name": "Arthur Rinderknech",
-    "p2name": "Brandon Nakashima"
-  },
-  "jiri lehecka|rafael jodar": {
-    "p1": 2.19,
-    "p2": 1.75,
-    "p1name": "Jiri Lehecka",
-    "p2name": "Rafael Jodar"
-  },
   "luciano darderi|nuno borges": {
     "p1": 1.62,
     "p2": 2.42,
     "p1name": "Nuno Borges",
     "p2name": "Luciano Darderi"
   },
-  "ann li|elena rybakina": {
-    "p1": 10,
-    "p2": 1.16,
-    "p1name": "Ann Li",
-    "p2name": "Elena Rybakina"
+  "arthur rinderknech|brandon nakashima": {
+    "p1": 2.95,
+    "p2": 1.46,
+    "p1name": "Arthur Rinderknech",
+    "p2name": "Brandon Nakashima"
   },
-  "leylah fernandez|mirra andreeva": {
-    "p1": 1.25,
-    "p2": 4.6,
-    "p1name": "Mirra Andreeva",
-    "p2name": "Leylah Fernandez"
+  "jiri lehecka|rafael jodar": {
+    "p1": 2.01,
+    "p2": 1.89,
+    "p1name": "Jiri Lehecka",
+    "p2name": "Rafael Jodar"
   },
-  "liudmila samsonova|maya joint": {
-    "p1": 3.27,
-    "p2": 1.39,
-    "p1name": "Maya Joint",
-    "p2name": "Liudmila Samsonova"
+  "arthur fils|cameron norrie": {
+    "p1": 1.4,
+    "p2": 3.18,
+    "p1name": "Arthur Fils",
+    "p2name": "Cameron Norrie"
   },
-  "elise mertens|naomi osaka": {
-    "p1": 3.1,
-    "p2": 1.41,
-    "p1name": "Elise Mertens",
-    "p2name": "Naomi Osaka"
-  },
-  "belinda bencic|taylor townsend": {
-    "p1": 3.53,
-    "p2": 1.35,
-    "p1name": "Taylor Townsend",
-    "p2name": "Belinda Bencic"
-  },
-  "coco gauff|maria sakkari": {
-    "p1": 4.32,
-    "p2": 1.25,
-    "p1name": "Maria Sakkari",
-    "p2name": "Coco Gauff"
-  },
-  "alexandra eala|caty mcnally": {
-    "p1": 3.16,
-    "p2": 1.41,
-    "p1name": "Caty McNally",
-    "p2name": "Alexandra Eala"
-  },
-  "amanda anisimova|elina svitolina": {
-    "p1": 1.67,
-    "p2": 2.32,
-    "p1name": "Elina Svitolina",
-    "p2name": "Amanda Anisimova"
-  },
-  "aryna sabalenka|ekaterina alexandrova": {
-    "p1": 1.17,
-    "p2": 5.71,
-    "p1name": "Aryna Sabalenka",
-    "p2name": "Ekaterina Alexandrova"
+  "iga swiatek|marta kostyuk": {
+    "p1": 2.3,
+    "p2": 1.68,
+    "p1name": "Marta Kostyuk",
+    "p2name": "Iga Swiatek"
   },
   "diana shnaider|jessica pegula": {
-    "p1": 1.41,
+    "p1": 1.43,
     "p2": 3.15,
     "p1name": "Jessica Pegula",
     "p2name": "Diana Shnaider"
   },
-  "iga swiatek|marta kostyuk": {
-    "p1": 2.26,
-    "p2": 1.7,
-    "p1name": "Marta Kostyuk",
-    "p2name": "Iga Swiatek"
+  "aryna sabalenka|ekaterina alexandrova": {
+    "p1": 1.17,
+    "p2": 5.78,
+    "p1name": "Aryna Sabalenka",
+    "p2name": "Ekaterina Alexandrova"
+  },
+  "amanda anisimova|elina svitolina": {
+    "p1": 1.68,
+    "p2": 2.32,
+    "p1name": "Elina Svitolina",
+    "p2name": "Amanda Anisimova"
   }
 }
