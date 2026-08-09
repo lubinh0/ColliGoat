@@ -1,19 +1,19 @@
 {
   "daniel merida aguilar|tallon griekspoor": {
-    "p1": 1.81,
-    "p2": 2.11,
+    "p1": 1.79,
+    "p2": 2.23,
     "p1name": "Tallon Griekspoor",
     "p2name": "Daniel Merida Aguilar"
   },
   "learner tien|thiago agustin tirante": {
-    "p1": 1.42,
-    "p2": 3.1,
+    "p1": 1.43,
+    "p2": 3.07,
     "p1name": "Learner Tien",
     "p2name": "Thiago Agustin Tirante"
   },
   "ben shelton|joao fonseca": {
-    "p1": 2.09,
-    "p2": 1.83,
+    "p1": 2.11,
+    "p2": 1.82,
     "p1name": "Joao Fonseca",
     "p2name": "Ben Shelton"
   },
@@ -24,8 +24,8 @@
     "p2name": "Jakub Mensik"
   },
   "arthur fils|rafael jodar": {
-    "p1": 1.98,
-    "p2": 1.91,
+    "p1": 1.95,
+    "p2": 1.93,
     "p1name": "Rafael Jodar",
     "p2name": "Arthur Fils"
   },
@@ -36,26 +36,26 @@
     "p2name": "Brandon Nakashima"
   },
   "elena rybakina|liudmila samsonova": {
-    "p1": 3.68,
-    "p2": 1.33,
+    "p1": 3.75,
+    "p2": 1.32,
     "p1name": "Liudmila Samsonova",
     "p2name": "Elena Rybakina"
   },
   "alina korneeva|coco gauff": {
-    "p1": 4,
+    "p1": 3.85,
     "p2": 1.31,
     "p1name": "Alina Korneeva",
     "p2name": "Coco Gauff"
   },
   "leylah fernandez|naomi osaka": {
-    "p1": 3.18,
-    "p2": 1.41,
+    "p1": 3.14,
+    "p2": 1.42,
     "p1name": "Leylah Fernandez",
     "p2name": "Naomi Osaka"
   },
   "alexandra eala|belinda bencic": {
-    "p1": 2.02,
-    "p2": 1.89,
+    "p1": 2.12,
+    "p2": 1.81,
     "p1name": "Alexandra Eala",
     "p2name": "Belinda Bencic"
   },
@@ -66,8 +66,8 @@
     "p2name": "Iga Swiatek"
   },
   "ekaterina alexandrova|elina svitolina": {
-    "p1": 3.25,
-    "p2": 1.38,
+    "p1": 3.24,
+    "p2": 1.39,
     "p1name": "Ekaterina Alexandrova",
     "p2name": "Elina Svitolina"
   }
