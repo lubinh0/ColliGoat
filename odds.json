@@ -7,7 +7,7 @@
   },
   "learner tien|thiago agustin tirante": {
     "p1": 1.47,
-    "p2": 3.1,
+    "p2": 2.91,
     "p1name": "Learner Tien",
     "p2name": "Thiago Agustin Tirante"
   },
@@ -23,6 +23,12 @@
     "p1name": "Botic van de Zandschulp",
     "p2name": "Jakub Mensik"
   },
+  "arthur fils|rafael jodar": {
+    "p1": 1.98,
+    "p2": 1.91,
+    "p1name": "Rafael Jodar",
+    "p2name": "Arthur Fils"
+  },
   "brandon nakashima|luciano darderi": {
     "p1": 3.04,
     "p2": 1.43,
@@ -30,8 +36,8 @@
     "p2name": "Brandon Nakashima"
   },
   "elena rybakina|liudmila samsonova": {
-    "p1": 3.65,
-    "p2": 1.33,
+    "p1": 3.61,
+    "p2": 1.34,
     "p1name": "Liudmila Samsonova",
     "p2name": "Elena Rybakina"
   },
@@ -49,8 +55,20 @@
   },
   "alexandra eala|belinda bencic": {
     "p1": 2.04,
-    "p2": 1.93,
+    "p2": 1.91,
     "p1name": "Alexandra Eala",
     "p2name": "Belinda Bencic"
+  },
+  "diana shnaider|iga swiatek": {
+    "p1": 3.46,
+    "p2": 1.35,
+    "p1name": "Diana Shnaider",
+    "p2name": "Iga Swiatek"
+  },
+  "ekaterina alexandrova|elina svitolina": {
+    "p1": 3.24,
+    "p2": 1.39,
+    "p1name": "Ekaterina Alexandrova",
+    "p2name": "Elina Svitolina"
   }
 }
