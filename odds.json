@@ -1,19 +1,19 @@
 {
-  "arthur fils|rafael jodar": {
-    "p1": 1.82,
-    "p2": 2.1,
-    "p1name": "Rafael Jodar",
-    "p2name": "Arthur Fils"
-  },
   "brandon nakashima|luciano darderi": {
-    "p1": 3.07,
+    "p1": 2.99,
     "p2": 1.45,
     "p1name": "Luciano Darderi",
     "p2name": "Brandon Nakashima"
   },
+  "arthur fils|rafael jodar": {
+    "p1": 1.69,
+    "p2": 2.33,
+    "p1name": "Rafael Jodar",
+    "p2name": "Arthur Fils"
+  },
   "ben shelton|jakub mensik": {
-    "p1": 2.13,
-    "p2": 1.83,
+    "p1": 2.11,
+    "p2": 1.82,
     "p1name": "Jakub Mensik",
     "p2name": "Ben Shelton"
   },
@@ -23,28 +23,22 @@
     "p1name": "Daniel Merida Aguilar",
     "p2name": "Learner Tien"
   },
-  "diana shnaider|iga swiatek": {
-    "p1": 3.54,
-    "p2": 1.36,
-    "p1name": "Diana Shnaider",
-    "p2name": "Iga Swiatek"
-  },
-  "ekaterina alexandrova|elina svitolina": {
-    "p1": 3.31,
-    "p2": 1.38,
-    "p1name": "Ekaterina Alexandrova",
-    "p2name": "Elina Svitolina"
-  },
   "belinda bencic|coco gauff": {
-    "p1": 2.41,
+    "p1": 2.46,
     "p2": 1.62,
     "p1name": "Belinda Bencic",
     "p2name": "Coco Gauff"
   },
   "elena rybakina|naomi osaka": {
-    "p1": 1.96,
+    "p1": 1.98,
     "p2": 1.93,
     "p1name": "Naomi Osaka",
     "p2name": "Elena Rybakina"
+  },
+  "elina svitolina|iga swiatek": {
+    "p1": 3.05,
+    "p2": 1.43,
+    "p1name": "Elina Svitolina",
+    "p2name": "Iga Swiatek"
   }
 }
