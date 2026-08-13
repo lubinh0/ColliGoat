@@ -57,7 +57,7 @@
       },
       {
         "id": "e723dde12617d39b432ea4de1747708f",
-        "date": "2026-08-14T00:05:00Z",
+        "date": "2026-08-14T00:00:00Z",
         "player1": {
           "name": "Ben Shelton"
         },
@@ -65,7 +65,7 @@
           "name": "Brandon Nakashima"
         },
         "tour": "atp",
-        "time": "02h05",
+        "time": "02h00",
         "scheduled": true,
         "tournament": {
           "name": "ATP Canadian Open",
@@ -618,6 +618,42 @@
         }
       },
       {
+        "id": "1143777c76b00855f6c94a3b107eafd2",
+        "date": "2026-08-13T16:30:00Z",
+        "player1": {
+          "name": "Xiyu Wang"
+        },
+        "player2": {
+          "name": "Polina Kudermetova"
+        },
+        "tour": "wta",
+        "time": "18h30",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA Cincinnati Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
+        "id": "33445cba10fd821009f6520983627515",
+        "date": "2026-08-13T17:00:00Z",
+        "player1": {
+          "name": "Aleksandar Vukic"
+        },
+        "player2": {
+          "name": "Mark Lajal"
+        },
+        "tour": "atp",
+        "time": "19h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Cincinnati Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
         "id": "cbb11e879ab28e78921c07861b67be44",
         "date": "2026-08-13T17:00:00Z",
         "player1": {
@@ -625,6 +661,24 @@
         },
         "player2": {
           "name": "Dino Prizmic"
+        },
+        "tour": "atp",
+        "time": "19h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Cincinnati Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
+        "id": "59754f2a97aefb64cddf9307017736a7",
+        "date": "2026-08-13T17:00:00Z",
+        "player1": {
+          "name": "Henrique Rocha"
+        },
+        "player2": {
+          "name": "Nicolas Mejia"
         },
         "tour": "atp",
         "time": "19h00",
