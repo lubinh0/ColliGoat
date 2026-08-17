@@ -348,6 +348,24 @@
         }
       },
       {
+        "id": "8bdf87cebc1de6c1a37b5df4e52b9ced",
+        "date": "2026-08-18T12:00:00Z",
+        "player1": {
+          "name": "Xiyu Wang"
+        },
+        "player2": {
+          "name": "Elina Svitolina"
+        },
+        "tour": "wta",
+        "time": "14h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA Cincinnati Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
         "id": "ea09ce3125148fa80ea0a1bff9546c79",
         "date": "2026-08-18T12:00:00Z",
         "player1": {
