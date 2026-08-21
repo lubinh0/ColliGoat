@@ -1,32 +1,38 @@
 {
   "brandon nakashima|taylor fritz": {
-    "p1": 1.56,
-    "p2": 2.61,
+    "p1": 1.6,
+    "p2": 2.55,
     "p1name": "Taylor Fritz",
     "p2name": "Brandon Nakashima"
   },
   "frances tiafoe|lorenzo musetti": {
-    "p1": 1.9,
-    "p2": 2.01,
+    "p1": 1.87,
+    "p2": 2.04,
     "p1name": "Lorenzo Musetti",
     "p2name": "Frances Tiafoe"
   },
   "arthur fils|flavio cobolli": {
-    "p1": 3.51,
-    "p2": 1.34,
+    "p1": 3.74,
+    "p2": 1.31,
     "p1name": "Flavio Cobolli",
     "p2name": "Arthur Fils"
   },
   "madison keys|sara bejlek": {
-    "p1": 2.82,
-    "p2": 1.48,
+    "p1": 2.85,
+    "p2": 1.47,
     "p1name": "Sara Bejlek",
     "p2name": "Madison Keys"
   },
   "coco gauff|marta kostyuk": {
-    "p1": 1.74,
-    "p2": 2.23,
+    "p1": 1.75,
+    "p2": 2.21,
     "p1name": "Coco Gauff",
     "p2name": "Marta Kostyuk"
+  },
+  "iga swiatek|jessica pegula": {
+    "p1": 3.05,
+    "p2": 1.43,
+    "p1name": "Jessica Pegula",
+    "p2name": "Iga Swiatek"
   }
 }
