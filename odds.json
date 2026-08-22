@@ -1,6 +1,6 @@
 {
   "arthur fils|flavio cobolli": {
-    "p1": 3.35,
+    "p1": 3.34,
     "p2": 1.38,
     "p1name": "Flavio Cobolli",
     "p2name": "Arthur Fils"
@@ -12,14 +12,14 @@
     "p2name": "Frances Tiafoe"
   },
   "iga swiatek|jessica pegula": {
-    "p1": 3,
-    "p2": 1.45,
+    "p1": 3.05,
+    "p2": 1.43,
     "p1name": "Jessica Pegula",
     "p2name": "Iga Swiatek"
   },
   "coco gauff|sara bejlek": {
-    "p1": 4.25,
-    "p2": 1.26,
+    "p1": 4.47,
+    "p2": 1.25,
     "p1name": "Sara Bejlek",
     "p2name": "Coco Gauff"
   }
