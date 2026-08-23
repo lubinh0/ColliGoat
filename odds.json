@@ -1,14 +1,86 @@
 {
   "arthur fils|frances tiafoe": {
-    "p1": 1.51,
-    "p2": 2.72,
+    "p1": 1.5,
+    "p2": 2.8,
     "p1name": "Arthur Fils",
     "p2name": "Frances Tiafoe"
   },
   "coco gauff|jessica pegula": {
-    "p1": 1.68,
-    "p2": 2.31,
+    "p1": 1.67,
+    "p2": 2.33,
     "p1name": "Coco Gauff",
     "p2name": "Jessica Pegula"
+  },
+  "darja vidmanova|panna udvardy": {
+    "p1": 2.81,
+    "p2": 1.45,
+    "p1name": "Panna Udvardy",
+    "p2name": "Darja Vidmanova"
+  },
+  "kamilla rakhimova|maria timofeeva": {
+    "p1": 2.36,
+    "p2": 1.61,
+    "p1name": "Maria Timofeeva",
+    "p2name": "Kamilla Rakhimova"
+  },
+  "anna bondár|liang en-shuo": {
+    "p1": 1.3,
+    "p2": 3.68,
+    "p1name": "Anna Bondár",
+    "p2name": "Liang En-shuo"
+  },
+  "maya joint|yulia putintseva": {
+    "p1": 2.07,
+    "p2": 1.79,
+    "p1name": "Maya Joint",
+    "p2name": "Yulia Putintseva"
+  },
+  "antonia ruzic|nikola bartunkova": {
+    "p1": 3.14,
+    "p2": 1.4,
+    "p1name": "Antonia Ruzic",
+    "p2name": "Nikola Bartunkova"
+  },
+  "lilli tagger|yuliia starodubtseva": {
+    "p1": 1.51,
+    "p2": 2.7,
+    "p1name": "Lilli Tagger",
+    "p2name": "Yuliia Starodubtseva"
+  },
+  "mayar sherif|oleksandra oliynykova": {
+    "p1": 1.87,
+    "p2": 2,
+    "p1name": "Mayar Sherif",
+    "p2name": "Oleksandra Oliynykova"
+  },
+  "ann li|maria camila osorio serrano": {
+    "p1": 1.88,
+    "p2": 1.98,
+    "p1name": "Maria Camila Osorio Serrano",
+    "p2name": "Ann Li"
+  },
+  "alycia parks|petra marcinko": {
+    "p1": 2.12,
+    "p2": 1.78,
+    "p1name": "Alycia Parks",
+    "p2name": "Petra Marcinko"
+  },
+  "clara tauson|renata zarazua": {
+    "p1": 1.31,
+    "p2": 3.7,
+    "p1name": "Clara Tauson",
+    "p2name": "Renata Zarazua"
+  },
+  "dayana yastremska|janice tjen": {
+    "p1": 1.62,
+    "p2": 2.4,
+    "p1name": "Janice Tjen",
+    "p2name": "Dayana Yastremska"
+  },
+  "diane parry|donna vekic": {
+    "p1": 2.39,
+    "p2": 1.62,
+    "p1name": "Diane Parry",
+    "p2name": "Donna Vekic"
   }
 }
