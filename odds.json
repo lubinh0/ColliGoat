@@ -1,18 +1,6 @@
 {
-  "antonia ruzic|nikola bartunkova": {
-    "p1": 30,
-    "p2": 1.08,
-    "p1name": "Antonia Ruzic",
-    "p2name": "Nikola Bartunkova"
-  },
-  "mayar sherif|oleksandra oliynykova": {
-    "p1": 5.2,
-    "p2": 1.29,
-    "p1name": "Mayar Sherif",
-    "p2name": "Oleksandra Oliynykova"
-  },
   "ann li|maria camila osorio serrano": {
-    "p1": 1.87,
+    "p1": 1.85,
     "p2": 2.02,
     "p1name": "Maria Camila Osorio Serrano",
     "p2name": "Ann Li"
@@ -25,7 +13,7 @@
   },
   "dayana yastremska|janice tjen": {
     "p1": 1.62,
-    "p2": 2.4,
+    "p2": 2.43,
     "p1name": "Janice Tjen",
     "p2name": "Dayana Yastremska"
   },
@@ -36,7 +24,7 @@
     "p2name": "Renata Zarazua"
   },
   "diane parry|donna vekic": {
-    "p1": 2.48,
+    "p1": 2.38,
     "p2": 1.63,
     "p1name": "Diane Parry",
     "p2name": "Donna Vekic"
