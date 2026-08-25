@@ -1,37 +1,13 @@
 {
-  "ann li|maria camila osorio serrano": {
-    "p1": 2.02,
-    "p2": 1.88,
-    "p1name": "Maria Camila Osorio Serrano",
-    "p2name": "Ann Li"
-  },
-  "alycia parks|petra marcinko": {
-    "p1": 2.08,
-    "p2": 1.83,
-    "p1name": "Alycia Parks",
-    "p2name": "Petra Marcinko"
-  },
-  "dayana yastremska|janice tjen": {
-    "p1": 1.47,
-    "p2": 2.88,
-    "p1name": "Janice Tjen",
-    "p2name": "Dayana Yastremska"
-  },
-  "clara tauson|renata zarazua": {
-    "p1": 1.33,
-    "p2": 3.57,
-    "p1name": "Clara Tauson",
-    "p2name": "Renata Zarazua"
-  },
   "diane parry|donna vekic": {
-    "p1": 2.33,
-    "p2": 1.67,
+    "p1": 3.78,
+    "p2": 1.36,
     "p1name": "Diane Parry",
     "p2name": "Donna Vekic"
   },
   "anhelina kalinina|maya joint": {
-    "p1": 1.92,
-    "p2": 1.88,
+    "p1": 1.83,
+    "p2": 2.05,
     "p1name": "Anhelina Kalinina",
     "p2name": "Maya Joint"
   },
@@ -42,7 +18,7 @@
     "p2name": "Anna Bondár"
   },
   "darja vidmanova|kimberly birrell": {
-    "p1": 1.7,
+    "p1": 1.69,
     "p2": 2.25,
     "p1name": "Darja Vidmanova",
     "p2name": "Kimberly Birrell"
@@ -54,8 +30,8 @@
     "p2name": "Maria Timofeeva"
   },
   "anastasia potapova|nikola bartunkova": {
-    "p1": 1.57,
-    "p2": 2.35,
+    "p1": 1.51,
+    "p2": 2.55,
     "p1name": "Nikola Bartunkova",
     "p2name": "Anastasia Potapova"
   }
