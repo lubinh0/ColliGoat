@@ -1,38 +1,56 @@
 {
-  "diane parry|donna vekic": {
-    "p1": 3.78,
-    "p2": 1.36,
-    "p1name": "Diane Parry",
-    "p2name": "Donna Vekic"
-  },
-  "anhelina kalinina|maya joint": {
-    "p1": 1.83,
-    "p2": 2.05,
-    "p1name": "Anhelina Kalinina",
-    "p2name": "Maya Joint"
-  },
   "anna bondár|cristina bucsa": {
-    "p1": 2.1,
-    "p2": 1.82,
+    "p1": 2.16,
+    "p2": 1.75,
     "p1name": "Cristina Bucsa",
     "p2name": "Anna Bondár"
   },
   "darja vidmanova|kimberly birrell": {
-    "p1": 1.69,
+    "p1": 1.7,
     "p2": 2.25,
     "p1name": "Darja Vidmanova",
     "p2name": "Kimberly Birrell"
   },
   "maria timofeeva|shuai zhang": {
-    "p1": 1.81,
-    "p2": 2.07,
+    "p1": 1.85,
+    "p2": 2.02,
     "p1name": "Shuai Zhang",
     "p2name": "Maria Timofeeva"
   },
+  "janice tjen|yuliia starodubtseva": {
+    "p1": 1.67,
+    "p2": 2.2,
+    "p1name": "Janice Tjen",
+    "p2name": "Yuliia Starodubtseva"
+  },
+  "maya joint|panna udvardy": {
+    "p1": 3.7,
+    "p2": 1.27,
+    "p1name": "Panna Udvardy",
+    "p2name": "Maya Joint"
+  },
+  "diane parry|oleksandra oliynykova": {
+    "p1": 3.85,
+    "p2": 1.26,
+    "p1name": "Oleksandra Oliynykova",
+    "p2name": "Diane Parry"
+  },
   "anastasia potapova|nikola bartunkova": {
-    "p1": 1.51,
-    "p2": 2.55,
+    "p1": 1.54,
+    "p2": 2.48,
     "p1name": "Nikola Bartunkova",
     "p2name": "Anastasia Potapova"
+  },
+  "alycia parks|maja chwalinska": {
+    "p1": 1.51,
+    "p2": 2.5,
+    "p1name": "Maja Chwalinska",
+    "p2name": "Alycia Parks"
+  },
+  "clara tauson|ekaterina alexandrova": {
+    "p1": 1.72,
+    "p2": 2.12,
+    "p1name": "Ekaterina Alexandrova",
+    "p2name": "Clara Tauson"
   }
 }
