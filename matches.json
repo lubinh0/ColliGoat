@@ -2,24 +2,6 @@
   "2026-08-26": {
     "data": [
       {
-        "id": "431149e74b48bc3ebdc4b20471c1ffb1",
-        "date": "2026-08-26T03:47:06Z",
-        "player1": {
-          "name": "Nikola Bartunkova"
-        },
-        "player2": {
-          "name": "Liang En-shuo"
-        },
-        "tour": "wta",
-        "time": "05h47",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Monterrey Open",
-          "surface": "Clay",
-          "flag": "MC"
-        }
-      },
-      {
         "id": "5f18c15b068f5690f5aab5e066ed4a67",
         "date": "2026-08-26T21:00:00Z",
         "player1": {
