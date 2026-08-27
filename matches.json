@@ -25,7 +25,7 @@
     "data": [
       {
         "id": "7b1d73a6f080cc7c97b974f8a7cb41dc",
-        "date": "2026-08-27T22:10:00Z",
+        "date": "2026-08-27T22:30:00Z",
         "player1": {
           "name": "Darja Vidmanova"
         },
@@ -33,7 +33,7 @@
           "name": "Nikola Bartunkova"
         },
         "tour": "wta",
-        "time": "00h10",
+        "time": "00h30",
         "scheduled": true,
         "tournament": {
           "name": "WTA Monterrey Open",
@@ -61,7 +61,7 @@
       },
       {
         "id": "fac7e47028ad48f11e2aa314cac4035d",
-        "date": "2026-08-28T02:40:00Z",
+        "date": "2026-08-28T03:00:00Z",
         "player1": {
           "name": "Yuliia Starodubtseva"
         },
@@ -69,7 +69,7 @@
           "name": "Elise Mertens"
         },
         "tour": "wta",
-        "time": "04h40",
+        "time": "05h00",
         "scheduled": true,
         "tournament": {
           "name": "WTA Monterrey Open",
