@@ -1,32 +1,26 @@
 {
-  "ann li|maria timofeeva": {
-    "p1": 2.7,
-    "p2": 1.53,
-    "p1name": "Maria Timofeeva",
+  "alycia parks|ann li": {
+    "p1": 3.05,
+    "p2": 1.38,
+    "p1name": "Alycia Parks",
     "p2name": "Ann Li"
   },
-  "cristina bucsa|darja vidmanova": {
-    "p1": 2.21,
-    "p2": 1.74,
-    "p1name": "Cristina Bucsa",
-    "p2name": "Darja Vidmanova"
+  "darja vidmanova|nikola bartunkova": {
+    "p1": 2.52,
+    "p2": 1.58,
+    "p1name": "Darja Vidmanova",
+    "p2name": "Nikola Bartunkova"
   },
-  "elise mertens|panna udvardy": {
-    "p1": 4.66,
-    "p2": 1.25,
-    "p1name": "Panna Udvardy",
+  "clara tauson|diane parry": {
+    "p1": 1.42,
+    "p2": 2.88,
+    "p1name": "Clara Tauson",
+    "p2name": "Diane Parry"
+  },
+  "elise mertens|yuliia starodubtseva": {
+    "p1": 2.9,
+    "p2": 1.41,
+    "p1name": "Yuliia Starodubtseva",
     "p2name": "Elise Mertens"
-  },
-  "alycia parks|maja chwalinska": {
-    "p1": 1.59,
-    "p2": 2.53,
-    "p1name": "Maja Chwalinska",
-    "p2name": "Alycia Parks"
-  },
-  "clara tauson|ekaterina alexandrova": {
-    "p1": 2.06,
-    "p2": 1.85,
-    "p1name": "Ekaterina Alexandrova",
-    "p2name": "Clara Tauson"
   }
 }
