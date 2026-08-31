@@ -2,42 +2,6 @@
   "2026-08-31": {
     "data": [
       {
-        "id": "dd05f963843b4f2fbab143e3fe9761be",
-        "date": "2026-08-30T22:08:00Z",
-        "player1": {
-          "name": "Sebastian Gorzny"
-        },
-        "player2": {
-          "name": "Raphael Collignon"
-        },
-        "tour": "atp",
-        "time": "00h08",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "2fd3409521b64ab86b4daec14aa383a6",
-        "date": "2026-08-30T22:20:51Z",
-        "player1": {
-          "name": "Kimberly Birrell"
-        },
-        "player2": {
-          "name": "Petra Marcinko"
-        },
-        "tour": "wta",
-        "time": "00h20",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
         "id": "804dee1bafd728e13c9dbde1f327d7e6",
         "date": "2026-08-30T22:30:53Z",
         "player1": {
@@ -1756,13 +1720,13 @@
         }
       },
       {
-        "id": "fb6637e0cf941527bc62a2fe98f131b4",
+        "id": "364094868576bfee653c5992ea92e622",
         "date": "2026-09-02T15:00:00Z",
         "player1": {
-          "name": "Jasmine Paolini"
+          "name": "Jessica Pegula"
         },
         "player2": {
-          "name": "Lucrezia Stefanini"
+          "name": "Sofia Kenin"
         },
         "tour": "wta",
         "time": "17h00",
@@ -1774,16 +1738,16 @@
         }
       },
       {
-        "id": "364094868576bfee653c5992ea92e622",
-        "date": "2026-09-02T15:00:00Z",
+        "id": "fb6637e0cf941527bc62a2fe98f131b4",
+        "date": "2026-09-02T18:00:00Z",
         "player1": {
-          "name": "Jessica Pegula"
+          "name": "Jasmine Paolini"
         },
         "player2": {
-          "name": "Sofia Kenin"
+          "name": "Lucrezia Stefanini"
         },
         "tour": "wta",
-        "time": "17h00",
+        "time": "20h00",
         "scheduled": true,
         "tournament": {
           "name": "WTA US Open",
