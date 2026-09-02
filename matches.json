@@ -2,296 +2,8 @@
   "2026-09-02": {
     "data": [
       {
-        "id": "a216f3e5b5e804512b4c4280b04a1ced",
-        "date": "2026-09-01T22:29:00Z",
-        "player1": {
-          "name": "Alex Molcan"
-        },
-        "player2": {
-          "name": "Benjamin Bonzi"
-        },
-        "tour": "atp",
-        "time": "00h29",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "e5884703108ab2654864abac07d0d536",
-        "date": "2026-09-02T01:07:12Z",
-        "player1": {
-          "name": "Iva Jović"
-        },
-        "player2": {
-          "name": "Magdalena Frech"
-        },
-        "tour": "wta",
-        "time": "03h07",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "8fa0437a44d41f7261e9fd8899ed690c",
-        "date": "2026-09-02T01:08:34Z",
-        "player1": {
-          "name": "Magda Linette"
-        },
-        "player2": {
-          "name": "Francesca Jones"
-        },
-        "tour": "wta",
-        "time": "03h08",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "a96687034c2f95459e9df7c231e89c88",
-        "date": "2026-09-02T15:00:00Z",
-        "player1": {
-          "name": "Brandon Nakashima"
-        },
-        "player2": {
-          "name": "Alex Michelsen"
-        },
-        "tour": "atp",
-        "time": "17h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "18a705b41a7729da73b06dc384a48869",
-        "date": "2026-09-02T15:00:00Z",
-        "player1": {
-          "name": "Daniel Merida Aguilar"
-        },
-        "player2": {
-          "name": "Andrey Rublev"
-        },
-        "tour": "atp",
-        "time": "17h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "64b6d0d2fc0289c705b8006982e8c5d6",
-        "date": "2026-09-02T15:00:00Z",
-        "player1": {
-          "name": "Jaume Munar"
-        },
-        "player2": {
-          "name": "Arthur Rinderknech"
-        },
-        "tour": "atp",
-        "time": "17h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "140f6e6e7e7bedcfe3aa61d75532e62c",
-        "date": "2026-09-02T15:00:00Z",
-        "player1": {
-          "name": "Daniil Medvedev"
-        },
-        "player2": {
-          "name": "Sebastian Gorzny"
-        },
-        "tour": "atp",
-        "time": "17h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "1b92d447c008fe63c572b44cbd065521",
-        "date": "2026-09-02T15:00:00Z",
-        "player1": {
-          "name": "Karolina Pliskova"
-        },
-        "player2": {
-          "name": "Diana Shnaider"
-        },
-        "tour": "wta",
-        "time": "17h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "fb7a1cb7fff4c117f91a71afae60946b",
-        "date": "2026-09-02T15:00:00Z",
-        "player1": {
-          "name": "Diane Parry"
-        },
-        "player2": {
-          "name": "Sorana Cirstea"
-        },
-        "tour": "wta",
-        "time": "17h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "fb6637e0cf941527bc62a2fe98f131b4",
-        "date": "2026-09-02T15:00:00Z",
-        "player1": {
-          "name": "Jasmine Paolini"
-        },
-        "player2": {
-          "name": "Lucrezia Stefanini"
-        },
-        "tour": "wta",
-        "time": "17h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "e95bb21658ceb1cf3738c9dfceae5bb4",
-        "date": "2026-09-02T15:00:00Z",
-        "player1": {
-          "name": "Mananchaya Sawangkaew"
-        },
-        "player2": {
-          "name": "Leylah Fernandez"
-        },
-        "tour": "wta",
-        "time": "17h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "4f48f037577cae77b50387e64fadc1e5",
-        "date": "2026-09-02T15:00:00Z",
-        "player1": {
-          "name": "Taylor Townsend"
-        },
-        "player2": {
-          "name": "Taylah Preston"
-        },
-        "tour": "wta",
-        "time": "17h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "364094868576bfee653c5992ea92e622",
-        "date": "2026-09-02T15:30:00Z",
-        "player1": {
-          "name": "Jessica Pegula"
-        },
-        "player2": {
-          "name": "Sofia Kenin"
-        },
-        "tour": "wta",
-        "time": "17h30",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "bc41dd439054452e36d98c8bef91e38c",
-        "date": "2026-09-02T16:10:00Z",
-        "player1": {
-          "name": "Tomas Martin Etcheverry"
-        },
-        "player2": {
-          "name": "Jacob Fearnley"
-        },
-        "tour": "atp",
-        "time": "18h10",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "e5302319ac0f9d8353d1540a1a645a6e",
-        "date": "2026-09-02T16:30:00Z",
-        "player1": {
-          "name": "Jan Choinski"
-        },
-        "player2": {
-          "name": "Botic van de Zandschulp"
-        },
-        "tour": "atp",
-        "time": "18h30",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "5f0f1edcc78791a180a4150137af2b07",
-        "date": "2026-09-02T16:30:00Z",
-        "player1": {
-          "name": "Rafael Jodar"
-        },
-        "player2": {
-          "name": "Bu Yunchaokete"
-        },
-        "tour": "atp",
-        "time": "18h30",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
         "id": "2a4e5a229fe1f9aff70b3cf2a0737694",
-        "date": "2026-09-02T16:30:00Z",
+        "date": "2026-09-02T16:37:00Z",
         "player1": {
           "name": "Zachary Svajda"
         },
@@ -299,7 +11,7 @@
           "name": "Daniel Altmaier"
         },
         "tour": "atp",
-        "time": "18h30",
+        "time": "18h37",
         "scheduled": true,
         "tournament": {
           "name": "ATP US Open",
@@ -309,7 +21,7 @@
       },
       {
         "id": "cb9527ab21c9f598c3d915005df17833",
-        "date": "2026-09-02T16:30:00Z",
+        "date": "2026-09-02T16:44:00Z",
         "player1": {
           "name": "Marcos Giron"
         },
@@ -317,25 +29,7 @@
           "name": "Ignacio Buse"
         },
         "tour": "atp",
-        "time": "18h30",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "442889af9a3afbbbfcf55b432837269a",
-        "date": "2026-09-02T16:40:00Z",
-        "player1": {
-          "name": "Andrea Guerrieri"
-        },
-        "player2": {
-          "name": "Alex de Minaur"
-        },
-        "tour": "atp",
-        "time": "18h40",
+        "time": "18h44",
         "scheduled": true,
         "tournament": {
           "name": "ATP US Open",
@@ -345,7 +39,7 @@
       },
       {
         "id": "d688ac68b19d07167b4e5486bdaf97fd",
-        "date": "2026-09-02T16:40:00Z",
+        "date": "2026-09-02T17:08:27Z",
         "player1": {
           "name": "Ben Shelton"
         },
@@ -353,7 +47,7 @@
           "name": "Hubert Hurkacz"
         },
         "tour": "atp",
-        "time": "18h40",
+        "time": "19h08",
         "scheduled": true,
         "tournament": {
           "name": "ATP US Open",
@@ -362,16 +56,34 @@
         }
       },
       {
-        "id": "c6da187f326b576700b5221075714dc4",
-        "date": "2026-09-02T16:40:00Z",
+        "id": "5f0f1edcc78791a180a4150137af2b07",
+        "date": "2026-09-02T17:16:00Z",
         "player1": {
-          "name": "Fabian Marozsan"
+          "name": "Rafael Jodar"
         },
         "player2": {
-          "name": "Michael Zheng"
+          "name": "Bu Yunchaokete"
         },
         "tour": "atp",
-        "time": "18h40",
+        "time": "19h16",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP US Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
+        "id": "bc41dd439054452e36d98c8bef91e38c",
+        "date": "2026-09-02T17:16:00Z",
+        "player1": {
+          "name": "Tomas Martin Etcheverry"
+        },
+        "player2": {
+          "name": "Jacob Fearnley"
+        },
+        "tour": "atp",
+        "time": "19h16",
         "scheduled": true,
         "tournament": {
           "name": "ATP US Open",
@@ -381,7 +93,7 @@
       },
       {
         "id": "9e30948c157623afa7bd240fddbd895b",
-        "date": "2026-09-02T16:40:00Z",
+        "date": "2026-09-02T17:18:50Z",
         "player1": {
           "name": "Emma Navarro"
         },
@@ -389,7 +101,7 @@
           "name": "Caty McNally"
         },
         "tour": "wta",
-        "time": "18h40",
+        "time": "19h18",
         "scheduled": true,
         "tournament": {
           "name": "WTA US Open",
@@ -399,7 +111,7 @@
       },
       {
         "id": "a317ace53cdb999e4243f2aa24120019",
-        "date": "2026-09-02T16:40:00Z",
+        "date": "2026-09-02T17:35:43Z",
         "player1": {
           "name": "Marta Kostyuk"
         },
@@ -407,7 +119,7 @@
           "name": "Sloane Stephens"
         },
         "tour": "wta",
-        "time": "18h40",
+        "time": "19h35",
         "scheduled": true,
         "tournament": {
           "name": "WTA US Open",
@@ -416,16 +128,16 @@
         }
       },
       {
-        "id": "b1c232f3649d4155d1c89c5ddd40512b",
-        "date": "2026-09-02T18:00:00Z",
+        "id": "442889af9a3afbbbfcf55b432837269a",
+        "date": "2026-09-02T18:06:19Z",
         "player1": {
-          "name": "Denis Shapovalov"
+          "name": "Andrea Guerrieri"
         },
         "player2": {
-          "name": "Luca Van Assche"
+          "name": "Alex de Minaur"
         },
         "tour": "atp",
-        "time": "20h00",
+        "time": "20h06",
         "scheduled": true,
         "tournament": {
           "name": "ATP US Open",
@@ -434,88 +146,16 @@
         }
       },
       {
-        "id": "bea843e2751e6a827b058f16dfa5a902",
-        "date": "2026-09-02T18:10:00Z",
+        "id": "c6da187f326b576700b5221075714dc4",
+        "date": "2026-09-02T18:27:00Z",
         "player1": {
-          "name": "James Duckworth"
+          "name": "Fabian Marozsan"
         },
         "player2": {
-          "name": "Wu Yibing"
+          "name": "Michael Zheng"
         },
         "tour": "atp",
-        "time": "20h10",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "fbec424c3540172206f3eb0220ba482a",
-        "date": "2026-09-02T18:10:00Z",
-        "player1": {
-          "name": "Xinyu Wang"
-        },
-        "player2": {
-          "name": "Anna Kalinskaya"
-        },
-        "tour": "wta",
-        "time": "20h10",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "0cdf113c357d677fdc83eec7e9476bf5",
-        "date": "2026-09-02T18:10:00Z",
-        "player1": {
-          "name": "Katie Boulter"
-        },
-        "player2": {
-          "name": "Karolina Muchova"
-        },
-        "tour": "wta",
-        "time": "20h10",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "392454bf9eb7dc5bc3c8e756dccc8616",
-        "date": "2026-09-02T18:20:00Z",
-        "player1": {
-          "name": "Matteo Berrettini"
-        },
-        "player2": {
-          "name": "Mariano Navone"
-        },
-        "tour": "atp",
-        "time": "20h20",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "b8c5874840b5d9ace01274520fc2fbdc",
-        "date": "2026-09-02T18:40:00Z",
-        "player1": {
-          "name": "Dino Prizmic"
-        },
-        "player2": {
-          "name": "Tommy Paul"
-        },
-        "tour": "atp",
-        "time": "20h40",
+        "time": "20h27",
         "scheduled": true,
         "tournament": {
           "name": "ATP US Open",
@@ -525,7 +165,7 @@
       },
       {
         "id": "992f55148bdc2b5c93beb52f52673edc",
-        "date": "2026-09-02T18:40:00Z",
+        "date": "2026-09-02T18:49:10Z",
         "player1": {
           "name": "Oksana Selekhmeteva"
         },
@@ -533,7 +173,7 @@
           "name": "Kamilla Rakhimova"
         },
         "tour": "wta",
-        "time": "20h40",
+        "time": "20h49",
         "scheduled": true,
         "tournament": {
           "name": "WTA US Open",
@@ -542,16 +182,16 @@
         }
       },
       {
-        "id": "e709f767937d2eb3f50833298a6b9650",
-        "date": "2026-09-02T18:50:00Z",
+        "id": "b1c232f3649d4155d1c89c5ddd40512b",
+        "date": "2026-09-02T19:05:00Z",
         "player1": {
-          "name": "Jiri Lehecka"
+          "name": "Denis Shapovalov"
         },
         "player2": {
-          "name": "Toby Samuel"
+          "name": "Luca Van Assche"
         },
         "tour": "atp",
-        "time": "20h50",
+        "time": "21h05",
         "scheduled": true,
         "tournament": {
           "name": "ATP US Open",
@@ -560,49 +200,49 @@
         }
       },
       {
-        "id": "3ef7277923a1263c6cd8da763372ae1f",
-        "date": "2026-09-02T19:00:00Z",
-        "player1": {
-          "name": "Kimberly Birrell"
-        },
-        "player2": {
-          "name": "Ekaterina Alexandrova"
-        },
-        "tour": "wta",
-        "time": "21h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "28fd88ad06c19dc8639738c812594226",
+        "id": "0cdf113c357d677fdc83eec7e9476bf5",
         "date": "2026-09-02T19:20:00Z",
         "player1": {
-          "name": "Alexander Bublik"
+          "name": "Katie Boulter"
         },
         "player2": {
-          "name": "Adrian Mannarino"
+          "name": "Karolina Muchova"
         },
-        "tour": "atp",
+        "tour": "wta",
         "time": "21h20",
         "scheduled": true,
         "tournament": {
+          "name": "WTA US Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
+        "id": "392454bf9eb7dc5bc3c8e756dccc8616",
+        "date": "2026-09-02T19:25:00Z",
+        "player1": {
+          "name": "Matteo Berrettini"
+        },
+        "player2": {
+          "name": "Mariano Navone"
+        },
+        "tour": "atp",
+        "time": "21h25",
+        "scheduled": true,
+        "tournament": {
           "name": "ATP US Open",
           "surface": "Hard",
           "flag": "US"
         }
       },
       {
-        "id": "618b994c9bbf2aa02be60161ecb684a6",
+        "id": "fbec424c3540172206f3eb0220ba482a",
         "date": "2026-09-02T19:40:00Z",
         "player1": {
-          "name": "Ann Li"
+          "name": "Xinyu Wang"
         },
         "player2": {
-          "name": "Donna Vekic"
+          "name": "Anna Kalinskaya"
         },
         "tour": "wta",
         "time": "21h40",
@@ -614,16 +254,16 @@
         }
       },
       {
-        "id": "5e239329c56a5ca4bea8769b7e5f2a85",
-        "date": "2026-09-02T20:30:00Z",
+        "id": "bea843e2751e6a827b058f16dfa5a902",
+        "date": "2026-09-02T20:15:00Z",
         "player1": {
-          "name": "Lloyd Harris"
+          "name": "James Duckworth"
         },
         "player2": {
-          "name": "Stefanos Tsitsipas"
+          "name": "Wu Yibing"
         },
         "tour": "atp",
-        "time": "22h30",
+        "time": "22h15",
         "scheduled": true,
         "tournament": {
           "name": "ATP US Open",
@@ -632,13 +272,103 @@
         }
       },
       {
-        "id": "eca482b730f8239626cb8551d239ac1a",
-        "date": "2026-09-02T20:50:00Z",
+        "id": "e709f767937d2eb3f50833298a6b9650",
+        "date": "2026-09-02T20:25:00Z",
         "player1": {
-          "name": "Valentin Vacherot"
+          "name": "Jiri Lehecka"
         },
         "player2": {
-          "name": "Kamil Majchrzak"
+          "name": "Toby Samuel"
+        },
+        "tour": "atp",
+        "time": "22h25",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP US Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
+        "id": "3ef7277923a1263c6cd8da763372ae1f",
+        "date": "2026-09-02T20:25:00Z",
+        "player1": {
+          "name": "Kimberly Birrell"
+        },
+        "player2": {
+          "name": "Ekaterina Alexandrova"
+        },
+        "tour": "wta",
+        "time": "22h25",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA US Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
+        "id": "b8c5874840b5d9ace01274520fc2fbdc",
+        "date": "2026-09-02T20:40:00Z",
+        "player1": {
+          "name": "Dino Prizmic"
+        },
+        "player2": {
+          "name": "Tommy Paul"
+        },
+        "tour": "atp",
+        "time": "22h40",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP US Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
+        "id": "5e239329c56a5ca4bea8769b7e5f2a85",
+        "date": "2026-09-02T20:40:00Z",
+        "player1": {
+          "name": "Lloyd Harris"
+        },
+        "player2": {
+          "name": "Stefanos Tsitsipas"
+        },
+        "tour": "atp",
+        "time": "22h40",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP US Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
+        "id": "618b994c9bbf2aa02be60161ecb684a6",
+        "date": "2026-09-02T20:40:00Z",
+        "player1": {
+          "name": "Ann Li"
+        },
+        "player2": {
+          "name": "Donna Vekic"
+        },
+        "tour": "wta",
+        "time": "22h40",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA US Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
+        "id": "28fd88ad06c19dc8639738c812594226",
+        "date": "2026-09-02T20:50:00Z",
+        "player1": {
+          "name": "Alexander Bublik"
+        },
+        "player2": {
+          "name": "Adrian Mannarino"
         },
         "tour": "atp",
         "time": "22h50",
@@ -650,19 +380,19 @@
         }
       },
       {
-        "id": "7b8308d2ac340418fd917e8fe8fd85bd",
-        "date": "2026-09-02T21:00:00Z",
+        "id": "eca482b730f8239626cb8551d239ac1a",
+        "date": "2026-09-02T21:50:00Z",
         "player1": {
-          "name": "Elina Svitolina"
+          "name": "Valentin Vacherot"
         },
         "player2": {
-          "name": "Maya Joint"
+          "name": "Kamil Majchrzak"
         },
-        "tour": "wta",
-        "time": "23h00",
+        "tour": "atp",
+        "time": "23h50",
         "scheduled": true,
         "tournament": {
-          "name": "WTA US Open",
+          "name": "ATP US Open",
           "surface": "Hard",
           "flag": "US"
         }
@@ -671,6 +401,24 @@
   },
   "2026-09-03": {
     "data": [
+      {
+        "id": "7b8308d2ac340418fd917e8fe8fd85bd",
+        "date": "2026-09-02T22:00:00Z",
+        "player1": {
+          "name": "Elina Svitolina"
+        },
+        "player2": {
+          "name": "Maya Joint"
+        },
+        "tour": "wta",
+        "time": "00h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA US Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
       {
         "id": "674ca3fc39a508424fbc20ac3ef8ecb2",
         "date": "2026-09-02T23:00:00Z",
@@ -780,24 +528,6 @@
         }
       },
       {
-        "id": "81d5598e13c2fcfce4989d037947f018",
-        "date": "2026-09-03T15:00:00Z",
-        "player1": {
-          "name": "Alexander Zverev"
-        },
-        "player2": {
-          "name": "Quentin Halys"
-        },
-        "tour": "atp",
-        "time": "17h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
         "id": "387e143b914f1924407c3911ae2eec86",
         "date": "2026-09-03T15:00:00Z",
         "player1": {
@@ -888,24 +618,6 @@
         }
       },
       {
-        "id": "93f7500d41836f113c7cb2101d9408cd",
-        "date": "2026-09-03T15:00:00Z",
-        "player1": {
-          "name": "Gael Monfils"
-        },
-        "player2": {
-          "name": "Learner Tien"
-        },
-        "tour": "atp",
-        "time": "17h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
         "id": "0848e831888372afebbf3089bb05921a",
         "date": "2026-09-03T15:00:00Z",
         "player1": {
@@ -919,42 +631,6 @@
         "scheduled": true,
         "tournament": {
           "name": "ATP US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "de81b7eaff562548a98086afe77b8553",
-        "date": "2026-09-03T15:00:00Z",
-        "player1": {
-          "name": "Taylor Fritz"
-        },
-        "player2": {
-          "name": "Mattia Bellucci"
-        },
-        "tour": "atp",
-        "time": "17h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "7e84f743a9993b43dfafa00c5779f57b",
-        "date": "2026-09-03T15:00:00Z",
-        "player1": {
-          "name": "Oleksandra Oliynykova"
-        },
-        "player2": {
-          "name": "Alexandra Eala"
-        },
-        "tour": "wta",
-        "time": "17h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA US Open",
           "surface": "Hard",
           "flag": "US"
         }
@@ -1021,24 +697,6 @@
         },
         "player2": {
           "name": "Himeno Sakatsume"
-        },
-        "tour": "wta",
-        "time": "17h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "6c47604abe636acbfe699e110e95bd8f",
-        "date": "2026-09-03T15:00:00Z",
-        "player1": {
-          "name": "Jessica Bouzas Maneiro"
-        },
-        "player2": {
-          "name": "Elena Rybakina"
         },
         "tour": "wta",
         "time": "17h00",
@@ -1122,24 +780,6 @@
         }
       },
       {
-        "id": "de00779383d83dcf68e68cccefacd8b4",
-        "date": "2026-09-03T15:00:00Z",
-        "player1": {
-          "name": "Naomi Osaka"
-        },
-        "player2": {
-          "name": "Katerina Siniakova"
-        },
-        "tour": "wta",
-        "time": "17h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
         "id": "43d04f8cdfb8c36ecf5b5dcd333740aa",
         "date": "2026-09-03T15:00:00Z",
         "player1": {
@@ -1165,6 +805,208 @@
         },
         "player2": {
           "name": "Yulia Putintseva"
+        },
+        "tour": "wta",
+        "time": "17h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA US Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
+        "id": "de00779383d83dcf68e68cccefacd8b4",
+        "date": "2026-09-03T15:30:00Z",
+        "player1": {
+          "name": "Naomi Osaka"
+        },
+        "player2": {
+          "name": "Katerina Siniakova"
+        },
+        "tour": "wta",
+        "time": "17h30",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA US Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
+        "id": "de81b7eaff562548a98086afe77b8553",
+        "date": "2026-09-03T16:40:00Z",
+        "player1": {
+          "name": "Taylor Fritz"
+        },
+        "player2": {
+          "name": "Mattia Bellucci"
+        },
+        "tour": "atp",
+        "time": "18h40",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP US Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
+        "id": "7e84f743a9993b43dfafa00c5779f57b",
+        "date": "2026-09-03T16:40:00Z",
+        "player1": {
+          "name": "Oleksandra Oliynykova"
+        },
+        "player2": {
+          "name": "Alexandra Eala"
+        },
+        "tour": "wta",
+        "time": "18h40",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA US Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      }
+    ]
+  },
+  "2026-09-04": {
+    "data": [
+      {
+        "id": "93f7500d41836f113c7cb2101d9408cd",
+        "date": "2026-09-03T23:00:00Z",
+        "player1": {
+          "name": "Gael Monfils"
+        },
+        "player2": {
+          "name": "Learner Tien"
+        },
+        "tour": "atp",
+        "time": "01h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP US Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
+        "id": "5f40099abeed800144b49aca282fc0b5",
+        "date": "2026-09-03T23:00:00Z",
+        "player1": {
+          "name": "Paula Badosa"
+        },
+        "player2": {
+          "name": "Coco Gauff"
+        },
+        "tour": "wta",
+        "time": "01h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA US Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
+        "id": "81d5598e13c2fcfce4989d037947f018",
+        "date": "2026-09-04T00:10:00Z",
+        "player1": {
+          "name": "Alexander Zverev"
+        },
+        "player2": {
+          "name": "Quentin Halys"
+        },
+        "tour": "atp",
+        "time": "02h10",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP US Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
+        "id": "6c47604abe636acbfe699e110e95bd8f",
+        "date": "2026-09-04T00:40:00Z",
+        "player1": {
+          "name": "Jessica Bouzas Maneiro"
+        },
+        "player2": {
+          "name": "Elena Rybakina"
+        },
+        "tour": "wta",
+        "time": "02h40",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA US Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
+        "id": "cd79358c4254d25e0c6f97a73a6bcc14",
+        "date": "2026-09-04T15:00:00Z",
+        "player1": {
+          "name": "Alex Michelsen"
+        },
+        "player2": {
+          "name": "Daniel Merida Aguilar"
+        },
+        "tour": "atp",
+        "time": "17h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP US Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
+        "id": "2253e8f02528c3b1271004f266984bed",
+        "date": "2026-09-04T15:00:00Z",
+        "player1": {
+          "name": "Taylor Townsend"
+        },
+        "player2": {
+          "name": "Diana Shnaider"
+        },
+        "tour": "wta",
+        "time": "17h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA US Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
+        "id": "7db1a8aa8a9f13abda0764ab4e89c6b1",
+        "date": "2026-09-04T15:00:00Z",
+        "player1": {
+          "name": "Jasmine Paolini"
+        },
+        "player2": {
+          "name": "Sorana Cirstea"
+        },
+        "tour": "wta",
+        "time": "17h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA US Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
+        "id": "3d9ca180b283490bc00f3f92665ec4e7",
+        "date": "2026-09-04T15:00:00Z",
+        "player1": {
+          "name": "Jessica Pegula"
+        },
+        "player2": {
+          "name": "Leylah Fernandez"
         },
         "tour": "wta",
         "time": "17h00",
