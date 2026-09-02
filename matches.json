@@ -2,24 +2,6 @@
   "2026-09-02": {
     "data": [
       {
-        "id": "4c050fb719e296c6657aa66040dfabac",
-        "date": "2026-09-01T22:05:52Z",
-        "player1": {
-          "name": "Tatjana Maria"
-        },
-        "player2": {
-          "name": "Jelena Ostapenko"
-        },
-        "tour": "wta",
-        "time": "00h05",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
         "id": "a216f3e5b5e804512b4c4280b04a1ced",
         "date": "2026-09-01T22:29:00Z",
         "player1": {
