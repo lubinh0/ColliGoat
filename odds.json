@@ -12,20 +12,20 @@
     "p2name": "Flavio Cobolli"
   },
   "arthur gea|michael zheng": {
-    "p1": 1.69,
-    "p2": 2.32,
+    "p1": 1.65,
+    "p2": 2.4,
     "p1name": "Michael Zheng",
     "p2name": "Arthur Gea"
   },
   "benjamin bonzi|karen khachanov": {
-    "p1": 1.54,
-    "p2": 2.66,
+    "p1": 1.52,
+    "p2": 2.75,
     "p1name": "Karen Khachanov",
     "p2name": "Benjamin Bonzi"
   },
   "dane sweeny|luciano darderi": {
     "p1": 1.28,
-    "p2": 4.1,
+    "p2": 4.14,
     "p1name": "Luciano Darderi",
     "p2name": "Dane Sweeny"
   },
@@ -37,13 +37,13 @@
   },
   "alejandro tabilo|alexander zverev": {
     "p1": 1.19,
-    "p2": 5.43,
+    "p2": 5.48,
     "p1name": "Alexander Zverev",
     "p2name": "Alejandro Tabilo"
   },
   "jakub mensik|learner tien": {
-    "p1": 2.13,
-    "p2": 1.81,
+    "p1": 2.16,
+    "p2": 1.78,
     "p1name": "Jakub Mensik",
     "p2name": "Learner Tien"
   },
@@ -60,14 +60,14 @@
     "p2name": "Stefanos Tsitsipas"
   },
   "carlos alcaraz|tommy paul": {
-    "p1": 5.3,
+    "p1": 5.31,
     "p2": 1.19,
     "p1name": "Tommy Paul",
     "p2name": "Carlos Alcaraz"
   },
   "daniil medvedev|frances tiafoe": {
     "p1": 1.66,
-    "p2": 2.35,
+    "p2": 2.34,
     "p1name": "Daniil Medvedev",
     "p2name": "Frances Tiafoe"
   },
@@ -79,24 +79,24 @@
   },
   "madison keys|qinwen zheng": {
     "p1": 1.6,
-    "p2": 2.55,
+    "p2": 2.53,
     "p1name": "Madison Keys",
     "p2name": "Qinwen Zheng"
   },
   "iga swiatek|marie bouzkova": {
     "p1": 1.17,
-    "p2": 6.11,
+    "p2": 6.04,
     "p1name": "Iga Swiatek",
     "p2name": "Marie Bouzkova"
   },
   "mirra andreeva|nikola bartunkova": {
     "p1": 1.25,
-    "p2": 4.46,
+    "p2": 4.51,
     "p1name": "Mirra Andreeva",
     "p2name": "Nikola Bartunkova"
   },
   "coco gauff|cristina bucsa": {
-    "p1": 14.37,
+    "p1": 15.93,
     "p2": 1.04,
     "p1name": "Cristina Bucsa",
     "p2name": "Coco Gauff"
@@ -138,8 +138,8 @@
     "p2name": "Sorana Cirstea"
   },
   "linda noskova|marta kostyuk": {
-    "p1": 1.71,
-    "p2": 2.25,
+    "p1": 1.75,
+    "p2": 2.23,
     "p1name": "Marta Kostyuk",
     "p2name": "Linda Noskova"
   }
