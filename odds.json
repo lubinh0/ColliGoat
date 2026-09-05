@@ -6,8 +6,8 @@
     "p2name": "Francisco Cerundolo"
   },
   "alexander blockx|flavio cobolli": {
-    "p1": 1.95,
-    "p2": 1.95,
+    "p1": 1.93,
+    "p2": 1.98,
     "p1name": "Alexander Blockx",
     "p2name": "Flavio Cobolli"
   },
@@ -19,25 +19,25 @@
   },
   "benjamin bonzi|karen khachanov": {
     "p1": 1.54,
-    "p2": 2.67,
+    "p2": 2.66,
     "p1name": "Karen Khachanov",
     "p2name": "Benjamin Bonzi"
   },
   "dane sweeny|luciano darderi": {
-    "p1": 1.31,
-    "p2": 3.9,
+    "p1": 1.28,
+    "p2": 4.1,
     "p1name": "Luciano Darderi",
     "p2name": "Dane Sweeny"
   },
   "botic van de zandschulp|zizou bergs": {
-    "p1": 2.8,
-    "p2": 1.5,
+    "p1": 2.83,
+    "p2": 1.49,
     "p1name": "Zizou Bergs",
     "p2name": "Botic van de Zandschulp"
   },
   "alejandro tabilo|alexander zverev": {
-    "p1": 1.18,
-    "p2": 5.63,
+    "p1": 1.19,
+    "p2": 5.43,
     "p1name": "Alexander Zverev",
     "p2name": "Alejandro Tabilo"
   },
@@ -48,26 +48,26 @@
     "p2name": "Learner Tien"
   },
   "alex michelsen|tomas martin etcheverry": {
-    "p1": 1.32,
-    "p2": 3.68,
+    "p1": 1.36,
+    "p2": 3.45,
     "p1name": "Alex Michelsen",
     "p2name": "Tomas Martin Etcheverry"
   },
   "ben shelton|stefanos tsitsipas": {
     "p1": 1.39,
-    "p2": 3.21,
+    "p2": 3.23,
     "p1name": "Ben Shelton",
     "p2name": "Stefanos Tsitsipas"
   },
   "carlos alcaraz|tommy paul": {
-    "p1": 5.4,
+    "p1": 5.3,
     "p2": 1.19,
     "p1name": "Tommy Paul",
     "p2name": "Carlos Alcaraz"
   },
   "daniil medvedev|frances tiafoe": {
-    "p1": 1.75,
-    "p2": 2.19,
+    "p1": 1.66,
+    "p2": 2.35,
     "p1name": "Daniil Medvedev",
     "p2name": "Frances Tiafoe"
   },
@@ -78,25 +78,25 @@
     "p2name": "Amanda Anisimova"
   },
   "madison keys|qinwen zheng": {
-    "p1": 1.65,
-    "p2": 2.38,
+    "p1": 1.6,
+    "p2": 2.55,
     "p1name": "Madison Keys",
     "p2name": "Qinwen Zheng"
   },
   "iga swiatek|marie bouzkova": {
     "p1": 1.17,
-    "p2": 6.16,
+    "p2": 6.11,
     "p1name": "Iga Swiatek",
     "p2name": "Marie Bouzkova"
   },
   "mirra andreeva|nikola bartunkova": {
-    "p1": 1.23,
-    "p2": 4.67,
+    "p1": 1.25,
+    "p2": 4.46,
     "p1name": "Mirra Andreeva",
     "p2name": "Nikola Bartunkova"
   },
   "coco gauff|cristina bucsa": {
-    "p1": 14.59,
+    "p1": 14.37,
     "p2": 1.04,
     "p1name": "Cristina Bucsa",
     "p2name": "Coco Gauff"
@@ -108,14 +108,14 @@
     "p2name": "Elena Rybakina"
   },
   "alexandra eala|iva jović": {
-    "p1": 1.85,
-    "p2": 2.07,
+    "p1": 1.83,
+    "p2": 2.1,
     "p1name": "Iva Jović",
     "p2name": "Alexandra Eala"
   },
   "elise mertens|naomi osaka": {
-    "p1": 1.36,
-    "p2": 3.44,
+    "p1": 1.34,
+    "p2": 3.6,
     "p1name": "Naomi Osaka",
     "p2name": "Elise Mertens"
   },
