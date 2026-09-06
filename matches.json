@@ -2,44 +2,8 @@
   "2026-09-06": {
     "data": [
       {
-        "id": "b180b0500ee5847e0612dba80f23f8eb",
-        "date": "2026-09-06T15:00:00Z",
-        "player1": {
-          "name": "Alex Michelsen"
-        },
-        "player2": {
-          "name": "Tomas Martin Etcheverry"
-        },
-        "tour": "atp",
-        "time": "17h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "516b2522c0938a61120dc4e95c7082f5",
-        "date": "2026-09-06T15:30:00Z",
-        "player1": {
-          "name": "Aryna Sabalenka"
-        },
-        "player2": {
-          "name": "Taylor Townsend"
-        },
-        "tour": "wta",
-        "time": "17h30",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
         "id": "1927673f7016985008a0501efdfd2944",
-        "date": "2026-09-06T16:30:00Z",
+        "date": "2026-09-06T16:44:06Z",
         "player1": {
           "name": "Marta Kostyuk"
         },
@@ -47,7 +11,7 @@
           "name": "Linda Noskova"
         },
         "tour": "wta",
-        "time": "18h30",
+        "time": "18h44",
         "scheduled": true,
         "tournament": {
           "name": "WTA US Open",
@@ -66,6 +30,24 @@
         },
         "tour": "atp",
         "time": "20h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP US Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
+        "id": "b180b0500ee5847e0612dba80f23f8eb",
+        "date": "2026-09-06T18:30:00Z",
+        "player1": {
+          "name": "Alex Michelsen"
+        },
+        "player2": {
+          "name": "Tomas Martin Etcheverry"
+        },
+        "tour": "atp",
+        "time": "20h30",
         "scheduled": true,
         "tournament": {
           "name": "ATP US Open",
