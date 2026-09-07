@@ -1,21 +1,21 @@
 {
-  "arthur gea|botic van de zandschulp": {
-    "p1": 2.46,
-    "p2": 1.62,
-    "p1name": "Arthur Gea",
-    "p2name": "Botic van de Zandschulp"
-  },
   "alexander blockx|francisco cerundolo": {
-    "p1": 2.4,
+    "p1": 2.41,
     "p2": 1.65,
     "p1name": "Francisco Cerundolo",
     "p2name": "Alexander Blockx"
   },
   "karen khachanov|learner tien": {
-    "p1": 2.55,
-    "p2": 1.58,
+    "p1": 2.7,
+    "p2": 1.57,
     "p1name": "Karen Khachanov",
     "p2name": "Learner Tien"
+  },
+  "arthur gea|botic van de zandschulp": {
+    "p1": 2.4,
+    "p2": 1.65,
+    "p1name": "Arthur Gea",
+    "p2name": "Botic van de Zandschulp"
   },
   "alexander zverev|luciano darderi": {
     "p1": 1.09,
@@ -25,7 +25,7 @@
   },
   "alex michelsen|frances tiafoe": {
     "p1": 1.72,
-    "p2": 2.33,
+    "p2": 2.23,
     "p1name": "Frances Tiafoe",
     "p2name": "Alex Michelsen"
   },
@@ -36,14 +36,14 @@
     "p2name": "Carlos Alcaraz"
   },
   "anastasia potapova|mirra andreeva": {
-    "p1": 1.19,
-    "p2": 5.55,
+    "p1": 1.22,
+    "p2": 4.92,
     "p1name": "Mirra Andreeva",
     "p2name": "Anastasia Potapova"
   },
   "iga swiatek|qinwen zheng": {
-    "p1": 1.22,
-    "p2": 4.97,
+    "p1": 1.2,
+    "p2": 5.2,
     "p1name": "Iga Swiatek",
     "p2name": "Qinwen Zheng"
   },
@@ -54,14 +54,14 @@
     "p2name": "Elena Rybakina"
   },
   "coco gauff|iva jović": {
-    "p1": 3.38,
-    "p2": 1.37,
+    "p1": 3.52,
+    "p2": 1.35,
     "p1name": "Iva Jović",
     "p2name": "Coco Gauff"
   },
   "aryna sabalenka|linda noskova": {
     "p1": 1.41,
-    "p2": 3.25,
+    "p2": 3.2,
     "p1name": "Aryna Sabalenka",
     "p2name": "Linda Noskova"
   },
