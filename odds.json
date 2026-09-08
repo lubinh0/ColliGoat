@@ -1,62 +1,50 @@
 {
-  "alexander blockx|francisco cerundolo": {
-    "p1": 1.94,
-    "p2": 2.63,
-    "p1name": "Francisco Cerundolo",
-    "p2name": "Alexander Blockx"
-  },
-  "karen khachanov|learner tien": {
-    "p1": 2.6,
-    "p2": 1.56,
-    "p1name": "Karen Khachanov",
-    "p2name": "Learner Tien"
-  },
-  "arthur gea|botic van de zandschulp": {
-    "p1": 2.41,
-    "p2": 1.64,
-    "p1name": "Arthur Gea",
-    "p2name": "Botic van de Zandschulp"
-  },
-  "alexander zverev|luciano darderi": {
-    "p1": 1.09,
-    "p2": 9.5,
-    "p1name": "Alexander Zverev",
-    "p2name": "Luciano Darderi"
-  },
   "alex michelsen|frances tiafoe": {
-    "p1": 1.68,
-    "p2": 2.31,
+    "p1": 1.71,
+    "p2": 2.27,
     "p1name": "Frances Tiafoe",
     "p2name": "Alex Michelsen"
   },
   "ben shelton|carlos alcaraz": {
-    "p1": 4.2,
-    "p2": 1.27,
+    "p1": 4.29,
+    "p2": 1.26,
     "p1name": "Ben Shelton",
     "p2name": "Carlos Alcaraz"
   },
-  "elena rybakina|naomi osaka": {
-    "p1": 2.23,
-    "p2": 1.76,
-    "p1name": "Naomi Osaka",
-    "p2name": "Elena Rybakina"
+  "alexander blockx|karen khachanov": {
+    "p1": 1.65,
+    "p2": 2.35,
+    "p1name": "Karen Khachanov",
+    "p2name": "Alexander Blockx"
   },
-  "coco gauff|iva jović": {
-    "p1": 3.61,
-    "p2": 1.35,
-    "p1name": "Iva Jović",
-    "p2name": "Coco Gauff"
+  "alexander zverev|botic van de zandschulp": {
+    "p1": 1.13,
+    "p2": 6.95,
+    "p1name": "Alexander Zverev",
+    "p2name": "Botic van de Zandschulp"
   },
   "aryna sabalenka|linda noskova": {
-    "p1": 1.41,
-    "p2": 3.2,
+    "p1": 1.44,
+    "p2": 3.05,
     "p1name": "Aryna Sabalenka",
     "p2name": "Linda Noskova"
   },
   "emma navarro|jessica pegula": {
-    "p1": 1.25,
-    "p2": 4.37,
+    "p1": 1.28,
+    "p2": 4.25,
     "p1name": "Jessica Pegula",
     "p2name": "Emma Navarro"
+  },
+  "coco gauff|mirra andreeva": {
+    "p1": 2.52,
+    "p2": 1.58,
+    "p1name": "Mirra Andreeva",
+    "p2name": "Coco Gauff"
+  },
+  "elena rybakina|qinwen zheng": {
+    "p1": 3.33,
+    "p2": 1.37,
+    "p1name": "Qinwen Zheng",
+    "p2name": "Elena Rybakina"
   }
 }
