@@ -1,7 +1,7 @@
 {
   "alex michelsen|frances tiafoe": {
-    "p1": 1.68,
-    "p2": 2.32,
+    "p1": 1.67,
+    "p2": 2.36,
     "p1name": "Frances Tiafoe",
     "p2name": "Alex Michelsen"
   },
@@ -12,20 +12,20 @@
     "p2name": "Carlos Alcaraz"
   },
   "alexander blockx|karen khachanov": {
-    "p1": 1.64,
-    "p2": 2.55,
+    "p1": 1.6,
+    "p2": 2.49,
     "p1name": "Karen Khachanov",
     "p2name": "Alexander Blockx"
   },
   "alexander zverev|botic van de zandschulp": {
     "p1": 1.12,
-    "p2": 8,
+    "p2": 7.5,
     "p1name": "Alexander Zverev",
     "p2name": "Botic van de Zandschulp"
   },
   "aryna sabalenka|linda noskova": {
-    "p1": 1.4,
-    "p2": 3.22,
+    "p1": 1.38,
+    "p2": 3.35,
     "p1name": "Aryna Sabalenka",
     "p2name": "Linda Noskova"
   },
@@ -37,12 +37,12 @@
   },
   "coco gauff|mirra andreeva": {
     "p1": 2.52,
-    "p2": 1.58,
+    "p2": 1.61,
     "p1name": "Mirra Andreeva",
     "p2name": "Coco Gauff"
   },
   "elena rybakina|qinwen zheng": {
-    "p1": 3.33,
+    "p1": 3.35,
     "p2": 1.37,
     "p1name": "Qinwen Zheng",
     "p2name": "Elena Rybakina"
