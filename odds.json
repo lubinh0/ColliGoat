@@ -1,7 +1,7 @@
 {
   "alexander blockx|karen khachanov": {
-    "p1": 1.6,
-    "p2": 2.52,
+    "p1": 1.55,
+    "p2": 2.55,
     "p1name": "Karen Khachanov",
     "p2name": "Alexander Blockx"
   },
@@ -12,26 +12,20 @@
     "p2name": "Botic van de Zandschulp"
   },
   "ben shelton|frances tiafoe": {
-    "p1": 3.58,
+    "p1": 3.55,
     "p2": 1.37,
     "p1name": "Frances Tiafoe",
     "p2name": "Ben Shelton"
   },
-  "elena rybakina|qinwen zheng": {
-    "p1": 3.69,
-    "p2": 1.33,
-    "p1name": "Qinwen Zheng",
-    "p2name": "Elena Rybakina"
-  },
   "coco gauff|mirra andreeva": {
-    "p1": 2.75,
-    "p2": 1.51,
+    "p1": 1.75,
+    "p2": 2.55,
     "p1name": "Mirra Andreeva",
     "p2name": "Coco Gauff"
   },
   "aryna sabalenka|jessica pegula": {
-    "p1": 1.56,
-    "p2": 2.6,
+    "p1": 1.58,
+    "p2": 2.59,
     "p1name": "Aryna Sabalenka",
     "p2name": "Jessica Pegula"
   }
