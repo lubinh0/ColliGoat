@@ -1,19 +1,19 @@
 {
   "alexander zverev|karen khachanov": {
-    "p1": 1.23,
-    "p2": 4.8,
+    "p1": 1.22,
+    "p2": 5.25,
     "p1name": "Alexander Zverev",
     "p2name": "Karen Khachanov"
   },
   "ben shelton|frances tiafoe": {
-    "p1": 3.5,
+    "p1": 3.47,
     "p2": 1.36,
     "p1name": "Frances Tiafoe",
     "p2name": "Ben Shelton"
   },
   "aryna sabalenka|elena rybakina": {
-    "p1": 1.73,
-    "p2": 2.22,
+    "p1": 1.74,
+    "p2": 2.25,
     "p1name": "Aryna Sabalenka",
     "p2name": "Elena Rybakina"
   }
