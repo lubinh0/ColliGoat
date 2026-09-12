@@ -1,17 +1,17 @@
 {
-  "2026-09-11": {
+  "2026-09-13": {
     "data": [
       {
-        "id": "a5886c5c9ac0bf4cac219e292081d438",
-        "date": "2026-09-11T19:00:00Z",
+        "id": "f3cdf500b7ae26bf7f70f24ac0f74d50",
+        "date": "2026-09-13T18:00:00Z",
         "player1": {
           "name": "Alexander Zverev"
         },
         "player2": {
-          "name": "Karen Khachanov"
+          "name": "Ben Shelton"
         },
         "tour": "atp",
-        "time": "21h00",
+        "time": "20h00",
         "scheduled": true,
         "tournament": {
           "name": "ATP US Open",
@@ -23,24 +23,6 @@
   },
   "2026-09-12": {
     "data": [
-      {
-        "id": "c0c9321519b34aea833d0e7708b28411",
-        "date": "2026-09-11T23:00:00Z",
-        "player1": {
-          "name": "Frances Tiafoe"
-        },
-        "player2": {
-          "name": "Ben Shelton"
-        },
-        "tour": "atp",
-        "time": "01h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
       {
         "id": "ae27d60e039955331961cbb317314ab9",
         "date": "2026-09-12T20:00:00Z",
