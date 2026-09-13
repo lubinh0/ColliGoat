@@ -20,24 +20,6 @@
         }
       },
       {
-        "id": "f0a1235eb3403c16178027188dbdcd05",
-        "date": "2026-09-13T16:00:00Z",
-        "player1": {
-          "name": "Nadiia Kichenok"
-        },
-        "player2": {
-          "name": "Nao Hibino"
-        },
-        "tour": "wta",
-        "time": "18h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Guadalajara Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
         "id": "6635d7a34679d1704ecbaa445739f048",
         "date": "2026-09-13T16:10:00Z",
         "player1": {
@@ -48,42 +30,6 @@
         },
         "tour": "wta",
         "time": "18h10",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Guadalajara Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "f3cdf500b7ae26bf7f70f24ac0f74d50",
-        "date": "2026-09-13T18:00:00Z",
-        "player1": {
-          "name": "Alexander Zverev"
-        },
-        "player2": {
-          "name": "Ben Shelton"
-        },
-        "tour": "atp",
-        "time": "20h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP US Open",
-          "surface": "Hard",
-          "flag": "US"
-        }
-      },
-      {
-        "id": "3af3abe58ac16b51170eb23dac60f3bc",
-        "date": "2026-09-13T18:00:00Z",
-        "player1": {
-          "name": "Alycia Parks"
-        },
-        "player2": {
-          "name": "Varvara Lepchenko"
-        },
-        "tour": "wta",
-        "time": "20h00",
         "scheduled": true,
         "tournament": {
           "name": "WTA Guadalajara Open",
@@ -110,13 +56,31 @@
         }
       },
       {
-        "id": "9221ba74412619779f5400f6877c0896",
-        "date": "2026-09-13T19:00:00Z",
+        "id": "f3cdf500b7ae26bf7f70f24ac0f74d50",
+        "date": "2026-09-13T18:13:40Z",
         "player1": {
-          "name": "Peyton Stearns"
+          "name": "Alexander Zverev"
         },
         "player2": {
-          "name": "Emiliana Arango"
+          "name": "Ben Shelton"
+        },
+        "tour": "atp",
+        "time": "20h13",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP US Open",
+          "surface": "Hard",
+          "flag": "US"
+        }
+      },
+      {
+        "id": "3af3abe58ac16b51170eb23dac60f3bc",
+        "date": "2026-09-13T19:00:00Z",
+        "player1": {
+          "name": "Alycia Parks"
+        },
+        "player2": {
+          "name": "Varvara Lepchenko"
         },
         "tour": "wta",
         "time": "21h00",
@@ -128,8 +92,26 @@
         }
       },
       {
-        "id": "a2d2de09422b77328f6e9abd84149376",
+        "id": "9221ba74412619779f5400f6877c0896",
         "date": "2026-09-13T19:10:00Z",
+        "player1": {
+          "name": "Peyton Stearns"
+        },
+        "player2": {
+          "name": "Emiliana Arango"
+        },
+        "tour": "wta",
+        "time": "21h10",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA Guadalajara Open",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "b9171307a753b267da272383d530eb79",
+        "date": "2026-09-13T20:00:00Z",
         "player1": {
           "name": "Darja Vidmanova"
         },
@@ -137,7 +119,7 @@
           "name": "Janice Tjen"
         },
         "tour": "wta",
-        "time": "21h10",
+        "time": "22h00",
         "scheduled": true,
         "tournament": {
           "name": "WTA Guadalajara Open",
@@ -168,8 +150,8 @@
   "2026-09-14": {
     "data": [
       {
-        "id": "490102e0057e491a53e5613c03f589c1",
-        "date": "2026-09-13T23:00:00Z",
+        "id": "abca2fe32b85ee9a0bc588c84076cabf",
+        "date": "2026-09-13T23:10:00Z",
         "player1": {
           "name": "Cristina Bucsa"
         },
@@ -177,7 +159,7 @@
           "name": "Bianca Andreescu"
         },
         "tour": "wta",
-        "time": "01h00",
+        "time": "01h10",
         "scheduled": true,
         "tournament": {
           "name": "WTA Guadalajara Open",
