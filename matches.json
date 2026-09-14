@@ -3,7 +3,7 @@
     "data": [
       {
         "id": "5362d93413eaafe53bfa0949d0a53253",
-        "date": "2026-09-14T18:00:00Z",
+        "date": "2026-09-14T18:10:00Z",
         "player1": {
           "name": "Elvina Kalieva"
         },
@@ -11,7 +11,7 @@
           "name": "Kayla Day"
         },
         "tour": "wta",
-        "time": "20h00",
+        "time": "20h10",
         "scheduled": true,
         "tournament": {
           "name": "WTA Guadalajara Open",
@@ -21,7 +21,7 @@
       },
       {
         "id": "eb7969a17fac0b34869978c65dd655c8",
-        "date": "2026-09-14T19:00:00Z",
+        "date": "2026-09-14T19:05:48Z",
         "player1": {
           "name": "Carole Monnet"
         },
@@ -29,25 +29,7 @@
           "name": "Sloane Stephens"
         },
         "tour": "wta",
-        "time": "21h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Guadalajara Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "f0b61dc173adea474f709e37b9171437",
-        "date": "2026-09-14T19:10:00Z",
-        "player1": {
-          "name": "Tatjana Maria"
-        },
-        "player2": {
-          "name": "Taylor Townsend"
-        },
-        "tour": "wta",
-        "time": "21h10",
+        "time": "21h05",
         "scheduled": true,
         "tournament": {
           "name": "WTA Guadalajara Open",
@@ -57,7 +39,7 @@
       },
       {
         "id": "802adbfaec80edf35c2ec7518ef1bb55",
-        "date": "2026-09-14T20:30:00Z",
+        "date": "2026-09-14T20:20:00Z",
         "player1": {
           "name": "Renata Zarazua"
         },
@@ -65,7 +47,25 @@
           "name": "Caroline Dolehide"
         },
         "tour": "wta",
-        "time": "22h30",
+        "time": "22h20",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA Guadalajara Open",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "f0b61dc173adea474f709e37b9171437",
+        "date": "2026-09-14T20:20:00Z",
+        "player1": {
+          "name": "Tatjana Maria"
+        },
+        "player2": {
+          "name": "Taylor Townsend"
+        },
+        "tour": "wta",
+        "time": "22h20",
         "scheduled": true,
         "tournament": {
           "name": "WTA Guadalajara Open",
@@ -75,7 +75,7 @@
       },
       {
         "id": "fce2ed04706d91aac2f6e91d3d2896c4",
-        "date": "2026-09-14T21:00:00Z",
+        "date": "2026-09-14T21:30:00Z",
         "player1": {
           "name": "Magdalena Frech"
         },
@@ -83,7 +83,7 @@
           "name": "Nao Hibino"
         },
         "tour": "wta",
-        "time": "23h00",
+        "time": "23h30",
         "scheduled": true,
         "tournament": {
           "name": "WTA Guadalajara Open",
@@ -133,7 +133,7 @@
       },
       {
         "id": "9a5291ac19b89971cc973e6b22b19c2b",
-        "date": "2026-09-15T19:00:00Z",
+        "date": "2026-09-15T18:00:00Z",
         "player1": {
           "name": "Alycia Parks"
         },
@@ -141,7 +141,7 @@
           "name": "Sara Bejlek"
         },
         "tour": "wta",
-        "time": "21h00",
+        "time": "20h00",
         "scheduled": true,
         "tournament": {
           "name": "WTA Guadalajara Open",
@@ -151,7 +151,7 @@
       },
       {
         "id": "711e4db91bf8dcfb4af508c8909ee695",
-        "date": "2026-09-15T19:00:00Z",
+        "date": "2026-09-15T18:00:00Z",
         "player1": {
           "name": "Cristina Bucsa"
         },
@@ -159,7 +159,7 @@
           "name": "Panna Udvardy"
         },
         "tour": "wta",
-        "time": "21h00",
+        "time": "20h00",
         "scheduled": true,
         "tournament": {
           "name": "WTA Guadalajara Open",
@@ -169,7 +169,7 @@
       },
       {
         "id": "6a84f9743e3001839ad4c2cf941f2c67",
-        "date": "2026-09-15T19:00:00Z",
+        "date": "2026-09-15T18:00:00Z",
         "player1": {
           "name": "Diane Parry"
         },
@@ -177,7 +177,7 @@
           "name": "Peyton Stearns"
         },
         "tour": "wta",
-        "time": "21h00",
+        "time": "20h00",
         "scheduled": true,
         "tournament": {
           "name": "WTA Guadalajara Open",
