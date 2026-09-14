@@ -39,7 +39,7 @@
       },
       {
         "id": "f0b61dc173adea474f709e37b9171437",
-        "date": "2026-09-14T19:30:00Z",
+        "date": "2026-09-14T19:10:00Z",
         "player1": {
           "name": "Tatjana Maria"
         },
@@ -47,7 +47,7 @@
           "name": "Taylor Townsend"
         },
         "tour": "wta",
-        "time": "21h30",
+        "time": "21h10",
         "scheduled": true,
         "tournament": {
           "name": "WTA Guadalajara Open",
@@ -115,7 +115,7 @@
       },
       {
         "id": "7769a797c1b937b390dd01166c8c84a3",
-        "date": "2026-09-15T00:30:00Z",
+        "date": "2026-09-15T00:10:00Z",
         "player1": {
           "name": "Elsa Jacquemot"
         },
@@ -123,7 +123,7 @@
           "name": "Liudmila Samsonova"
         },
         "tour": "wta",
-        "time": "02h30",
+        "time": "02h10",
         "scheduled": true,
         "tournament": {
           "name": "WTA Guadalajara Open",
