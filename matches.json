@@ -3,7 +3,7 @@
     "data": [
       {
         "id": "711e4db91bf8dcfb4af508c8909ee695",
-        "date": "2026-09-15T19:00:00Z",
+        "date": "2026-09-15T19:04:14Z",
         "player1": {
           "name": "Cristina Bucsa"
         },
@@ -11,7 +11,7 @@
           "name": "Panna Udvardy"
         },
         "tour": "wta",
-        "time": "21h00",
+        "time": "21h04",
         "scheduled": true,
         "tournament": {
           "name": "WTA Guadalajara Open",
