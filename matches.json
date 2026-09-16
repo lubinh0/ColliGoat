@@ -1,82 +1,6 @@
 {
-  "2026-09-15": {
-    "data": [
-      {
-        "id": "711e4db91bf8dcfb4af508c8909ee695",
-        "date": "2026-09-15T19:04:14Z",
-        "player1": {
-          "name": "Cristina Bucsa"
-        },
-        "player2": {
-          "name": "Panna Udvardy"
-        },
-        "tour": "wta",
-        "time": "21h04",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Guadalajara Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "9a5291ac19b89971cc973e6b22b19c2b",
-        "date": "2026-09-15T20:30:00Z",
-        "player1": {
-          "name": "Alycia Parks"
-        },
-        "player2": {
-          "name": "Sara Bejlek"
-        },
-        "tour": "wta",
-        "time": "22h30",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Guadalajara Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      }
-    ]
-  },
   "2026-09-16": {
     "data": [
-      {
-        "id": "6a84f9743e3001839ad4c2cf941f2c67",
-        "date": "2026-09-15T23:00:00Z",
-        "player1": {
-          "name": "Diane Parry"
-        },
-        "player2": {
-          "name": "Peyton Stearns"
-        },
-        "tour": "wta",
-        "time": "01h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Guadalajara Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "c3afffa7512abaf7cc1a286bbc7ac4d8",
-        "date": "2026-09-16T00:30:00Z",
-        "player1": {
-          "name": "Sloane Stephens"
-        },
-        "player2": {
-          "name": "Janice Tjen"
-        },
-        "tour": "wta",
-        "time": "02h30",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Guadalajara Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
       {
         "id": "c47460aa74f991d6e40bc2374ff6945f",
         "date": "2026-09-16T19:00:00Z",
@@ -97,7 +21,7 @@
       },
       {
         "id": "56673e11053e9bea05afb963e37ae3f7",
-        "date": "2026-09-16T19:00:00Z",
+        "date": "2026-09-16T20:30:00Z",
         "player1": {
           "name": "Zeynep Sonmez"
         },
@@ -105,7 +29,29 @@
           "name": "Iva Jović"
         },
         "tour": "wta",
-        "time": "21h00",
+        "time": "22h30",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA Guadalajara Open",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      }
+    ]
+  },
+  "2026-09-17": {
+    "data": [
+      {
+        "id": "f2503c5b229ca3baa26c482a338a5517",
+        "date": "2026-09-16T23:00:00Z",
+        "player1": {
+          "name": "Marta Kostyuk"
+        },
+        "player2": {
+          "name": "Taylor Townsend"
+        },
+        "tour": "wta",
+        "time": "01h00",
         "scheduled": true,
         "tournament": {
           "name": "WTA Guadalajara Open",
@@ -115,12 +61,30 @@
       },
       {
         "id": "594cd99fc2a2c803ec059d629feed51c",
-        "date": "2026-09-16T19:00:00Z",
+        "date": "2026-09-17T00:30:00Z",
         "player1": {
           "name": "Kayla Day"
         },
         "player2": {
           "name": "Liudmila Samsonova"
+        },
+        "tour": "wta",
+        "time": "02h30",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA Guadalajara Open",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "e9f2dc156ba348fcd57bfc5de2dde91b",
+        "date": "2026-09-17T19:00:00Z",
+        "player1": {
+          "name": "Cristina Bucsa"
+        },
+        "player2": {
+          "name": "Sara Bejlek"
         },
         "tour": "wta",
         "time": "21h00",
@@ -132,13 +96,13 @@
         }
       },
       {
-        "id": "f2503c5b229ca3baa26c482a338a5517",
-        "date": "2026-09-16T19:00:00Z",
+        "id": "d9227f791230695a4adf669298304799",
+        "date": "2026-09-17T19:00:00Z",
         "player1": {
-          "name": "Marta Kostyuk"
+          "name": "Peyton Stearns"
         },
         "player2": {
-          "name": "Taylor Townsend"
+          "name": "Sloane Stephens"
         },
         "tour": "wta",
         "time": "21h00",
