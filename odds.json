@@ -1,27 +1,27 @@
 {
   "caroline dolehide|magdalena frech": {
-    "p1": 1.5,
-    "p2": 2.81,
+    "p1": 1.55,
+    "p2": 4.34,
     "p1name": "Magdalena Frech",
     "p2name": "Caroline Dolehide"
   },
   "iva jović|zeynep sonmez": {
-    "p1": 4.34,
+    "p1": 4.33,
     "p2": 1.26,
     "p1name": "Zeynep Sonmez",
     "p2name": "Iva Jović"
   },
-  "marta kostyuk|taylor townsend": {
-    "p1": 1.35,
-    "p2": 3.54,
-    "p1name": "Marta Kostyuk",
-    "p2name": "Taylor Townsend"
-  },
   "kayla day|liudmila samsonova": {
-    "p1": 3.11,
-    "p2": 1.42,
+    "p1": 3.2,
+    "p2": 1.4,
     "p1name": "Kayla Day",
     "p2name": "Liudmila Samsonova"
+  },
+  "marta kostyuk|taylor townsend": {
+    "p1": 1.34,
+    "p2": 3.25,
+    "p1name": "Marta Kostyuk",
+    "p2name": "Taylor Townsend"
   },
   "cristina bucsa|sara bejlek": {
     "p1": 2.63,
