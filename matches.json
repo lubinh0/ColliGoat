@@ -3,7 +3,7 @@
     "data": [
       {
         "id": "e9f2dc156ba348fcd57bfc5de2dde91b",
-        "date": "2026-09-17T19:00:00Z",
+        "date": "2026-09-17T19:03:45Z",
         "player1": {
           "name": "Cristina Bucsa"
         },
@@ -11,7 +11,7 @@
           "name": "Sara Bejlek"
         },
         "tour": "wta",
-        "time": "21h00",
+        "time": "21h03",
         "scheduled": true,
         "tournament": {
           "name": "WTA Guadalajara Open",
