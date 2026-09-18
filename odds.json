@@ -1,26 +1,14 @@
 {
-  "cristina bucsa|sara bejlek": {
-    "p1": 1.33,
-    "p2": 3.61,
+  "cristina bucsa|iva jović": {
+    "p1": 3.96,
+    "p2": 1.29,
     "p1name": "Cristina Bucsa",
-    "p2name": "Sara Bejlek"
-  },
-  "iva jović|magdalena frech": {
-    "p1": 3.55,
-    "p2": 1.35,
-    "p1name": "Magdalena Frech",
     "p2name": "Iva Jović"
   },
-  "liudmila samsonova|marta kostyuk": {
-    "p1": 1.28,
-    "p2": 4,
-    "p1name": "Marta Kostyuk",
-    "p2name": "Liudmila Samsonova"
-  },
-  "peyton stearns|sloane stephens": {
-    "p1": 1.56,
-    "p2": 2.6,
-    "p1name": "Peyton Stearns",
-    "p2name": "Sloane Stephens"
+  "liudmila samsonova|peyton stearns": {
+    "p1": 1.68,
+    "p2": 2.32,
+    "p1name": "Liudmila Samsonova",
+    "p2name": "Peyton Stearns"
   }
 }
