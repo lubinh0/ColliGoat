@@ -2,78 +2,6 @@
   "2026-09-21": {
     "data": [
       {
-        "id": "143aa9d42227876ac0745e375bb8cae1",
-        "date": "2026-09-21T03:00:00Z",
-        "player1": {
-          "name": "Daria Kasatkina"
-        },
-        "player2": {
-          "name": "Aliaksandra Sasnovich"
-        },
-        "tour": "wta",
-        "time": "05h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Singapore Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "92cae619de2a4179dc32db1e21e7c665",
-        "date": "2026-09-21T04:30:00Z",
-        "player1": {
-          "name": "Kristina Mladenovic"
-        },
-        "player2": {
-          "name": "Nao Hibino"
-        },
-        "tour": "wta",
-        "time": "06h30",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Singapore Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "e2b9457528471fd98a0056dae3c31203",
-        "date": "2026-09-21T06:00:00Z",
-        "player1": {
-          "name": "Talia Gibson"
-        },
-        "player2": {
-          "name": "Fiona Ferro"
-        },
-        "tour": "wta",
-        "time": "08h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Singapore Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "3489c3560aca57f0bb2ddd9ecba9b39e",
-        "date": "2026-09-21T06:00:00Z",
-        "player1": {
-          "name": "Rebecca Sramkova"
-        },
-        "player2": {
-          "name": "Maja Chwalinska"
-        },
-        "tour": "wta",
-        "time": "08h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Singapore Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
         "id": "ff148419f7d5eb25e56152d03d978141",
         "date": "2026-09-21T10:30:00Z",
         "player1": {
@@ -114,60 +42,6 @@
   "2026-09-22": {
     "data": [
       {
-        "id": "f7ada307b7c90a2871846bb9347d0f9c",
-        "date": "2026-09-22T03:00:00Z",
-        "player1": {
-          "name": "Barbora Krejcikova"
-        },
-        "player2": {
-          "name": "Anna-Lena Friedsam"
-        },
-        "tour": "wta",
-        "time": "05h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Singapore Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "ee9008010d12daebaaabf94a91f40bae",
-        "date": "2026-09-22T03:00:00Z",
-        "player1": {
-          "name": "Donna Vekic"
-        },
-        "player2": {
-          "name": "Xinyu Wang"
-        },
-        "tour": "wta",
-        "time": "05h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Singapore Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "fbe5690f3bb5d61e742c6172bf96afd1",
-        "date": "2026-09-22T03:00:00Z",
-        "player1": {
-          "name": "Maria Sakkari"
-        },
-        "player2": {
-          "name": "Linda Fruhvirtova"
-        },
-        "tour": "wta",
-        "time": "05h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Singapore Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
         "id": "80b14dcee4510e7bdc94014121046ba9",
         "date": "2026-09-22T03:00:00Z",
         "player1": {
@@ -187,7 +61,7 @@
       },
       {
         "id": "a01c68667e4694ee5e56d526041795a6",
-        "date": "2026-09-22T03:00:00Z",
+        "date": "2026-09-22T05:30:00Z",
         "player1": {
           "name": "Tatiana Prozorova"
         },
@@ -195,7 +69,61 @@
           "name": "Sofia Costoulas"
         },
         "tour": "wta",
-        "time": "05h00",
+        "time": "07h30",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA Singapore Open",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "ee9008010d12daebaaabf94a91f40bae",
+        "date": "2026-09-22T05:40:00Z",
+        "player1": {
+          "name": "Donna Vekic"
+        },
+        "player2": {
+          "name": "Xinyu Wang"
+        },
+        "tour": "wta",
+        "time": "07h40",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA Singapore Open",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "f7ada307b7c90a2871846bb9347d0f9c",
+        "date": "2026-09-22T10:30:00Z",
+        "player1": {
+          "name": "Barbora Krejcikova"
+        },
+        "player2": {
+          "name": "Anna-Lena Friedsam"
+        },
+        "tour": "wta",
+        "time": "12h30",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA Singapore Open",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "fbe5690f3bb5d61e742c6172bf96afd1",
+        "date": "2026-09-22T11:40:00Z",
+        "player1": {
+          "name": "Maria Sakkari"
+        },
+        "player2": {
+          "name": "Linda Fruhvirtova"
+        },
+        "tour": "wta",
+        "time": "13h40",
         "scheduled": true,
         "tournament": {
           "name": "WTA Singapore Open",

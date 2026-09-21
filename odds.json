@@ -1,68 +1,44 @@
 {
-  "aliaksandra sasnovich|daria kasatkina": {
-    "p1": 1.63,
-    "p2": 2.38,
-    "p1name": "Daria Kasatkina",
-    "p2name": "Aliaksandra Sasnovich"
-  },
-  "kristina mladenovic|nao hibino": {
-    "p1": 4.42,
-    "p2": 1.24,
-    "p1name": "Kristina Mladenovic",
-    "p2name": "Nao Hibino"
-  },
-  "fiona ferro|talia gibson": {
-    "p1": 1.81,
-    "p2": 2.09,
-    "p1name": "Talia Gibson",
-    "p2name": "Fiona Ferro"
-  },
-  "maja chwalinska|rebecca sramkova": {
-    "p1": 2.72,
-    "p2": 1.5,
-    "p1name": "Rebecca Sramkova",
-    "p2name": "Maja Chwalinska"
-  },
   "kyoka okamura|leylah fernandez": {
-    "p1": 22.63,
+    "p1": 17.01,
     "p2": 1.03,
     "p1name": "Kyoka Okamura",
     "p2name": "Leylah Fernandez"
   },
   "joanna garland|storm hunter": {
-    "p1": 1.74,
-    "p2": 2.08,
+    "p1": 2.11,
+    "p2": 1.8,
     "p1name": "Storm Hunter",
     "p2name": "Joanna Garland"
   },
-  "anna-lena friedsam|barbora krejcikova": {
-    "p1": 1.13,
-    "p2": 6,
-    "p1name": "Barbora Krejcikova",
-    "p2name": "Anna-Lena Friedsam"
-  },
-  "donna vekic|xinyu wang": {
-    "p1": 1.98,
-    "p2": 1.95,
-    "p1name": "Donna Vekic",
-    "p2name": "Xinyu Wang"
-  },
-  "linda fruhvirtova|maria sakkari": {
-    "p1": 1.27,
-    "p2": 4.06,
-    "p1name": "Maria Sakkari",
-    "p2name": "Linda Fruhvirtova"
-  },
   "oleksandra oliynykova|vivian wolff": {
-    "p1": 3.88,
-    "p2": 1.32,
+    "p1": 3.68,
+    "p2": 1.31,
     "p1name": "Vivian Wolff",
     "p2name": "Oleksandra Oliynykova"
   },
   "sofia costoulas|tatiana prozorova": {
-    "p1": 1.64,
-    "p2": 2.45,
+    "p1": 1.65,
+    "p2": 2.34,
     "p1name": "Tatiana Prozorova",
     "p2name": "Sofia Costoulas"
+  },
+  "donna vekic|xinyu wang": {
+    "p1": 2.01,
+    "p2": 1.87,
+    "p1name": "Donna Vekic",
+    "p2name": "Xinyu Wang"
+  },
+  "anna-lena friedsam|barbora krejcikova": {
+    "p1": 1.1,
+    "p2": 7.48,
+    "p1name": "Barbora Krejcikova",
+    "p2name": "Anna-Lena Friedsam"
+  },
+  "linda fruhvirtova|maria sakkari": {
+    "p1": 1.27,
+    "p2": 4.08,
+    "p1name": "Maria Sakkari",
+    "p2name": "Linda Fruhvirtova"
   }
 }
