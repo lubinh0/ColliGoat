@@ -1,15 +1,15 @@
 {
-  "joanna garland|storm hunter": {
-    "p1": 2.48,
-    "p2": 1.53,
-    "p1name": "Storm Hunter",
-    "p2name": "Joanna Garland"
-  },
   "oleksandra oliynykova|vivian wolff": {
     "p1": 3.71,
     "p2": 1.32,
     "p1name": "Vivian Wolff",
     "p2name": "Oleksandra Oliynykova"
+  },
+  "alycia parks|mei yamaguchi": {
+    "p1": 1.22,
+    "p2": 4.73,
+    "p1name": "Alycia Parks",
+    "p2name": "Mei Yamaguchi"
   },
   "sofia costoulas|tatiana prozorova": {
     "p1": 1.68,
@@ -18,14 +18,14 @@
     "p2name": "Sofia Costoulas"
   },
   "donna vekic|xinyu wang": {
-    "p1": 2.01,
-    "p2": 1.88,
+    "p1": 2.04,
+    "p2": 1.85,
     "p1name": "Donna Vekic",
     "p2name": "Xinyu Wang"
   },
   "anna-lena friedsam|barbora krejcikova": {
     "p1": 1.1,
-    "p2": 7.43,
+    "p2": 7.5,
     "p1name": "Barbora Krejcikova",
     "p2name": "Anna-Lena Friedsam"
   },
