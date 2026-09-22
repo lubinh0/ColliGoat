@@ -1,26 +1,38 @@
 {
-  "sofia costoulas|tatiana prozorova": {
-    "p1": 1.02,
-    "p2": 44.12,
-    "p1name": "Tatiana Prozorova",
-    "p2name": "Sofia Costoulas"
-  },
   "anna-lena friedsam|barbora krejcikova": {
-    "p1": 1.11,
-    "p2": 7.51,
+    "p1": 1.09,
+    "p2": 11.5,
     "p1name": "Barbora Krejcikova",
     "p2name": "Anna-Lena Friedsam"
   },
   "linda fruhvirtova|maria sakkari": {
-    "p1": 1.26,
-    "p2": 4.28,
+    "p1": 1.25,
+    "p2": 4.38,
     "p1name": "Maria Sakkari",
     "p2name": "Linda Fruhvirtova"
   },
+  "maja chwalinska|oleksandra oliynykova": {
+    "p1": 2.88,
+    "p2": 1.49,
+    "p1name": "Oleksandra Oliynykova",
+    "p2name": "Maja Chwalinska"
+  },
   "aliaksandra sasnovich|mirra andreeva": {
-    "p1": 1.1,
-    "p2": 7,
+    "p1": 1.11,
+    "p2": 7.36,
     "p1name": "Mirra Andreeva",
     "p2name": "Aliaksandra Sasnovich"
+  },
+  "alycia parks|leylah fernandez": {
+    "p1": 3.89,
+    "p2": 1.29,
+    "p1name": "Alycia Parks",
+    "p2name": "Leylah Fernandez"
+  },
+  "talia gibson|viktória morvayová": {
+    "p1": 1.08,
+    "p2": 8,
+    "p1name": "Talia Gibson",
+    "p2name": "Viktória Morvayová"
   }
 }
