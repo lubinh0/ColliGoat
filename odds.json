@@ -1,38 +1,38 @@
 {
-  "aliaksandra sasnovich|mirra andreeva": {
-    "p1": 1.11,
-    "p2": 7.88,
-    "p1name": "Mirra Andreeva",
-    "p2name": "Aliaksandra Sasnovich"
-  },
   "alycia parks|leylah fernandez": {
-    "p1": 3.39,
-    "p2": 1.37,
+    "p1": 3.59,
+    "p2": 1.43,
     "p1name": "Alycia Parks",
     "p2name": "Leylah Fernandez"
   },
   "talia gibson|viktória morvayová": {
-    "p1": 1.08,
-    "p2": 8,
+    "p1": 1.09,
+    "p2": 8.2,
     "p1name": "Talia Gibson",
     "p2name": "Viktória Morvayová"
   },
-  "alexandra eala|tatiana prozorova": {
-    "p1": 4.87,
-    "p2": 1.21,
-    "p1name": "Tatiana Prozorova",
-    "p2name": "Alexandra Eala"
-  },
   "joanna garland|xinyu wang": {
-    "p1": 1.33,
-    "p2": 3.59,
+    "p1": 1.32,
+    "p2": 3.73,
     "p1name": "Xinyu Wang",
     "p2name": "Joanna Garland"
+  },
+  "alexandra eala|tatiana prozorova": {
+    "p1": 4.41,
+    "p2": 1.25,
+    "p1name": "Tatiana Prozorova",
+    "p2name": "Alexandra Eala"
   },
   "maria sakkari|nao hibino": {
     "p1": 1.2,
     "p2": 5.04,
     "p1name": "Maria Sakkari",
     "p2name": "Nao Hibino"
+  },
+  "elise mertens|maja chwalinska": {
+    "p1": 1.46,
+    "p2": 2.95,
+    "p1name": "Elise Mertens",
+    "p2name": "Maja Chwalinska"
   }
 }
