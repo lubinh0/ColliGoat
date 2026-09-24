@@ -2,26 +2,8 @@
   "2026-09-24": {
     "data": [
       {
-        "id": "c65df584ad7862e7b88cc738c1844268",
-        "date": "2026-09-24T05:00:00Z",
-        "player1": {
-          "name": "Talia Gibson"
-        },
-        "player2": {
-          "name": "Viktória Morvayová"
-        },
-        "tour": "wta",
-        "time": "07h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Singapore Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
         "id": "1c144e78b89011322a38085acf85a1e9",
-        "date": "2026-09-24T06:30:00Z",
+        "date": "2026-09-24T07:41:13Z",
         "player1": {
           "name": "Xinyu Wang"
         },
@@ -29,7 +11,7 @@
           "name": "Joanna Garland"
         },
         "tour": "wta",
-        "time": "08h30",
+        "time": "09h41",
         "scheduled": true,
         "tournament": {
           "name": "WTA Singapore Open",
