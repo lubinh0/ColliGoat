@@ -1,26 +1,4 @@
 {
-  "2026-09-24": {
-    "data": [
-      {
-        "id": "e6170a66ea1bedf7465820889622b9ae",
-        "date": "2026-09-24T14:05:28Z",
-        "player1": {
-          "name": "Maria Sakkari"
-        },
-        "player2": {
-          "name": "Nao Hibino"
-        },
-        "tour": "wta",
-        "time": "16h05",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Singapore Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      }
-    ]
-  },
   "2026-09-25": {
     "data": [
       {
@@ -70,6 +48,24 @@
         },
         "tour": "wta",
         "time": "12h30",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA Singapore Open",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "f8fd133da68433a0a2f53b76b80e903d",
+        "date": "2026-09-25T12:00:00Z",
+        "player1": {
+          "name": "Maria Sakkari"
+        },
+        "player2": {
+          "name": "Talia Gibson"
+        },
+        "tour": "wta",
+        "time": "14h00",
         "scheduled": true,
         "tournament": {
           "name": "WTA Singapore Open",
