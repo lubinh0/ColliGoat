@@ -1,35 +1,17 @@
 {
-  "2026-09-25": {
+  "2026-09-26": {
     "data": [
       {
-        "id": "019e16123376050b7a03b6e497b7bbcd",
-        "date": "2026-09-25T10:43:00Z",
+        "id": "fc6f0c9af77a5fa7e183f85d576cac79",
+        "date": "2026-09-26T04:30:00Z",
         "player1": {
-          "name": "Mirra Andreeva"
-        },
-        "player2": {
           "name": "Leylah Fernandez"
         },
-        "tour": "wta",
-        "time": "12h43",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Singapore Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "f8fd133da68433a0a2f53b76b80e903d",
-        "date": "2026-09-25T12:35:00Z",
-        "player1": {
-          "name": "Maria Sakkari"
-        },
         "player2": {
-          "name": "Talia Gibson"
+          "name": "Maja Chwalinska"
         },
         "tour": "wta",
-        "time": "14h35",
+        "time": "06h30",
         "scheduled": true,
         "tournament": {
           "name": "WTA Singapore Open",
