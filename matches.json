@@ -2,26 +2,8 @@
   "2026-09-25": {
     "data": [
       {
-        "id": "f0731c18d689ed876e51dc1a9bf12170",
-        "date": "2026-09-25T05:00:00Z",
-        "player1": {
-          "name": "Elise Mertens"
-        },
-        "player2": {
-          "name": "Maja Chwalinska"
-        },
-        "tour": "wta",
-        "time": "07h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Singapore Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
         "id": "4b9798f2942c776f60e433fb4b9cd90a",
-        "date": "2026-09-25T06:30:00Z",
+        "date": "2026-09-25T06:50:00Z",
         "player1": {
           "name": "Xinyu Wang"
         },
@@ -29,7 +11,7 @@
           "name": "Tatiana Prozorova"
         },
         "tour": "wta",
-        "time": "08h30",
+        "time": "08h50",
         "scheduled": true,
         "tournament": {
           "name": "WTA Singapore Open",
