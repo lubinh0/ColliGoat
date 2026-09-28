@@ -1,1 +1,402 @@
-{}
+{
+  "2026-09-30": {
+    "data": [
+      {
+        "id": "f3149a5c4e24243211d462d3becfe39d",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Alex de Minaur"
+        },
+        "player2": {
+          "name": "Mariano Navone"
+        },
+        "tour": "atp",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "8e1b1ccdaf9bc406f149cfba186e0337",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Alexander Bublik"
+        },
+        "player2": {
+          "name": "Jakub Mensik"
+        },
+        "tour": "atp",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "baf8f73b47a664fcede53262ff09e26d",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Alexander Zverev"
+        },
+        "player2": {
+          "name": "Cameron Norrie"
+        },
+        "tour": "atp",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "ef3f453a337c9dae404be4cbf6772441",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Tallon Griekspoor"
+        },
+        "player2": {
+          "name": "Andrey Rublev"
+        },
+        "tour": "atp",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "e16bcc00525542f000cc3fc617c7abc4",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Juan Manuel Cerundolo"
+        },
+        "player2": {
+          "name": "Bu Yunchaokete"
+        },
+        "tour": "atp",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "cd50cbdecb590b3b66ff69dac64b1c7d",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Karen Khachanov"
+        },
+        "player2": {
+          "name": "Felix Auger-Aliassime"
+        },
+        "tour": "atp",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "8385aac113ecfb54b50592228c73e06f",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Roman Safiullin"
+        },
+        "player2": {
+          "name": "Flavio Cobolli"
+        },
+        "tour": "atp",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "726e426c5068e86e57b7f81891e0136e",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Learner Tien"
+        },
+        "player2": {
+          "name": "Hubert Hurkacz"
+        },
+        "tour": "atp",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "0c39522d563ce8eb6ce47ba0d07b50d8",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Ignacio Buse"
+        },
+        "player2": {
+          "name": "Quentin Halys"
+        },
+        "tour": "atp",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "35b54ab48cccdd5228a9cbb1b90e93f9",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Jan-Lennard Struff"
+        },
+        "player2": {
+          "name": "Thiago Agustin Tirante"
+        },
+        "tour": "atp",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "c1bae50988ffee351524f95dacfa76f7",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Juncheng Shang"
+        },
+        "player2": {
+          "name": "Sebastian Baez"
+        },
+        "tour": "atp",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "1b9a358b39f42e7ac16354a717729f4f",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Nuno Borges"
+        },
+        "player2": {
+          "name": "Novak Djokovic"
+        },
+        "tour": "atp",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "dd870a99aafe250eeb6eb9e769dccbea",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Viktorija Golubic"
+        },
+        "player2": {
+          "name": "Alina Korneeva"
+        },
+        "tour": "wta",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "7b7d3040c0a9c64be8117d3301393f49",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Janice Tjen"
+        },
+        "player2": {
+          "name": "Anhelina Kalinina"
+        },
+        "tour": "wta",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "8a371753095dc91ecfc727a9bf51b90c",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Anna Bondár"
+        },
+        "player2": {
+          "name": "Renata Zarazua"
+        },
+        "tour": "wta",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "7dc77d55cdf748e75a18b1dbcd1aae68",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Darja Vidmanova"
+        },
+        "player2": {
+          "name": "Maria Timofeeva"
+        },
+        "tour": "wta",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "32e7c1cc65b0c3a18b06e9e009cd3e35",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Elena Gabriela Ruse"
+        },
+        "player2": {
+          "name": "Lilli Tagger"
+        },
+        "tour": "wta",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "025d305a5487d45a414b2e270fa4754b",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Petra Marcinko"
+        },
+        "player2": {
+          "name": "Magdalena Frech"
+        },
+        "tour": "wta",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "3d7ca27dc89b58d3883de95847cfc74e",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Maya Joint"
+        },
+        "player2": {
+          "name": "Sinja Kraus"
+        },
+        "tour": "wta",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "2ef1631ed3c54fa2c2d6903629201493",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Mayar Sherif"
+        },
+        "player2": {
+          "name": "Polina Kudermetova"
+        },
+        "tour": "wta",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "018b47464f16ca78f46bd6e72e2227a2",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Oleksandra Oliynykova"
+        },
+        "player2": {
+          "name": "Yue Yuan"
+        },
+        "tour": "wta",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "0a5724597a812c45faf15e4bb13f4f0e",
+        "date": "2026-09-30T02:00:00Z",
+        "player1": {
+          "name": "Taylah Preston"
+        },
+        "player2": {
+          "name": "Tamara Korpatsch"
+        },
+        "tour": "wta",
+        "time": "04h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      }
+    ]
+  }
+}
