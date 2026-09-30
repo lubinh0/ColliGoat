@@ -744,6 +744,24 @@
         }
       },
       {
+        "id": "b37042990194a603e165f3ffaa66d3e4",
+        "date": "2026-10-02T04:00:00Z",
+        "player1": {
+          "name": "Renata Zarazua"
+        },
+        "player2": {
+          "name": "Aryna Sabalenka"
+        },
+        "tour": "wta",
+        "time": "06h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
         "id": "c7bfd02f55913334369753aa2e15ffd0",
         "date": "2026-10-02T04:00:00Z",
         "player1": {
@@ -975,28 +993,6 @@
           "name": "WTA China Open",
           "surface": "Hard",
           "flag": "CN"
-        }
-      }
-    ]
-  },
-  "2026-09-30": {
-    "data": [
-      {
-        "id": "0bff2782ee07c23760cbe4d2877ea6b4",
-        "date": "2026-09-30T03:05:00Z",
-        "player1": {
-          "name": "Jiri Lehecka"
-        },
-        "player2": {
-          "name": "Zizou Bergs"
-        },
-        "tour": "atp",
-        "time": "05h05",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Japan Open",
-          "surface": "Hard",
-          "flag": "JP"
         }
       }
     ]
