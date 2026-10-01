@@ -1,26 +1,4 @@
 {
-  "2026-10-01": {
-    "data": [
-      {
-        "id": "8e1b1ccdaf9bc406f149cfba186e0337",
-        "date": "2026-10-01T12:35:00Z",
-        "player1": {
-          "name": "Alexander Bublik"
-        },
-        "player2": {
-          "name": "Jakub Mensik"
-        },
-        "tour": "atp",
-        "time": "14h35",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP China Open",
-          "surface": "Hard",
-          "flag": "CN"
-        }
-      }
-    ]
-  },
   "2026-10-02": {
     "data": [
       {
@@ -586,6 +564,24 @@
         }
       },
       {
+        "id": "33518edfa1e26f2c0e3ae617afe0ab1b",
+        "date": "2026-10-03T03:00:00Z",
+        "player1": {
+          "name": "Francisco Cerundolo"
+        },
+        "player2": {
+          "name": "Jakub Mensik"
+        },
+        "tour": "atp",
+        "time": "05h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
         "id": "3a1b590508385c6acada556aec2f0676",
         "date": "2026-10-03T04:00:00Z",
         "player1": {
@@ -755,6 +751,24 @@
         },
         "player2": {
           "name": "Harriet Dart"
+        },
+        "tour": "wta",
+        "time": "06h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "6bf6841c79aa53815b86f5fd0463dbe3",
+        "date": "2026-10-03T04:00:00Z",
+        "player1": {
+          "name": "Xinyu Gao"
+        },
+        "player2": {
+          "name": "Iga Swiatek"
         },
         "tour": "wta",
         "time": "06h00",
