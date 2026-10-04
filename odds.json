@@ -1,37 +1,31 @@
 {
-  "alexander zverev|novak djokovic": {
-    "p1": 1.57,
-    "p2": 7.33,
-    "p1name": "Alexander Zverev",
-    "p2name": "Novak Djokovic"
-  },
   "alex de minaur|hubert hurkacz": {
-    "p1": 1.76,
-    "p2": 2.17,
+    "p1": 1.75,
+    "p2": 2.18,
     "p1name": "Alex de Minaur",
     "p2name": "Hubert Hurkacz"
   },
+  "daniil medvedev|novak djokovic": {
+    "p1": 2.28,
+    "p2": 1.63,
+    "p1name": "Novak Djokovic",
+    "p2name": "Daniil Medvedev"
+  },
   "carlos alcaraz|jaume munar": {
-    "p1": 1.11,
-    "p2": 7.68,
+    "p1": 1.1,
+    "p2": 7.71,
     "p1name": "Carlos Alcaraz",
     "p2name": "Jaume Munar"
   },
   "jiri lehecka|valentin vacherot": {
-    "p1": 1.49,
-    "p2": 2.6,
+    "p1": 1.53,
+    "p2": 2.66,
     "p1name": "Jiri Lehecka",
     "p2name": "Valentin Vacherot"
   },
-  "naomi osaka|sara bejlek": {
-    "p1": 34.28,
-    "p2": 1.03,
-    "p1name": "Sara Bejlek",
-    "p2name": "Naomi Osaka"
-  },
   "karolina muchova|liudmila samsonova": {
-    "p1": 1.28,
-    "p2": 4.12,
+    "p1": 2.03,
+    "p2": 1.97,
     "p1name": "Karolina Muchova",
     "p2name": "Liudmila Samsonova"
   },
@@ -60,8 +54,8 @@
     "p2name": "Sonay Kartal"
   },
   "ann li|belinda bencic": {
-    "p1": 1.42,
-    "p2": 3.24,
+    "p1": 1.43,
+    "p2": 3.23,
     "p1name": "Belinda Bencic",
     "p2name": "Ann Li"
   },
