@@ -219,28 +219,6 @@
       }
     ]
   },
-  "2026-10-04": {
-    "data": [
-      {
-        "id": "5dcb61ea08af6d8049acffbcb7735ce2",
-        "date": "2026-10-04T14:04:00Z",
-        "player1": {
-          "name": "Karolina Muchova"
-        },
-        "player2": {
-          "name": "Liudmila Samsonova"
-        },
-        "tour": "wta",
-        "time": "16h04",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA China Open",
-          "surface": "Hard",
-          "flag": "CN"
-        }
-      }
-    ]
-  },
   "2026-10-06": {
     "data": [
       {
@@ -269,6 +247,24 @@
         },
         "player2": {
           "name": "Ekaterina Alexandrova"
+        },
+        "tour": "wta",
+        "time": "05h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "66c01266795342d3ed47ac9fb23b438b",
+        "date": "2026-10-06T03:00:00Z",
+        "player1": {
+          "name": "Karolina Muchova"
+        },
+        "player2": {
+          "name": "Naomi Osaka"
         },
         "tour": "wta",
         "time": "05h00",
