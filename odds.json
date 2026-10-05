@@ -1,98 +1,56 @@
 {
-  "alex de minaur|hubert hurkacz": {
-    "p1": 1.8,
-    "p2": 2.17,
-    "p1name": "Alex de Minaur",
-    "p2name": "Hubert Hurkacz"
-  },
   "daniil medvedev|novak djokovic": {
-    "p1": 2.4,
-    "p2": 1.63,
+    "p1": 2.22,
+    "p2": 1.74,
     "p1name": "Novak Djokovic",
     "p2name": "Daniil Medvedev"
   },
-  "carlos alcaraz|jaume munar": {
-    "p1": 1.12,
-    "p2": 7,
-    "p1name": "Carlos Alcaraz",
-    "p2name": "Jaume Munar"
-  },
   "jiri lehecka|valentin vacherot": {
-    "p1": 1.55,
-    "p2": 2.63,
+    "p1": 1.02,
+    "p2": 38.85,
     "p1name": "Jiri Lehecka",
     "p2name": "Valentin Vacherot"
   },
-  "donna vekic|iga swiatek": {
-    "p1": 8,
-    "p2": 1.1,
-    "p1name": "Donna Vekic",
-    "p2name": "Iga Swiatek"
-  },
-  "iva jović|kamilla rakhimova": {
-    "p1": 1.24,
-    "p2": 4.59,
-    "p1name": "Iva Jović",
-    "p2name": "Kamilla Rakhimova"
-  },
-  "marie bouzkova|qinwen zheng": {
-    "p1": 2.28,
-    "p2": 1.69,
-    "p1name": "Marie Bouzkova",
-    "p2name": "Qinwen Zheng"
-  },
-  "alina charaeva|sonay kartal": {
-    "p1": 2.6,
-    "p2": 1.55,
-    "p1name": "Alina Charaeva",
-    "p2name": "Sonay Kartal"
-  },
-  "ann li|belinda bencic": {
-    "p1": 1.43,
-    "p2": 3.23,
-    "p1name": "Belinda Bencic",
-    "p2name": "Ann Li"
-  },
-  "elina svitolina|maria sakkari": {
-    "p1": 3.78,
-    "p2": 1.31,
-    "p1name": "Maria Sakkari",
-    "p2name": "Elina Svitolina"
-  },
-  "elise mertens|jelena ostapenko": {
-    "p1": 2.57,
-    "p2": 1.57,
-    "p1name": "Jelena Ostapenko",
-    "p2name": "Elise Mertens"
-  },
   "coco gauff|sun xinran": {
     "p1": 1.05,
-    "p2": 12.26,
+    "p2": 12.48,
     "p1name": "Coco Gauff",
     "p2name": "Sun Xinran"
   },
   "daria snigur|mirra andreeva": {
-    "p1": 6.5,
-    "p2": 1.11,
+    "p1": 6.1,
+    "p2": 1.15,
     "p1name": "Daria Snigur",
     "p2name": "Mirra Andreeva"
   },
   "ekaterina alexandrova|linda noskova": {
-    "p1": 1.28,
-    "p2": 3.65,
+    "p1": 1.32,
+    "p2": 3.82,
     "p1name": "Linda Noskova",
     "p2name": "Ekaterina Alexandrova"
   },
   "karolina muchova|naomi osaka": {
-    "p1": 1.65,
-    "p2": 2.23,
+    "p1": 1.76,
+    "p2": 2.17,
     "p1name": "Karolina Muchova",
     "p2name": "Naomi Osaka"
   },
   "nikola bartunkova|sinja kraus": {
-    "p1": 4.75,
-    "p2": 1.19,
+    "p1": 4.9,
+    "p2": 1.21,
     "p1name": "Sinja Kraus",
     "p2name": "Nikola Bartunkova"
+  },
+  "alina charaeva|qinwen zheng": {
+    "p1": 4.1,
+    "p2": 1.24,
+    "p1name": "Alina Charaeva",
+    "p2name": "Qinwen Zheng"
+  },
+  "iga swiatek|iva jović": {
+    "p1": 2.95,
+    "p2": 1.4,
+    "p1name": "Iva Jović",
+    "p2name": "Iga Swiatek"
   }
 }
