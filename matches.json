@@ -1,136 +1,6 @@
 {
-  "2026-10-06": {
-    "data": [
-      {
-        "id": "bd4d71c36db8e457d45721651426c225",
-        "date": "2026-10-06T10:16:56Z",
-        "player1": {
-          "name": "Sinja Kraus"
-        },
-        "player2": {
-          "name": "Nikola Bartunkova"
-        },
-        "tour": "wta",
-        "time": "12h16",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA China Open",
-          "surface": "Hard",
-          "flag": "CN"
-        }
-      },
-      {
-        "id": "d77588347c84136dd9fe6fb7a54b40b4",
-        "date": "2026-10-06T11:08:30Z",
-        "player1": {
-          "name": "Novak Djokovic"
-        },
-        "player2": {
-          "name": "Alex de Minaur"
-        },
-        "tour": "atp",
-        "time": "13h08",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP China Open",
-          "surface": "Hard",
-          "flag": "CN"
-        }
-      }
-    ]
-  },
   "2026-10-07": {
     "data": [
-      {
-        "id": "8ddf5799d5cf59e20a7340e60481d105",
-        "date": "2026-10-07T03:00:00Z",
-        "player1": {
-          "name": "Alina Charaeva"
-        },
-        "player2": {
-          "name": "Qinwen Zheng"
-        },
-        "tour": "wta",
-        "time": "05h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA China Open",
-          "surface": "Hard",
-          "flag": "CN"
-        }
-      },
-      {
-        "id": "020e257e15a4271205631c42fc05f671",
-        "date": "2026-10-07T03:00:00Z",
-        "player1": {
-          "name": "Ann Li"
-        },
-        "player2": {
-          "name": "Elina Svitolina"
-        },
-        "tour": "wta",
-        "time": "05h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA China Open",
-          "surface": "Hard",
-          "flag": "CN"
-        }
-      },
-      {
-        "id": "64e1b6c212f584a22df9d6376314746c",
-        "date": "2026-10-07T03:00:00Z",
-        "player1": {
-          "name": "Coco Gauff"
-        },
-        "player2": {
-          "name": "Elise Mertens"
-        },
-        "tour": "wta",
-        "time": "05h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA China Open",
-          "surface": "Hard",
-          "flag": "CN"
-        }
-      },
-      {
-        "id": "b0713dc2ab30dc84cdb96e7dc4957c1d",
-        "date": "2026-10-07T03:00:00Z",
-        "player1": {
-          "name": "Iva Jović"
-        },
-        "player2": {
-          "name": "Iga Swiatek"
-        },
-        "tour": "wta",
-        "time": "05h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA China Open",
-          "surface": "Hard",
-          "flag": "CN"
-        }
-      },
-      {
-        "id": "791964bea0ff62114832d025fcec6b9d",
-        "date": "2026-10-07T04:00:00Z",
-        "player1": {
-          "name": "Adolfo Daniel Vallejo"
-        },
-        "player2": {
-          "name": "Valentin Royer"
-        },
-        "tour": "atp",
-        "time": "06h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Shanghai Masters",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
       {
         "id": "24468f2798418b3734b62f8235a96196",
         "date": "2026-10-07T04:00:00Z",
@@ -139,24 +9,6 @@
         },
         "player2": {
           "name": "Matteo Berrettini"
-        },
-        "tour": "atp",
-        "time": "06h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Shanghai Masters",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "1487c11ccf669ab9d00607993033871f",
-        "date": "2026-10-07T04:00:00Z",
-        "player1": {
-          "name": "Arthur Fery"
-        },
-        "player2": {
-          "name": "Marin Cilic"
         },
         "tour": "atp",
         "time": "06h00",
@@ -186,240 +38,6 @@
         }
       },
       {
-        "id": "790f5e853b0ee965cff9ae0f2521a4a4",
-        "date": "2026-10-07T04:00:00Z",
-        "player1": {
-          "name": "Botic van de Zandschulp"
-        },
-        "player2": {
-          "name": "Daniel Merida Aguilar"
-        },
-        "tour": "atp",
-        "time": "06h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Shanghai Masters",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "e239b6153731e9f0b84f346eb587f9f7",
-        "date": "2026-10-07T04:00:00Z",
-        "player1": {
-          "name": "Luca Van Assche"
-        },
-        "player2": {
-          "name": "Bu Yunchaokete"
-        },
-        "tour": "atp",
-        "time": "06h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Shanghai Masters",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "4955d590a659f419a3c243ac01adcba5",
-        "date": "2026-10-07T04:00:00Z",
-        "player1": {
-          "name": "Cameron Norrie"
-        },
-        "player2": {
-          "name": "Denis Shapovalov"
-        },
-        "tour": "atp",
-        "time": "06h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Shanghai Masters",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "ff12f67489673ffd2bc90d9a6f686b15",
-        "date": "2026-10-07T04:00:00Z",
-        "player1": {
-          "name": "Holger Rune"
-        },
-        "player2": {
-          "name": "Daniel Altmaier"
-        },
-        "tour": "atp",
-        "time": "06h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Shanghai Masters",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "6330b92e3c299cc0b3db77e4e0a4b83c",
-        "date": "2026-10-07T04:00:00Z",
-        "player1": {
-          "name": "Fabian Marozsan"
-        },
-        "player2": {
-          "name": "Zachary Svajda"
-        },
-        "tour": "atp",
-        "time": "06h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Shanghai Masters",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "333980ed121c08c335b86c91a1de3a48",
-        "date": "2026-10-07T04:00:00Z",
-        "player1": {
-          "name": "Nuno Borges"
-        },
-        "player2": {
-          "name": "Facundo Diaz Acosta"
-        },
-        "tour": "atp",
-        "time": "06h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Shanghai Masters",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "fd28d05a1e60816704c0dc6a7eb12b72",
-        "date": "2026-10-07T04:00:00Z",
-        "player1": {
-          "name": "Thiago Agustin Tirante"
-        },
-        "player2": {
-          "name": "Hamad Medjedovic"
-        },
-        "tour": "atp",
-        "time": "06h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Shanghai Masters",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "2ba2d49f6e9fb8fc7d0417ca0b590f77",
-        "date": "2026-10-07T04:00:00Z",
-        "player1": {
-          "name": "Hubert Hurkacz"
-        },
-        "player2": {
-          "name": "James Duckworth"
-        },
-        "tour": "atp",
-        "time": "06h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Shanghai Masters",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "4ed151cdcdb29939aae76add155bbc56",
-        "date": "2026-10-07T04:00:00Z",
-        "player1": {
-          "name": "Martin Landaluce"
-        },
-        "player2": {
-          "name": "Jan-Lennard Struff"
-        },
-        "tour": "atp",
-        "time": "06h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Shanghai Masters",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "e891a02e881883be43d898107660ddcf",
-        "date": "2026-10-07T04:00:00Z",
-        "player1": {
-          "name": "Jaume Munar"
-        },
-        "player2": {
-          "name": "Jenson Brooksby"
-        },
-        "tour": "atp",
-        "time": "06h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Shanghai Masters",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "f8c8d214822b7274556c6080c45b21b3",
-        "date": "2026-10-07T04:00:00Z",
-        "player1": {
-          "name": "Yannick Hanfmann"
-        },
-        "player2": {
-          "name": "Kamil Majchrzak"
-        },
-        "tour": "atp",
-        "time": "06h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Shanghai Masters",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "469d64661302be8270a740c26c2307d4",
-        "date": "2026-10-07T04:00:00Z",
-        "player1": {
-          "name": "Marcos Giron"
-        },
-        "player2": {
-          "name": "Sebastian Baez"
-        },
-        "tour": "atp",
-        "time": "06h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Shanghai Masters",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "7aa5316e991e75b643af8f08eef61311",
-        "date": "2026-10-07T04:00:00Z",
-        "player1": {
-          "name": "Mariano Navone"
-        },
-        "player2": {
-          "name": "Pablo Carreno Busta"
-        },
-        "tour": "atp",
-        "time": "06h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Shanghai Masters",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
         "id": "09891c53a582f50d3153736a7cf7e307",
         "date": "2026-10-07T04:00:00Z",
         "player1": {
@@ -438,16 +56,34 @@
         }
       },
       {
-        "id": "02f6a0ddcd015fe9b206546eb4298936",
-        "date": "2026-10-07T04:00:00Z",
+        "id": "b0713dc2ab30dc84cdb96e7dc4957c1d",
+        "date": "2026-10-07T05:00:00Z",
         "player1": {
-          "name": "Zhizhen Zhang"
+          "name": "Iva Jović"
         },
         "player2": {
-          "name": "Tomas Machac"
+          "name": "Iga Swiatek"
+        },
+        "tour": "wta",
+        "time": "07h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "f8c8d214822b7274556c6080c45b21b3",
+        "date": "2026-10-07T05:10:00Z",
+        "player1": {
+          "name": "Yannick Hanfmann"
+        },
+        "player2": {
+          "name": "Kamil Majchrzak"
         },
         "tour": "atp",
-        "time": "06h00",
+        "time": "07h10",
         "scheduled": true,
         "tournament": {
           "name": "ATP Shanghai Masters",
@@ -456,21 +92,111 @@
         }
       },
       {
-        "id": "df1352ed67512cd95822357e152abc7c",
-        "date": "2026-10-07T04:00:00Z",
+        "id": "02f6a0ddcd015fe9b206546eb4298936",
+        "date": "2026-10-07T05:10:00Z",
         "player1": {
-          "name": "Vit Kopriva"
+          "name": "Zhizhen Zhang"
         },
         "player2": {
-          "name": "Zizou Bergs"
+          "name": "Tomas Machac"
         },
         "tour": "atp",
-        "time": "06h00",
+        "time": "07h10",
         "scheduled": true,
         "tournament": {
           "name": "ATP Shanghai Masters",
           "surface": "Hard",
           "flag": "UN"
+        }
+      },
+      {
+        "id": "64e1b6c212f584a22df9d6376314746c",
+        "date": "2026-10-07T06:15:00Z",
+        "player1": {
+          "name": "Coco Gauff"
+        },
+        "player2": {
+          "name": "Elise Mertens"
+        },
+        "tour": "wta",
+        "time": "08h15",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "ff12f67489673ffd2bc90d9a6f686b15",
+        "date": "2026-10-07T07:30:00Z",
+        "player1": {
+          "name": "Holger Rune"
+        },
+        "player2": {
+          "name": "Daniel Altmaier"
+        },
+        "tour": "atp",
+        "time": "09h30",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Shanghai Masters",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "8ddf5799d5cf59e20a7340e60481d105",
+        "date": "2026-10-07T11:00:00Z",
+        "player1": {
+          "name": "Alina Charaeva"
+        },
+        "player2": {
+          "name": "Qinwen Zheng"
+        },
+        "tour": "wta",
+        "time": "13h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "1487c11ccf669ab9d00607993033871f",
+        "date": "2026-10-07T11:10:00Z",
+        "player1": {
+          "name": "Arthur Fery"
+        },
+        "player2": {
+          "name": "Marin Cilic"
+        },
+        "tour": "atp",
+        "time": "13h10",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Shanghai Masters",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "020e257e15a4271205631c42fc05f671",
+        "date": "2026-10-07T12:30:00Z",
+        "player1": {
+          "name": "Ann Li"
+        },
+        "player2": {
+          "name": "Elina Svitolina"
+        },
+        "tour": "wta",
+        "time": "14h30",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA China Open",
+          "surface": "Hard",
+          "flag": "CN"
         }
       }
     ]
@@ -493,6 +219,258 @@
           "name": "WTA China Open",
           "surface": "Hard",
           "flag": "CN"
+        }
+      },
+      {
+        "id": "0b76ddef0404c0c940c69d1134ea109c",
+        "date": "2026-10-08T03:00:00Z",
+        "player1": {
+          "name": "Karolina Muchova"
+        },
+        "player2": {
+          "name": "Nikola Bartunkova"
+        },
+        "tour": "wta",
+        "time": "05h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA China Open",
+          "surface": "Hard",
+          "flag": "CN"
+        }
+      },
+      {
+        "id": "791964bea0ff62114832d025fcec6b9d",
+        "date": "2026-10-08T04:00:00Z",
+        "player1": {
+          "name": "Adolfo Daniel Vallejo"
+        },
+        "player2": {
+          "name": "Valentin Royer"
+        },
+        "tour": "atp",
+        "time": "06h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Shanghai Masters",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "790f5e853b0ee965cff9ae0f2521a4a4",
+        "date": "2026-10-08T04:00:00Z",
+        "player1": {
+          "name": "Botic van de Zandschulp"
+        },
+        "player2": {
+          "name": "Daniel Merida Aguilar"
+        },
+        "tour": "atp",
+        "time": "06h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Shanghai Masters",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "e239b6153731e9f0b84f346eb587f9f7",
+        "date": "2026-10-08T04:00:00Z",
+        "player1": {
+          "name": "Luca Van Assche"
+        },
+        "player2": {
+          "name": "Bu Yunchaokete"
+        },
+        "tour": "atp",
+        "time": "06h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Shanghai Masters",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "4955d590a659f419a3c243ac01adcba5",
+        "date": "2026-10-08T04:00:00Z",
+        "player1": {
+          "name": "Cameron Norrie"
+        },
+        "player2": {
+          "name": "Denis Shapovalov"
+        },
+        "tour": "atp",
+        "time": "06h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Shanghai Masters",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "6330b92e3c299cc0b3db77e4e0a4b83c",
+        "date": "2026-10-08T04:00:00Z",
+        "player1": {
+          "name": "Fabian Marozsan"
+        },
+        "player2": {
+          "name": "Zachary Svajda"
+        },
+        "tour": "atp",
+        "time": "06h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Shanghai Masters",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "333980ed121c08c335b86c91a1de3a48",
+        "date": "2026-10-08T04:00:00Z",
+        "player1": {
+          "name": "Nuno Borges"
+        },
+        "player2": {
+          "name": "Facundo Diaz Acosta"
+        },
+        "tour": "atp",
+        "time": "06h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Shanghai Masters",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "fd28d05a1e60816704c0dc6a7eb12b72",
+        "date": "2026-10-08T04:00:00Z",
+        "player1": {
+          "name": "Thiago Agustin Tirante"
+        },
+        "player2": {
+          "name": "Hamad Medjedovic"
+        },
+        "tour": "atp",
+        "time": "06h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Shanghai Masters",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "2ba2d49f6e9fb8fc7d0417ca0b590f77",
+        "date": "2026-10-08T04:00:00Z",
+        "player1": {
+          "name": "Hubert Hurkacz"
+        },
+        "player2": {
+          "name": "James Duckworth"
+        },
+        "tour": "atp",
+        "time": "06h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Shanghai Masters",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "4ed151cdcdb29939aae76add155bbc56",
+        "date": "2026-10-08T04:00:00Z",
+        "player1": {
+          "name": "Martin Landaluce"
+        },
+        "player2": {
+          "name": "Jan-Lennard Struff"
+        },
+        "tour": "atp",
+        "time": "06h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Shanghai Masters",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "e891a02e881883be43d898107660ddcf",
+        "date": "2026-10-08T04:00:00Z",
+        "player1": {
+          "name": "Jaume Munar"
+        },
+        "player2": {
+          "name": "Jenson Brooksby"
+        },
+        "tour": "atp",
+        "time": "06h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Shanghai Masters",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "469d64661302be8270a740c26c2307d4",
+        "date": "2026-10-08T04:00:00Z",
+        "player1": {
+          "name": "Marcos Giron"
+        },
+        "player2": {
+          "name": "Sebastian Baez"
+        },
+        "tour": "atp",
+        "time": "06h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Shanghai Masters",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "7aa5316e991e75b643af8f08eef61311",
+        "date": "2026-10-08T04:00:00Z",
+        "player1": {
+          "name": "Mariano Navone"
+        },
+        "player2": {
+          "name": "Pablo Carreno Busta"
+        },
+        "tour": "atp",
+        "time": "06h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Shanghai Masters",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "df1352ed67512cd95822357e152abc7c",
+        "date": "2026-10-08T04:00:00Z",
+        "player1": {
+          "name": "Vit Kopriva"
+        },
+        "player2": {
+          "name": "Zizou Bergs"
+        },
+        "tour": "atp",
+        "time": "06h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Shanghai Masters",
+          "surface": "Hard",
+          "flag": "UN"
         }
       }
     ]
