@@ -1,44 +1,4 @@
 {
-  "2026-10-07": {
-    "data": [
-      {
-        "id": "ff12f67489673ffd2bc90d9a6f686b15",
-        "date": "2026-10-07T13:11:00Z",
-        "player1": {
-          "name": "Holger Rune"
-        },
-        "player2": {
-          "name": "Daniel Altmaier"
-        },
-        "tour": "atp",
-        "time": "15h11",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Shanghai Masters",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "020e257e15a4271205631c42fc05f671",
-        "date": "2026-10-07T13:38:50Z",
-        "player1": {
-          "name": "Ann Li"
-        },
-        "player2": {
-          "name": "Elina Svitolina"
-        },
-        "tour": "wta",
-        "time": "15h38",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA China Open",
-          "surface": "Hard",
-          "flag": "CN"
-        }
-      }
-    ]
-  },
   "2026-10-08": {
     "data": [
       {
@@ -424,6 +384,24 @@
         }
       },
       {
+        "id": "7fa3afd6824f6f399b190a8b95e17b57",
+        "date": "2026-10-09T04:00:00Z",
+        "player1": {
+          "name": "Alex de Minaur"
+        },
+        "player2": {
+          "name": "Alex Molcan"
+        },
+        "tour": "atp",
+        "time": "06h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Shanghai Masters",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
         "id": "4e2c5a5395b42d51415ecd6dcbb351fa",
         "date": "2026-10-09T04:00:00Z",
         "player1": {
@@ -496,6 +474,24 @@
         }
       },
       {
+        "id": "bd351fd9f9a56cd0cc2878d9ec9cda89",
+        "date": "2026-10-09T04:00:00Z",
+        "player1": {
+          "name": "Karen Khachanov"
+        },
+        "player2": {
+          "name": "Arthur Fery"
+        },
+        "tour": "atp",
+        "time": "06h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Shanghai Masters",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
         "id": "eb1e0b228ed44a2ea7cd0398f92f30f5",
         "date": "2026-10-09T04:00:00Z",
         "player1": {
@@ -503,6 +499,24 @@
         },
         "player2": {
           "name": "Ugo Humbert"
+        },
+        "tour": "atp",
+        "time": "06h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Shanghai Masters",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "1c50f0f54375e316e823480ca6ccf537",
+        "date": "2026-10-09T04:00:00Z",
+        "player1": {
+          "name": "Ben Shelton"
+        },
+        "player2": {
+          "name": "Daniel Altmaier"
         },
         "tour": "atp",
         "time": "06h00",
@@ -601,6 +615,24 @@
           "name": "ATP Shanghai Masters",
           "surface": "Hard",
           "flag": "UN"
+        }
+      },
+      {
+        "id": "10ff295353bc42df59a57a02170e241d",
+        "date": "2026-10-09T04:00:00Z",
+        "player1": {
+          "name": "Qinwen Zheng"
+        },
+        "player2": {
+          "name": "Elina Svitolina"
+        },
+        "tour": "wta",
+        "time": "06h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA China Open",
+          "surface": "Hard",
+          "flag": "CN"
         }
       },
       {
