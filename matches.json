@@ -1,26 +1,4 @@
 {
-  "2026-10-08": {
-    "data": [
-      {
-        "id": "e4ee78c7ad5031e88f5b5c2cc49f68cb",
-        "date": "2026-10-08T12:07:07Z",
-        "player1": {
-          "name": "Cameron Norrie"
-        },
-        "player2": {
-          "name": "Dalibor Svrcina"
-        },
-        "tour": "atp",
-        "time": "14h07",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Shanghai Masters",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      }
-    ]
-  },
   "2026-10-09": {
     "data": [
       {
@@ -467,6 +445,24 @@
         },
         "player2": {
           "name": "Carlos Alcaraz"
+        },
+        "tour": "atp",
+        "time": "06h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Shanghai Masters",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "450360a425a5b30032be061533efc51a",
+        "date": "2026-10-10T04:00:00Z",
+        "player1": {
+          "name": "Dalibor Svrcina"
+        },
+        "player2": {
+          "name": "Tomas Martin Etcheverry"
         },
         "tour": "atp",
         "time": "06h00",

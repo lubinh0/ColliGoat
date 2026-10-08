@@ -1,10 +1,4 @@
 {
-  "cameron norrie|dalibor svrcina": {
-    "p1": 3.05,
-    "p2": 3.1,
-    "p1name": "Cameron Norrie",
-    "p2name": "Dalibor Svrcina"
-  },
   "adrian mannarino|flavio cobolli": {
     "p1": 2.8,
     "p2": 1.49,
@@ -12,7 +6,7 @@
     "p2name": "Flavio Cobolli"
   },
   "andrey rublev|rei sakamoto": {
-    "p1": 3.24,
+    "p1": 3.22,
     "p2": 1.39,
     "p1name": "Rei Sakamoto",
     "p2name": "Andrey Rublev"
@@ -25,31 +19,31 @@
   },
   "ben shelton|daniel altmaier": {
     "p1": 1.12,
-    "p2": 6.82,
+    "p2": 6.87,
     "p1name": "Ben Shelton",
     "p2name": "Daniel Altmaier"
   },
   "alexander blockx|quentin halys": {
-    "p1": 2.21,
-    "p2": 1.74,
+    "p1": 2.24,
+    "p2": 1.71,
     "p1name": "Quentin Halys",
     "p2name": "Alexander Blockx"
   },
   "alexander zverev|wu yibing": {
     "p1": 1.1,
-    "p2": 7.91,
+    "p2": 7.76,
     "p1name": "Alexander Zverev",
     "p2name": "Wu Yibing"
   },
   "brandon nakashima|matteo berrettini": {
-    "p1": 2.3,
-    "p2": 1.68,
+    "p1": 2.32,
+    "p2": 1.67,
     "p1name": "Matteo Berrettini",
     "p2name": "Brandon Nakashima"
   },
   "frances tiafoe|yannick hanfmann": {
-    "p1": 3.1,
-    "p2": 1.41,
+    "p1": 3.22,
+    "p2": 1.39,
     "p1name": "Yannick Hanfmann",
     "p2name": "Frances Tiafoe"
   },
@@ -60,26 +54,26 @@
     "p2name": "Jenson Brooksby"
   },
   "alex molcan|alex de minaur": {
-    "p1": 1.36,
-    "p2": 3.42,
+    "p1": 1.38,
+    "p2": 3.3,
     "p1name": "Alex de Minaur",
     "p2name": "Alex Molcan"
   },
   "arthur fery|karen khachanov": {
-    "p1": 1.5,
-    "p2": 2.95,
+    "p1": 1.47,
+    "p2": 2.84,
     "p1name": "Karen Khachanov",
     "p2name": "Arthur Fery"
   },
   "alexander bublik|tomas machac": {
-    "p1": 1.56,
-    "p2": 2.58,
+    "p1": 1.59,
+    "p2": 2.51,
     "p1name": "Alexander Bublik",
     "p2name": "Tomas Machac"
   },
   "francisco cerundolo|roman safiullin": {
     "p1": 1.95,
-    "p2": 1.93,
+    "p2": 2,
     "p1name": "Francisco Cerundolo",
     "p2name": "Roman Safiullin"
   },
@@ -90,32 +84,32 @@
     "p2name": "Jakub Mensik"
   },
   "hubert hurkacz|novak djokovic": {
-    "p1": 1.63,
-    "p2": 2.39,
+    "p1": 1.56,
+    "p2": 2.56,
     "p1name": "Novak Djokovic",
     "p2name": "Hubert Hurkacz"
   },
   "lorenzo musetti|yi zhou": {
-    "p1": 4.95,
-    "p2": 1.21,
+    "p1": 4.9,
+    "p2": 1.22,
     "p1name": "Yi Zhou",
     "p2name": "Lorenzo Musetti"
   },
   "adolfo daniel vallejo|tommy paul": {
-    "p1": 1.5,
+    "p1": 1.49,
     "p2": 2.8,
     "p1name": "Tommy Paul",
     "p2name": "Adolfo Daniel Vallejo"
   },
   "alejandro tabilo|pablo carreno busta": {
     "p1": 1.61,
-    "p2": 2.43,
+    "p2": 2.5,
     "p1name": "Alejandro Tabilo",
     "p2name": "Pablo Carreno Busta"
   },
   "alex michelsen|botic van de zandschulp": {
-    "p1": 2.58,
-    "p2": 1.55,
+    "p1": 2.55,
+    "p2": 1.61,
     "p1name": "Botic van de Zandschulp",
     "p2name": "Alex Michelsen"
   },
@@ -126,44 +120,50 @@
     "p2name": "Pavel Kotov"
   },
   "bu yunchaokete|casper ruud": {
-    "p1": 2.05,
-    "p2": 1.77,
+    "p1": 2.29,
+    "p2": 1.71,
     "p1name": "Bu Yunchaokete",
     "p2name": "Casper Ruud"
   },
   "camilo ugo carabelli|felix auger-aliassime": {
-    "p1": 10.5,
-    "p2": 1.04,
+    "p1": 15.7,
+    "p2": 1.05,
     "p1name": "Camilo Ugo Carabelli",
     "p2name": "Felix Auger-Aliassime"
   },
   "carlos alcaraz|juan manuel cerundolo": {
-    "p1": 16.13,
+    "p1": 16.62,
     "p2": 1.04,
     "p1name": "Juan Manuel Cerundolo",
     "p2name": "Carlos Alcaraz"
   },
+  "dalibor svrcina|tomas martin etcheverry": {
+    "p1": 2.15,
+    "p2": 1.76,
+    "p1name": "Dalibor Svrcina",
+    "p2name": "Tomas Martin Etcheverry"
+  },
   "daniil medvedev|jan-lennard struff": {
-    "p1": 1.16,
-    "p2": 5.8,
+    "p1": 1.18,
+    "p2": 5.7,
     "p1name": "Daniil Medvedev",
     "p2name": "Jan-Lennard Struff"
   },
   "ignacio buse|zizou bergs": {
-    "p1": 2.4,
+    "p1": 2.57,
     "p2": 1.57,
     "p1name": "Ignacio Buse",
     "p2name": "Zizou Bergs"
   },
   "jiri lehecka|nuno borges": {
-    "p1": 1.38,
+    "p1": 1.37,
     "p2": 3.5,
     "p1name": "Jiri Lehecka",
     "p2name": "Nuno Borges"
   },
   "learner tien|zachary svajda": {
-    "p1": 1.34,
-    "p2": 3.45,
+    "p1": 1.33,
+    "p2": 3.54,
     "p1name": "Learner Tien",
     "p2name": "Zachary Svajda"
   },
@@ -180,7 +180,7 @@
     "p2name": "Taylor Fritz"
   },
   "rafael jodar|thiago agustin tirante": {
-    "p1": 3.09,
+    "p1": 3.3,
     "p2": 1.41,
     "p1name": "Thiago Agustin Tirante",
     "p2name": "Rafael Jodar"
@@ -204,8 +204,8 @@
     "p2name": "Iga Swiatek"
   },
   "mirra andreeva|nikola bartunkova": {
-    "p1": 1.36,
-    "p2": 3.15,
+    "p1": 1.4,
+    "p2": 3.19,
     "p1name": "Mirra Andreeva",
     "p2name": "Nikola Bartunkova"
   }
