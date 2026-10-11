@@ -1,19 +1,7 @@
 {
-  "alexander zverev|quentin halys": {
-    "p1": 1.07,
-    "p2": 12.78,
-    "p1name": "Alexander Zverev",
-    "p2name": "Quentin Halys"
-  },
-  "alexander bublik|brandon nakashima": {
-    "p1": 2.26,
-    "p2": 1.8,
-    "p1name": "Alexander Bublik",
-    "p2name": "Brandon Nakashima"
-  },
   "alejandro davidovich fokina|frances tiafoe": {
-    "p1": 2,
-    "p2": 1.9,
+    "p1": 2.75,
+    "p2": 1.54,
     "p1name": "Alejandro Davidovich Fokina",
     "p2name": "Frances Tiafoe"
   },
@@ -61,13 +49,19 @@
   },
   "tommy paul|valentin vacherot": {
     "p1": 1.69,
-    "p2": 2.29,
+    "p2": 2.3,
     "p1name": "Tommy Paul",
     "p2name": "Valentin Vacherot"
   },
+  "arthur gea|jakub mensik": {
+    "p1": 2.55,
+    "p2": 1.5,
+    "p1name": "Arthur Gea",
+    "p2name": "Jakub Mensik"
+  },
   "mirra andreeva|qinwen zheng": {
-    "p1": 2.6,
-    "p2": 1.58,
+    "p1": 1.39,
+    "p2": 8,
     "p1name": "Qinwen Zheng",
     "p2name": "Mirra Andreeva"
   },
@@ -85,7 +79,7 @@
   },
   "anhelina kalinina|sonay kartal": {
     "p1": 2.63,
-    "p2": 1.59,
+    "p2": 1.58,
     "p1name": "Anhelina Kalinina",
     "p2name": "Sonay Kartal"
   },
@@ -94,6 +88,12 @@
     "p2": 2.06,
     "p1name": "Ekaterina Alexandrova",
     "p2name": "Leylah Fernandez"
+  },
+  "aoi ito|janice tjen": {
+    "p1": 1.35,
+    "p2": 3.45,
+    "p1name": "Janice Tjen",
+    "p2name": "Aoi Ito"
   },
   "clara tauson|marie bouzkova": {
     "p1": 3.2,
@@ -113,11 +113,29 @@
     "p1name": "Jasmine Paolini",
     "p2name": "Sara Bejlek"
   },
+  "magdalena frech|mananchaya sawangkaew": {
+    "p1": 2.12,
+    "p2": 1.72,
+    "p1name": "Mananchaya Sawangkaew",
+    "p2name": "Magdalena Frech"
+  },
+  "caty mcnally|yuliia starodubtseva": {
+    "p1": 1.58,
+    "p2": 2.35,
+    "p1name": "Caty McNally",
+    "p2name": "Yuliia Starodubtseva"
+  },
   "xinyu wang|xiyu wang": {
-    "p1": 1.91,
+    "p1": 1.97,
     "p2": 1.97,
     "p1name": "Xiyu Wang",
     "p2name": "Xinyu Wang"
+  },
+  "alexandra eala|shi han": {
+    "p1": 1.22,
+    "p2": 4.35,
+    "p1name": "Alexandra Eala",
+    "p2name": "Shi Han"
   },
   "ann li|qinwen zheng": {
     "p1": 3.11,
@@ -126,8 +144,8 @@
     "p2name": "Qinwen Zheng"
   },
   "belinda bencic|shuai zhang": {
-    "p1": 1.2,
-    "p2": 5,
+    "p1": 1.23,
+    "p2": 4.59,
     "p1name": "Belinda Bencic",
     "p2name": "Shuai Zhang"
   },
@@ -162,14 +180,14 @@
     "p2name": "Liudmila Samsonova"
   },
   "lilli tagger|nikola bartunkova": {
-    "p1": 3.05,
-    "p2": 1.44,
+    "p1": 3.13,
+    "p2": 1.4,
     "p1name": "Lilli Tagger",
     "p2name": "Nikola Bartunkova"
   },
   "maja chwalinska|mayar sherif": {
     "p1": 4.2,
-    "p2": 1.28,
+    "p2": 1.26,
     "p1name": "Mayar Sherif",
     "p2name": "Maja Chwalinska"
   }
