@@ -1,37 +1,37 @@
 {
   "botic van de zandschulp|rafael jodar": {
-    "p1": 2.74,
-    "p2": 1.52,
+    "p1": 2.63,
+    "p2": 1.56,
     "p1name": "Botic van de Zandschulp",
     "p2name": "Rafael Jodar"
   },
   "casper ruud|felix auger-aliassime": {
-    "p1": 2.27,
+    "p1": 2.28,
     "p2": 1.71,
     "p1name": "Casper Ruud",
     "p2name": "Felix Auger-Aliassime"
   },
   "daniil medvedev|stefanos tsitsipas": {
-    "p1": 1.44,
-    "p2": 3.02,
+    "p1": 1.46,
+    "p2": 2.95,
     "p1name": "Daniil Medvedev",
     "p2name": "Stefanos Tsitsipas"
   },
   "tommy paul|zizou bergs": {
-    "p1": 1.47,
-    "p2": 2.93,
+    "p1": 1.48,
+    "p2": 2.88,
     "p1name": "Tommy Paul",
     "p2name": "Zizou Bergs"
   },
   "alex de minaur|alexander zverev": {
     "p1": 1.47,
-    "p2": 2.89,
+    "p2": 2.87,
     "p1name": "Alexander Zverev",
     "p2name": "Alex de Minaur"
   },
   "belinda bencic|sonay kartal": {
-    "p1": 2.98,
-    "p2": 1.44,
+    "p1": 2.88,
+    "p2": 1.47,
     "p1name": "Sonay Kartal",
     "p2name": "Belinda Bencic"
   },
@@ -48,20 +48,20 @@
     "p2name": "Iga Swiatek"
   },
   "maja chwalinska|marie bouzkova": {
-    "p1": 1.49,
-    "p2": 2.78,
+    "p1": 1.5,
+    "p2": 2.74,
     "p1name": "Marie Bouzkova",
     "p2name": "Maja Chwalinska"
   },
   "dayana yastremska|iva jović": {
-    "p1": 1.21,
-    "p2": 4.4,
+    "p1": 1.28,
+    "p2": 3.99,
     "p1name": "Iva Jović",
     "p2name": "Dayana Yastremska"
   },
   "caty mcnally|karolina muchova": {
     "p1": 1.23,
-    "p2": 4.63,
+    "p2": 4.58,
     "p1name": "Karolina Muchova",
     "p2name": "Caty McNally"
   },
@@ -72,13 +72,13 @@
     "p2name": "Diana Shnaider"
   },
   "jasmine paolini|nikola bartunkova": {
-    "p1": 2.32,
-    "p2": 1.66,
+    "p1": 2.3,
+    "p2": 1.7,
     "p1name": "Jasmine Paolini",
     "p2name": "Nikola Bartunkova"
   },
   "daria snigur|janice tjen": {
-    "p1": 2.52,
+    "p1": 2.51,
     "p2": 1.57,
     "p1name": "Janice Tjen",
     "p2name": "Daria Snigur"
@@ -90,8 +90,8 @@
     "p2name": "Guo Hanyu"
   },
   "jelena ostapenko|jessica pegula": {
-    "p1": 2.96,
-    "p2": 1.44,
+    "p1": 2.88,
+    "p2": 1.46,
     "p1name": "Jelena Ostapenko",
     "p2name": "Jessica Pegula"
   },
@@ -103,7 +103,7 @@
   },
   "ann li|aryna sabalenka": {
     "p1": 1.17,
-    "p2": 5.51,
+    "p2": 5.62,
     "p1name": "Aryna Sabalenka",
     "p2name": "Ann Li"
   },
