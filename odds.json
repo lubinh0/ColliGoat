@@ -1,10 +1,4 @@
 {
-  "tommy paul|zizou bergs": {
-    "p1": 1.56,
-    "p2": 2.54,
-    "p1name": "Tommy Paul",
-    "p2name": "Zizou Bergs"
-  },
   "alejandro davidovich fokina|arthur gea": {
     "p1": 2.06,
     "p2": 1.84,
@@ -13,31 +7,25 @@
   },
   "alex de minaur|alexander zverev": {
     "p1": 1.5,
-    "p2": 2.81,
+    "p2": 2.79,
     "p1name": "Alexander Zverev",
     "p2name": "Alex de Minaur"
   },
   "casper ruud|rafael jodar": {
-    "p1": 1.68,
-    "p2": 2.31,
+    "p1": 1.7,
+    "p2": 2.27,
     "p1name": "Rafael Jodar",
     "p2name": "Casper Ruud"
   },
-  "ashlyn krueger|lanlana tararudee": {
-    "p1": 1.62,
-    "p2": 3.01,
-    "p1name": "Ashlyn Krueger",
-    "p2name": "Lanlana Tararudee"
-  },
-  "ann li|aryna sabalenka": {
-    "p1": 1.06,
-    "p2": 15.18,
-    "p1name": "Aryna Sabalenka",
-    "p2name": "Ann Li"
+  "daniil medvedev|tommy paul": {
+    "p1": 1.45,
+    "p2": 2.75,
+    "p1name": "Daniil Medvedev",
+    "p2name": "Tommy Paul"
   },
   "leylah fernandez|shi han": {
-    "p1": 4.02,
-    "p2": 1.28,
+    "p1": 7.03,
+    "p2": 1.14,
     "p1name": "Shi Han",
     "p2name": "Leylah Fernandez"
   },
@@ -59,10 +47,28 @@
     "p1name": "Iva Jović",
     "p2name": "Maja Chwalinska"
   },
+  "elina svitolina|guo hanyu": {
+    "p1": 1.06,
+    "p2": 9,
+    "p1name": "Elina Svitolina",
+    "p2name": "Guo Hanyu"
+  },
   "jasmine paolini|sonay kartal": {
     "p1": 1.83,
-    "p2": 1.98,
+    "p2": 1.97,
     "p1name": "Jasmine Paolini",
     "p2name": "Sonay Kartal"
+  },
+  "ashlyn krueger|iga swiatek": {
+    "p1": 8,
+    "p2": 1.08,
+    "p1name": "Ashlyn Krueger",
+    "p2name": "Iga Swiatek"
+  },
+  "ann li|janice tjen": {
+    "p1": 1.56,
+    "p2": 2.43,
+    "p1name": "Ann Li",
+    "p2name": "Janice Tjen"
   }
 }
