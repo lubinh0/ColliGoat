@@ -1,13 +1,7 @@
 {
-  "casper ruud|rafael jodar": {
-    "p1": 1.09,
-    "p2": 11,
-    "p1name": "Rafael Jodar",
-    "p2name": "Casper Ruud"
-  },
   "daniil medvedev|tommy paul": {
-    "p1": 1.46,
-    "p2": 2.95,
+    "p1": 1.16,
+    "p2": 6.31,
     "p1name": "Daniil Medvedev",
     "p2name": "Tommy Paul"
   },
@@ -17,21 +11,15 @@
     "p1name": "Alexander Zverev",
     "p2name": "Alejandro Davidovich Fokina"
   },
-  "maja chwalinska|maria sakkari": {
-    "p1": 1.87,
-    "p2": 2.16,
-    "p1name": "Maja Chwalinska",
-    "p2name": "Maria Sakkari"
-  },
   "ann li|iga swiatek": {
-    "p1": 4.67,
-    "p2": 1.23,
+    "p1": 5.68,
+    "p2": 1.18,
     "p1name": "Ann Li",
     "p2name": "Iga Swiatek"
   },
   "jelena ostapenko|sonay kartal": {
-    "p1": 1.75,
-    "p2": 2.07,
+    "p1": 1.78,
+    "p2": 2.15,
     "p1name": "Sonay Kartal",
     "p2name": "Jelena Ostapenko"
   }
