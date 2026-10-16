@@ -1,25 +1,25 @@
 {
   "alejandro davidovich fokina|alexander zverev": {
-    "p1": 1.31,
-    "p2": 3.85,
+    "p1": 1.3,
+    "p2": 4.04,
     "p1name": "Alexander Zverev",
     "p2name": "Alejandro Davidovich Fokina"
   },
   "daniil medvedev|rafael jodar": {
-    "p1": 2.62,
+    "p1": 2.64,
     "p2": 1.54,
     "p1name": "Rafael Jodar",
     "p2name": "Daniil Medvedev"
   },
   "jelena ostapenko|sonay kartal": {
-    "p1": 1.74,
+    "p1": 1.72,
     "p2": 2.25,
     "p1name": "Sonay Kartal",
     "p2name": "Jelena Ostapenko"
   },
   "iga swiatek|maja chwalinska": {
     "p1": 1.15,
-    "p2": 6.53,
+    "p2": 6.36,
     "p1name": "Iga Swiatek",
     "p2name": "Maja Chwalinska"
   }
