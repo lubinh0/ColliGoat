@@ -2,44 +2,8 @@
   "2026-10-17": {
     "data": [
       {
-        "id": "3dd021eb08a07ee593039b5f1c6c8be1",
-        "date": "2026-10-17T09:05:00Z",
-        "player1": {
-          "name": "Sonay Kartal"
-        },
-        "player2": {
-          "name": "Jelena Ostapenko"
-        },
-        "tour": "wta",
-        "time": "11h05",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Wuhan Open",
-          "surface": "Hard",
-          "flag": "CN"
-        }
-      },
-      {
-        "id": "ec7b2ed5ca42a47451864cedfd5b61d3",
-        "date": "2026-10-17T11:05:00Z",
-        "player1": {
-          "name": "Rafael Jodar"
-        },
-        "player2": {
-          "name": "Daniil Medvedev"
-        },
-        "tour": "atp",
-        "time": "13h05",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Shanghai Masters",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
         "id": "ab648a948516e13d5f2ca038684780ca",
-        "date": "2026-10-17T11:30:00Z",
+        "date": "2026-10-17T11:40:00Z",
         "player1": {
           "name": "Iga Swiatek"
         },
@@ -47,7 +11,7 @@
           "name": "Maja Chwalinska"
         },
         "tour": "wta",
-        "time": "13h30",
+        "time": "13h40",
         "scheduled": true,
         "tournament": {
           "name": "WTA Wuhan Open",

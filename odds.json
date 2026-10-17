@@ -1,19 +1,7 @@
 {
-  "daniil medvedev|rafael jodar": {
-    "p1": 2.62,
-    "p2": 1.63,
-    "p1name": "Rafael Jodar",
-    "p2name": "Daniil Medvedev"
-  },
-  "jelena ostapenko|sonay kartal": {
-    "p1": 1.56,
-    "p2": 3.75,
-    "p1name": "Sonay Kartal",
-    "p2name": "Jelena Ostapenko"
-  },
   "iga swiatek|maja chwalinska": {
-    "p1": 1.19,
-    "p2": 5.5,
+    "p1": 6.25,
+    "p2": 1.12,
     "p1name": "Iga Swiatek",
     "p2name": "Maja Chwalinska"
   }
