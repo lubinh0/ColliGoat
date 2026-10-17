@@ -1,8 +1,14 @@
 {
-  "iga swiatek|maja chwalinska": {
-    "p1": 6.25,
-    "p2": 1.12,
-    "p1name": "Iga Swiatek",
-    "p2name": "Maja Chwalinska"
+  "alejandro davidovich fokina|rafael jodar": {
+    "p1": 2.19,
+    "p2": 1.75,
+    "p1name": "Alejandro Davidovich Fokina",
+    "p2name": "Rafael Jodar"
+  },
+  "maja chwalinska|sonay kartal": {
+    "p1": 2.09,
+    "p2": 1.81,
+    "p1name": "Maja Chwalinska",
+    "p2name": "Sonay Kartal"
   }
 }
