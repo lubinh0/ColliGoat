@@ -5,6 +5,12 @@
     "p1name": "Sara Bejlek",
     "p2name": "Xiyu Wang"
   },
+  "alycia parks|sara bejlek": {
+    "p1": 1.19,
+    "p2": 5.16,
+    "p1name": "Sara Bejlek",
+    "p2name": "Alycia Parks"
+  },
   "diana shnaider|yulia putintseva": {
     "p1": 3.62,
     "p2": 1.33,
@@ -12,26 +18,26 @@
     "p2name": "Diana Shnaider"
   },
   "anhelina kalinina|jasmine paolini": {
-    "p1": 1.49,
-    "p2": 2.76,
+    "p1": 1.47,
+    "p2": 2.82,
     "p1name": "Jasmine Paolini",
     "p2name": "Anhelina Kalinina"
   },
   "cristina bucsa|polina kudermetova": {
     "p1": 1.85,
-    "p2": 2.03,
+    "p2": 2.02,
     "p1name": "Cristina Bucsa",
     "p2name": "Polina Kudermetova"
   },
   "belinda bencic|jelena ostapenko": {
-    "p1": 2.18,
-    "p2": 1.75,
+    "p1": 2.26,
+    "p2": 1.73,
     "p1name": "Jelena Ostapenko",
     "p2name": "Belinda Bencic"
   },
   "daria snigur|katarzyna kawa": {
-    "p1": 4.1,
-    "p2": 1.29,
+    "p1": 3.71,
+    "p2": 1.31,
     "p1name": "Katarzyna Kawa",
     "p2name": "Daria Snigur"
   },
