@@ -1,15 +1,15 @@
 {
-  "kamilla rakhimova|marie bouzkova": {
-    "p1": 3.15,
-    "p2": 1.36,
-    "p1name": "Kamilla Rakhimova",
-    "p2name": "Marie Bouzkova"
+  "sara bejlek|xiyu wang": {
+    "p1": 1.95,
+    "p2": 1.93,
+    "p1name": "Sara Bejlek",
+    "p2name": "Xiyu Wang"
   },
-  "alexandra eala|diane parry": {
-    "p1": 1.33,
-    "p2": 3.58,
-    "p1name": "Alexandra Eala",
-    "p2name": "Diane Parry"
+  "diana shnaider|yulia putintseva": {
+    "p1": 3.62,
+    "p2": 1.33,
+    "p1name": "Yulia Putintseva",
+    "p2name": "Diana Shnaider"
   },
   "anhelina kalinina|jasmine paolini": {
     "p1": 1.5,
@@ -17,17 +17,17 @@
     "p1name": "Jasmine Paolini",
     "p2name": "Anhelina Kalinina"
   },
-  "belinda bencic|jelena ostapenko": {
-    "p1": 2.18,
-    "p2": 1.75,
-    "p1name": "Jelena Ostapenko",
-    "p2name": "Belinda Bencic"
-  },
   "cristina bucsa|polina kudermetova": {
     "p1": 1.85,
     "p2": 2.02,
     "p1name": "Cristina Bucsa",
     "p2name": "Polina Kudermetova"
+  },
+  "belinda bencic|jelena ostapenko": {
+    "p1": 2.18,
+    "p2": 1.75,
+    "p1name": "Jelena Ostapenko",
+    "p2name": "Belinda Bencic"
   },
   "daria snigur|katarzyna kawa": {
     "p1": 4.1,
@@ -35,22 +35,10 @@
     "p1name": "Katarzyna Kawa",
     "p2name": "Daria Snigur"
   },
-  "diana shnaider|yulia putintseva": {
-    "p1": 3.59,
-    "p2": 1.32,
-    "p1name": "Yulia Putintseva",
-    "p2name": "Diana Shnaider"
-  },
   "ekaterina alexandrova|guo hanyu": {
     "p1": 4.25,
     "p2": 1.26,
     "p1name": "Guo Hanyu",
     "p2name": "Ekaterina Alexandrova"
-  },
-  "sara bejlek|xiyu wang": {
-    "p1": 1.95,
-    "p2": 1.93,
-    "p1name": "Sara Bejlek",
-    "p2name": "Xiyu Wang"
   }
 }
