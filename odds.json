@@ -1,19 +1,13 @@
 {
   "daria snigur|katarzyna kawa": {
-    "p1": 4.87,
-    "p2": 1.22,
+    "p1": 1.33,
+    "p2": 6.5,
     "p1name": "Katarzyna Kawa",
     "p2name": "Daria Snigur"
   },
-  "ekaterina alexandrova|guo hanyu": {
-    "p1": 10.95,
-    "p2": 1.09,
-    "p1name": "Guo Hanyu",
-    "p2name": "Ekaterina Alexandrova"
-  },
   "anastasia zakharova|marie bouzkova": {
-    "p1": 1.27,
-    "p2": 3.75,
+    "p1": 1.25,
+    "p2": 4.33,
     "p1name": "Marie Bouzkova",
     "p2name": "Anastasia Zakharova"
   },
@@ -22,5 +16,29 @@
     "p2": 2.7,
     "p1name": "Leylah Fernandez",
     "p2name": "Aliaksandra Sasnovich"
+  },
+  "sara bejlek|sorana cirstea": {
+    "p1": 1.48,
+    "p2": 2.65,
+    "p1name": "Sorana Cirstea",
+    "p2name": "Sara Bejlek"
+  },
+  "alexandra eala|diana shnaider": {
+    "p1": 2.38,
+    "p2": 1.65,
+    "p1name": "Alexandra Eala",
+    "p2name": "Diana Shnaider"
+  },
+  "elena rybakina|polina kudermetova": {
+    "p1": 1.12,
+    "p2": 7.14,
+    "p1name": "Elena Rybakina",
+    "p2name": "Polina Kudermetova"
+  },
+  "iva jović|jasmine paolini": {
+    "p1": 1.5,
+    "p2": 2.75,
+    "p1name": "Iva Jović",
+    "p2name": "Jasmine Paolini"
   }
 }
