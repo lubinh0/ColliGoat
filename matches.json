@@ -1,26 +1,4 @@
 {
-  "2026-10-20": {
-    "data": [
-      {
-        "id": "49063fd027706f4302f3102cff14bc47",
-        "date": "2026-10-20T10:45:00Z",
-        "player1": {
-          "name": "Katarzyna Kawa"
-        },
-        "player2": {
-          "name": "Daria Snigur"
-        },
-        "tour": "wta",
-        "time": "12h45",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Ningbo Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      }
-    ]
-  },
   "2026-10-21": {
     "data": [
       {
@@ -107,6 +85,24 @@
         },
         "player2": {
           "name": "Diana Shnaider"
+        },
+        "tour": "wta",
+        "time": "06h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA Ningbo Open",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "b22bbc938da4853cc3b24227e1530341",
+        "date": "2026-10-22T04:00:00Z",
+        "player1": {
+          "name": "Katarzyna Kawa"
+        },
+        "player2": {
+          "name": "Belinda Bencic"
         },
         "tour": "wta",
         "time": "06h00",
