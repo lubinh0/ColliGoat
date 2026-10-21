@@ -1,18 +1,12 @@
 {
-  "aliaksandra sasnovich|leylah fernandez": {
-    "p1": 1.41,
-    "p2": 3.25,
-    "p1name": "Leylah Fernandez",
-    "p2name": "Aliaksandra Sasnovich"
-  },
   "sara bejlek|sorana cirstea": {
-    "p1": 1.48,
-    "p2": 2.65,
+    "p1": 3.31,
+    "p2": 1.37,
     "p1name": "Sorana Cirstea",
     "p2name": "Sara Bejlek"
   },
   "ekaterina alexandrova|marta kostyuk": {
-    "p1": 2.33,
+    "p1": 2.36,
     "p2": 1.68,
     "p1name": "Ekaterina Alexandrova",
     "p2name": "Marta Kostyuk"
@@ -24,13 +18,13 @@
     "p2name": "Jasmine Paolini"
   },
   "belinda bencic|katarzyna kawa": {
-    "p1": 8.12,
+    "p1": 8.27,
     "p2": 1.09,
     "p1name": "Katarzyna Kawa",
     "p2name": "Belinda Bencic"
   },
   "alexandra eala|diana shnaider": {
-    "p1": 2.38,
+    "p1": 2.36,
     "p2": 1.67,
     "p1name": "Alexandra Eala",
     "p2name": "Diana Shnaider"
