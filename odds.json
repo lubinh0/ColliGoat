@@ -1,15 +1,9 @@
 {
-  "alexandra eala|diana shnaider": {
-    "p1": 2.06,
-    "p2": 1.88,
-    "p1name": "Alexandra Eala",
-    "p2name": "Diana Shnaider"
-  },
-  "elena rybakina|polina kudermetova": {
-    "p1": 1.12,
-    "p2": 7.43,
-    "p1name": "Elena Rybakina",
-    "p2name": "Polina Kudermetova"
+  "marie bouzkova|sara bejlek": {
+    "p1": 2.43,
+    "p2": 1.62,
+    "p1name": "Sara Bejlek",
+    "p2name": "Marie Bouzkova"
   },
   "ekaterina alexandrova|leylah fernandez": {
     "p1": 2.2,
@@ -17,10 +11,10 @@
     "p1name": "Leylah Fernandez",
     "p2name": "Ekaterina Alexandrova"
   },
-  "marie bouzkova|sara bejlek": {
-    "p1": 2.43,
-    "p2": 1.62,
-    "p1name": "Sara Bejlek",
-    "p2name": "Marie Bouzkova"
+  "diana shnaider|iva jović": {
+    "p1": 1.98,
+    "p2": 1.95,
+    "p1name": "Iva Jović",
+    "p2name": "Diana Shnaider"
   }
 }

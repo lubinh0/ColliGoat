@@ -1,64 +1,6 @@
 {
-  "2026-10-22": {
-    "data": [
-      {
-        "id": "2790f03a39ec672cd20a0fb57c24cdab",
-        "date": "2026-10-22T08:45:44Z",
-        "player1": {
-          "name": "Alexandra Eala"
-        },
-        "player2": {
-          "name": "Diana Shnaider"
-        },
-        "tour": "wta",
-        "time": "10h45",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Ningbo Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "e08ebf78ffa7cff3ba4d5f58846854c2",
-        "date": "2026-10-22T11:00:00Z",
-        "player1": {
-          "name": "Elena Rybakina"
-        },
-        "player2": {
-          "name": "Polina Kudermetova"
-        },
-        "tour": "wta",
-        "time": "13h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Ningbo Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      }
-    ]
-  },
   "2026-10-23": {
     "data": [
-      {
-        "id": "f34a0b19a0651c9e3720cf57770d105d",
-        "date": "2026-10-23T04:00:00Z",
-        "player1": {
-          "name": "Leylah Fernandez"
-        },
-        "player2": {
-          "name": "Ekaterina Alexandrova"
-        },
-        "tour": "wta",
-        "time": "06h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Ningbo Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
       {
         "id": "f5c4465f64797dcb67aa1b42fd45292e",
         "date": "2026-10-23T05:00:00Z",
@@ -70,6 +12,42 @@
         },
         "tour": "wta",
         "time": "07h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA Ningbo Open",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "f34a0b19a0651c9e3720cf57770d105d",
+        "date": "2026-10-23T06:30:00Z",
+        "player1": {
+          "name": "Leylah Fernandez"
+        },
+        "player2": {
+          "name": "Ekaterina Alexandrova"
+        },
+        "tour": "wta",
+        "time": "08h30",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA Ningbo Open",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "70d2acd96d31199e701797e524beb6f4",
+        "date": "2026-10-23T08:00:00Z",
+        "player1": {
+          "name": "Iva Jović"
+        },
+        "player2": {
+          "name": "Diana Shnaider"
+        },
+        "tour": "wta",
+        "time": "10h00",
         "scheduled": true,
         "tournament": {
           "name": "WTA Ningbo Open",
