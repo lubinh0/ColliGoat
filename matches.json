@@ -2,44 +2,8 @@
   "2026-10-22": {
     "data": [
       {
-        "id": "0fb3913071cee064c0674f6ad49f6f09",
-        "date": "2026-10-22T05:00:00Z",
-        "player1": {
-          "name": "Iva Jović"
-        },
-        "player2": {
-          "name": "Jasmine Paolini"
-        },
-        "tour": "wta",
-        "time": "07h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Ningbo Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
-        "id": "b22bbc938da4853cc3b24227e1530341",
-        "date": "2026-10-22T06:30:00Z",
-        "player1": {
-          "name": "Katarzyna Kawa"
-        },
-        "player2": {
-          "name": "Belinda Bencic"
-        },
-        "tour": "wta",
-        "time": "08h30",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Ningbo Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
         "id": "2790f03a39ec672cd20a0fb57c24cdab",
-        "date": "2026-10-22T08:00:00Z",
+        "date": "2026-10-22T08:45:44Z",
         "player1": {
           "name": "Alexandra Eala"
         },
@@ -47,7 +11,7 @@
           "name": "Diana Shnaider"
         },
         "tour": "wta",
-        "time": "10h00",
+        "time": "10h45",
         "scheduled": true,
         "tournament": {
           "name": "WTA Ningbo Open",
