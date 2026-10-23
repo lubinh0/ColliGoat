@@ -1,14 +1,14 @@
 {
-  "elena rybakina|katarzyna kawa": {
-    "p1": 1.07,
-    "p2": 10,
-    "p1name": "Elena Rybakina",
-    "p2name": "Katarzyna Kawa"
-  },
   "leylah fernandez|marie bouzkova": {
     "p1": 1.96,
     "p2": 1.84,
     "p1name": "Leylah Fernandez",
     "p2name": "Marie Bouzkova"
+  },
+  "diana shnaider|elena rybakina": {
+    "p1": 1.46,
+    "p2": 2.75,
+    "p1name": "Elena Rybakina",
+    "p2name": "Diana Shnaider"
   }
 }

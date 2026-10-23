@@ -1,26 +1,4 @@
 {
-  "2026-10-23": {
-    "data": [
-      {
-        "id": "af18854b3c532d504418cd5e5b28ddf2",
-        "date": "2026-10-23T12:10:00Z",
-        "player1": {
-          "name": "Elena Rybakina"
-        },
-        "player2": {
-          "name": "Katarzyna Kawa"
-        },
-        "tour": "wta",
-        "time": "14h10",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Ningbo Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      }
-    ]
-  },
   "2026-10-24": {
     "data": [
       {
@@ -34,6 +12,24 @@
         },
         "tour": "wta",
         "time": "09h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA Ningbo Open",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "ae319b5b7c6cbef88dda71720672c0c6",
+        "date": "2026-10-24T09:30:00Z",
+        "player1": {
+          "name": "Elena Rybakina"
+        },
+        "player2": {
+          "name": "Diana Shnaider"
+        },
+        "tour": "wta",
+        "time": "11h30",
         "scheduled": true,
         "tournament": {
           "name": "WTA Ningbo Open",
