@@ -2,26 +2,8 @@
   "2026-10-24": {
     "data": [
       {
-        "id": "3849e1db276f31bcb15aad1cca44184d",
-        "date": "2026-10-24T07:28:16Z",
-        "player1": {
-          "name": "Leylah Fernandez"
-        },
-        "player2": {
-          "name": "Marie Bouzkova"
-        },
-        "tour": "wta",
-        "time": "09h28",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Ningbo Open",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
         "id": "ae319b5b7c6cbef88dda71720672c0c6",
-        "date": "2026-10-24T09:30:00Z",
+        "date": "2026-10-24T09:51:00Z",
         "player1": {
           "name": "Elena Rybakina"
         },
@@ -29,7 +11,7 @@
           "name": "Diana Shnaider"
         },
         "tour": "wta",
-        "time": "11h30",
+        "time": "11h51",
         "scheduled": true,
         "tournament": {
           "name": "WTA Ningbo Open",
