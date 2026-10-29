@@ -1,61 +1,43 @@
 {
-  "daniel altmaier|jiri lehecka": {
-    "p1": 11.61,
-    "p2": 1.08,
-    "p1name": "Daniel Altmaier",
-    "p2name": "Jiri Lehecka"
-  },
-  "denis shapovalov|taylor fritz": {
-    "p1": 1.54,
-    "p2": 2.75,
-    "p1name": "Taylor Fritz",
-    "p2name": "Denis Shapovalov"
-  },
   "jan-lennard struff|novak djokovic": {
-    "p1": 1.29,
-    "p2": 4.05,
+    "p1": 1.94,
+    "p2": 2.78,
     "p1name": "Novak Djokovic",
     "p2name": "Jan-Lennard Struff"
   },
   "ben shelton|jerome kym": {
-    "p1": 1.32,
-    "p2": 3.77,
+    "p1": 1.29,
+    "p2": 4.22,
     "p1name": "Ben Shelton",
     "p2name": "Jerome Kym"
   },
-  "carlos alcaraz|nikoloz basilashvili": {
-    "p1": 11.65,
-    "p2": 1.08,
-    "p1name": "Nikoloz Basilashvili",
+  "holger rune|valentin vacherot": {
+    "p1": 1.75,
+    "p2": 2.27,
+    "p1name": "Holger Rune",
+    "p2name": "Valentin Vacherot"
+  },
+  "adrian mannarino|daniil medvedev": {
+    "p1": 4.91,
+    "p2": 1.21,
+    "p1name": "Adrian Mannarino",
+    "p2name": "Daniil Medvedev"
+  },
+  "carlos alcaraz|tommy paul": {
+    "p1": 4.35,
+    "p2": 1.25,
+    "p1name": "Tommy Paul",
     "p2name": "Carlos Alcaraz"
   },
-  "arthur fery|lorenzo musetti": {
-    "p1": 3.35,
-    "p2": 1.46,
-    "p1name": "Arthur Fery",
-    "p2name": "Lorenzo Musetti"
-  },
-  "alexander zverev|tallon griekspoor": {
-    "p1": 1.33,
-    "p2": 4.1,
-    "p1name": "Alexander Zverev",
-    "p2name": "Tallon Griekspoor"
-  },
-  "flavio cobolli|matteo berrettini": {
-    "p1": 1.97,
-    "p2": 1.93,
-    "p1name": "Flavio Cobolli",
-    "p2name": "Matteo Berrettini"
-  },
   "kamilla rakhimova|maya joint": {
-    "p1": 2.15,
-    "p2": 1.83,
+    "p1": 2.18,
+    "p2": 1.77,
     "p1name": "Kamilla Rakhimova",
     "p2name": "Maya Joint"
   },
   "alycia parks|mia pohánková": {
-    "p1": 1.51,
-    "p2": 2.73,
+    "p1": 1.49,
+    "p2": 2.88,
     "p1name": "Mia Pohánková",
     "p2name": "Alycia Parks"
   },
@@ -66,8 +48,8 @@
     "p2name": "Leylah Fernandez"
   },
   "alexandra eala|diana shnaider": {
-    "p1": 2.33,
-    "p2": 1.69,
+    "p1": 2.36,
+    "p2": 1.67,
     "p1name": "Alexandra Eala",
     "p2name": "Diana Shnaider"
   }
