@@ -1,56 +1,62 @@
 {
-  "jan-lennard struff|novak djokovic": {
-    "p1": 1.94,
-    "p2": 2.78,
-    "p1name": "Novak Djokovic",
-    "p2name": "Jan-Lennard Struff"
-  },
-  "ben shelton|jerome kym": {
-    "p1": 1.29,
-    "p2": 4.22,
-    "p1name": "Ben Shelton",
-    "p2name": "Jerome Kym"
-  },
   "holger rune|valentin vacherot": {
-    "p1": 1.75,
-    "p2": 2.27,
+    "p1": 1.69,
+    "p2": 2.31,
     "p1name": "Holger Rune",
     "p2name": "Valentin Vacherot"
   },
+  "arthur fils|taylor fritz": {
+    "p1": 1.97,
+    "p2": 1.92,
+    "p1name": "Taylor Fritz",
+    "p2name": "Arthur Fils"
+  },
+  "jerome kym|jiri lehecka": {
+    "p1": 3.48,
+    "p2": 1.35,
+    "p1name": "Jerome Kym",
+    "p2name": "Jiri Lehecka"
+  },
+  "jan-lennard struff|nuno borges": {
+    "p1": 1.83,
+    "p2": 2.07,
+    "p1name": "Jan-Lennard Struff",
+    "p2name": "Nuno Borges"
+  },
   "adrian mannarino|daniil medvedev": {
-    "p1": 4.91,
-    "p2": 1.21,
+    "p1": 4.59,
+    "p2": 1.25,
     "p1name": "Adrian Mannarino",
     "p2name": "Daniil Medvedev"
   },
   "carlos alcaraz|tommy paul": {
-    "p1": 4.35,
-    "p2": 1.25,
+    "p1": 4.1,
+    "p2": 1.28,
     "p1name": "Tommy Paul",
     "p2name": "Carlos Alcaraz"
   },
-  "kamilla rakhimova|maya joint": {
-    "p1": 2.18,
-    "p2": 1.77,
-    "p1name": "Kamilla Rakhimova",
-    "p2name": "Maya Joint"
+  "alexander zverev|arthur fery": {
+    "p1": 1.13,
+    "p2": 6.89,
+    "p1name": "Alexander Zverev",
+    "p2name": "Arthur Fery"
   },
-  "alycia parks|mia pohánková": {
-    "p1": 1.49,
-    "p2": 2.88,
-    "p1name": "Mia Pohánková",
-    "p2name": "Alycia Parks"
-  },
-  "elena rybakina|leylah fernandez": {
-    "p1": 1.28,
-    "p2": 4.03,
-    "p1name": "Elena Rybakina",
-    "p2name": "Leylah Fernandez"
+  "alex de minaur|matteo berrettini": {
+    "p1": 2.95,
+    "p2": 1.48,
+    "p1name": "Matteo Berrettini",
+    "p2name": "Alex de Minaur"
   },
   "alexandra eala|diana shnaider": {
-    "p1": 2.36,
-    "p2": 1.67,
+    "p1": 7.5,
+    "p2": 1.73,
     "p1name": "Alexandra Eala",
     "p2name": "Diana Shnaider"
+  },
+  "kamilla rakhimova|leylah fernandez": {
+    "p1": 1.33,
+    "p2": 3.63,
+    "p1name": "Leylah Fernandez",
+    "p2name": "Kamilla Rakhimova"
   }
 }
