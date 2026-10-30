@@ -1,62 +1,62 @@
 {
   "holger rune|valentin vacherot": {
-    "p1": 1.69,
-    "p2": 2.31,
+    "p1": 1.83,
+    "p2": 2.15,
     "p1name": "Holger Rune",
     "p2name": "Valentin Vacherot"
   },
   "arthur fils|taylor fritz": {
-    "p1": 1.97,
-    "p2": 1.92,
+    "p1": 1.99,
+    "p2": 1.91,
     "p1name": "Taylor Fritz",
     "p2name": "Arthur Fils"
   },
   "jerome kym|jiri lehecka": {
-    "p1": 3.48,
-    "p2": 1.35,
+    "p1": 3.55,
+    "p2": 1.34,
     "p1name": "Jerome Kym",
     "p2name": "Jiri Lehecka"
   },
   "jan-lennard struff|nuno borges": {
-    "p1": 1.83,
+    "p1": 1.85,
     "p2": 2.07,
     "p1name": "Jan-Lennard Struff",
     "p2name": "Nuno Borges"
   },
   "adrian mannarino|daniil medvedev": {
-    "p1": 4.59,
-    "p2": 1.25,
+    "p1": 11.8,
+    "p2": 1.08,
     "p1name": "Adrian Mannarino",
     "p2name": "Daniil Medvedev"
   },
   "carlos alcaraz|tommy paul": {
-    "p1": 4.1,
-    "p2": 1.28,
+    "p1": 4.22,
+    "p2": 1.29,
     "p1name": "Tommy Paul",
     "p2name": "Carlos Alcaraz"
   },
   "alexander zverev|arthur fery": {
     "p1": 1.13,
-    "p2": 6.89,
+    "p2": 6.94,
     "p1name": "Alexander Zverev",
     "p2name": "Arthur Fery"
   },
   "alex de minaur|matteo berrettini": {
     "p1": 2.95,
-    "p2": 1.48,
+    "p2": 1.45,
     "p1name": "Matteo Berrettini",
     "p2name": "Alex de Minaur"
   },
-  "alexandra eala|diana shnaider": {
-    "p1": 7.5,
-    "p2": 1.73,
-    "p1name": "Alexandra Eala",
-    "p2name": "Diana Shnaider"
-  },
   "kamilla rakhimova|leylah fernandez": {
-    "p1": 1.33,
-    "p2": 3.63,
+    "p1": 1.31,
+    "p2": 3.74,
     "p1name": "Leylah Fernandez",
     "p2name": "Kamilla Rakhimova"
+  },
+  "diana shnaider|mia pohánková": {
+    "p1": 1.41,
+    "p2": 3.12,
+    "p1name": "Diana Shnaider",
+    "p2name": "Mia Pohánková"
   }
 }
