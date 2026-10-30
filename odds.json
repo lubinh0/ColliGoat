@@ -1,39 +1,21 @@
 {
-  "arthur fils|taylor fritz": {
-    "p1": 1.01,
-    "p2": 16,
-    "p1name": "Taylor Fritz",
-    "p2name": "Arthur Fils"
-  },
-  "jerome kym|jiri lehecka": {
-    "p1": 3.51,
-    "p2": 1.35,
-    "p1name": "Jerome Kym",
-    "p2name": "Jiri Lehecka"
-  },
-  "jan-lennard struff|nuno borges": {
-    "p1": 1.88,
-    "p2": 2.05,
-    "p1name": "Jan-Lennard Struff",
-    "p2name": "Nuno Borges"
-  },
-  "carlos alcaraz|tommy paul": {
-    "p1": 25.76,
-    "p2": 1.03,
-    "p1name": "Tommy Paul",
-    "p2name": "Carlos Alcaraz"
-  },
-  "alexander zverev|arthur fery": {
-    "p1": 1.13,
-    "p2": 6.94,
-    "p1name": "Alexander Zverev",
-    "p2name": "Arthur Fery"
+  "taylor fritz|valentin vacherot": {
+    "p1": 3.69,
+    "p2": 1.32,
+    "p1name": "Valentin Vacherot",
+    "p2name": "Taylor Fritz"
   },
   "alex de minaur|matteo berrettini": {
-    "p1": 3.06,
-    "p2": 1.43,
+    "p1": 3.75,
+    "p2": 1.52,
     "p1name": "Matteo Berrettini",
     "p2name": "Alex de Minaur"
+  },
+  "carlos alcaraz|daniil medvedev": {
+    "p1": 3.05,
+    "p2": 1.38,
+    "p1name": "Daniil Medvedev",
+    "p2name": "Carlos Alcaraz"
   },
   "kamilla rakhimova|leylah fernandez": {
     "p1": 1.33,
