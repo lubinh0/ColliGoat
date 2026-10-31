@@ -2,24 +2,6 @@
   "2026-10-31": {
     "data": [
       {
-        "id": "b79cec36580dcc0d4a39f0e998bf6259",
-        "date": "2026-10-31T10:05:00Z",
-        "player1": {
-          "name": "Pablo Carreno Busta"
-        },
-        "player2": {
-          "name": "Mattia Bellucci"
-        },
-        "tour": "atp",
-        "time": "12h05",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Paris Masters",
-          "surface": "Hard",
-          "flag": "FR"
-        }
-      },
-      {
         "id": "4eaa8a4094623f5bcb9871f3ed3916ce",
         "date": "2026-10-31T11:05:00Z",
         "player1": {
@@ -27,42 +9,6 @@
         },
         "player2": {
           "name": "Vit Kopriva"
-        },
-        "tour": "atp",
-        "time": "13h05",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Paris Masters",
-          "surface": "Hard",
-          "flag": "FR"
-        }
-      },
-      {
-        "id": "2a5f1771a236171c3e21d21bdf56bff4",
-        "date": "2026-10-31T11:05:00Z",
-        "player1": {
-          "name": "Jaime Faria"
-        },
-        "player2": {
-          "name": "Rinky Hijikata"
-        },
-        "tour": "atp",
-        "time": "13h05",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Paris Masters",
-          "surface": "Hard",
-          "flag": "FR"
-        }
-      },
-      {
-        "id": "8f1291f57aab2102a046f3688a5cb9da",
-        "date": "2026-10-31T11:05:00Z",
-        "player1": {
-          "name": "Thiago Agustin Tirante"
-        },
-        "player2": {
-          "name": "Zachary Svajda"
         },
         "tour": "atp",
         "time": "13h05",
