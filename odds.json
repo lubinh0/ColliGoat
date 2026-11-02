@@ -1,43 +1,31 @@
 {
-  "lorenzo sonego|mattia bellucci": {
-    "p1": 1.06,
-    "p2": 20.37,
-    "p1name": "Mattia Bellucci",
-    "p2name": "Lorenzo Sonego"
-  },
-  "kyrian jacquet|tomas machac": {
-    "p1": 2.15,
-    "p2": 1.78,
-    "p1name": "Kyrian Jacquet",
-    "p2name": "Tomas Machac"
-  },
   "alex molcan|titouan droguet": {
-    "p1": 1.78,
-    "p2": 2.14,
+    "p1": 1.22,
+    "p2": 15,
     "p1name": "Alex Molcan",
     "p2name": "Titouan Droguet"
   },
   "denis shapovalov|karen khachanov": {
-    "p1": 2.46,
-    "p2": 1.61,
+    "p1": 3.57,
+    "p2": 1.77,
     "p1name": "Denis Shapovalov",
     "p2name": "Karen Khachanov"
   },
   "botic van de zandschulp|ugo humbert": {
-    "p1": 1.59,
-    "p2": 2.55,
+    "p1": 1.56,
+    "p2": 2.57,
     "p1name": "Ugo Humbert",
     "p2name": "Botic van de Zandschulp"
   },
   "alejandro davidovich fokina|moise kouame": {
-    "p1": 1.37,
-    "p2": 3.37,
+    "p1": 1.36,
+    "p2": 3.4,
     "p1name": "Alejandro Davidovich Fokina",
     "p2name": "Moise Kouame"
   },
   "novak djokovic|valentin vacherot": {
     "p1": 1.47,
-    "p2": 2.95,
+    "p2": 2.87,
     "p1name": "Novak Djokovic",
     "p2name": "Valentin Vacherot"
   },
@@ -54,8 +42,8 @@
     "p2name": "Arthur Fery"
   },
   "arthur rinderknech|francisco cerundolo": {
-    "p1": 2.75,
-    "p2": 1.51,
+    "p1": 2.63,
+    "p2": 1.55,
     "p1name": "Arthur Rinderknech",
     "p2name": "Francisco Cerundolo"
   },
@@ -85,25 +73,43 @@
   },
   "benjamin bonzi|taylor fritz": {
     "p1": 4.36,
-    "p2": 1.26,
+    "p2": 1.24,
     "p1name": "Benjamin Bonzi",
     "p2name": "Taylor Fritz"
   },
   "arthur gea|jan-lennard struff": {
-    "p1": 2,
-    "p2": 1.88,
+    "p1": 2.01,
+    "p2": 1.87,
     "p1name": "Jan-Lennard Struff",
     "p2name": "Arthur Gea"
   },
+  "ben shelton|cameron norrie": {
+    "p1": 1.34,
+    "p2": 3.49,
+    "p1name": "Ben Shelton",
+    "p2name": "Cameron Norrie"
+  },
+  "casper ruud|rafael jodar": {
+    "p1": 2.72,
+    "p2": 1.54,
+    "p1name": "Casper Ruud",
+    "p2name": "Rafael Jodar"
+  },
   "alexander zverev|lorenzo musetti": {
-    "p1": 1.36,
-    "p2": 3.15,
+    "p1": 1.41,
+    "p2": 3.2,
     "p1name": "Alexander Zverev",
     "p2name": "Lorenzo Musetti"
   },
+  "arthur fils|tomas machac": {
+    "p1": 1.4,
+    "p2": 3.14,
+    "p1name": "Arthur Fils",
+    "p2name": "Tomas Machac"
+  },
   "daniil medvedev|ignacio buse": {
-    "p1": 5.8,
-    "p2": 1.13,
+    "p1": 5.86,
+    "p2": 1.15,
     "p1name": "Ignacio Buse",
     "p2name": "Daniil Medvedev"
   }
