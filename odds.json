@@ -1,61 +1,31 @@
 {
-  "luca van assche|mariano navone": {
-    "p1": 1.27,
-    "p2": 4.28,
-    "p1name": "Luca Van Assche",
-    "p2name": "Mariano Navone"
-  },
-  "alejandro tabilo|rafael jodar": {
-    "p1": 4.54,
-    "p2": 1.24,
-    "p1name": "Alejandro Tabilo",
-    "p2name": "Rafael Jodar"
-  },
-  "cameron norrie|matteo arnaldi": {
-    "p1": 1.38,
-    "p2": 3.32,
-    "p1name": "Cameron Norrie",
-    "p2name": "Matteo Arnaldi"
-  },
-  "daniel merida aguilar|sebastian baez": {
-    "p1": 1.36,
-    "p2": 3.44,
-    "p1name": "Daniel Merida Aguilar",
-    "p2name": "Sebastian Baez"
-  },
-  "casper ruud|juan manuel cerundolo": {
-    "p1": 1.36,
-    "p2": 3.45,
-    "p1name": "Casper Ruud",
-    "p2name": "Juan Manuel Cerundolo"
-  },
   "lorenzo sonego|mattia bellucci": {
-    "p1": 1.67,
-    "p2": 2.3,
+    "p1": 1.06,
+    "p2": 20.37,
     "p1name": "Mattia Bellucci",
     "p2name": "Lorenzo Sonego"
   },
   "kyrian jacquet|tomas machac": {
-    "p1": 2.76,
-    "p2": 1.49,
+    "p1": 2.15,
+    "p2": 1.78,
     "p1name": "Kyrian Jacquet",
     "p2name": "Tomas Machac"
   },
   "alex molcan|titouan droguet": {
-    "p1": 1.77,
-    "p2": 2.13,
+    "p1": 1.78,
+    "p2": 2.14,
     "p1name": "Alex Molcan",
     "p2name": "Titouan Droguet"
   },
   "denis shapovalov|karen khachanov": {
-    "p1": 2.51,
-    "p2": 1.58,
+    "p1": 2.46,
+    "p2": 1.61,
     "p1name": "Denis Shapovalov",
     "p2name": "Karen Khachanov"
   },
   "botic van de zandschulp|ugo humbert": {
-    "p1": 1.64,
-    "p2": 2.39,
+    "p1": 1.59,
+    "p2": 2.55,
     "p1name": "Ugo Humbert",
     "p2name": "Botic van de Zandschulp"
   },
@@ -66,46 +36,28 @@
     "p2name": "Moise Kouame"
   },
   "novak djokovic|valentin vacherot": {
-    "p1": 1.48,
+    "p1": 1.47,
     "p2": 2.95,
     "p1name": "Novak Djokovic",
     "p2name": "Valentin Vacherot"
   },
-  "alex michelsen|jiri lehecka": {
-    "p1": 2.3,
-    "p2": 1.68,
-    "p1name": "Alex Michelsen",
-    "p2name": "Jiri Lehecka"
-  },
   "andrey rublev|tomas martin etcheverry": {
-    "p1": 1.4,
-    "p2": 3.2,
+    "p1": 1.44,
+    "p2": 3.05,
     "p1name": "Andrey Rublev",
     "p2name": "Tomas Martin Etcheverry"
   },
   "arthur fery|quentin halys": {
-    "p1": 1.67,
-    "p2": 2.33,
+    "p1": 1.68,
+    "p2": 2.32,
     "p1name": "Quentin Halys",
     "p2name": "Arthur Fery"
   },
-  "arthur gea|jan-lennard struff": {
-    "p1": 2.02,
-    "p2": 1.86,
-    "p1name": "Jan-Lennard Struff",
-    "p2name": "Arthur Gea"
-  },
   "arthur rinderknech|francisco cerundolo": {
-    "p1": 2.78,
-    "p2": 1.49,
+    "p1": 2.75,
+    "p2": 1.51,
     "p1name": "Arthur Rinderknech",
     "p2name": "Francisco Cerundolo"
-  },
-  "benjamin bonzi|taylor fritz": {
-    "p1": 4.31,
-    "p2": 1.25,
-    "p1name": "Benjamin Bonzi",
-    "p2name": "Taylor Fritz"
   },
   "brandon nakashima|matteo berrettini": {
     "p1": 1.67,
@@ -113,16 +65,46 @@
     "p1name": "Brandon Nakashima",
     "p2name": "Matteo Berrettini"
   },
+  "learner tien|stefanos tsitsipas": {
+    "p1": 2.17,
+    "p2": 1.76,
+    "p1name": "Stefanos Tsitsipas",
+    "p2name": "Learner Tien"
+  },
   "holger rune|tommy paul": {
     "p1": 1.5,
     "p2": 2.85,
     "p1name": "Tommy Paul",
     "p2name": "Holger Rune"
   },
-  "learner tien|stefanos tsitsipas": {
-    "p1": 2.17,
-    "p2": 1.76,
-    "p1name": "Stefanos Tsitsipas",
-    "p2name": "Learner Tien"
+  "alex michelsen|jiri lehecka": {
+    "p1": 2.3,
+    "p2": 1.68,
+    "p1name": "Alex Michelsen",
+    "p2name": "Jiri Lehecka"
+  },
+  "benjamin bonzi|taylor fritz": {
+    "p1": 4.36,
+    "p2": 1.26,
+    "p1name": "Benjamin Bonzi",
+    "p2name": "Taylor Fritz"
+  },
+  "arthur gea|jan-lennard struff": {
+    "p1": 2,
+    "p2": 1.88,
+    "p1name": "Jan-Lennard Struff",
+    "p2name": "Arthur Gea"
+  },
+  "alexander zverev|lorenzo musetti": {
+    "p1": 1.36,
+    "p2": 3.15,
+    "p1name": "Alexander Zverev",
+    "p2name": "Lorenzo Musetti"
+  },
+  "daniil medvedev|ignacio buse": {
+    "p1": 5.8,
+    "p2": 1.13,
+    "p1name": "Ignacio Buse",
+    "p2name": "Daniil Medvedev"
   }
 }
