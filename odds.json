@@ -1,98 +1,86 @@
 {
-  "arthur fery|quentin halys": {
-    "p1": 1.25,
-    "p2": 7,
-    "p1name": "Quentin Halys",
-    "p2name": "Arthur Fery"
-  },
-  "andrey rublev|tomas martin etcheverry": {
-    "p1": 2.86,
-    "p2": 1.47,
-    "p1name": "Andrey Rublev",
-    "p2name": "Tomas Martin Etcheverry"
-  },
-  "arthur rinderknech|francisco cerundolo": {
-    "p1": 2.93,
-    "p2": 1.62,
-    "p1name": "Arthur Rinderknech",
-    "p2name": "Francisco Cerundolo"
-  },
   "adolfo daniel vallejo|learner tien": {
-    "p1": 4.2,
-    "p2": 1.26,
+    "p1": 10.5,
+    "p2": 1.09,
     "p1name": "Adolfo Daniel Vallejo",
     "p2name": "Learner Tien"
   },
   "brandon nakashima|matteo berrettini": {
-    "p1": 1.59,
-    "p2": 2.5,
+    "p1": 2.34,
+    "p2": 2.2,
     "p1name": "Brandon Nakashima",
     "p2name": "Matteo Berrettini"
   },
-  "moise kouame|nuno borges": {
-    "p1": 1.66,
-    "p2": 2.33,
-    "p1name": "Nuno Borges",
-    "p2name": "Moise Kouame"
+  "novak djokovic|valentin vacherot": {
+    "p1": 2.8,
+    "p2": 2.06,
+    "p1name": "Novak Djokovic",
+    "p2name": "Valentin Vacherot"
   },
   "holger rune|tommy paul": {
-    "p1": 1.5,
+    "p1": 1.49,
     "p2": 2.85,
     "p1name": "Tommy Paul",
     "p2name": "Holger Rune"
   },
-  "novak djokovic|valentin vacherot": {
-    "p1": 1.46,
-    "p2": 2.91,
-    "p1name": "Novak Djokovic",
-    "p2name": "Valentin Vacherot"
-  },
   "alex michelsen|jiri lehecka": {
-    "p1": 2.32,
-    "p2": 1.68,
+    "p1": 2.39,
+    "p2": 1.64,
     "p1name": "Alex Michelsen",
     "p2name": "Jiri Lehecka"
   },
   "benjamin bonzi|taylor fritz": {
-    "p1": 4.35,
+    "p1": 4.37,
     "p2": 1.25,
     "p1name": "Benjamin Bonzi",
     "p2name": "Taylor Fritz"
   },
   "arthur gea|jan-lennard struff": {
-    "p1": 2.04,
-    "p2": 1.85,
+    "p1": 2,
+    "p2": 1.89,
     "p1name": "Jan-Lennard Struff",
     "p2name": "Arthur Gea"
   },
   "ben shelton|cameron norrie": {
-    "p1": 1.36,
-    "p2": 3.34,
+    "p1": 1.37,
+    "p2": 3.37,
     "p1name": "Ben Shelton",
     "p2name": "Cameron Norrie"
   },
   "casper ruud|rafael jodar": {
     "p1": 2.7,
-    "p2": 1.54,
+    "p2": 1.57,
     "p1name": "Casper Ruud",
     "p2name": "Rafael Jodar"
   },
   "alexander zverev|lorenzo musetti": {
-    "p1": 1.41,
-    "p2": 3.06,
+    "p1": 1.42,
+    "p2": 3.08,
     "p1name": "Alexander Zverev",
     "p2name": "Lorenzo Musetti"
   },
   "arthur fils|tomas machac": {
     "p1": 1.52,
-    "p2": 2.68,
+    "p2": 2.69,
     "p1name": "Arthur Fils",
     "p2name": "Tomas Machac"
   },
+  "arthur rinderknech|mattia bellucci": {
+    "p1": 1.75,
+    "p2": 2.25,
+    "p1name": "Mattia Bellucci",
+    "p2name": "Arthur Rinderknech"
+  },
   "daniil medvedev|ignacio buse": {
-    "p1": 5.93,
+    "p1": 6.04,
     "p2": 1.15,
     "p1name": "Ignacio Buse",
     "p2name": "Daniil Medvedev"
+  },
+  "frances tiafoe|quentin halys": {
+    "p1": 2.3,
+    "p2": 1.73,
+    "p1name": "Quentin Halys",
+    "p2name": "Frances Tiafoe"
   }
 }
