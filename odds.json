@@ -1,50 +1,26 @@
 {
-  "alex molcan|taylor fritz": {
-    "p1": 3.4,
-    "p2": 1.7,
-    "p1name": "Alex Molcan",
-    "p2name": "Taylor Fritz"
-  },
-  "matteo berrettini|ugo humbert": {
-    "p1": 2.23,
-    "p2": 1.81,
-    "p1name": "Matteo Berrettini",
-    "p2name": "Ugo Humbert"
-  },
-  "alex michelsen|carlos alcaraz": {
-    "p1": 5.37,
-    "p2": 1.19,
-    "p1name": "Alex Michelsen",
-    "p2name": "Carlos Alcaraz"
-  },
-  "jan-lennard struff|thiago agustin tirante": {
-    "p1": 3,
-    "p2": 1.44,
-    "p1name": "Thiago Agustin Tirante",
-    "p2name": "Jan-Lennard Struff"
-  },
   "arthur fils|tomas machac": {
-    "p1": 1.59,
-    "p2": 2.5,
+    "p1": 1.21,
+    "p2": 5.02,
     "p1name": "Arthur Fils",
     "p2name": "Tomas Machac"
   },
+  "quentin halys|tommy paul": {
+    "p1": 1.35,
+    "p2": 3.6,
+    "p1name": "Tommy Paul",
+    "p2name": "Quentin Halys"
+  },
   "arthur rinderknech|ben shelton": {
-    "p1": 1.3,
-    "p2": 3.5,
+    "p1": 1.34,
+    "p2": 3.54,
     "p1name": "Ben Shelton",
     "p2name": "Arthur Rinderknech"
   },
   "lorenzo musetti|luca van assche": {
-    "p1": 1.35,
-    "p2": 3.2,
+    "p1": 1.38,
+    "p2": 3.42,
     "p1name": "Lorenzo Musetti",
     "p2name": "Luca Van Assche"
-  },
-  "quentin halys|tommy paul": {
-    "p1": 1.29,
-    "p2": 3.6,
-    "p1name": "Tommy Paul",
-    "p2name": "Quentin Halys"
   }
 }
