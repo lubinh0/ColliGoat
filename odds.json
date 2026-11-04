@@ -1,55 +1,31 @@
 {
-  "alex de minaur|tomas martin etcheverry": {
-    "p1": 2.18,
-    "p2": 4.7,
-    "p1name": "Tomas Martin Etcheverry",
-    "p2name": "Alex de Minaur"
-  },
-  "daniil medvedev|ignacio buse": {
-    "p1": 1.95,
-    "p2": 1.9,
-    "p1name": "Ignacio Buse",
-    "p2name": "Daniil Medvedev"
-  },
-  "novak djokovic|rinky hijikata": {
-    "p1": 1.1,
-    "p2": 9.8,
-    "p1name": "Novak Djokovic",
-    "p2name": "Rinky Hijikata"
-  },
   "alex molcan|taylor fritz": {
-    "p1": 4.54,
-    "p2": 1.24,
+    "p1": 3.4,
+    "p2": 1.7,
     "p1name": "Alex Molcan",
     "p2name": "Taylor Fritz"
   },
-  "karen khachanov|nuno borges": {
-    "p1": 2.71,
-    "p2": 1.52,
-    "p1name": "Nuno Borges",
-    "p2name": "Karen Khachanov"
-  },
-  "jan-lennard struff|thiago agustin tirante": {
-    "p1": 2.88,
-    "p2": 1.48,
-    "p1name": "Thiago Agustin Tirante",
-    "p2name": "Jan-Lennard Struff"
-  },
   "matteo berrettini|ugo humbert": {
-    "p1": 2.09,
+    "p1": 2.23,
     "p2": 1.81,
     "p1name": "Matteo Berrettini",
     "p2name": "Ugo Humbert"
   },
   "alex michelsen|carlos alcaraz": {
-    "p1": 5.28,
+    "p1": 5.37,
     "p2": 1.19,
     "p1name": "Alex Michelsen",
     "p2name": "Carlos Alcaraz"
   },
+  "jan-lennard struff|thiago agustin tirante": {
+    "p1": 3,
+    "p2": 1.44,
+    "p1name": "Thiago Agustin Tirante",
+    "p2name": "Jan-Lennard Struff"
+  },
   "arthur fils|tomas machac": {
-    "p1": 1.61,
-    "p2": 2.46,
+    "p1": 1.59,
+    "p2": 2.5,
     "p1name": "Arthur Fils",
     "p2name": "Tomas Machac"
   },
@@ -59,9 +35,15 @@
     "p1name": "Ben Shelton",
     "p2name": "Arthur Rinderknech"
   },
-  "quentin halys|tommy paul": {
+  "lorenzo musetti|luca van assche": {
     "p1": 1.35,
     "p2": 3.2,
+    "p1name": "Lorenzo Musetti",
+    "p2name": "Luca Van Assche"
+  },
+  "quentin halys|tommy paul": {
+    "p1": 1.29,
+    "p2": 3.6,
     "p1name": "Tommy Paul",
     "p2name": "Quentin Halys"
   }
