@@ -1,49 +1,9 @@
 {
-  "2026-11-03": {
-    "data": [
-      {
-        "id": "42bb4ea6113cbbd3effbb4904bf80c9b",
-        "date": "2026-11-03T19:59:00Z",
-        "player1": {
-          "name": "Casper Ruud"
-        },
-        "player2": {
-          "name": "Rafael Jodar"
-        },
-        "tour": "atp",
-        "time": "21h59",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Paris Masters",
-          "surface": "Hard",
-          "flag": "FR"
-        }
-      }
-    ]
-  },
   "2026-11-04": {
     "data": [
       {
-        "id": "3d3a05094b9f2796c2b3d68ef4b43c66",
-        "date": "2026-11-04T10:00:00Z",
-        "player1": {
-          "name": "Mattia Bellucci"
-        },
-        "player2": {
-          "name": "Arthur Rinderknech"
-        },
-        "tour": "atp",
-        "time": "12h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Paris Masters",
-          "surface": "Hard",
-          "flag": "FR"
-        }
-      },
-      {
         "id": "b1f8e4cc08a752752738c51105899ad6",
-        "date": "2026-11-04T10:00:00Z",
+        "date": "2026-11-04T10:09:17Z",
         "player1": {
           "name": "Quentin Halys"
         },
@@ -51,7 +11,7 @@
           "name": "Frances Tiafoe"
         },
         "tour": "atp",
-        "time": "12h00",
+        "time": "12h09",
         "scheduled": true,
         "tournament": {
           "name": "ATP Paris Masters",
@@ -61,30 +21,12 @@
       },
       {
         "id": "4ce1d6b1ec3f3a58daf5d9c774afc3f6",
-        "date": "2026-11-04T11:10:00Z",
+        "date": "2026-11-04T11:30:00Z",
         "player1": {
           "name": "Luca Van Assche"
         },
         "player2": {
           "name": "Learner Tien"
-        },
-        "tour": "atp",
-        "time": "13h10",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Paris Masters",
-          "surface": "Hard",
-          "flag": "FR"
-        }
-      },
-      {
-        "id": "bff9716e2c2e4b207744b20ff82a2241",
-        "date": "2026-11-04T11:30:00Z",
-        "player1": {
-          "name": "Tommy Paul"
-        },
-        "player2": {
-          "name": "Daniel Merida Aguilar"
         },
         "tour": "atp",
         "time": "13h30",
@@ -96,16 +38,16 @@
         }
       },
       {
-        "id": "bc5dffba531009c0a80d3facb9410062",
-        "date": "2026-11-04T12:20:00Z",
+        "id": "bff9716e2c2e4b207744b20ff82a2241",
+        "date": "2026-11-04T11:53:36Z",
         "player1": {
-          "name": "Ignacio Buse"
+          "name": "Tommy Paul"
         },
         "player2": {
-          "name": "Daniil Medvedev"
+          "name": "Daniel Merida Aguilar"
         },
         "tour": "atp",
-        "time": "14h20",
+        "time": "13h53",
         "scheduled": true,
         "tournament": {
           "name": "ATP Paris Masters",
@@ -132,8 +74,26 @@
         }
       },
       {
+        "id": "bc5dffba531009c0a80d3facb9410062",
+        "date": "2026-11-04T12:30:00Z",
+        "player1": {
+          "name": "Ignacio Buse"
+        },
+        "player2": {
+          "name": "Daniil Medvedev"
+        },
+        "tour": "atp",
+        "time": "14h30",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Paris Masters",
+          "surface": "Hard",
+          "flag": "FR"
+        }
+      },
+      {
         "id": "9f0cefd1f030d8ad5ba4085132aff58d",
-        "date": "2026-11-04T12:40:00Z",
+        "date": "2026-11-04T12:55:00Z",
         "player1": {
           "name": "Tomas Martin Etcheverry"
         },
@@ -141,7 +101,7 @@
           "name": "Alex de Minaur"
         },
         "tour": "atp",
-        "time": "14h40",
+        "time": "14h55",
         "scheduled": true,
         "tournament": {
           "name": "ATP Paris Masters",
@@ -169,7 +129,7 @@
       },
       {
         "id": "d9db521dae7522d7d24255286307307f",
-        "date": "2026-11-04T13:50:00Z",
+        "date": "2026-11-04T14:05:00Z",
         "player1": {
           "name": "Alex Molcan"
         },
@@ -177,7 +137,7 @@
           "name": "Taylor Fritz"
         },
         "tour": "atp",
-        "time": "15h50",
+        "time": "16h05",
         "scheduled": true,
         "tournament": {
           "name": "ATP Paris Masters",
@@ -205,7 +165,7 @@
       },
       {
         "id": "83e3278f7f08fc8e5f9d88ec513d0aeb",
-        "date": "2026-11-04T15:00:00Z",
+        "date": "2026-11-04T15:15:00Z",
         "player1": {
           "name": "Thiago Agustin Tirante"
         },
@@ -213,7 +173,7 @@
           "name": "Jan-Lennard Struff"
         },
         "tour": "atp",
-        "time": "17h00",
+        "time": "17h15",
         "scheduled": true,
         "tournament": {
           "name": "ATP Paris Masters",
