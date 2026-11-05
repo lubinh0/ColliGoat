@@ -1,44 +1,4 @@
 {
-  "2026-11-05": {
-    "data": [
-      {
-        "id": "6a03e950601f142942705acfb764d107",
-        "date": "2026-11-05T18:00:00Z",
-        "player1": {
-          "name": "Arthur Fils"
-        },
-        "player2": {
-          "name": "Taylor Fritz"
-        },
-        "tour": "atp",
-        "time": "20h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Paris Masters",
-          "surface": "Hard",
-          "flag": "FR"
-        }
-      },
-      {
-        "id": "47d9edba7490e876194504362c877fe3",
-        "date": "2026-11-05T19:30:00Z",
-        "player1": {
-          "name": "Jan-Lennard Struff"
-        },
-        "player2": {
-          "name": "Casper Ruud"
-        },
-        "tour": "atp",
-        "time": "21h30",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Paris Masters",
-          "surface": "Hard",
-          "flag": "FR"
-        }
-      }
-    ]
-  },
   "2026-11-06": {
     "data": [
       {
@@ -70,6 +30,42 @@
         },
         "tour": "atp",
         "time": "16h10",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Paris Masters",
+          "surface": "Hard",
+          "flag": "FR"
+        }
+      },
+      {
+        "id": "e4e0781ebc80c47d216dd73609a3c8e0",
+        "date": "2026-11-06T18:00:00Z",
+        "player1": {
+          "name": "Taylor Fritz"
+        },
+        "player2": {
+          "name": "Carlos Alcaraz"
+        },
+        "tour": "atp",
+        "time": "20h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Paris Masters",
+          "surface": "Hard",
+          "flag": "FR"
+        }
+      },
+      {
+        "id": "0adc47c275819823d018232033a6de7f",
+        "date": "2026-11-06T19:30:00Z",
+        "player1": {
+          "name": "Casper Ruud"
+        },
+        "player2": {
+          "name": "Nuno Borges"
+        },
+        "tour": "atp",
+        "time": "21h30",
         "scheduled": true,
         "tournament": {
           "name": "ATP Paris Masters",
