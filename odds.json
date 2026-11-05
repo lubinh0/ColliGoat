@@ -1,32 +1,20 @@
 {
-  "rinky hijikata|tomas martin etcheverry": {
-    "p1": 2.05,
-    "p2": 1.82,
-    "p1name": "Rinky Hijikata",
-    "p2name": "Tomas Martin Etcheverry"
-  },
-  "lorenzo musetti|luca van assche": {
-    "p1": 1.63,
-    "p2": 3.07,
-    "p1name": "Lorenzo Musetti",
-    "p2name": "Luca Van Assche"
-  },
-  "ignacio buse|nuno borges": {
-    "p1": 1.58,
-    "p2": 2.55,
-    "p1name": "Nuno Borges",
-    "p2name": "Ignacio Buse"
-  },
   "arthur fils|taylor fritz": {
-    "p1": 1.79,
-    "p2": 2.12,
+    "p1": 1.71,
+    "p2": 2.27,
     "p1name": "Arthur Fils",
     "p2name": "Taylor Fritz"
   },
   "casper ruud|jan-lennard struff": {
-    "p1": 2.86,
-    "p2": 1.48,
+    "p1": 2.97,
+    "p2": 1.45,
     "p1name": "Jan-Lennard Struff",
     "p2name": "Casper Ruud"
+  },
+  "ben shelton|tommy paul": {
+    "p1": 1.98,
+    "p2": 1.83,
+    "p1name": "Ben Shelton",
+    "p2name": "Tommy Paul"
   }
 }
