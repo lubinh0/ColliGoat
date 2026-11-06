@@ -1,20 +1,20 @@
 {
-  "luca van assche|rinky hijikata": {
-    "p1": 1.95,
-    "p2": 2.82,
-    "p1name": "Luca Van Assche",
-    "p2name": "Rinky Hijikata"
-  },
   "carlos alcaraz|taylor fritz": {
-    "p1": 3.54,
-    "p2": 1.35,
+    "p1": 3.45,
+    "p2": 1.46,
     "p1name": "Taylor Fritz",
     "p2name": "Carlos Alcaraz"
   },
   "casper ruud|nuno borges": {
-    "p1": 1.46,
-    "p2": 2.96,
+    "p1": 1.44,
+    "p2": 3.04,
     "p1name": "Casper Ruud",
     "p2name": "Nuno Borges"
+  },
+  "ben shelton|luca van assche": {
+    "p1": 3.93,
+    "p2": 1.29,
+    "p1name": "Luca Van Assche",
+    "p2name": "Ben Shelton"
   }
 }
