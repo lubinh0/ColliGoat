@@ -1,35 +1,17 @@
 {
-  "2026-11-07": {
+  "2026-11-08": {
     "data": [
       {
-        "id": "9ebb22b87460accfb899c0e613b47651",
-        "date": "2026-11-07T13:39:08Z",
+        "id": "2c1005d01a3f63cd2249facf4ce5f5ed",
+        "date": "2026-11-08T14:00:00Z",
         "player1": {
-          "name": "Luca Van Assche"
-        },
-        "player2": {
           "name": "Ben Shelton"
-        },
-        "tour": "atp",
-        "time": "15h39",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Paris Masters",
-          "surface": "Hard",
-          "flag": "FR"
-        }
-      },
-      {
-        "id": "d4b8a9b232417b21fd0dd2de1af179ee",
-        "date": "2026-11-07T16:05:00Z",
-        "player1": {
-          "name": "Casper Ruud"
         },
         "player2": {
           "name": "Carlos Alcaraz"
         },
         "tour": "atp",
-        "time": "18h05",
+        "time": "16h00",
         "scheduled": true,
         "tournament": {
           "name": "ATP Paris Masters",

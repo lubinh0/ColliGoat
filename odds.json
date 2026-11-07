@@ -1,14 +1,8 @@
 {
-  "ben shelton|luca van assche": {
-    "p1": 3.65,
-    "p2": 1.32,
-    "p1name": "Luca Van Assche",
-    "p2name": "Ben Shelton"
-  },
-  "carlos alcaraz|casper ruud": {
-    "p1": 5.2,
-    "p2": 1.21,
-    "p1name": "Casper Ruud",
+  "ben shelton|carlos alcaraz": {
+    "p1": 3.95,
+    "p2": 1.29,
+    "p1name": "Ben Shelton",
     "p2name": "Carlos Alcaraz"
   }
 }
