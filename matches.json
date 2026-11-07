@@ -1,44 +1,4 @@
 {
-  "2026-11-06": {
-    "data": [
-      {
-        "id": "e4e0781ebc80c47d216dd73609a3c8e0",
-        "date": "2026-11-06T18:59:00Z",
-        "player1": {
-          "name": "Taylor Fritz"
-        },
-        "player2": {
-          "name": "Carlos Alcaraz"
-        },
-        "tour": "atp",
-        "time": "20h59",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Paris Masters",
-          "surface": "Hard",
-          "flag": "FR"
-        }
-      },
-      {
-        "id": "0adc47c275819823d018232033a6de7f",
-        "date": "2026-11-06T21:30:00Z",
-        "player1": {
-          "name": "Casper Ruud"
-        },
-        "player2": {
-          "name": "Nuno Borges"
-        },
-        "tour": "atp",
-        "time": "23h30",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Paris Masters",
-          "surface": "Hard",
-          "flag": "FR"
-        }
-      }
-    ]
-  },
   "2026-11-07": {
     "data": [
       {
@@ -52,6 +12,24 @@
         },
         "tour": "atp",
         "time": "15h30",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Paris Masters",
+          "surface": "Hard",
+          "flag": "FR"
+        }
+      },
+      {
+        "id": "d4b8a9b232417b21fd0dd2de1af179ee",
+        "date": "2026-11-07T16:00:00Z",
+        "player1": {
+          "name": "Casper Ruud"
+        },
+        "player2": {
+          "name": "Carlos Alcaraz"
+        },
+        "tour": "atp",
+        "time": "18h00",
         "scheduled": true,
         "tournament": {
           "name": "ATP Paris Masters",
