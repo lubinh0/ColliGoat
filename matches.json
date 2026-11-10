@@ -3,7 +3,7 @@
     "data": [
       {
         "id": "ef9c0fc8fc1cd492cac4edd668d60a72",
-        "date": "2026-11-10T20:00:00Z",
+        "date": "2026-11-10T20:17:00Z",
         "player1": {
           "name": "Marta Kostyuk"
         },
@@ -11,7 +11,7 @@
           "name": "Jessica Pegula"
         },
         "tour": "wta",
-        "time": "22h00",
+        "time": "22h17",
         "scheduled": true,
         "tournament": {
           "name": "WTA Finals",
@@ -21,7 +21,7 @@
       },
       {
         "id": "0066b4bf94846e710339ce11591e33f8",
-        "date": "2026-11-10T21:10:00Z",
+        "date": "2026-11-10T21:45:00Z",
         "player1": {
           "name": "Coco Gauff"
         },
@@ -29,7 +29,7 @@
           "name": "Linda Noskova"
         },
         "tour": "wta",
-        "time": "23h10",
+        "time": "23h45",
         "scheduled": true,
         "tournament": {
           "name": "WTA Finals",
