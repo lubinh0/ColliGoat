@@ -1,27 +1,9 @@
 {
-  "2026-11-11": {
+  "2026-11-12": {
     "data": [
       {
-        "id": "d87ade1e56f0c96e3b28b59dea344837",
-        "date": "2026-11-11T20:00:00Z",
-        "player1": {
-          "name": "Elina Svitolina"
-        },
-        "player2": {
-          "name": "Karolina Muchova"
-        },
-        "tour": "wta",
-        "time": "22h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Finals",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
         "id": "d1549c8585e649677db3579affc1da2e",
-        "date": "2026-11-11T21:10:00Z",
+        "date": "2026-11-11T22:35:00Z",
         "player1": {
           "name": "Aryna Sabalenka"
         },
@@ -29,18 +11,14 @@
           "name": "Mirra Andreeva"
         },
         "tour": "wta",
-        "time": "23h10",
+        "time": "00h35",
         "scheduled": true,
         "tournament": {
           "name": "WTA Finals",
           "surface": "Hard",
           "flag": "UN"
         }
-      }
-    ]
-  },
-  "2026-11-12": {
-    "data": [
+      },
       {
         "id": "b8a1b5d0077794775db0a2ca6b15baf7",
         "date": "2026-11-12T20:00:00Z",
