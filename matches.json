@@ -1,27 +1,9 @@
 {
-  "2026-11-12": {
+  "2026-11-13": {
     "data": [
       {
-        "id": "b8a1b5d0077794775db0a2ca6b15baf7",
-        "date": "2026-11-12T20:00:00Z",
-        "player1": {
-          "name": "Marta Kostyuk"
-        },
-        "player2": {
-          "name": "Coco Gauff"
-        },
-        "tour": "wta",
-        "time": "22h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Finals",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
         "id": "7d0fa680caf6f5718ca51b421754252d",
-        "date": "2026-11-12T21:30:00Z",
+        "date": "2026-11-12T22:10:00Z",
         "player1": {
           "name": "Jessica Pegula"
         },
@@ -29,18 +11,14 @@
           "name": "Linda Noskova"
         },
         "tour": "wta",
-        "time": "23h30",
+        "time": "00h10",
         "scheduled": true,
         "tournament": {
           "name": "WTA Finals",
           "surface": "Hard",
           "flag": "UN"
         }
-      }
-    ]
-  },
-  "2026-11-13": {
-    "data": [
+      },
       {
         "id": "6b92a67eab021047017da9d42e1e1fae",
         "date": "2026-11-13T20:00:00Z",
@@ -61,7 +39,7 @@
       },
       {
         "id": "29a6e4e35a3b385e9666473ad68f2084",
-        "date": "2026-11-13T21:30:00Z",
+        "date": "2026-11-13T21:10:00Z",
         "player1": {
           "name": "Aryna Sabalenka"
         },
@@ -69,7 +47,7 @@
           "name": "Elina Svitolina"
         },
         "tour": "wta",
-        "time": "23h30",
+        "time": "23h10",
         "scheduled": true,
         "tournament": {
           "name": "WTA Finals",
