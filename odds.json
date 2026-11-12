@@ -1,20 +1,26 @@
 {
-  "aryna sabalenka|mirra andreeva": {
-    "p1": 1.91,
-    "p2": 1.89,
-    "p1name": "Aryna Sabalenka",
-    "p2name": "Mirra Andreeva"
-  },
   "coco gauff|marta kostyuk": {
-    "p1": 2.88,
-    "p2": 1.42,
+    "p1": 3.35,
+    "p2": 1.33,
     "p1name": "Marta Kostyuk",
     "p2name": "Coco Gauff"
   },
   "jessica pegula|linda noskova": {
-    "p1": 1.93,
-    "p2": 1.87,
+    "p1": 2,
+    "p2": 1.8,
     "p1name": "Jessica Pegula",
     "p2name": "Linda Noskova"
+  },
+  "karolina muchova|mirra andreeva": {
+    "p1": 1.37,
+    "p2": 3.1,
+    "p1name": "Mirra Andreeva",
+    "p2name": "Karolina Muchova"
+  },
+  "aryna sabalenka|elina svitolina": {
+    "p1": 1.53,
+    "p2": 2.5,
+    "p1name": "Aryna Sabalenka",
+    "p2name": "Elina Svitolina"
   }
 }
