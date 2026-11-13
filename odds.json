@@ -1,19 +1,37 @@
 {
-  "jessica pegula|linda noskova": {
-    "p1": 2.07,
-    "p2": 1.76,
-    "p1name": "Jessica Pegula",
-    "p2name": "Linda Noskova"
+  "alexander zverev|rafael jodar": {
+    "p1": 1.38,
+    "p2": 3,
+    "p1name": "Alexander Zverev",
+    "p2name": "Rafael Jodar"
+  },
+  "arthur fils|ben shelton": {
+    "p1": 1.67,
+    "p2": 2.2,
+    "p1name": "Ben Shelton",
+    "p2name": "Arthur Fils"
+  },
+  "carlos alcaraz|frances tiafoe": {
+    "p1": 1.14,
+    "p2": 5.75,
+    "p1name": "Carlos Alcaraz",
+    "p2name": "Frances Tiafoe"
+  },
+  "daniil medvedev|flavio cobolli": {
+    "p1": 1.23,
+    "p2": 4.2,
+    "p1name": "Daniil Medvedev",
+    "p2name": "Flavio Cobolli"
   },
   "karolina muchova|mirra andreeva": {
-    "p1": 1.37,
-    "p2": 3.1,
+    "p1": 1.29,
+    "p2": 3.55,
     "p1name": "Mirra Andreeva",
     "p2name": "Karolina Muchova"
   },
   "aryna sabalenka|elina svitolina": {
-    "p1": 1.53,
-    "p2": 2.5,
+    "p1": 1.52,
+    "p2": 2.55,
     "p1name": "Aryna Sabalenka",
     "p2name": "Elina Svitolina"
   }
