@@ -79,33 +79,11 @@
       }
     ]
   },
-  "2026-11-13": {
-    "data": [
-      {
-        "id": "29a6e4e35a3b385e9666473ad68f2084",
-        "date": "2026-11-13T21:15:00Z",
-        "player1": {
-          "name": "Aryna Sabalenka"
-        },
-        "player2": {
-          "name": "Elina Svitolina"
-        },
-        "tour": "wta",
-        "time": "23h15",
-        "scheduled": true,
-        "tournament": {
-          "name": "WTA Finals",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      }
-    ]
-  },
   "2026-11-14": {
     "data": [
       {
         "id": "53d87628f7d7ae2c16b9b10ab1be03ab",
-        "date": "2026-11-14T15:00:00Z",
+        "date": "2026-11-14T20:00:00Z",
         "player1": {
           "name": "Jessica Pegula"
         },
@@ -113,7 +91,25 @@
           "name": "Mirra Andreeva"
         },
         "tour": "wta",
-        "time": "17h00",
+        "time": "22h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "WTA Finals",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "57cede457aa62785e8460c5b2a052ac6",
+        "date": "2026-11-14T21:30:00Z",
+        "player1": {
+          "name": "Linda Noskova"
+        },
+        "player2": {
+          "name": "Elina Svitolina"
+        },
+        "tour": "wta",
+        "time": "23h30",
         "scheduled": true,
         "tournament": {
           "name": "WTA Finals",
