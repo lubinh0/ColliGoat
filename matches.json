@@ -83,7 +83,7 @@
     "data": [
       {
         "id": "53d87628f7d7ae2c16b9b10ab1be03ab",
-        "date": "2026-11-14T20:00:00Z",
+        "date": "2026-11-14T20:10:00Z",
         "player1": {
           "name": "Jessica Pegula"
         },
@@ -91,7 +91,7 @@
           "name": "Mirra Andreeva"
         },
         "tour": "wta",
-        "time": "22h00",
+        "time": "22h10",
         "scheduled": true,
         "tournament": {
           "name": "WTA Finals",
