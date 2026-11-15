@@ -1,12 +1,12 @@
 {
   "arthur fils|ben shelton": {
-    "p1": 1.61,
-    "p2": 2.5,
+    "p1": 1.13,
+    "p2": 7.4,
     "p1name": "Ben Shelton",
     "p2name": "Arthur Fils"
   },
   "carlos alcaraz|frances tiafoe": {
-    "p1": 1.13,
+    "p1": 1.11,
     "p2": 8.1,
     "p1name": "Carlos Alcaraz",
     "p2name": "Frances Tiafoe"
@@ -18,8 +18,8 @@
     "p2name": "Flavio Cobolli"
   },
   "elina svitolina|mirra andreeva": {
-    "p1": 3.37,
-    "p2": 1.38,
+    "p1": 3.75,
+    "p2": 1.47,
     "p1name": "Elina Svitolina",
     "p2name": "Mirra Andreeva"
   }
