@@ -2,24 +2,6 @@
   "2026-11-16": {
     "data": [
       {
-        "id": "c81851847baf5e3a479993ec167a8e2a",
-        "date": "2026-11-16T13:00:00Z",
-        "player1": {
-          "name": "Carlos Alcaraz"
-        },
-        "player2": {
-          "name": "Frances Tiafoe"
-        },
-        "tour": "atp",
-        "time": "15h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Finals",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
         "id": "7ac3bf138012785e65835d1481524d5c",
         "date": "2026-11-16T19:30:00Z",
         "player1": {
