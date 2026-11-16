@@ -1,26 +1,4 @@
 {
-  "2026-11-16": {
-    "data": [
-      {
-        "id": "7ac3bf138012785e65835d1481524d5c",
-        "date": "2026-11-16T19:52:00Z",
-        "player1": {
-          "name": "Daniil Medvedev"
-        },
-        "player2": {
-          "name": "Flavio Cobolli"
-        },
-        "tour": "atp",
-        "time": "21h52",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Finals",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      }
-    ]
-  },
   "2026-11-17": {
     "data": [
       {
@@ -49,6 +27,46 @@
         },
         "player2": {
           "name": "Ben Shelton"
+        },
+        "tour": "atp",
+        "time": "21h30",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Finals",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      }
+    ]
+  },
+  "2026-11-18": {
+    "data": [
+      {
+        "id": "a3e64105988f48f4c6447c9ca6de0030",
+        "date": "2026-11-18T13:00:00Z",
+        "player1": {
+          "name": "Carlos Alcaraz"
+        },
+        "player2": {
+          "name": "Daniil Medvedev"
+        },
+        "tour": "atp",
+        "time": "15h00",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Finals",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "5f11f792535a031c557f8a33a8093f18",
+        "date": "2026-11-18T19:30:00Z",
+        "player1": {
+          "name": "Flavio Cobolli"
+        },
+        "player2": {
+          "name": "Frances Tiafoe"
         },
         "tour": "atp",
         "time": "21h30",
