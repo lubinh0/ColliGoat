@@ -1,10 +1,4 @@
 {
-  "alexander zverev|ben shelton": {
-    "p1": 1.5,
-    "p2": 2.81,
-    "p1name": "Alexander Zverev",
-    "p2name": "Ben Shelton"
-  },
   "carlos alcaraz|daniil medvedev": {
     "p1": 1.28,
     "p2": 4.22,
@@ -16,5 +10,17 @@
     "p2": 1.77,
     "p1name": "Flavio Cobolli",
     "p2name": "Frances Tiafoe"
+  },
+  "ben shelton|rafael jodar": {
+    "p1": 1.5,
+    "p2": 2.55,
+    "p1name": "Ben Shelton",
+    "p2name": "Rafael Jodar"
+  },
+  "alexander zverev|arthur fils": {
+    "p1": 1.38,
+    "p2": 3.05,
+    "p1name": "Alexander Zverev",
+    "p2name": "Arthur Fils"
   }
 }
