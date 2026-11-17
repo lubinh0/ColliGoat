@@ -2,24 +2,6 @@
   "2026-11-17": {
     "data": [
       {
-        "id": "b347b8bd2e85f10eca7dc7160026443b",
-        "date": "2026-11-17T13:08:00Z",
-        "player1": {
-          "name": "Arthur Fils"
-        },
-        "player2": {
-          "name": "Rafael Jodar"
-        },
-        "tour": "atp",
-        "time": "15h08",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Finals",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
         "id": "f0a6612a0e894025a58459b04ecd02c9",
         "date": "2026-11-17T19:30:00Z",
         "player1": {
