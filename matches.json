@@ -2,24 +2,6 @@
   "2026-11-19": {
     "data": [
       {
-        "id": "91d621e106bf38d41c61739852993840",
-        "date": "2026-11-19T13:00:00Z",
-        "player1": {
-          "name": "Ben Shelton"
-        },
-        "player2": {
-          "name": "Rafael Jodar"
-        },
-        "tour": "atp",
-        "time": "15h00",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Finals",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      },
-      {
         "id": "66cc3b98e9e67560a34198715ee78d75",
         "date": "2026-11-19T19:30:00Z",
         "player1": {
