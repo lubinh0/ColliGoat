@@ -1,31 +1,9 @@
 {
-  "2026-11-20": {
-    "data": [
-      {
-        "id": "1acdb2047defbe0439ef3b1961a60010",
-        "date": "2026-11-20T19:30:00Z",
-        "player1": {
-          "name": "Daniil Medvedev"
-        },
-        "player2": {
-          "name": "Frances Tiafoe"
-        },
-        "tour": "atp",
-        "time": "21h30",
-        "scheduled": true,
-        "tournament": {
-          "name": "ATP Finals",
-          "surface": "Hard",
-          "flag": "UN"
-        }
-      }
-    ]
-  },
   "2026-11-21": {
     "data": [
       {
         "id": "81c3faeaadd3d42734cd831b32b32597",
-        "date": "2026-11-21T13:00:00Z",
+        "date": "2026-11-21T13:30:00Z",
         "player1": {
           "name": "Carlos Alcaraz"
         },
@@ -33,7 +11,25 @@
           "name": "Ben Shelton"
         },
         "tour": "atp",
-        "time": "15h00",
+        "time": "15h30",
+        "scheduled": true,
+        "tournament": {
+          "name": "ATP Finals",
+          "surface": "Hard",
+          "flag": "UN"
+        }
+      },
+      {
+        "id": "32e23a0b745bed6c0a23f60fab451adb",
+        "date": "2026-11-21T19:30:00Z",
+        "player1": {
+          "name": "Alexander Zverev"
+        },
+        "player2": {
+          "name": "Daniil Medvedev"
+        },
+        "tour": "atp",
+        "time": "21h30",
         "scheduled": true,
         "tournament": {
           "name": "ATP Finals",

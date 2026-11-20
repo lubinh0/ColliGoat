@@ -1,8 +1,14 @@
 {
-  "daniil medvedev|frances tiafoe": {
-    "p1": 1.38,
-    "p2": 3.32,
-    "p1name": "Daniil Medvedev",
-    "p2name": "Frances Tiafoe"
+  "ben shelton|carlos alcaraz": {
+    "p1": 1.25,
+    "p2": 4,
+    "p1name": "Carlos Alcaraz",
+    "p2name": "Ben Shelton"
+  },
+  "alexander zverev|daniil medvedev": {
+    "p1": 1.55,
+    "p2": 2.45,
+    "p1name": "Alexander Zverev",
+    "p2name": "Daniil Medvedev"
   }
 }
