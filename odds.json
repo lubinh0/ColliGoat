@@ -1,13 +1,13 @@
 {
   "ben shelton|carlos alcaraz": {
-    "p1": 1.25,
-    "p2": 4,
+    "p1": 1.24,
+    "p2": 4.58,
     "p1name": "Carlos Alcaraz",
     "p2name": "Ben Shelton"
   },
   "alexander zverev|daniil medvedev": {
-    "p1": 1.55,
-    "p2": 2.45,
+    "p1": 1.59,
+    "p2": 2.63,
     "p1name": "Alexander Zverev",
     "p2name": "Daniil Medvedev"
   }
